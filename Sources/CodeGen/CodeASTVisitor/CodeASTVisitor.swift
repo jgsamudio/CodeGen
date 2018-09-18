@@ -14,9 +14,11 @@ final class CodeASTVisitor: ASTVisitor {
     var modifications = [FileModifier]()
 
     private let fileComponents: [String]
+    private let config: Configuration?
 
-    init(fileComponents: [String]) {
+    init(fileComponents: [String], config: Configuration?) {
         self.fileComponents = fileComponents
+        self.config = config
     }
 
     func visit(_ declaration: ClassDeclaration) throws -> Bool {

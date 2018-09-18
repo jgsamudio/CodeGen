@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Visitor: String {
+enum Visitor: String, Decodable {
     case `class`
     case `enum`
     case `protocol`

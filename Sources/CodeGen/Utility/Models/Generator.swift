@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Generator {
+struct Generator: Decodable {
     let name: String
     let insertString: [String]?
     let visitors: [Visitor]?

@@ -1,11 +1,10 @@
 {
-	"directory": "/Users/jonathansamudio/Prolific-Projects/CodeGen/SampleFiles", // /Users/jonathansamudio/Prolific-Projects/CodeGen/SampleFiles
 	"enabledGenerators": [
 		{
 			"name": "declarationHeader",
 			"insertString":[
 				"/// <Description of the class>",
-				"///"
+				"///",
 				"/// **Subspec: Folder/Filename**",
 				"///",
 				"/// ```",

@@ -9,12 +9,12 @@ import Foundation
 import AST
 import Parser
 import Source
+import Alamofire
 
 final class ArgumentParser {
 
     private let arguments: [String]
-
-    private var fileNameDict = [String: [String]]()
+    private let dataDecoder = DataDecoder()
 
     init(arguments: [String] = CommandLine.arguments) {
         self.arguments = arguments
@@ -26,6 +26,7 @@ final class ArgumentParser {
         }
 
         let directory = arguments[1]
+        let config = try loadConfig(directory: directory)
         let fileNames = FileRetriever.retrieveFilenames(at: directory, fileExtensions: [".swift"])
 
         // Parse files.
@@ -35,7 +36,7 @@ final class ArgumentParser {
 
             let parser = Parser(source: sourceFile)
             let topLevelDecl = try parser.parse()
-            let visitor = CodeASTVisitor(fileComponents: fileComponents)
+            let visitor = CodeASTVisitor(fileComponents: fileComponents, config: config)
             _ = try? visitor.traverse(topLevelDecl)
 
             // Update files with modifications.
@@ -60,6 +61,17 @@ final class ArgumentParser {
                 }
             }
             updatedFileComponents.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
+        }
+    }
+
+    func loadConfig(directory: String) throws -> Configuration {
+        let jsonString = try? String(contentsOfFile: "\(directory)/.codegen.config.json", encoding: String.Encoding.utf8)
+        let data = jsonString?.data(using: .utf8)
+        let result: Result<Configuration> = dataDecoder.decodeData(data)
+        if let config = result.value {
+            return config
+        } else {
+            throw CommandLineError.configFileMissing
         }
     }
 

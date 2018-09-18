@@ -10,6 +10,7 @@ import Foundation
 class SourceFileLoader {
 
     var sourceFile: SourceFile?
+    
     var fileNameUrl: URL {
         return URL(string: fileName.replacingOccurrences(of: " ", with: "%20")) ?? URL(string: "hello")!
     }
@@ -27,19 +28,15 @@ class SourceFileLoader {
     }
 
     func loadFiles(completion: (()->Void)? = nil) {
-        DispatchQueue.global().async {
-            do {
-                let content = try String(contentsOfFile: "\(self.directory)/\(self.fileName)", encoding: String.Encoding.utf8)
-                let fileComponents = content.components(separatedBy: "\n")
-                self.sourceFile = ((self.fileNameUrl, content, fileComponents))
-                if let completion = completion {
-                    DispatchQueue.main.async {
-                        completion()
-                    }
-                }
-            } catch {
-                print("Error caught with message: \(error.localizedDescription)")
+        do {
+            let content = try String(contentsOfFile: "\(self.directory)/\(self.fileName)", encoding: String.Encoding.utf8)
+            let fileComponents = content.components(separatedBy: "\n")
+            self.sourceFile = ((self.fileNameUrl, content, fileComponents))
+            if let completion = completion {
+                completion()
             }
+        } catch {
+            print("Error caught with message: \(error.localizedDescription)")
         }
     }
 

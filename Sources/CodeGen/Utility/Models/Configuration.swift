@@ -7,7 +7,6 @@
 
 import Foundation
 
-struct Configuration {
-    let directory: String
+struct Configuration: Decodable {
     let enabledGenerators: [Generator]
 }

@@ -9,4 +9,5 @@ import Foundation
 
 enum CommandLineError: Error {
     case missingDirectory
+    case configFileMissing
 }
