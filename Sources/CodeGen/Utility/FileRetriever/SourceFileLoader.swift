@@ -26,13 +26,20 @@ class SourceFileLoader {
         self.fileName = fileName
     }
 
-    func loadFiles() {
-        do {
-            let content = try String(contentsOfFile: "\(self.directory)/\(self.fileName)", encoding: String.Encoding.utf8)
-            let fileComponents = content.components(separatedBy: "\n")
-            self.sourceFile = ((self.fileNameUrl, content, fileComponents))
-        } catch {
-            print("Error caught with message: \(error.localizedDescription)")
+    func loadFiles(completion: (()->Void)? = nil) {
+        DispatchQueue.global().async {
+            do {
+                let content = try String(contentsOfFile: "\(self.directory)/\(self.fileName)", encoding: String.Encoding.utf8)
+                let fileComponents = content.components(separatedBy: "\n")
+                self.sourceFile = ((self.fileNameUrl, content, fileComponents))
+                if let completion = completion {
+                    DispatchQueue.main.async {
+                        completion()
+                    }
+                }
+            } catch {
+                print("Error caught with message: \(error.localizedDescription)")
+            }
         }
     }
 

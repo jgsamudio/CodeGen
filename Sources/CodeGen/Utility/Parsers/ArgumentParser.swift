@@ -14,6 +14,8 @@ final class ArgumentParser {
 
     private let arguments: [String]
 
+    private var fileNameDict = [String: [String]]()
+
     init(arguments: [String] = CommandLine.arguments) {
         self.arguments = arguments
     }
@@ -24,22 +26,42 @@ final class ArgumentParser {
         }
 
         let directory = arguments[1]
-        let fileNames = FileRetriever.retrieveFilenames(at: directory, fileExtensions: [".swift"]).map {
-            "\(directory)/\($0)"
-        }
-
+        let fileNames = FileRetriever.retrieveFilenames(at: directory, fileExtensions: [".swift"])
         let visitor = CodeASTVisitor()
 
         for fileName in fileNames {
-            let sourceFile = try SourceReader.read(at: fileName)
+            let sourceFile = try SourceReader.read(at: "\(directory)/\(fileName)")
             let parser = Parser(source: sourceFile)
             let topLevelDecl = try parser.parse()
             _ = try? visitor.traverse(topLevelDecl)
+
+            print(visitor.modifications.count)
+            var fileComponents = sourceFile.content.components(separatedBy: "\n")
+            var updatedFileComponents = [String]()
+
+            for i in 0..<fileComponents.count {
+                let line = i+1
+                let fileComponent = fileComponents[i]
+
+                for modIndex in 0..<visitor.modifications.count {
+                    let modification = visitor.modifications[modIndex]
+
+                    if modification.line == line {
+                        updatedFileComponents.insert(modification.insertions.joined(separator: "\n"), at: i)
+                        visitor.modifications.remove(at: modIndex)
+
+                        if !modification.replaceCurrentLine {
+                            updatedFileComponents.append(fileComponent)
+                        }
+                        continue
+                    }
+                }
+
+
+            }
+
+            updatedFileComponents.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
         }
     }
 
-}
-
-enum CommandLineError: Error {
-    case missingDirectory
 }
