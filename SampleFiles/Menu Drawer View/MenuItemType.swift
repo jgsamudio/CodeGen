@@ -14,6 +14,16 @@ import Foundation
 /// - privacy: Privacy menu item.
 /// - contactUs: Contact us menu item.
 // HELLO WORLD
+/// <Description of the class>
+///
+/// **Subspec: Folder/Filename**
+///
+/// ```
+/// Code Snippet
+/// ```
+///
+/// <Real world example of how someone would use this class with code snippet>
+///
 enum MenuItemType {
     case settings
     case privacy

@@ -16,26 +16,35 @@ final class CodeASTVisitor: ASTVisitor {
     private let fileComponents: [String]
     private let config: Configuration?
 
+    private let codeGenerators: [CodeGenerator]
+
     init(fileComponents: [String], config: Configuration?) {
         self.fileComponents = fileComponents
         self.config = config
+
+        codeGenerators = config?.enabledGenerators.compactMap {
+            if $0.name == DeclarationHeaderGenerator.name {
+                return DeclarationHeaderGenerator(generator: $0)
+            }
+            return nil
+        } ?? []
     }
 
     func visit(_ declaration: ClassDeclaration) throws -> Bool {
         print(declaration.name)
-        checkFileHeader(sourceLocation: declaration.sourceLocation)
+        visited(.class, sourceLocation: declaration.sourceLocation)
         return true
     }
 
     func visit(_ declaration: StructDeclaration) throws -> Bool {
         print(declaration.name)
-        checkFileHeader(sourceLocation: declaration.sourceLocation)
+        visited(.struct, sourceLocation: declaration.sourceLocation)
         return true
     }
 
     func visit(_ declaration: EnumDeclaration) throws -> Bool {
         print(declaration.name)
-        checkFileHeader(sourceLocation: declaration.sourceLocation)
+        visited(.enum, sourceLocation: declaration.sourceLocation)
         return true
     }
 
@@ -47,15 +56,11 @@ final class CodeASTVisitor: ASTVisitor {
 
 private extension CodeASTVisitor {
 
-    func checkFileHeader(sourceLocation: SourceLocation) {
-        let fileModifier = FileModifier(filePath: sourceLocation.identifier,
-                                        lineNumber: sourceLocation.line,
-                                        insertions: ["// HELLO WORLD"])
-
-        let index = sourceLocation.line-1
-        if Array(fileComponents[index-fileModifier.insertions.count..<index]) != fileModifier.insertions {
-            // add check for comments.
-            modifications.append(fileModifier)
+    func visited(_ visitor: Visitor, sourceLocation: SourceLocation) {
+        codeGenerators.filter { $0.generator.visitors?.contains(visitor) ?? false }.forEach {
+            if let modifier = $0.fileModifier(sourceLocation: sourceLocation, fileComponents: fileComponents) {
+                modifications.append(modifier)
+            }
         }
     }
 

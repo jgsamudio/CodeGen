@@ -10,6 +10,16 @@ import UIKit
 import Pilas
 
 // HELLO WORLD
+/// <Description of the class>
+///
+/// **Subspec: Folder/Filename**
+///
+/// ```
+/// Code Snippet
+/// ```
+///
+/// <Real world example of how someone would use this class with code snippet>
+///
 final class MenuDrawerView: UIView {
 
     // MARK: - Public Properties

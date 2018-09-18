@@ -10,7 +10,10 @@ import Source
 
 protocol CodeGenerator {
 
-    var name: String { get }
+    static var name: String { get }
+
+    var generator: Generator { get }
 
     func fileModifier(sourceLocation: SourceLocation, fileComponents: [String]) -> FileModifier?
+    
 }

@@ -10,12 +10,22 @@ import Source
 
 final class DeclarationHeaderGenerator: CodeGenerator {
 
-    var name = "declarationHeader"
+    static var name = "declarationHeader"
+
+    let generator: Generator
+
+    init(generator: Generator) {
+        self.generator = generator
+    }
 
     func fileModifier(sourceLocation: SourceLocation, fileComponents: [String]) -> FileModifier? {
+        guard let insertions = generator.insertString else {
+            return nil
+        }
+
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
                                         lineNumber: sourceLocation.line,
-                                        insertions: ["// HELLO WORLD"])
+                                        insertions: insertions)
 
         let index = sourceLocation.line-1
         if Array(fileComponents[index-fileModifier.insertions.count..<index]) != fileModifier.insertions {
