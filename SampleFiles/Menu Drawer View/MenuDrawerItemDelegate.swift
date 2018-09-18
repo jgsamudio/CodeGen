@@ -8,6 +8,16 @@
 
 import Foundation
 
+/// <Description of the class>
+///
+/// **Subspec: Folder/Filename**
+///
+/// ```
+/// Code Snippet
+/// ```
+///
+/// <Real world example of how someone would use this class with code snippet>
+///
 protocol MenuDrawerItemDelegate: class {
 
     /// Called when the menu item is selected.

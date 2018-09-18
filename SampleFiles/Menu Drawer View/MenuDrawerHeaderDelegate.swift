@@ -8,6 +8,16 @@
 
 import Foundation
 
+/// <Description of the class>
+///
+/// **Subspec: Folder/Filename**
+///
+/// ```
+/// Code Snippet
+/// ```
+///
+/// <Real world example of how someone would use this class with code snippet>
+///
 protocol MenuDrawerHeaderDelegate: MenuDrawerItemDelegate {
 
     /// Called when the profile is selected.

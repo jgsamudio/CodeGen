@@ -48,6 +48,12 @@ final class CodeASTVisitor: ASTVisitor {
         return true
     }
 
+    func visit(_ declaration: ProtocolDeclaration) throws -> Bool {
+        print(declaration.name)
+        visited(.protocol, sourceLocation: declaration.sourceLocation)
+        return true
+    }
+
     func visit(_ declaration: ExtensionDeclaration) throws -> Bool {
         return true
     }
