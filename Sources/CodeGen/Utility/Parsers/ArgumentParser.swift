@@ -51,9 +51,7 @@ final class ArgumentParser {
                         updatedFileComponents.insert(modification.insertions.joined(separator: "\n"), at: i)
                         visitor.modifications.remove(at: modIndex)
 
-                        if !modification.replaceCurrentLine {
-                            replaceCurrentLine = true
-                        }
+                        replaceCurrentLine = modification.replaceCurrentLine
                     }
                 }
 
