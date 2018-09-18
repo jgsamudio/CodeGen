@@ -47,12 +47,9 @@ private extension CodeASTVisitor {
                                         insertions: ["// HELLO WORLD"])
 
         let index = sourceLocation.line-1
-        for i in stride(from: index-1, to: 0, by: -1) {
-            if fileComponents[i] != fileModifier.insertions.last {
-                // add check for comments.
-                modifications.append(fileModifier)
-                return
-            }
+        if Array(fileComponents[index-fileModifier.insertions.count..<index]) != fileModifier.insertions {
+            // add check for comments.
+            modifications.append(fileModifier)
         }
     }
 

@@ -17,6 +17,9 @@ import Foundation
 // HELLO WORLD
 // HELLO WORLD
 // HELLO WORLD
+// HELLO WORLD
+// HELLO WORLD
+// HELLO WORLD
 enum MenuItemType {
     case settings
     case privacy
