@@ -8,15 +8,11 @@
 import Foundation
 import Source
 
-final class DeclarationHeaderGenerator: CodeGenerator {
+struct DeclarationHeaderGenerator: CodeGenerator {
 
     static var name = "declarationHeader"
 
     let generator: Generator
-
-    init(generator: Generator) {
-        self.generator = generator
-    }
 
     func fileModifier(sourceLocation: SourceLocation, fileComponents: [String]) -> FileModifier? {
         guard let insertions = generator.insertString else {
