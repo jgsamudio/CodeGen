@@ -42,6 +42,7 @@ final class ArgumentParser {
             for i in 0..<fileComponents.count {
                 let line = i+1
                 let fileComponent = fileComponents[i]
+                var replaceCurrentLine = false
 
                 for modIndex in 0..<visitor.modifications.count {
                     let modification = visitor.modifications[modIndex]
@@ -51,13 +52,14 @@ final class ArgumentParser {
                         visitor.modifications.remove(at: modIndex)
 
                         if !modification.replaceCurrentLine {
-                            updatedFileComponents.append(fileComponent)
+                            replaceCurrentLine = true
                         }
-                        continue
                     }
                 }
 
-
+                if !replaceCurrentLine {
+                    updatedFileComponents.append(fileComponent)
+                }
             }
 
             updatedFileComponents.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
