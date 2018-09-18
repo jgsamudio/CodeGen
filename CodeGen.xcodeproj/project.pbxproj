@@ -32,6 +32,7 @@
 		201095C921517FCC00FFDA5D /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095C721517FBC00FFDA5D /* ArgumentParser.swift */; };
 		201095CD2151848700FFDA5D /* CommandLineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095CB2151845600FFDA5D /* CommandLineError.swift */; };
 		201095D12151899B00FFDA5D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095CF2151899700FFDA5D /* StringExtension.swift */; };
+		201095D321518F2100FFDA5D /* FileModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095D221518F2100FFDA5D /* FileModifier.swift */; };
 		OBJ_231 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* ASTNode.swift */; };
 		OBJ_232 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* ASTNodeContext.swift */; };
 		OBJ_233 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ASTTextRepresentable.swift */; };
@@ -466,6 +467,7 @@
 		201095C721517FBC00FFDA5D /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
 		201095CB2151845600FFDA5D /* CommandLineError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineError.swift; sourceTree = "<group>"; };
 		201095CF2151899700FFDA5D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		201095D221518F2100FFDA5D /* FileModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModifier.swift; sourceTree = "<group>"; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_100 /* InitializerExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerExpression.swift; sourceTree = "<group>"; };
 		OBJ_101 /* KeyPathExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathExpression.swift; sourceTree = "<group>"; };
@@ -745,6 +747,7 @@
 			isa = PBXGroup;
 			children = (
 				201095BB21517C7E00FFDA5D /* CodeASTVisitor.swift */,
+				201095D221518F2100FFDA5D /* FileModifier.swift */,
 			);
 			path = CodeASTVisitor;
 			sourceTree = "<group>";
@@ -1643,6 +1646,7 @@
 				201095D12151899B00FFDA5D /* StringExtension.swift in Sources */,
 				201095C321517D2A00FFDA5D /* FileRetriever.swift in Sources */,
 				201095C521517D3400FFDA5D /* CodeASTVisitor.swift in Sources */,
+				201095D321518F2100FFDA5D /* FileModifier.swift in Sources */,
 				OBJ_380 /* main.swift in Sources */,
 				201095CD2151848700FFDA5D /* CommandLineError.swift in Sources */,
 				201095C921517FCC00FFDA5D /* ArgumentParser.swift in Sources */,

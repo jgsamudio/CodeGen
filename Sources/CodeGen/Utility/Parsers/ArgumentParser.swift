@@ -61,7 +61,6 @@ final class ArgumentParser {
                     updatedFileComponents.append(fileComponent)
                 }
             }
-
             updatedFileComponents.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
         }
     }
