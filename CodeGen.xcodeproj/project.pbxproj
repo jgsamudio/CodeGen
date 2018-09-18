@@ -26,6 +26,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		201095C321517D2A00FFDA5D /* FileRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095BF21517CE600FFDA5D /* FileRetriever.swift */; };
+		201095C421517D2F00FFDA5D /* SourceFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095C121517CFB00FFDA5D /* SourceFileLoader.swift */; };
+		201095C521517D3400FFDA5D /* CodeASTVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095BB21517C7E00FFDA5D /* CodeASTVisitor.swift */; };
+		201095C921517FCC00FFDA5D /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095C721517FBC00FFDA5D /* ArgumentParser.swift */; };
+		201095CC2151845600FFDA5D /* CommandLineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095CB2151845600FFDA5D /* CommandLineError.swift */; };
 		OBJ_231 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* ASTNode.swift */; };
 		OBJ_232 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* ASTNodeContext.swift */; };
 		OBJ_233 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ASTTextRepresentable.swift */; };
@@ -454,6 +459,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201095BB21517C7E00FFDA5D /* CodeASTVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeASTVisitor.swift; sourceTree = "<group>"; };
+		201095BF21517CE600FFDA5D /* FileRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRetriever.swift; sourceTree = "<group>"; };
+		201095C121517CFB00FFDA5D /* SourceFileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceFileLoader.swift; sourceTree = "<group>"; };
+		201095C721517FBC00FFDA5D /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
+		201095CB2151845600FFDA5D /* CommandLineError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineError.swift; sourceTree = "<group>"; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_100 /* InitializerExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerExpression.swift; sourceTree = "<group>"; };
 		OBJ_101 /* KeyPathExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathExpression.swift; sourceTree = "<group>"; };
@@ -729,6 +739,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201095BA21517C6900FFDA5D /* CodeASTVisitor */ = {
+			isa = PBXGroup;
+			children = (
+				201095BB21517C7E00FFDA5D /* CodeASTVisitor.swift */,
+			);
+			path = CodeASTVisitor;
+			sourceTree = "<group>";
+		};
+		201095BD21517CBD00FFDA5D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				201095CA2151843D00FFDA5D /* CommandLineError */,
+				201095C621517FB400FFDA5D /* Parsers */,
+				201095BE21517CDF00FFDA5D /* FileRetriever */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		201095BE21517CDF00FFDA5D /* FileRetriever */ = {
+			isa = PBXGroup;
+			children = (
+				201095BF21517CE600FFDA5D /* FileRetriever.swift */,
+				201095C121517CFB00FFDA5D /* SourceFileLoader.swift */,
+			);
+			path = FileRetriever;
+			sourceTree = "<group>";
+		};
+		201095C621517FB400FFDA5D /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				201095C721517FBC00FFDA5D /* ArgumentParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		201095CA2151843D00FFDA5D /* CommandLineError */ = {
+			isa = PBXGroup;
+			children = (
+				201095CB2151845600FFDA5D /* CommandLineError.swift */,
+			);
+			path = CommandLineError;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1149,6 +1202,8 @@
 		OBJ_8 /* CodeGen */ = {
 			isa = PBXGroup;
 			children = (
+				201095BD21517CBD00FFDA5D /* Utility */,
+				201095BA21517C6900FFDA5D /* CodeASTVisitor */,
 				OBJ_9 /* main.swift */,
 			);
 			name = CodeGen;
@@ -1510,6 +1565,7 @@
 				OBJ_308 /* IdentifierPattern.swift in Sources */,
 				OBJ_309 /* OptionalPattern.swift in Sources */,
 				OBJ_310 /* TuplePattern.swift in Sources */,
+				201095CC2151845600FFDA5D /* CommandLineError.swift in Sources */,
 				OBJ_311 /* TypeCastingPattern.swift in Sources */,
 				OBJ_312 /* ValueBindingPattern.swift in Sources */,
 				OBJ_313 /* WildcardPattern.swift in Sources */,
@@ -1573,7 +1629,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				201095C421517D2F00FFDA5D /* SourceFileLoader.swift in Sources */,
+				201095C321517D2A00FFDA5D /* FileRetriever.swift in Sources */,
+				201095C521517D3400FFDA5D /* CodeASTVisitor.swift in Sources */,
 				OBJ_380 /* main.swift in Sources */,
+				201095C921517FCC00FFDA5D /* ArgumentParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
