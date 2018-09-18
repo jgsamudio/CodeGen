@@ -41,15 +41,16 @@ final class ArgumentParser {
 
             // Update files with modifications.
             for i in 0..<fileComponents.count {
-                let line = i+1
+                let lineNumber = i+1
                 let fileComponent = fileComponents[i]
                 var replaceCurrentLine = false
 
                 // Check Modifications
                 for modIndex in 0..<visitor.modifications.count {
                     let modification = visitor.modifications[modIndex]
+                    if modification.lineNumber == lineNumber,
+                        let index = modification.indexToInsert(currentIndex: i, fileComponents: fileComponents) {
 
-                    if modification.line == line {
                         updatedFileComponents.insert(modification.insertions.joined(separator: "\n"), at: i)
                         visitor.modifications.remove(at: modIndex)
                         replaceCurrentLine = modification.replaceCurrentLine

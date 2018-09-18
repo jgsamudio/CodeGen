@@ -37,7 +37,7 @@ private extension CodeASTVisitor {
 
     func checkFileHeader(sourceLocation: SourceLocation) {
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
-                                        line: sourceLocation.line,
+                                        lineNumber: sourceLocation.line,
                                         insertions: ["// HELLO WORLD"])
 
         modifications.append(fileModifier)

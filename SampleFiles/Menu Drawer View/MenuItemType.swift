@@ -14,6 +14,7 @@ import Foundation
 /// - privacy: Privacy menu item.
 /// - contactUs: Contact us menu item.
 // HELLO WORLD
+// HELLO WORLD
 enum MenuItemType {
     case settings
     case privacy
