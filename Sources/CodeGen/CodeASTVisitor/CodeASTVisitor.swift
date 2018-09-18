@@ -51,6 +51,7 @@ private extension CodeASTVisitor {
             if fileComponents[i] != fileModifier.insertions.last {
                 // add check for comments.
                 modifications.append(fileModifier)
+                return
             }
         }
     }
