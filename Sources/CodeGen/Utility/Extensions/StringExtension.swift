@@ -10,8 +10,8 @@ import Foundation
 extension String {
 
     func writeToFile(directory: String) {
-        guard let fileURL = URL(string: directory) else {
-            print("Error: Not a valid url: " + directory)
+        let urlString = "file://\(directory.replacingOccurrences(of: " ", with: "%20"))"
+        guard let fileURL = URL(string: urlString) else {
             return
         }
 
