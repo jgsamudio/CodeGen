@@ -33,6 +33,11 @@
 		201095CD2151848700FFDA5D /* CommandLineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095CB2151845600FFDA5D /* CommandLineError.swift */; };
 		201095D12151899B00FFDA5D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095CF2151899700FFDA5D /* StringExtension.swift */; };
 		201095D321518F2100FFDA5D /* FileModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095D221518F2100FFDA5D /* FileModifier.swift */; };
+		201095D62151998C00FFDA5D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095D52151998C00FFDA5D /* Configuration.swift */; };
+		201095D921519C5D00FFDA5D /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095D821519C5D00FFDA5D /* Visitor.swift */; };
+		201095DC21519DA900FFDA5D /* CodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095DB21519DA900FFDA5D /* CodeGenerator.swift */; };
+		201095DE21519DB500FFDA5D /* DeclarationHeaderGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095DD21519DB500FFDA5D /* DeclarationHeaderGenerator.swift */; };
+		201095E021519E3200FFDA5D /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201095DF21519E3200FFDA5D /* Generator.swift */; };
 		OBJ_231 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* ASTNode.swift */; };
 		OBJ_232 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* ASTNodeContext.swift */; };
 		OBJ_233 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ASTTextRepresentable.swift */; };
@@ -468,6 +473,11 @@
 		201095CB2151845600FFDA5D /* CommandLineError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineError.swift; sourceTree = "<group>"; };
 		201095CF2151899700FFDA5D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		201095D221518F2100FFDA5D /* FileModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModifier.swift; sourceTree = "<group>"; };
+		201095D52151998C00FFDA5D /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		201095D821519C5D00FFDA5D /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		201095DB21519DA900FFDA5D /* CodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGenerator.swift; sourceTree = "<group>"; };
+		201095DD21519DB500FFDA5D /* DeclarationHeaderGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationHeaderGenerator.swift; sourceTree = "<group>"; };
+		201095DF21519E3200FFDA5D /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_100 /* InitializerExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerExpression.swift; sourceTree = "<group>"; };
 		OBJ_101 /* KeyPathExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathExpression.swift; sourceTree = "<group>"; };
@@ -755,6 +765,9 @@
 		201095BD21517CBD00FFDA5D /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				201095DA21519D9B00FFDA5D /* CodeGenerators */,
+				201095D721519C5700FFDA5D /* Enums */,
+				201095D42151997700FFDA5D /* Models */,
 				201095CE2151898D00FFDA5D /* Extensions */,
 				201095CA2151843D00FFDA5D /* CommandLineError */,
 				201095C621517FB400FFDA5D /* Parsers */,
@@ -794,6 +807,32 @@
 				201095CF2151899700FFDA5D /* StringExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		201095D42151997700FFDA5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				201095D52151998C00FFDA5D /* Configuration.swift */,
+				201095DF21519E3200FFDA5D /* Generator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		201095D721519C5700FFDA5D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				201095D821519C5D00FFDA5D /* Visitor.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		201095DA21519D9B00FFDA5D /* CodeGenerators */ = {
+			isa = PBXGroup;
+			children = (
+				201095DB21519DA900FFDA5D /* CodeGenerator.swift */,
+				201095DD21519DB500FFDA5D /* DeclarationHeaderGenerator.swift */,
+			);
+			path = CodeGenerators;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -1645,11 +1684,16 @@
 				201095C421517D2F00FFDA5D /* SourceFileLoader.swift in Sources */,
 				201095D12151899B00FFDA5D /* StringExtension.swift in Sources */,
 				201095C321517D2A00FFDA5D /* FileRetriever.swift in Sources */,
+				201095D62151998C00FFDA5D /* Configuration.swift in Sources */,
 				201095C521517D3400FFDA5D /* CodeASTVisitor.swift in Sources */,
 				201095D321518F2100FFDA5D /* FileModifier.swift in Sources */,
+				201095DE21519DB500FFDA5D /* DeclarationHeaderGenerator.swift in Sources */,
+				201095D921519C5D00FFDA5D /* Visitor.swift in Sources */,
 				OBJ_380 /* main.swift in Sources */,
 				201095CD2151848700FFDA5D /* CommandLineError.swift in Sources */,
+				201095DC21519DA900FFDA5D /* CodeGenerator.swift in Sources */,
 				201095C921517FCC00FFDA5D /* ArgumentParser.swift in Sources */,
+				201095E021519E3200FFDA5D /* Generator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,13 +11,13 @@ import Source
 
 final class CodeASTVisitor: ASTVisitor {
 
+    var modifications = [FileModifier]()
+
     private let fileComponents: [String]
 
     init(fileComponents: [String]) {
         self.fileComponents = fileComponents
     }
-
-    var modifications = [FileModifier]()
 
     func visit(_ declaration: ClassDeclaration) throws -> Bool {
         print(declaration.name)
@@ -34,6 +34,10 @@ final class CodeASTVisitor: ASTVisitor {
     func visit(_ declaration: EnumDeclaration) throws -> Bool {
         print(declaration.name)
         checkFileHeader(sourceLocation: declaration.sourceLocation)
+        return true
+    }
+
+    func visit(_ declaration: ExtensionDeclaration) throws -> Bool {
         return true
     }
 
