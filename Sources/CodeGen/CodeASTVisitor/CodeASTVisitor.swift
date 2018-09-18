@@ -11,6 +11,12 @@ import Source
 
 final class CodeASTVisitor: ASTVisitor {
 
+    private let fileComponents: [String]
+
+    init(fileComponents: [String]) {
+        self.fileComponents = fileComponents
+    }
+
     var modifications = [FileModifier]()
 
     func visit(_ declaration: ClassDeclaration) throws -> Bool {
@@ -40,7 +46,13 @@ private extension CodeASTVisitor {
                                         lineNumber: sourceLocation.line,
                                         insertions: ["// HELLO WORLD"])
 
-        modifications.append(fileModifier)
+        let index = sourceLocation.line-1
+        for i in stride(from: index-1, to: 0, by: -1) {
+            if fileComponents[i] != fileModifier.insertions.last {
+                // add check for comments.
+                modifications.append(fileModifier)
+            }
+        }
     }
 
 }

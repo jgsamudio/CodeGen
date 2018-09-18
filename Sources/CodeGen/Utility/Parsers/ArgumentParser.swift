@@ -27,19 +27,19 @@ final class ArgumentParser {
 
         let directory = arguments[1]
         let fileNames = FileRetriever.retrieveFilenames(at: directory, fileExtensions: [".swift"])
-        let visitor = CodeASTVisitor()
 
         // Parse files.
         for fileName in fileNames {
             let sourceFile = try SourceReader.read(at: "\(directory)/\(fileName)")
+            let fileComponents = sourceFile.content.components(separatedBy: "\n")
+
             let parser = Parser(source: sourceFile)
             let topLevelDecl = try parser.parse()
+            let visitor = CodeASTVisitor(fileComponents: fileComponents)
             _ = try? visitor.traverse(topLevelDecl)
 
-            var fileComponents = sourceFile.content.components(separatedBy: "\n")
-            var updatedFileComponents = [String]()
-
             // Update files with modifications.
+            var updatedFileComponents = [String]()
             for i in 0..<fileComponents.count {
                 let lineNumber = i+1
                 let fileComponent = fileComponents[i]
@@ -48,11 +48,8 @@ final class ArgumentParser {
                 // Check Modifications
                 for modIndex in 0..<visitor.modifications.count {
                     let modification = visitor.modifications[modIndex]
-                    if modification.lineNumber == lineNumber,
-                        let index = modification.indexToInsert(currentIndex: i, fileComponents: fileComponents) {
-
+                    if modification.lineNumber == lineNumber {
                         updatedFileComponents.insert(modification.insertions.joined(separator: "\n"), at: i)
-                        visitor.modifications.remove(at: modIndex)
                         replaceCurrentLine = modification.replaceCurrentLine
                     }
                 }

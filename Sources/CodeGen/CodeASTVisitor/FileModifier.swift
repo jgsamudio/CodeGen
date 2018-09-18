@@ -27,16 +27,4 @@ final class FileModifier {
         self.replaceCurrentLine = replaceCurrentLine
     }
 
-    func indexToInsert(currentIndex: Int, fileComponents: [String]) -> Int? {
-        for i in stride(from: currentIndex-1, to: 0, by: -1) {
-            if fileComponents[i] == insertions.last {
-                return nil
-            } else {
-                // add check for comments.
-                return currentIndex
-            }
-        }
-        return nil
-    }
-
 }
