@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "bocho",
+        "repositoryURL": "https://github.com/yanagiba/bocho",
+        "state": {
+          "branch": null,
+          "revision": "b7fad4d8087792664c1256d315608acc0999592e",
+          "version": "0.1.3"
+        }
+      },
+      {
+        "package": "swift-ast",
+        "repositoryURL": "https://github.com/yanagiba/swift-ast.git",
+        "state": {
+          "branch": null,
+          "revision": "059a48d28d547a153dc223b93bcf592803988fdf",
+          "version": "0.4.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
