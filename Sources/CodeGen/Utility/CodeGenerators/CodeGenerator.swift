@@ -17,8 +17,8 @@ protocol CodeGenerator {
 
     init(generatorConfig: GeneratorConfig)
 
-    func fileModifier<T: Declaration>(declaration: T?,
-                                      sourceLocation: SourceLocation,
-                                      fileComponents: [String]) -> FileModifier?
+    func fileModifier<T: ASTNode>(node: T?,
+                                  sourceLocation: SourceLocation,
+                                  fileComponents: [String]) -> FileModifier?
     
 }

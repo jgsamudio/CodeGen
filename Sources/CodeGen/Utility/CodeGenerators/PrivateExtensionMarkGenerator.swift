@@ -15,11 +15,11 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
 
     let generatorConfig: GeneratorConfig
 
-    func fileModifier<T: Declaration>(declaration: T?,
-                                      sourceLocation: SourceLocation,
-                                      fileComponents: [String]) -> FileModifier? {
+    func fileModifier<T: ASTNode>(node: T?,
+                                  sourceLocation: SourceLocation,
+                                  fileComponents: [String]) -> FileModifier? {
         guard var insertions = generatorConfig.insertString,
-            let extensionDeclaration = declaration as? ExtensionDeclaration,
+            let extensionDeclaration = node as? ExtensionDeclaration,
             extensionDeclaration.accessLevelModifier == .private else {
                 return nil
         }
@@ -33,5 +33,32 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
         let index = sourceLocation.line-1
         let previousLine = fileComponents[index-1]
         return (previousLine != insertions.last) ? fileModifier : nil
+    }
+}
+
+struct InitializationMark: CodeGenerator {
+
+    static var name = "initializationMark"
+
+    let generatorConfig: GeneratorConfig
+
+    func fileModifier<T: ASTNode>(node: T?,
+                                  sourceLocation: SourceLocation,
+                                  fileComponents: [String]) -> FileModifier? {
+        guard var insertions = generatorConfig.insertString else {
+                return nil
+        }
+
+        insertions.append("/// ===== Generator Name: \(InitializationMark.name) =====")
+
+        let index = sourceLocation.line-1
+        let previousLine = fileComponents[index-1]
+
+        if (previousLine != insertions.last) {
+            return FileModifier(filePath: sourceLocation.identifier,
+                                lineNumber: sourceLocation.line,
+                                insertions: insertions)
+        }
+        return nil
     }
 }

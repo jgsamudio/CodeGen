@@ -15,11 +15,11 @@ struct DelegateExtensionMarkGenerator: CodeGenerator {
 
     let generatorConfig: GeneratorConfig
 
-    func fileModifier<T: Declaration>(declaration: T?,
-                                      sourceLocation: SourceLocation,
-                                      fileComponents: [String]) -> FileModifier? {
+    func fileModifier<T: ASTNode>(node: T?,
+                                  sourceLocation: SourceLocation,
+                                  fileComponents: [String]) -> FileModifier? {
         guard var insertions = generatorConfig.insertString,
-            let extensionDeclaration = declaration as? ExtensionDeclaration,
+            let extensionDeclaration = node as? ExtensionDeclaration,
             let typeInheritanceList = extensionDeclaration.typeInheritanceClause?.typeInheritanceList,
             !typeInheritanceList.isEmpty else {
                 return nil

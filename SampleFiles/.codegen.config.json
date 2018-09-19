@@ -27,6 +27,12 @@
 			"enabled": true,
 			"insertString":["// MARK: - %@"],
 			"visitors": ["extension"]
+		},
+		{
+			"name": "initializationMark",
+			"enabled": true,
+			"insertString":["// MARK: - Initialization"],
+			"visitors": ["initializer"]
 		}
 	],
 	"excluded": [],

@@ -15,9 +15,9 @@ struct DeclarationHeaderGenerator: CodeGenerator {
 
     let generatorConfig: GeneratorConfig
 
-    func fileModifier<T: Declaration>(declaration: T?,
-                                      sourceLocation: SourceLocation,
-                                      fileComponents: [String]) -> FileModifier? {
+    func fileModifier<T: ASTNode>(node: T?,
+                                  sourceLocation: SourceLocation,
+                                  fileComponents: [String]) -> FileModifier? {
         guard var insertions = generatorConfig.insertString else {
             return nil
         }

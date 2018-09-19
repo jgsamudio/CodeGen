@@ -21,7 +21,8 @@ final class CodeASTVisitor: ASTVisitor {
     private static var availableGenerators: [CodeGenerator.Type] {
         return [DeclarationHeaderGenerator.self,
                 PrivateExtensionMarkGenerator.self,
-                DelegateExtensionMarkGenerator.self]
+                DelegateExtensionMarkGenerator.self,
+                InitializationMark.self]
     }
 
     init(fileComponents: [String], config: Configuration?) {
@@ -43,27 +44,32 @@ final class CodeASTVisitor: ASTVisitor {
     }
 
     func visit(_ declaration: ClassDeclaration) throws -> Bool {
-        visited(.class, sourceLocation: declaration.sourceLocation, declaration: declaration)
+        visited(.class, sourceLocation: declaration.sourceLocation, node: declaration)
         return true
     }
 
     func visit(_ declaration: StructDeclaration) throws -> Bool {
-        visited(.struct, sourceLocation: declaration.sourceLocation, declaration: declaration)
+        visited(.struct, sourceLocation: declaration.sourceLocation, node: declaration)
         return true
     }
 
     func visit(_ declaration: EnumDeclaration) throws -> Bool {
-        visited(.enum, sourceLocation: declaration.sourceLocation, declaration: declaration)
+        visited(.enum, sourceLocation: declaration.sourceLocation, node: declaration)
         return true
     }
 
     func visit(_ declaration: ProtocolDeclaration) throws -> Bool {
-        visited(.protocol, sourceLocation: declaration.sourceLocation, declaration: declaration)
+        visited(.protocol, sourceLocation: declaration.sourceLocation, node: declaration)
         return true
     }
 
     func visit(_ declaration: ExtensionDeclaration) throws -> Bool {
-        visited(.extension, sourceLocation: declaration.sourceLocation, declaration: declaration)
+        visited(.extension, sourceLocation: declaration.sourceLocation, node: declaration)
+        return true
+    }
+
+    func visit(_ declaration: InitializerExpression) throws -> Bool {
+        visited(.initializer, sourceLocation: declaration.sourceLocation, node: declaration)
         return true
     }
 
@@ -71,9 +77,9 @@ final class CodeASTVisitor: ASTVisitor {
 
 private extension CodeASTVisitor {
 
-    func visited<T: Declaration>(_ visitor: Visitor, sourceLocation: SourceLocation, declaration: T?) {
+    func visited<T: ASTNode>(_ visitor: Visitor, sourceLocation: SourceLocation, node: T?) {
         codeGenerators.filter { $0.generatorConfig.visitors?.contains(visitor) ?? false }.forEach {
-            if let modifier = $0.fileModifier(declaration: declaration,
+            if let modifier = $0.fileModifier(node: node,
                                               sourceLocation: sourceLocation,
                                               fileComponents: fileComponents) {
                 modifications.append(modifier)
