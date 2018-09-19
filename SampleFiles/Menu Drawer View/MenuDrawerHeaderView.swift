@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// <Description of the class>
+/// The menu drawer item.
 ///
 /// **Subspec: Folder/Filename**
 ///

@@ -1,7 +1,8 @@
 {
-	"enabledGenerators": [
+	"generators": [
 		{
 			"name": "declarationHeader",
+			"enabled": true,
 			"insertString":[
 				"/// <Description of the class>",
 				"///",
@@ -14,7 +15,15 @@
 				"/// <Real world example of how someone would use this class with code snippet>",
 			],
 			"visitors": ["class", "enum", "protocol", "struct"]
+		},
+		{
+			"name": "privateExtensionMark",
+			"enabled": true,
+			"insertString":[
+				"// MARK: - Private Functions",
+			],
+			"visitors": ["enum"]
 		}
 	],
-	"excludedFolders": [],
+	"excluded": [],
 }

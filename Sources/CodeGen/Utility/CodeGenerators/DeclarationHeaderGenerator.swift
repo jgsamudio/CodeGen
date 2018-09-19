@@ -7,6 +7,7 @@
 
 import Foundation
 import Source
+import AST
 
 struct DeclarationHeaderGenerator: CodeGenerator {
 
@@ -14,7 +15,9 @@ struct DeclarationHeaderGenerator: CodeGenerator {
 
     let generator: Generator
 
-    func fileModifier(sourceLocation: SourceLocation, fileComponents: [String]) -> FileModifier? {
+    func fileModifier<T: Declaration>(declaration: T?,
+                                      sourceLocation: SourceLocation,
+                                      fileComponents: [String]) -> FileModifier? {
         guard var insertions = generator.insertString else {
             return nil
         }
@@ -26,10 +29,30 @@ struct DeclarationHeaderGenerator: CodeGenerator {
                                         insertions: insertions)
 
         let index = sourceLocation.line-1
-        if fileComponents[index-1] != fileModifier.insertions.last {
-            // add check for comments.
-            return fileModifier
+        return (fileComponents[index-1] != insertions.last) ? fileModifier : nil
+    }
+    
+}
+
+struct PrivateExtensionMarkGenerator: CodeGenerator {
+
+    static var name = "privateExtensionMark"
+
+    let generator: Generator
+
+    func fileModifier<T: Declaration>(declaration: T?,
+                                      sourceLocation: SourceLocation,
+                                      fileComponents: [String]) -> FileModifier? {
+        guard let insertions = generator.insertString, let enumDeclaration = declaration as? EnumDeclaration, enumDeclaration.accessLevelModifier == .private else {
+            return nil
         }
-        return nil
+
+        let fileModifier = FileModifier(filePath: sourceLocation.identifier,
+                                        lineNumber: sourceLocation.line,
+                                        insertions: insertions)
+
+        let index = sourceLocation.line-1
+        let previousLine = fileComponents[index-1]
+        return (previousLine != insertions.last) ? fileModifier : nil
     }
 }

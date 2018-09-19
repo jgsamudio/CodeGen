@@ -9,6 +9,7 @@ import Foundation
 
 struct Generator: Decodable {
     let name: String
+    let enabled: Bool
     let insertString: [String]?
     let visitors: [Visitor]?
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 import Source
+import AST
 
 protocol CodeGenerator {
 
@@ -14,6 +15,10 @@ protocol CodeGenerator {
 
     var generator: Generator { get }
 
-    func fileModifier(sourceLocation: SourceLocation, fileComponents: [String]) -> FileModifier?
+    init(generator: Generator)
+
+    func fileModifier<T: Declaration>(declaration: T?,
+                                      sourceLocation: SourceLocation,
+                                      fileComponents: [String]) -> FileModifier?
     
 }
