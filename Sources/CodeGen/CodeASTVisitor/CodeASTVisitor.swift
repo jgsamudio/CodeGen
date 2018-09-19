@@ -41,30 +41,27 @@ final class CodeASTVisitor: ASTVisitor {
     }
 
     func visit(_ declaration: ClassDeclaration) throws -> Bool {
-        print(declaration.name)
         visited(.class, sourceLocation: declaration.sourceLocation, declaration: declaration)
         return true
     }
 
     func visit(_ declaration: StructDeclaration) throws -> Bool {
-        print(declaration.name)
         visited(.struct, sourceLocation: declaration.sourceLocation, declaration: declaration)
         return true
     }
 
     func visit(_ declaration: EnumDeclaration) throws -> Bool {
-        print(declaration.name)
         visited(.enum, sourceLocation: declaration.sourceLocation, declaration: declaration)
         return true
     }
 
     func visit(_ declaration: ProtocolDeclaration) throws -> Bool {
-        print(declaration.name)
         visited(.protocol, sourceLocation: declaration.sourceLocation, declaration: declaration)
         return true
     }
 
     func visit(_ declaration: ExtensionDeclaration) throws -> Bool {
+        visited(.extension, sourceLocation: declaration.sourceLocation, declaration: declaration)
         return true
     }
 

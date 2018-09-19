@@ -43,7 +43,7 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
     func fileModifier<T: Declaration>(declaration: T?,
                                       sourceLocation: SourceLocation,
                                       fileComponents: [String]) -> FileModifier? {
-        guard let insertions = generator.insertString, let enumDeclaration = declaration as? EnumDeclaration, enumDeclaration.accessLevelModifier == .private else {
+        guard let insertions = generator.insertString, let enumDeclaration = declaration as? ExtensionDeclaration, enumDeclaration.accessLevelModifier == .private else {
             return nil
         }
 

@@ -22,7 +22,7 @@
 			"insertString":[
 				"// MARK: - Private Functions",
 			],
-			"visitors": ["enum"]
+			"visitors": ["extension"]
 		}
 	],
 	"excluded": [],
