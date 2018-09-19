@@ -8,6 +8,6 @@
 import Foundation
 
 struct Configuration: Decodable {
-    let generators: [Generator]
+    let generators: [GeneratorConfig]
     let excluded: [String]?
 }

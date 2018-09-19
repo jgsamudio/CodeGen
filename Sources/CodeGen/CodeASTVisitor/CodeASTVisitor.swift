@@ -19,7 +19,9 @@ final class CodeASTVisitor: ASTVisitor {
     private let codeGenerators: [CodeGenerator]
 
     private static var availableGenerators: [CodeGenerator.Type] {
-        return [DeclarationHeaderGenerator.self, PrivateExtensionMarkGenerator.self]
+        return [DeclarationHeaderGenerator.self,
+                PrivateExtensionMarkGenerator.self,
+                DelegateExtensionMarkGenerator.self]
     }
 
     init(fileComponents: [String], config: Configuration?) {
@@ -33,7 +35,7 @@ final class CodeASTVisitor: ASTVisitor {
 
             for generator in CodeASTVisitor.availableGenerators {
                 if $0.name == generator.name {
-                    return generator.init(generator: $0)
+                    return generator.init(generatorConfig: $0)
                 }
             }
             return nil
@@ -70,7 +72,7 @@ final class CodeASTVisitor: ASTVisitor {
 private extension CodeASTVisitor {
 
     func visited<T: Declaration>(_ visitor: Visitor, sourceLocation: SourceLocation, declaration: T?) {
-        codeGenerators.filter { $0.generator.visitors?.contains(visitor) ?? false }.forEach {
+        codeGenerators.filter { $0.generatorConfig.visitors?.contains(visitor) ?? false }.forEach {
             if let modifier = $0.fileModifier(declaration: declaration,
                                               sourceLocation: sourceLocation,
                                               fileComponents: fileComponents) {

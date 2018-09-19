@@ -13,12 +13,12 @@ struct DeclarationHeaderGenerator: CodeGenerator {
 
     static var name = "declarationHeader"
 
-    let generator: Generator
+    let generatorConfig: GeneratorConfig
 
     func fileModifier<T: Declaration>(declaration: T?,
                                       sourceLocation: SourceLocation,
                                       fileComponents: [String]) -> FileModifier? {
-        guard var insertions = generator.insertString else {
+        guard var insertions = generatorConfig.insertString else {
             return nil
         }
 
@@ -29,7 +29,8 @@ struct DeclarationHeaderGenerator: CodeGenerator {
                                         insertions: insertions)
 
         let index = sourceLocation.line-1
-        return (fileComponents[index-1] != insertions.last) ? fileModifier : nil
+        let previousLine = fileComponents[index-1]
+        return (previousLine != insertions.last) ? fileModifier : nil
     }
     
 }
@@ -38,12 +39,35 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
 
     static var name = "privateExtensionMark"
 
-    let generator: Generator
+    let generatorConfig: GeneratorConfig
 
     func fileModifier<T: Declaration>(declaration: T?,
                                       sourceLocation: SourceLocation,
                                       fileComponents: [String]) -> FileModifier? {
-        guard let insertions = generator.insertString, let enumDeclaration = declaration as? ExtensionDeclaration, enumDeclaration.accessLevelModifier == .private else {
+        guard let insertions = generatorConfig.insertString, let enumDeclaration = declaration as? ExtensionDeclaration, enumDeclaration.accessLevelModifier == .private else {
+            return nil
+        }
+
+        let fileModifier = FileModifier(filePath: sourceLocation.identifier,
+                                        lineNumber: sourceLocation.line,
+                                        insertions: insertions)
+
+        let index = sourceLocation.line-1
+        let previousLine = fileComponents[index-1]
+        return (previousLine != insertions.last) ? fileModifier : nil
+    }
+}
+
+struct DelegateExtensionMarkGenerator: CodeGenerator {
+
+    static var name = "delegateExtensionMark"
+
+    let generatorConfig: GeneratorConfig
+
+    func fileModifier<T: Declaration>(declaration: T?,
+                                      sourceLocation: SourceLocation,
+                                      fileComponents: [String]) -> FileModifier? {
+        guard let insertions = generatorConfig.insertString, let enumDeclaration = declaration as? ExtensionDeclaration, enumDeclaration.accessLevelModifier == .private else {
             return nil
         }
 

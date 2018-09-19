@@ -188,7 +188,7 @@
 		OBJ_461 /* FileRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* FileRetriever.swift */; };
 		OBJ_462 /* SourceFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* SourceFileLoader.swift */; };
 		OBJ_463 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Configuration.swift */; };
-		OBJ_464 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Generator.swift */; };
+		OBJ_464 /* GeneratorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* GeneratorConfig.swift */; };
 		OBJ_465 /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* ArgumentParser.swift */; };
 		OBJ_466 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* main.swift */; };
 		OBJ_468 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
@@ -649,7 +649,7 @@
 		OBJ_259 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/jonathansamudio/Prolific-Projects/CodeGen/.build/checkouts/bocho-9204563082657130146/Package.swift"; sourceTree = "<group>"; };
 		OBJ_26 /* SourceFileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceFileLoader.swift; sourceTree = "<group>"; };
 		OBJ_28 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		OBJ_29 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		OBJ_29 /* GeneratorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfig.swift; sourceTree = "<group>"; };
 		OBJ_31 /* ArgumentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentParser.swift; sourceTree = "<group>"; };
 		OBJ_32 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_34 /* SampleFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SampleFiles; sourceTree = SOURCE_ROOT; };
@@ -1168,7 +1168,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_28 /* Configuration.swift */,
-				OBJ_29 /* Generator.swift */,
+				OBJ_29 /* GeneratorConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1855,7 +1855,7 @@
 				OBJ_461 /* FileRetriever.swift in Sources */,
 				OBJ_462 /* SourceFileLoader.swift in Sources */,
 				OBJ_463 /* Configuration.swift in Sources */,
-				OBJ_464 /* Generator.swift in Sources */,
+				OBJ_464 /* GeneratorConfig.swift in Sources */,
 				OBJ_465 /* ArgumentParser.swift in Sources */,
 				OBJ_466 /* main.swift in Sources */,
 			);

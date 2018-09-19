@@ -19,9 +19,13 @@
 		{
 			"name": "privateExtensionMark",
 			"enabled": true,
-			"insertString":[
-				"// MARK: - Private Functions",
-			],
+			"insertString":["// MARK: - Private Functions"],
+			"visitors": ["extension"]
+		},
+		{
+			"name": "delegateExtensionMark",
+			"enabled": true,
+			"insertString":["// MARK: - %@"],
 			"visitors": ["extension"]
 		}
 	],

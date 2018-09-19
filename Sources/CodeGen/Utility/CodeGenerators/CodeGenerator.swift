@@ -13,9 +13,9 @@ protocol CodeGenerator {
 
     static var name: String { get }
 
-    var generator: Generator { get }
+    var generatorConfig: GeneratorConfig { get }
 
-    init(generator: Generator)
+    init(generatorConfig: GeneratorConfig)
 
     func fileModifier<T: Declaration>(declaration: T?,
                                       sourceLocation: SourceLocation,
