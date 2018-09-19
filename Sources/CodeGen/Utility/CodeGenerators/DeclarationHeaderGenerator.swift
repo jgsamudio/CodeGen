@@ -15,9 +15,11 @@ struct DeclarationHeaderGenerator: CodeGenerator {
     let generator: Generator
 
     func fileModifier(sourceLocation: SourceLocation, fileComponents: [String]) -> FileModifier? {
-        guard let insertions = generator.insertString else {
+        guard var insertions = generator.insertString else {
             return nil
         }
+
+        insertions.append("/// ===== Generator Name: \(DeclarationHeaderGenerator.name) =====")
 
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
                                         lineNumber: sourceLocation.line,
