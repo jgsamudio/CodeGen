@@ -36,17 +36,23 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
     }
 }
 
-struct InitializationMark: CodeGenerator {
+class InitializationMark: CodeGenerator {
 
     static var name = "initializationMark"
 
     let generatorConfig: GeneratorConfig
 
+    private var markAdded = false
+
+    required init(generatorConfig: GeneratorConfig) {
+        self.generatorConfig = generatorConfig
+    }
+
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String]) -> FileModifier? {
-        guard var insertions = generatorConfig.insertString else {
-                return nil
+        guard var insertions = generatorConfig.insertString, !markAdded else {
+            return nil
         }
 
         insertions.append("/// ===== Generator Name: \(InitializationMark.name) =====")
@@ -55,6 +61,7 @@ struct InitializationMark: CodeGenerator {
         let previousLine = fileComponents[index-1]
 
         if (previousLine != insertions.last) {
+            markAdded = true
             return FileModifier(filePath: sourceLocation.identifier,
                                 lineNumber: sourceLocation.line,
                                 insertions: insertions)

@@ -40,9 +40,9 @@ final class MenuDrawerItem: UIView {
         super.init(frame: .zero)
         configureView(theme: theme, text: type.title)
     }
+
 // MARK: - Initialization
 /// ===== Generator Name: initializationMark =====
-
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

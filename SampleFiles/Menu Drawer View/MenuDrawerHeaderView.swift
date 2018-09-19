@@ -57,6 +57,8 @@ final class MenuDrawerHeaderView: BuildableView {
 // MARK: - Initialization
 /// ===== Generator Name: initializationMark =====
 
+// MARK: - Initialization
+/// ===== Generator Name: initializationMark =====
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
