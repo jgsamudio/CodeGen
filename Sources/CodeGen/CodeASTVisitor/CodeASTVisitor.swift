@@ -68,7 +68,7 @@ final class CodeASTVisitor: ASTVisitor {
         return true
     }
 
-    func visit(_ declaration: InitializerExpression) throws -> Bool {
+    func visit(_ declaration: InitializerDeclaration) throws -> Bool {
         visited(.initializer, sourceLocation: declaration.sourceLocation, node: declaration)
         return true
     }
