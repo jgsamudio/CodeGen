@@ -30,10 +30,6 @@ final class MenuDrawerItem: UIView {
     
     private let type: MenuItemType
 
-    // MARK: - Initialization
-
-// MARK: - Initialization
-/// ===== Generator Name: initializationMark =====
     init(theme: Theme, type: MenuItemType, delegate: MenuDrawerItemDelegate?) {
         self.type = type
         self.delegate = delegate
@@ -41,8 +37,6 @@ final class MenuDrawerItem: UIView {
         configureView(theme: theme, text: type.title)
     }
 
-// MARK: - Initialization
-/// ===== Generator Name: initializationMark =====
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

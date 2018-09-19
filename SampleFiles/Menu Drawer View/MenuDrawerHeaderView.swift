@@ -48,17 +48,11 @@ final class MenuDrawerHeaderView: BuildableView {
     fileprivate static let verticalPadding: CGFloat = 18
     fileprivate static let profileImageSize = CGSize(width: 52, height: 52)
 
-// MARK: - Initialization
-/// ===== Generator Name: initializationMark =====
     override init(theme: Theme) {
         super.init(theme: theme)
         configureView(theme: theme)
     }
-// MARK: - Initialization
-/// ===== Generator Name: initializationMark =====
 
-// MARK: - Initialization
-/// ===== Generator Name: initializationMark =====
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

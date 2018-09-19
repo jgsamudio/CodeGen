@@ -57,15 +57,18 @@ class InitializationMark: CodeGenerator {
 
         insertions.append("/// ===== Generator Name: \(InitializationMark.name) =====")
 
-        let index = sourceLocation.line-1
-        let previousLine = fileComponents[index-1]
+        let tabString = String(repeating: " ", count: sourceLocation.column)
+        insertions = insertions.map { "\(tabString)\($0)" } 
 
-        if (previousLine != insertions.last) {
-            markAdded = true
+        markAdded = true
+        let index = sourceLocation.line-1
+
+        if !Array(fileComponents[0..<index]).joined().contains(insertions.joined()){
             return FileModifier(filePath: sourceLocation.identifier,
                                 lineNumber: sourceLocation.line,
                                 insertions: insertions)
         }
         return nil
     }
+
 }
