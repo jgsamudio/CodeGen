@@ -44,7 +44,9 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
     func fileModifier<T: Declaration>(declaration: T?,
                                       sourceLocation: SourceLocation,
                                       fileComponents: [String]) -> FileModifier? {
-        guard let insertions = generatorConfig.insertString, let enumDeclaration = declaration as? ExtensionDeclaration, enumDeclaration.accessLevelModifier == .private else {
+        guard let insertions = generatorConfig.insertString,
+            let extensionDeclaration = declaration as? ExtensionDeclaration,
+            extensionDeclaration.accessLevelModifier == .private else {
             return nil
         }
 
@@ -67,13 +69,19 @@ struct DelegateExtensionMarkGenerator: CodeGenerator {
     func fileModifier<T: Declaration>(declaration: T?,
                                       sourceLocation: SourceLocation,
                                       fileComponents: [String]) -> FileModifier? {
-        guard let insertions = generatorConfig.insertString, let enumDeclaration = declaration as? ExtensionDeclaration, enumDeclaration.accessLevelModifier == .private else {
+        guard let insertions = generatorConfig.insertString,
+            let extensionDeclaration = declaration as? ExtensionDeclaration,
+            let typeInheritanceList = extensionDeclaration.typeInheritanceClause?.typeInheritanceList,
+            !typeInheritanceList.isEmpty else {
             return nil
         }
 
+        let inheritanceString = typeInheritanceList.map { $0.names }.joined(separator: ", ")
+        var mappedInsertions = insertions.map { String(format: $0, inheritanceString) }
+
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
                                         lineNumber: sourceLocation.line,
-                                        insertions: insertions)
+                                        insertions: mappedInsertions)
 
         let index = sourceLocation.line-1
         let previousLine = fileComponents[index-1]

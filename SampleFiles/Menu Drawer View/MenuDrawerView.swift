@@ -58,6 +58,10 @@ final class MenuDrawerView: UIView {
 }
 
 // MARK: - Private Functions
+// MARK: - %@
+// MARK: - Private Functions
+// MARK: - %@
+// MARK: - Private Functions
 private extension MenuDrawerView {
 
     func configureView(theme: Theme) {
@@ -107,4 +111,9 @@ private extension MenuDrawerView {
         delegate?.closeButtonSelected()
     }
     
+}
+// MARK: - %@
+
+extension MenuDrawerView: ProfileViewDelegate {
+
 }
