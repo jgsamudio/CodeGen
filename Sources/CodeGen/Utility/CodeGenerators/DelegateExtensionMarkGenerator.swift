@@ -34,6 +34,6 @@ struct DelegateExtensionMarkGenerator: CodeGenerator {
 
         let index = sourceLocation.line-1
         let previousLine = fileComponents[index-1]
-        return (previousLine != insertions.last) ? fileModifier : nil
+        return (previousLine != mappedInsertions.last) ? fileModifier : nil
     }
 }
