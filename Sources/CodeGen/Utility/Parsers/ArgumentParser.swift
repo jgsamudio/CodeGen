@@ -64,6 +64,10 @@ final class ArgumentParser {
         }
     }
 
+}
+
+private extension ArgumentParser {
+
     func loadConfig(directory: String) throws -> Configuration {
         let jsonString = try? String(contentsOfFile: "\(directory)/.codegen.config.json", encoding: String.Encoding.utf8)
         let data = jsonString?.data(using: .utf8)

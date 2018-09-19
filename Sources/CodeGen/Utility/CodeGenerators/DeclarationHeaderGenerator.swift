@@ -24,7 +24,8 @@ struct DeclarationHeaderGenerator: CodeGenerator {
                                         insertions: insertions)
 
         let index = sourceLocation.line-1
-        if Array(fileComponents[index-fileModifier.insertions.count..<index]) != fileModifier.insertions {
+        // What to do if you already filled it out?
+        if fileComponents[index] != fileModifier.insertions.last {
             // add check for comments.
             return fileModifier
         }
