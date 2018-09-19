@@ -27,6 +27,8 @@
 
 /* Begin PBXBuildFile section */
 		201096062151A32600FFDA5D /* APIErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201096042151A2EF00FFDA5D /* APIErrorType.swift */; };
+		20437D802152BB7A006EC083 /* DelegateExtensionMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */; };
+		20437D812152BB7D006EC083 /* PrivateExtensionMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */; };
 		OBJ_275 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* ASTNode.swift */; };
 		OBJ_276 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* ASTNodeContext.swift */; };
 		OBJ_277 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* ASTTextRepresentable.swift */; };
@@ -495,6 +497,8 @@
 
 /* Begin PBXFileReference section */
 		201096042151A2EF00FFDA5D /* APIErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorType.swift; sourceTree = "<group>"; };
+		20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateExtensionMarkGenerator.swift; sourceTree = "<group>"; };
+		20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateExtensionMarkGenerator.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CodeASTVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeASTVisitor.swift; sourceTree = "<group>"; };
@@ -895,6 +899,8 @@
 			children = (
 				OBJ_14 /* CodeGenerator.swift */,
 				OBJ_15 /* DeclarationHeaderGenerator.swift */,
+				20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */,
+				20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */,
 			);
 			path = CodeGenerators;
 			sourceTree = "<group>";
@@ -1224,7 +1230,7 @@
 			path = ".build/checkouts/Alamofire.git-6801331143877184500/Source";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -1234,7 +1240,6 @@
 				OBJ_35 /* Dependencies */,
 				OBJ_260 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_55 /* swift-ast 0.4.3 */ = {
@@ -1640,7 +1645,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_260 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1852,7 +1857,9 @@
 				OBJ_458 /* DataDecoder.swift in Sources */,
 				OBJ_459 /* Visitor.swift in Sources */,
 				OBJ_460 /* StringExtension.swift in Sources */,
+				20437D802152BB7A006EC083 /* DelegateExtensionMarkGenerator.swift in Sources */,
 				OBJ_461 /* FileRetriever.swift in Sources */,
+				20437D812152BB7D006EC083 /* PrivateExtensionMarkGenerator.swift in Sources */,
 				OBJ_462 /* SourceFileLoader.swift in Sources */,
 				OBJ_463 /* Configuration.swift in Sources */,
 				OBJ_464 /* GeneratorConfig.swift in Sources */,

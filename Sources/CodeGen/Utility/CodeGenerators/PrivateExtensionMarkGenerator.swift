@@ -1,28 +1,28 @@
 //
-//  DeclarationHeaderGenerator.swift
-//  CodeGen
+//  PrivateExtensionMarkGenerator.swift
+//  AST
 //
-//  Created by Jonathan Samudio on 9/18/18.
+//  Created by Jonathan Samudio on 9/19/18.
 //
 
 import Foundation
 import Source
 import AST
 
-struct DeclarationHeaderGenerator: CodeGenerator {
+struct PrivateExtensionMarkGenerator: CodeGenerator {
 
-    static var name = "declarationHeader"
+    static var name = "privateExtensionMark"
 
     let generatorConfig: GeneratorConfig
 
     func fileModifier<T: Declaration>(declaration: T?,
                                       sourceLocation: SourceLocation,
                                       fileComponents: [String]) -> FileModifier? {
-        guard var insertions = generatorConfig.insertString else {
-            return nil
+        guard let insertions = generatorConfig.insertString,
+            let extensionDeclaration = declaration as? ExtensionDeclaration,
+            extensionDeclaration.accessLevelModifier == .private else {
+                return nil
         }
-
-        insertions.append("/// ===== Generator Name: \(DeclarationHeaderGenerator.name) =====")
 
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
                                         lineNumber: sourceLocation.line,
@@ -32,5 +32,4 @@ struct DeclarationHeaderGenerator: CodeGenerator {
         let previousLine = fileComponents[index-1]
         return (previousLine != insertions.last) ? fileModifier : nil
     }
-    
 }
