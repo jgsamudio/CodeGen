@@ -18,11 +18,13 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
     func fileModifier<T: Declaration>(declaration: T?,
                                       sourceLocation: SourceLocation,
                                       fileComponents: [String]) -> FileModifier? {
-        guard let insertions = generatorConfig.insertString,
+        guard var insertions = generatorConfig.insertString,
             let extensionDeclaration = declaration as? ExtensionDeclaration,
             extensionDeclaration.accessLevelModifier == .private else {
                 return nil
         }
+
+        insertions.append("/// ===== Generator Name: \(PrivateExtensionMarkGenerator.name) =====")
 
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
                                         lineNumber: sourceLocation.line,

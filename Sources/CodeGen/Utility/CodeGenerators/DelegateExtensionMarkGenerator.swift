@@ -18,12 +18,14 @@ struct DelegateExtensionMarkGenerator: CodeGenerator {
     func fileModifier<T: Declaration>(declaration: T?,
                                       sourceLocation: SourceLocation,
                                       fileComponents: [String]) -> FileModifier? {
-        guard let insertions = generatorConfig.insertString,
+        guard var insertions = generatorConfig.insertString,
             let extensionDeclaration = declaration as? ExtensionDeclaration,
             let typeInheritanceList = extensionDeclaration.typeInheritanceClause?.typeInheritanceList,
             !typeInheritanceList.isEmpty else {
                 return nil
         }
+
+        insertions.append("/// ===== Generator Name: \(DelegateExtensionMarkGenerator.name) =====")
 
         let inheritanceString = (typeInheritanceList.compactMap { $0.names.first?.name.description }).joined(separator: ", ")
         let mappedInsertions = insertions.map { String(format: $0, inheritanceString) }

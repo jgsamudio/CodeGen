@@ -62,10 +62,7 @@ final class MenuDrawerHeaderView: BuildableView {
 }
 
 // MARK: - Private Functions
-// MARK: - %@
-// MARK: - Private Functions
-// MARK: - %@
-// MARK: - Private Functions
+/// ===== Generator Name: privateExtensionMark =====
 private extension MenuDrawerHeaderView {
 
     func configureView(theme: Theme) {
