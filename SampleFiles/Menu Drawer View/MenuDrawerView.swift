@@ -114,6 +114,7 @@ private extension MenuDrawerView {
 }
 // MARK: - %@
 
+// MARK: - ProfileViewDelegate
 extension MenuDrawerView: ProfileViewDelegate {
 
 }
