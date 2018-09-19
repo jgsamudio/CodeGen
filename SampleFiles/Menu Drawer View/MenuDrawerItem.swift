@@ -45,7 +45,6 @@ final class MenuDrawerItem: UIView {
     
 }
 
-// MARK: - Private Functions
 private extension MenuDrawerItem {
 
     func configureView(theme: Theme, text: String) {
