@@ -31,13 +31,11 @@ final class CodeASTVisitor: ASTVisitor {
         self.config = config
 
         codeGenerators = config?.generators.compactMap {
-            guard $0.enabled else {
-                return nil
-            }
-
-            for generator in CodeASTVisitor.availableGenerators {
-                if $0.name == generator.name {
-                    return generator.init(generatorConfig: $0)
+            if $0.enabled {
+                for generator in CodeASTVisitor.availableGenerators {
+                    if $0.name == generator.name {
+                        return generator.init(generatorConfig: $0)
+                    }
                 }
             }
             return nil
