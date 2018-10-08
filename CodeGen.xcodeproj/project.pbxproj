@@ -35,6 +35,7 @@
 		20FA3C3C216BB9A7009AD3A2 /* SourceLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C3B216BB9A7009AD3A2 /* SourceLocationExtension.swift */; };
 		20FA3C3F216BF19A009AD3A2 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C3E216BF19A009AD3A2 /* Regex.swift */; };
 		20FA3C43216BF1D8009AD3A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C42216BF1D8009AD3A2 /* Constants.swift */; };
+		20FA3C46216C071D009AD3A2 /* PublicVariableMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C45216C071D009AD3A2 /* PublicVariableMarkGenerator.swift */; };
 		OBJ_275 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* ASTNode.swift */; };
 		OBJ_276 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* ASTNodeContext.swift */; };
 		OBJ_277 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* ASTTextRepresentable.swift */; };
@@ -511,6 +512,7 @@
 		20FA3C3B216BB9A7009AD3A2 /* SourceLocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLocationExtension.swift; sourceTree = "<group>"; };
 		20FA3C3E216BF19A009AD3A2 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		20FA3C42216BF1D8009AD3A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		20FA3C45216C071D009AD3A2 /* PublicVariableMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicVariableMarkGenerator.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CodeASTVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeASTVisitor.swift; sourceTree = "<group>"; };
@@ -947,6 +949,7 @@
 				20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */,
 				20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */,
 				20FA3C32216BB3F7009AD3A2 /* InitializationMarkGenerator.swift */,
+				20FA3C45216C071D009AD3A2 /* PublicVariableMarkGenerator.swift */,
 			);
 			path = CodeGenerators;
 			sourceTree = "<group>";
@@ -1915,6 +1918,7 @@
 				OBJ_461 /* FileRetriever.swift in Sources */,
 				20437D812152BB7D006EC083 /* PrivateExtensionMarkGenerator.swift in Sources */,
 				OBJ_462 /* SourceFileLoader.swift in Sources */,
+				20FA3C46216C071D009AD3A2 /* PublicVariableMarkGenerator.swift in Sources */,
 				20FA3C3A216BB995009AD3A2 /* ArrayExtension.swift in Sources */,
 				OBJ_463 /* Configuration.swift in Sources */,
 				OBJ_464 /* GeneratorConfig.swift in Sources */,

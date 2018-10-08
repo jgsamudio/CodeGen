@@ -1,6 +1,6 @@
 //
-//  InitializationMarkGenerator.swift
-//  AST
+//  PublicVariableMarkGenerator.swift
+//  CodeGen
 //
 //  Created by Jonathan Samudio on 10/8/18.
 //
@@ -9,9 +9,9 @@ import Foundation
 import Source
 import AST
 
-class InitializationMarkGenerator: CodeGenerator {
+class PublicVariableMarkGenerator: CodeGenerator {
 
-    static var name = "initializationMark"
+    static var name = "publicVariableMarkGenerator"
 
     let generatorConfig: GeneratorConfig
 
@@ -24,8 +24,9 @@ class InitializationMarkGenerator: CodeGenerator {
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String]) -> FileModifier? {
-        guard let insertions = generatorConfig.insertString, !markAdded else {
-            return nil
+        guard let insertions = generatorConfig.insertString, !markAdded,
+            let variableNode = node as? VariableDeclaration, variableNode.modifiers.isPublic else {
+                return nil
         }
         markAdded = true
 
