@@ -26,9 +26,14 @@ extension Array where Element == String {
 
     func removeTabs(format: TabFormat = .spaces) -> [String] {
         return map { (string) -> String in
+            guard !string.replacingOccurrences(of: " ", with: "").isEmpty else {
+                return ""
+            }
+
             guard string.count >= format.rawValue.count else {
                 return string
             }
+            
             let tabColumnIndex = string.index(string.startIndex, offsetBy: format.rawValue.count)
             if String(string[string.startIndex..<tabColumnIndex]) == format.rawValue {
                 return String(string[tabColumnIndex..<string.endIndex])
