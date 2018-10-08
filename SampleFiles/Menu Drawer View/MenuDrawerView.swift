@@ -110,7 +110,6 @@ private extension MenuDrawerView {
 }
 
 // MARK: - ProfileViewDelegate
-/// ===== Generator Name: delegateExtensionMark =====
 extension MenuDrawerView: ProfileViewDelegate {
 
 }
