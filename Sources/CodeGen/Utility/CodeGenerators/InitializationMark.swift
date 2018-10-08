@@ -25,14 +25,19 @@ class InitializationMark: CodeGenerator {
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String]) -> FileModifier? {
 
-        guard let insertions = generatorConfig.insertString, !markAdded else {
+        guard var insertions = generatorConfig.insertString, !markAdded else {
             return nil
         }
 
         markAdded = true
-        if !insertStringFound(fileComponents: fileComponents, sourceLocation: sourceLocation) {
+        let componentData = Array(fileComponents[0..<sourceLocation.index]).indexAboveComment(index: sourceLocation.index)
+        if !componentData.insertTopSpace, insertions.first == "" {
+            insertions.removeFirst()
+        }
+
+        if !insertStringFound(fileComponents: fileComponents, startIndex: componentData.index) {
             return FileModifier(filePath: sourceLocation.identifier,
-                                lineNumber: sourceLocation.line,
+                                startIndex: componentData.index,
                                 insertions: insertions.insertTabs())
         }
         return nil

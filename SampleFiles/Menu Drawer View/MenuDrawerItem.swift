@@ -29,8 +29,7 @@ final class MenuDrawerItem: UIView {
     private let textLabel = UILabel()
     
     private let type: MenuItemType
-    
-    
+
     // MARK: - Initialization
     
     init(theme: Theme, type: MenuItemType, delegate: MenuDrawerItemDelegate?) {

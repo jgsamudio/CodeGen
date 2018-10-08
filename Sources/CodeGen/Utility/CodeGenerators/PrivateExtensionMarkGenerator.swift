@@ -27,7 +27,7 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
         insertions.append("/// ===== Generator Name: \(PrivateExtensionMarkGenerator.name) =====")
 
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
-                                        lineNumber: sourceLocation.line,
+                                        startIndex: sourceLocation.index,
                                         insertions: insertions)
 
         let index = sourceLocation.line-1

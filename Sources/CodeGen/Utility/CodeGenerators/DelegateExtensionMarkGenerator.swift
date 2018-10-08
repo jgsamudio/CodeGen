@@ -31,7 +31,7 @@ struct DelegateExtensionMarkGenerator: CodeGenerator {
         let mappedInsertions = insertions.map { String(format: $0, inheritanceString) }
 
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
-                                        lineNumber: sourceLocation.line,
+                                        startIndex: sourceLocation.index,
                                         insertions: mappedInsertions)
 
         let index = sourceLocation.line-1

@@ -42,14 +42,14 @@ final class ArgumentParser {
             // Update files with modifications.
             var updatedFileComponents = [String]()
             for i in 0..<fileComponents.count {
-                let lineNumber = i+1
+                let startIndex = i
                 let fileComponent = fileComponents[i]
                 var replaceCurrentLine = false
 
                 // Check Modifications
                 for modIndex in 0..<visitor.modifications.count {
                     let modification = visitor.modifications[modIndex]
-                    if modification.lineNumber == lineNumber {
+                    if modification.startIndex == startIndex {
                         updatedFileComponents.insert(modification.insertions.joined(separator: "\n"), at: i)
                         replaceCurrentLine = modification.replaceCurrentLine
                     }

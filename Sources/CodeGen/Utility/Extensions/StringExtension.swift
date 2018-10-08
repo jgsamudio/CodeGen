@@ -22,5 +22,14 @@ extension String {
             print("Error: " + error.localizedDescription)
         }
     }
+
+    /// Returns true if the string containing Swift code is a comment.
+    ///
+    /// - Returns: True if the string containing Swift code is a comment.
+    func isComment() -> Bool {
+        return Regex.commentRegex().hasMatch(input: self) ||
+            self.components(separatedBy: " ").contains("*") ||
+            self.components(separatedBy: " ").contains("-")
+    }
     
 }

@@ -34,4 +34,20 @@ extension Array where Element == String {
         }
     }
 
+    /// Returns the line number above comments
+    ///
+    /// - Parameter startLineNumber: Line number to start checking.
+    /// - Returns: The updated index where there is no comment and whether an additional space should be added.
+    func indexAboveComment(index: Int) -> (index: Int, insertTopSpace: Bool) {
+        for index in stride(from: index-1, through: 0, by: -1) {
+            let formattedString = self[index].replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "")
+            if formattedString.isComment() {
+                continue
+            } else {
+                return (index + 1, !formattedString.isEmpty)
+            }
+        }
+        return (0, false)
+    }
+
 }

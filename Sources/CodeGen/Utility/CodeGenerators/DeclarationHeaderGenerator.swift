@@ -25,11 +25,10 @@ struct DeclarationHeaderGenerator: CodeGenerator {
         insertions.append("/// ===== Generator Name: \(DeclarationHeaderGenerator.name) =====")
 
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
-                                        lineNumber: sourceLocation.line,
+                                        startIndex: sourceLocation.index,
                                         insertions: insertions)
 
-        let index = sourceLocation.line-1
-        let previousLine = fileComponents[index-1]
+        let previousLine = fileComponents[sourceLocation.index-1]
         return (previousLine != insertions.last) ? fileModifier : nil
     }
     

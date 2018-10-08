@@ -33,6 +33,8 @@
 		20FA3C38216BB97D009AD3A2 /* TabFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C36216BB974009AD3A2 /* TabFormat.swift */; };
 		20FA3C3A216BB995009AD3A2 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C39216BB995009AD3A2 /* ArrayExtension.swift */; };
 		20FA3C3C216BB9A7009AD3A2 /* SourceLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C3B216BB9A7009AD3A2 /* SourceLocationExtension.swift */; };
+		20FA3C3F216BF19A009AD3A2 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C3E216BF19A009AD3A2 /* Regex.swift */; };
+		20FA3C43216BF1D8009AD3A2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C42216BF1D8009AD3A2 /* Constants.swift */; };
 		OBJ_275 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* ASTNode.swift */; };
 		OBJ_276 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* ASTNodeContext.swift */; };
 		OBJ_277 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* ASTTextRepresentable.swift */; };
@@ -507,6 +509,8 @@
 		20FA3C36216BB974009AD3A2 /* TabFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFormat.swift; sourceTree = "<group>"; };
 		20FA3C39216BB995009AD3A2 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		20FA3C3B216BB9A7009AD3A2 /* SourceLocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLocationExtension.swift; sourceTree = "<group>"; };
+		20FA3C3E216BF19A009AD3A2 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		20FA3C42216BF1D8009AD3A2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CodeASTVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeASTVisitor.swift; sourceTree = "<group>"; };
@@ -831,6 +835,30 @@
 			path = "Code Format";
 			sourceTree = "<group>";
 		};
+		20FA3C3D216BF18B009AD3A2 /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				20FA3C3E216BF19A009AD3A2 /* Regex.swift */,
+			);
+			path = Regex;
+			sourceTree = "<group>";
+		};
+		20FA3C40216BF1AB009AD3A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20FA3C41216BF1BC009AD3A2 /* Constants */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		20FA3C41216BF1BC009AD3A2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				20FA3C42216BF1D8009AD3A2 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		OBJ_102 /* Declaration */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,6 +915,7 @@
 		OBJ_12 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				20FA3C3D216BF18B009AD3A2 /* Regex */,
 				OBJ_13 /* CodeGenerators */,
 				OBJ_16 /* CommandLineError */,
 				OBJ_18 /* Decoders */,
@@ -1366,6 +1395,7 @@
 		OBJ_8 /* CodeGen */ = {
 			isa = PBXGroup;
 			children = (
+				20FA3C40216BF1AB009AD3A2 /* Resources */,
 				OBJ_9 /* CodeASTVisitor */,
 				OBJ_12 /* Utility */,
 				OBJ_32 /* main.swift */,
@@ -1874,6 +1904,7 @@
 				OBJ_455 /* CodeGenerator.swift in Sources */,
 				OBJ_456 /* DeclarationHeaderGenerator.swift in Sources */,
 				OBJ_457 /* CommandLineError.swift in Sources */,
+				20FA3C43216BF1D8009AD3A2 /* Constants.swift in Sources */,
 				20FA3C34216BB408009AD3A2 /* InitializationMark.swift in Sources */,
 				OBJ_458 /* DataDecoder.swift in Sources */,
 				OBJ_459 /* Visitor.swift in Sources */,
@@ -1889,6 +1920,7 @@
 				OBJ_464 /* GeneratorConfig.swift in Sources */,
 				OBJ_465 /* ArgumentParser.swift in Sources */,
 				OBJ_466 /* main.swift in Sources */,
+				20FA3C3F216BF19A009AD3A2 /* Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
