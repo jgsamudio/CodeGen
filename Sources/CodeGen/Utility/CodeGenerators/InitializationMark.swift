@@ -25,22 +25,19 @@ class InitializationMark: CodeGenerator {
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String]) -> FileModifier? {
 
-        guard var insertions = generatorConfig.insertString, !markAdded else {
+        guard let insertions = generatorConfig.insertString, !markAdded else {
             return nil
         }
-
         markAdded = true
-        let componentData = Array(fileComponents[0..<sourceLocation.index]).indexAboveComment(index: sourceLocation.index)
-        if !componentData.insertTopSpace, insertions.first == "" {
-            insertions.removeFirst()
-        }
 
-        if !insertStringFound(fileComponents: fileComponents, startIndex: componentData.index) {
-            return FileModifier(filePath: sourceLocation.identifier,
-                                startIndex: componentData.index,
-                                insertions: insertions.insertTabs())
-        }
-        return nil
+        let componentData = fileComponents.commentComponentData(startIndex: sourceLocation.index)
+        let fileModifier = FileModifier(filePath: sourceLocation.identifier,
+                                        startIndex: componentData.index,
+                                        insertions: insertions.removeDoubleTopSpace(data: componentData).insertTabs())
+
+        return foundInsertions(insertions,
+                               fileComponents: fileComponents,
+                               startIndex: componentData.index) ? nil : fileModifier
     }
 
 }

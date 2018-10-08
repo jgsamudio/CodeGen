@@ -32,6 +32,8 @@ struct DelegateExtensionMarkGenerator: CodeGenerator {
                                         startIndex: sourceLocation.index,
                                         insertions: mappedInsertions)
 
-        return insertStringFound(fileComponents: fileComponents, startIndex: sourceLocation.index) ? nil : fileModifier
+        return foundInsertions(mappedInsertions,
+                               fileComponents: fileComponents,
+                               startIndex: sourceLocation.index) ? nil : fileModifier
     }
 }

@@ -28,7 +28,9 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
                                         startIndex: sourceLocation.index,
                                         insertions: insertions)
 
-
-        return insertStringFound(fileComponents: fileComponents, startIndex: sourceLocation.index) ? nil : fileModifier
+        return foundInsertions(insertions,
+                               fileComponents: fileComponents,
+                               startIndex: sourceLocation.index) ? nil : fileModifier
     }
+    
 }

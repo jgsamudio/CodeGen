@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias CommentComponentData = (index: Int, insertTopSpace: Bool)
+
 extension Array where Element == String {
 
     func insertTabs(format: TabFormat = .spaces) -> [String] {
@@ -34,11 +36,23 @@ extension Array where Element == String {
         }
     }
 
+    func commentComponentData(startIndex: Index) -> CommentComponentData {
+        return Array(self[0..<startIndex]).indexAboveComment(index: startIndex)
+    }
+
+    func removeDoubleTopSpace(data: CommentComponentData) -> [String] {
+        var array = self
+        if !data.insertTopSpace, array.first == "" {
+            array.removeFirst()
+        }
+        return array
+    }
+
     /// Returns the line number above comments
     ///
     /// - Parameter startLineNumber: Line number to start checking.
     /// - Returns: The updated index where there is no comment and whether an additional space should be added.
-    func indexAboveComment(index: Int) -> (index: Int, insertTopSpace: Bool) {
+    func indexAboveComment(index: Int) -> CommentComponentData {
         for index in stride(from: index-1, through: 0, by: -1) {
             let formattedString = self[index].replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "")
             if formattedString.isComment() {
