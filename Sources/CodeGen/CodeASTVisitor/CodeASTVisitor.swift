@@ -22,7 +22,8 @@ final class CodeASTVisitor: ASTVisitor {
         return [DeclarationHeaderGenerator.self,
                 PrivateExtensionMarkGenerator.self,
                 DelegateExtensionMarkGenerator.self,
-                InitializationMark.self]
+                InitializationMarkGenerator.self,
+                PublicVariableMarkGenerator.self]
     }
 
     init(fileComponents: [String], config: Configuration?) {
@@ -70,6 +71,12 @@ final class CodeASTVisitor: ASTVisitor {
 
     func visit(_ declaration: InitializerDeclaration) throws -> Bool {
         visited(.initializer, sourceLocation: declaration.sourceLocation, node: declaration)
+        return true
+    }
+
+    func visit(_ declaration: VariableDeclaration) throws -> Bool {
+        print(declaration.modifiers)
+        visited(.variable, sourceLocation: declaration.sourceLocation, node: declaration)
         return true
     }
 

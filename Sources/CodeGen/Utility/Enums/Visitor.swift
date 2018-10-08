@@ -14,4 +14,5 @@ enum Visitor: String, Decodable {
     case `struct`
     case `extension`
     case initializer
+    case variable
 }

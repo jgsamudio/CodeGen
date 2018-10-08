@@ -20,10 +20,10 @@ import Pilas
 /// <Real world example of how someone would use this class with code snippet>
 final class MenuDrawerView: UIView {
 
-    // MARK: - Public Properties
-
     /// Delegate.
     weak var delegate: MenuDrawerHeaderDelegate?
+    
+    // MARK: - Public Properties
     
     var profileImageURLString: String? {
         didSet {

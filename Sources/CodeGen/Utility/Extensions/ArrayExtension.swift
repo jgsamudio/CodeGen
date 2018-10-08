@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AST
 
 typealias CommentComponentData = (index: Int, insertTopSpace: Bool)
 
@@ -62,6 +63,15 @@ extension Array where Element == String {
             }
         }
         return (0, false)
+    }
+
+}
+
+extension Array where Element == DeclarationModifier {
+
+    var isPublic: Bool {
+        let privateModifiers = ["private", "fileprivate"]
+        return filter { privateModifiers.contains($0.textDescription) }.isEmpty
     }
 
 }

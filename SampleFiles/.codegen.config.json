@@ -2,7 +2,7 @@
 	"generators": [
 		{
 			"name": "declarationHeader",
-			"enabled": true,
+			"enabled": false,
 			"insertString":[
 				"/// <Description of the class>",
 				"///",
@@ -33,6 +33,12 @@
 			"enabled": true,
 			"insertString":["", "// MARK: - Initialization", ""],
 			"visitors": ["initializer"]
+		},
+		{
+			"name": "publicVariableMarkGenerator",
+			"enabled": true,
+			"insertString":["", "// MARK: - Public Properties", ""],
+			"visitors": ["variable"]
 		}
 	],
 	"excluded": [],

@@ -19,8 +19,6 @@ import UIKit
 /// <Real world example of how someone would use this class with code snippet>
 final class MenuDrawerItem: UIView {
 
-    // MARK: - Public Properties
-
     weak var delegate: MenuDrawerItemDelegate?
 
     // MARK: - Private Properties

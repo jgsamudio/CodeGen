@@ -40,11 +40,12 @@ extension CodeGenerator {
     /// Determines if the insert string is found.
     ///
     /// - Parameters:
+    ///   - insertions: Array of string insertions to check if the file has.
     ///   - fileComponents: File components of the swift file.
     ///   - sourceLocation: Location with in the source file.
     /// - Returns: Boolean if the insert string is found or not.
-    func foundInsertions(_ insertString: [String]?, fileComponents: [String], startIndex: Int) -> Bool {
-        return insertString?.isEqual(toBottomOf: Array(fileComponents[0..<startIndex])) ?? false
+    func foundInsertions(_ insertions: [String]?, fileComponents: [String], startIndex: Int) -> Bool {
+        return insertions?.isEqual(toBottomOf: Array(fileComponents[0..<startIndex])) ?? false
     }
 
 }

@@ -27,7 +27,7 @@ enum MenuItemType {
     static var menuListItems: [MenuItemType] {
         return [.settings, .privacy, .termsConditions, .contactUs]
     }
-
+    
     /// Title of the menu item.
     var title: String {
         switch self {
