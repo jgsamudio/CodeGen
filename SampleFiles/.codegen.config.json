@@ -2,7 +2,7 @@
 	"generators": [
 		{
 			"name": "declarationHeader",
-			"enabled": true,
+			"enabled": false,
 			"insertString":[
 				"/// <Description of the class>",
 				"///",
@@ -31,7 +31,7 @@
 		{
 			"name": "initializationMark",
 			"enabled": true,
-			"insertString":["// MARK: - Initialization"],
+			"insertString":["", "// MARK: - Initialization", ""],
 			"visitors": ["initializer"]
 		}
 	],

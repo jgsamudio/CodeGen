@@ -43,6 +43,8 @@ final class MenuDrawerView: UIView {
 
     fileprivate static let closeButtonSize = 44
 
+    // MARK: - Initialization
+    
     init(theme: Theme, delegate: MenuDrawerHeaderDelegate?) {
         self.delegate = delegate
         super.init(frame: .zero)
