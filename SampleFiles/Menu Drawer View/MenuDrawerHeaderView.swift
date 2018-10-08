@@ -47,36 +47,6 @@ final class MenuDrawerHeaderView: BuildableView {
     fileprivate static let buttonSize: CGFloat = 67
     fileprivate static let verticalPadding: CGFloat = 18
     fileprivate static let profileImageSize = CGSize(width: 52, height: 52)
-
-    // MARK: - Initialization
-    /// ===== Generator Name: initializationMark =====
-
-    // MARK: - Initialization
-    /// ===== Generator Name: initializationMark =====
-
-    // MARK: - Initialization
-    /// ===== Generator Name: initializationMark =====
-
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
     
     
     // MARK: - Initialization

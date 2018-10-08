@@ -29,39 +29,6 @@ final class MenuDrawerItem: UIView {
     private let textLabel = UILabel()
     
     private let type: MenuItemType
-
-    // MARK: - Initialization
-    /// ===== Generator Name: initializationMark =====
-
-    // MARK: - Initialization
-    /// ===== Generator Name: initializationMark =====
-
-    // MARK: - Initialization
-    /// ===== Generator Name: initializationMark =====
-
-    // MARK: - Initialization
-    /// ===== Generator Name: initializationMark =====
-
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
-    
-    
-    // MARK: - Initialization
     
     
     // MARK: - Initialization
