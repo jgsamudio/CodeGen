@@ -2,7 +2,7 @@
 	"generators": [
 		{
 			"name": "declarationHeader",
-			"enabled": false,
+			"enabled": true,
 			"insertString":[
 				"/// <Description of the class>",
 				"///",

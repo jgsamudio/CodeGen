@@ -17,7 +17,6 @@ import Foundation
 /// ```
 ///
 /// <Real world example of how someone would use this class with code snippet>
-/// ===== Generator Name: declarationHeader =====
 enum MenuItemType {
     case settings
     case privacy

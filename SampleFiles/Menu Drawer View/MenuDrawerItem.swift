@@ -17,7 +17,6 @@ import UIKit
 /// ```
 ///
 /// <Real world example of how someone would use this class with code snippet>
-/// ===== Generator Name: declarationHeader =====
 final class MenuDrawerItem: UIView {
 
     // MARK: - Public Properties

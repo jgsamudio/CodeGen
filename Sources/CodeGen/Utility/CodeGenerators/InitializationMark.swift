@@ -24,7 +24,6 @@ class InitializationMark: CodeGenerator {
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String]) -> FileModifier? {
-
         guard let insertions = generatorConfig.insertString, !markAdded else {
             return nil
         }

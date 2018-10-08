@@ -18,18 +18,17 @@ struct DeclarationHeaderGenerator: CodeGenerator {
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String]) -> FileModifier? {
-        guard var insertions = generatorConfig.insertString else {
+        guard let insertions = generatorConfig.insertString else {
             return nil
         }
-
-        insertions.append("/// ===== Generator Name: \(DeclarationHeaderGenerator.name) =====")
 
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
                                         startIndex: sourceLocation.index,
                                         insertions: insertions)
 
-        let previousLine = fileComponents[sourceLocation.index-1]
-        return (previousLine != insertions.last) ? fileModifier : nil
+        return foundInsertions(insertions,
+                               fileComponents: fileComponents,
+                               startIndex: sourceLocation.index) ? nil : fileModifier
     }
     
 }

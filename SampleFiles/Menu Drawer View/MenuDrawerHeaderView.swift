@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// The menu drawer item.
+/// <Description of the class>
 ///
 /// **Subspec: Folder/Filename**
 ///
@@ -17,7 +17,6 @@ import UIKit
 /// ```
 ///
 /// <Real world example of how someone would use this class with code snippet>
-/// ===== Generator Name: declarationHeader =====
 final class MenuDrawerHeaderView: BuildableView {
     
     // MARK: - Public Properties

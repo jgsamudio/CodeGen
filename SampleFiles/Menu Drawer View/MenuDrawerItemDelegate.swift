@@ -17,7 +17,6 @@ import Foundation
 /// ```
 ///
 /// <Real world example of how someone would use this class with code snippet>
-/// ===== Generator Name: declarationHeader =====
 protocol MenuDrawerItemDelegate: class {
 
     /// Called when the menu item is selected.
