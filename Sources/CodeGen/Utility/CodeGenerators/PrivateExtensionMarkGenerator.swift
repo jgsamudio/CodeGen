@@ -18,20 +18,17 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String]) -> FileModifier? {
-        guard var insertions = generatorConfig.insertString,
+        guard let insertions = generatorConfig.insertString,
             let extensionDeclaration = node as? ExtensionDeclaration,
             extensionDeclaration.accessLevelModifier == .private else {
                 return nil
         }
 
-        insertions.append("/// ===== Generator Name: \(PrivateExtensionMarkGenerator.name) =====")
-
         let fileModifier = FileModifier(filePath: sourceLocation.identifier,
                                         startIndex: sourceLocation.index,
                                         insertions: insertions)
 
-        let index = sourceLocation.line-1
-        let previousLine = fileComponents[index-1]
-        return (previousLine != insertions.last) ? fileModifier : nil
+
+        return insertStringFound(fileComponents: fileComponents, startIndex: sourceLocation.index) ? nil : fileModifier
     }
 }

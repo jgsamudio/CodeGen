@@ -58,7 +58,6 @@ final class MenuDrawerView: UIView {
 }
 
 // MARK: - Private Functions
-/// ===== Generator Name: privateExtensionMark =====
 private extension MenuDrawerView {
 
     func configureView(theme: Theme) {
