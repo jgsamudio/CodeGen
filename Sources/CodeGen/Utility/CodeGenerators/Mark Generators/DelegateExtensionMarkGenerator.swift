@@ -18,7 +18,7 @@ struct DelegateExtensionMarkGenerator: CodeGenerator {
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String],
-                                  visitedNodes: [ASTNode]) -> FileModifier? {
+                                  visitedNodes: VisitedNodeCollection) -> FileModifier? {
         guard let insertions = generatorConfig.insertString,
             let extensionDeclaration = node as? ExtensionDeclaration,
             let typeInheritanceList = extensionDeclaration.typeInheritanceClause?.typeInheritanceList,

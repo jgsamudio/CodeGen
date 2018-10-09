@@ -9,11 +9,13 @@ import Foundation
 import AST
 import Source
 
+typealias VisitedNodeCollection = [Visitor: LinkedList<ASTNode>]
+
 final class CodeASTVisitor: ASTVisitor {
 
     var modifications = [FileModifier]()
 
-    private var visitedNodes: [ASTNode]
+    private var visitedNodes: VisitedNodeCollection
 
     private let fileComponents: [String]
     private let config: Configuration?
@@ -32,7 +34,7 @@ final class CodeASTVisitor: ASTVisitor {
     init(fileComponents: [String], config: Configuration?) {
         self.fileComponents = fileComponents
         self.config = config
-        self.visitedNodes = []
+        self.visitedNodes = VisitedNodeCollection()
 
         codeGenerators = config?.generators.compactMap {
             if $0.enabled {
@@ -96,10 +98,7 @@ final class CodeASTVisitor: ASTVisitor {
 private extension CodeASTVisitor {
 
     func visited<T: ASTNode>(_ visitor: Visitor, sourceLocation: SourceLocation, node: T?) {
-        if let node = node {
-            visitedNodes.append(node)
-        }
-
+        updateVisitedNodes(visitor, node: node)
         codeGenerators.filter { $0.generatorConfig.visitors?.contains(visitor) ?? false }.forEach {
             if let modifier = $0.fileModifier(node: node,
                                               sourceLocation: sourceLocation,
@@ -107,6 +106,20 @@ private extension CodeASTVisitor {
                                               visitedNodes: visitedNodes) {
                 modifications.append(modifier)
             }
+        }
+    }
+
+    func updateVisitedNodes(_ visitor: Visitor, node: ASTNode?) {
+        guard let node = node else {
+            return
+        }
+        if let list = visitedNodes[visitor] {
+            list.append(node)
+            visitedNodes[visitor] = list
+        } else {
+            let list = LinkedList<ASTNode>()
+            list.append(node)
+            visitedNodes[visitor] = list
         }
     }
 

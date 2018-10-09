@@ -24,7 +24,7 @@ class PrivateVariableMarkGenerator: CodeGenerator {
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String],
-                                  visitedNodes: [ASTNode]) -> FileModifier? {
+                                  visitedNodes: VisitedNodeCollection) -> FileModifier? {
         guard let insertions = generatorConfig.insertString, !markAdded,
             let variableNode = node as? DeclarationModifierProtocol, !variableNode.modifiers.isPublic else {
                 return nil

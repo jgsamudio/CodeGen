@@ -24,7 +24,7 @@ class PublicFunctionMarkGenerator: CodeGenerator {
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String],
-                                  visitedNodes: [ASTNode]) -> FileModifier? {
+                                  visitedNodes: VisitedNodeCollection) -> FileModifier? {
         guard let insertions = generatorConfig.insertString,
             let functionNode = node as? FunctionDeclaration,
             functionNode.modifiers.isPublic,

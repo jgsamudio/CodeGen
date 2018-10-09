@@ -203,5 +203,5 @@ extension LinkedList where T == String {
         }
         return string
     }
-    
+
 }

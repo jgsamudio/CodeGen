@@ -33,7 +33,7 @@ protocol CodeGenerator {
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String],
-                                  visitedNodes: [ASTNode]) -> FileModifier?
+                                  visitedNodes: VisitedNodeCollection) -> FileModifier?
     
 }
 
