@@ -22,8 +22,6 @@ enum MenuItemType {
     case privacy
     case termsConditions
     case contactUs
-
-    // MARK: - Public Properties
     
     /// Order of the menu items to display.
     static var menuListItems: [MenuItemType] {
