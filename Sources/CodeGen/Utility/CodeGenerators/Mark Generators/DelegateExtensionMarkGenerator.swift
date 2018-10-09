@@ -37,4 +37,5 @@ struct DelegateExtensionMarkGenerator: CodeGenerator {
                                fileComponents: fileComponents,
                                startIndex: sourceLocation.index) ? nil : fileModifier
     }
+
 }

@@ -12,5 +12,4 @@ struct GeneratorConfig: Decodable {
     let enabled: Bool
     let insertString: [String]?
     let visitors: [Visitor]?
-    let revertChanges: Bool?
 }
