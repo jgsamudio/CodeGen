@@ -20,36 +20,42 @@
 			"name": "privateExtensionMark",
 			"enabled": true,
 			"insertString":["// MARK: - Private Functions"],
+			"revertChanges" : false,
 			"visitors": ["extension"]
 		},
 		{
 			"name": "delegateExtensionMark",
 			"enabled": true,
 			"insertString":["// MARK: - %@"],
+			"revertChanges" : false,
 			"visitors": ["extension"]
 		},
 		{
 			"name": "initializationMark",
 			"enabled": true,
 			"insertString":["", "// MARK: - Initialization", ""],
+			"revertChanges" : false,
 			"visitors": ["initializer"]
 		},
 		{
 			"name": "publicVariableMarkGenerator",
 			"enabled": true,
 			"insertString":["", "// MARK: - Public Properties", ""],
+			"revertChanges" : false,
 			"visitors": ["variable", "constant"]
 		},
 		{
 			"name": "privateVariableMarkGenerator",
 			"enabled": true,
 			"insertString":["", "// MARK: - Private Properties", ""],
+			"revertChanges" : false,
 			"visitors": ["variable", "constant"]
 		},
 		{
 			"name": "publicFunctionMarkGenerator",
 			"enabled": true,
 			"insertString":["", "// MARK: - Public Functions", ""],
+			"revertChanges" : false,
 			"visitors": ["function"]
 		}
 	],
