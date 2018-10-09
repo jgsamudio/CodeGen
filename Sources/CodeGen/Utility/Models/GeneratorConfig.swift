@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GeneratorConfig: Decodable {
+struct GeneratorConfig: Codable {
     let name: String
     let enabled: Bool
     let insertString: [String]?

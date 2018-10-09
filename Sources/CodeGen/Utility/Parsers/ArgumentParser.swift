@@ -26,8 +26,8 @@ final class ArgumentParser {
         }
 
         let directory = arguments[1]
-        let config = try loadConfig(directory: directory)
         let fileNames = FileRetriever.retrieveFilenames(at: directory, fileExtensions: [".swift"])
+        let config = try loadConfig(directory: directory)
 
         // Parse files.
         for fileName in fileNames {
@@ -52,6 +52,7 @@ final class ArgumentParser {
                     if modification.startIndex == startIndex {
                         updatedFileComponents.insert(modification.insertions.joined(separator: "\n"), at: i)
                         replaceCurrentLine = modification.replaceCurrentLine
+                        // Deletions should be a range
                     }
                 }
 
@@ -62,6 +63,9 @@ final class ArgumentParser {
             }
             updatedFileComponents.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
         }
+
+        // Store config generators for next run.
+        storeConfigGenerators(config: config)
     }
 
 }
@@ -76,6 +80,12 @@ private extension ArgumentParser {
             return config
         } else {
             throw CommandLineError.configFileMissing
+        }
+    }
+
+    func storeConfigGenerators(config: Configuration) {
+        for generator in config.generators {
+            generator.storeGenerator()
         }
     }
 

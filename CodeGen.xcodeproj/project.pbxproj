@@ -29,6 +29,7 @@
 		201096062151A32600FFDA5D /* APIErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201096042151A2EF00FFDA5D /* APIErrorType.swift */; };
 		20437D802152BB7A006EC083 /* DelegateExtensionMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */; };
 		20437D812152BB7D006EC083 /* PrivateExtensionMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */; };
+		204DDE1B216D345D00A51F52 /* GeneratorConfigExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204DDE19216D344F00A51F52 /* GeneratorConfigExtension.swift */; };
 		20FA3C34216BB408009AD3A2 /* InitializationMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C32216BB3F7009AD3A2 /* InitializationMarkGenerator.swift */; };
 		20FA3C38216BB97D009AD3A2 /* TabFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C36216BB974009AD3A2 /* TabFormat.swift */; };
 		20FA3C3A216BB995009AD3A2 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C39216BB995009AD3A2 /* ArrayExtension.swift */; };
@@ -510,6 +511,7 @@
 		201096042151A2EF00FFDA5D /* APIErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorType.swift; sourceTree = "<group>"; };
 		20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateExtensionMarkGenerator.swift; sourceTree = "<group>"; };
 		20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateExtensionMarkGenerator.swift; sourceTree = "<group>"; };
+		204DDE19216D344F00A51F52 /* GeneratorConfigExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfigExtension.swift; sourceTree = "<group>"; };
 		20FA3C32216BB3F7009AD3A2 /* InitializationMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializationMarkGenerator.swift; sourceTree = "<group>"; };
 		20FA3C36216BB974009AD3A2 /* TabFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFormat.swift; sourceTree = "<group>"; };
 		20FA3C39216BB995009AD3A2 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
@@ -1144,6 +1146,7 @@
 				OBJ_23 /* StringExtension.swift */,
 				20FA3C39216BB995009AD3A2 /* ArrayExtension.swift */,
 				20FA3C3B216BB9A7009AD3A2 /* SourceLocationExtension.swift */,
+				204DDE19216D344F00A51F52 /* GeneratorConfigExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1947,6 +1950,7 @@
 				20FA3C43216BF1D8009AD3A2 /* Constants.swift in Sources */,
 				20FA3C34216BB408009AD3A2 /* InitializationMarkGenerator.swift in Sources */,
 				OBJ_458 /* DataDecoder.swift in Sources */,
+				204DDE1B216D345D00A51F52 /* GeneratorConfigExtension.swift in Sources */,
 				OBJ_459 /* Visitor.swift in Sources */,
 				20FA3C4B216CFF68009AD3A2 /* PrivateVariableMarkGenerator.swift in Sources */,
 				20FA3C38216BB97D009AD3A2 /* TabFormat.swift in Sources */,

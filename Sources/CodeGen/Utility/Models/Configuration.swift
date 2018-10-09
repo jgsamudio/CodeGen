@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Configuration: Decodable {
+struct Configuration: Codable {
     let generators: [GeneratorConfig]
     let excluded: [String]?
 }
