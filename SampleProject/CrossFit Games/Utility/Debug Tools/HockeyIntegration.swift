@@ -16,6 +16,8 @@ import Keys
 /// Integration of HockeyApp SDK.
 struct HockeyIntegration {
 
+    // MARK: - Public Functions
+    
     /// Sets up the HockeyApp SDK. This function does nothing if run on either debug or production environment.
     static func setup() {
         #if ALPHA || BETA

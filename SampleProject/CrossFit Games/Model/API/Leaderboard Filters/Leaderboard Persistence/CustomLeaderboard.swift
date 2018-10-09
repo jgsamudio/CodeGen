@@ -11,6 +11,8 @@ import Foundation
 /// Custom leaderboard, described by the controls available for the leaderboard as well as the user's filter selection.
 struct CustomLeaderboard: Codable, Hashable {
 
+    // MARK: - Public Properties
+    
     /// Leaderboard controls available for selection.
     let controls: [LeaderboardControls]
 
@@ -67,6 +69,8 @@ struct CustomLeaderboard: Codable, Hashable {
 
 }
 
+    // MARK: - Public Functions
+    
 func == (_ lhs: CustomLeaderboard, _ rhs: CustomLeaderboard) -> Bool {
     return lhs.filterSelection.sorted(by: { (lhs, rhs) -> Bool in
         lhs.filter.configName.compare(rhs.filter.configName) == .orderedAscending

@@ -11,11 +11,15 @@ import Foundation
 /// Formatter for time intervals, such as ss, mm:ss, mm:ss.sss, HH:mm:ss.sss etc. (colon separated).
 final class TimeIntervalFormatter: NumberFormatter {
 
+    // MARK: - Public Functions
+    
     override func number(from string: String) -> NSNumber? {
         guard !string.isEmpty else {
             return 0
         }
 
+    // MARK: - Public Properties
+    
         var interval: Double = 0
 
         let parts = string.components(separatedBy: ":")

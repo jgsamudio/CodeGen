@@ -11,8 +11,12 @@ import UIKit
 /// Controller for presenting and dismissing a top drawer.
 final class TopDrawerTransitionController: UIPresentationController {
 
+    // MARK: - Private Properties
+    
     private let presentationHeight: CGFloat
 
+    // MARK: - Public Properties
+    
     static let defaultPresentationHeight: CGFloat = 408
 
     /// Presenter which will be notified about presentation content offset.
@@ -22,6 +26,8 @@ final class TopDrawerTransitionController: UIPresentationController {
 
     private var interactiveFeedbackGenerator: UISelectionFeedbackGenerator?
 
+    // MARK: - Initialization
+    
     /// Creates a new instance of TopDrawerTransitionController and sets the top drawer presenter.
     ///
     /// - Parameters:
@@ -53,6 +59,8 @@ final class TopDrawerTransitionController: UIPresentationController {
         return containerFrame.intersection(CGRect(origin: .zero, size: maxSize))
     }
 
+    // MARK: - Public Functions
+    
     override func presentationTransitionWillBegin() {
         if let containerView = containerView, let presentedView = presentedView {
             let panGestureView = UIView(frame: containerView.bounds)

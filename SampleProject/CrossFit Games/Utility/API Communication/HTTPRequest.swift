@@ -12,6 +12,8 @@ import Foundation
 /// Network request that can be sent via instances of `HTTPClientProtocol`.
 struct HTTPRequest {
 
+    // MARK: - Public Properties
+    
     /// URL of the endpoint that receives the request.
     let url: URLConvertible
 
@@ -52,6 +54,8 @@ struct HTTPRequest {
         return try? encoding.encode(request as URLRequest, with: body)
     }
 
+    // MARK: - Initialization
+    
     /// Creates an HTTP request with the given attributes.
     ///
     /// - Parameters:

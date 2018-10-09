@@ -10,6 +10,8 @@ import Foundation
 
 struct Division: Codable {
 
+    // MARK: - Public Properties
+    
     /// title of the division
     let label: String
 }

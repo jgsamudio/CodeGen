@@ -19,7 +19,7 @@ struct LoginBuilder: Builder {
     init(loginCompletion: ((LoginEvent) -> Void)? = nil) {
         self.loginCompletion = loginCompletion
     }
-
+    
     // MARK: - Public Functions
     
     func build() -> UIViewController {

@@ -17,6 +17,8 @@ struct CodedLeaderboardFilterData: LeaderboardFilterData {
         case display
     }
 
+    // MARK: - Public Properties
+    
     /// Code of `self`.
     let code: String
 
@@ -24,6 +26,8 @@ struct CodedLeaderboardFilterData: LeaderboardFilterData {
 
     let display: String
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         code = try container.decode(String.self, forKey: .code)
@@ -32,6 +36,8 @@ struct CodedLeaderboardFilterData: LeaderboardFilterData {
         display = try container.decode(String.self, forKey: .display)
     }
 
+    // MARK: - Public Functions
+    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
 

@@ -10,8 +10,12 @@ import UIKit
 
 struct StyleGuide {
 
+    // MARK: - Public Properties
+    
     static let shared = StyleGuide()
 
+    // MARK: - Public Functions
+    
     func style(row: StyleRow, column: StyleColumn, weight: StyleWeight) -> [NSAttributedStringKey: Any] {
         var attributes = row.attributes
         attributes[NSAttributedStringKey.font] = UIFont(name: "\(row.fontFamily)\(weight.fontSuffix)", size: row.fontSize)

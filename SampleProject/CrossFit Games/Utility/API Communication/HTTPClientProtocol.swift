@@ -54,9 +54,14 @@ protocol HTTPClientProtocol {
 
 extension HTTPClientProtocol {
 
+    // MARK: - Public Functions
+    
     func requestJson(request: HTTPRequest, isAuthRequest: Bool, completion: @escaping (Data?, Int?, Error?, [String: Any]?) -> Void) {
         /// Show activity indicator in status bar
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    
+    // MARK: - Public Properties
+    
         let afRequest = sessionManager.request(request.url,
                                                method: request.method,
                                                parameters: request.body,

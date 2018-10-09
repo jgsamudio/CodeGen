@@ -12,6 +12,8 @@ import NotificationBannerSwift
 /// Manages banner operations
 struct BannerManager {
 
+    // MARK: - Public Functions
+    
     /// Shows banner on the main window
     ///
     /// - Parameters:
@@ -20,6 +22,9 @@ struct BannerManager {
                               duration: TimeInterval = 5) where T: NSObject {
         if let customView = GeneralErrorBannerView.fromNib() {
             customView.setTitle(title: text)
+    
+    // MARK: - Public Properties
+    
             let banner = NotificationBanner(customView: customView)
             banner.onTap = onTap
             banner.duration = duration

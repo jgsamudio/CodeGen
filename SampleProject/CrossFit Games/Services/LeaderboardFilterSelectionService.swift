@@ -11,11 +11,15 @@ import Foundation
 /// Service for selecting leaderboard filters.
 final class LeaderboardFilterSelectionService {
 
+    // MARK: - Public Properties
+    
     /// List of subscribers.
     var subscribers: [LeaderboardFilterSubscriber] {
         return _subscribers.allObjects.flatMap { $0 as? LeaderboardFilterSubscriber }
     }
 
+    // MARK: - Private Properties
+    
     private let _subscribers = NSHashTable<AnyObject>()
 
     private let competitionInfoService: CompetitionInfoService
@@ -54,6 +58,9 @@ final class LeaderboardFilterSelectionService {
 
     /// Currently selected index paths on the contained filters.
     var selectedIndexPaths: [IndexPath] {
+    
+    // MARK: - Public Functions
+    
         /// Getting all index paths for a filter selection.
         ///
         /// - Parameters:
@@ -195,6 +202,8 @@ final class LeaderboardFilterSelectionService {
         return selectedControls.controls.filter { !$0.isYearFilter && !$0.isCompetitionFilter }
     }
 
+    // MARK: - Initialization
+    
     init?(controls: [LeaderboardControls],
           selectedControls: LeaderboardControls? = nil,
           preselection: [LeaderboardFilterSelection] = [],

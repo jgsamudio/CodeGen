@@ -10,10 +10,15 @@ import Foundation
 
 extension Date {
 
+    // MARK: - Initialization
+    
     /// Initializes a date with `CrossFit standard time` (i.e. Pacific standard time) in seconds since 1970.
     ///
     /// - Parameter crossFitStandardTime: Date in pacific standard time.
     init(crossFitStandardTime: Int, timeZone: String = "PST") {
+    
+    // MARK: - Public Properties
+    
         let dateformatter = DateFormatter()
         dateformatter.timeStyle = .medium
         dateformatter.dateStyle = .medium

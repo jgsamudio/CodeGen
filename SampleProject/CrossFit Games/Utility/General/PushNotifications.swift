@@ -14,6 +14,8 @@ import UserNotifications
 /// Push notification services.
 final class PushNotifications: NSObject {
 
+    // MARK: - Public Properties
+    
     /// Shared instance for push notification handling.
     static let shared = PushNotifications()
 
@@ -22,6 +24,8 @@ final class PushNotifications: NSObject {
         return currentOpenCount > 0
     }
 
+    // MARK: - Public Functions
+    
     /// Indicates whether the user has allowed push notifications.
     func isPushEnabled(completion: @escaping (Bool) -> Void) {
         UNUserNotificationCenter.current().getNotificationSettings { (settings) in
@@ -29,10 +33,14 @@ final class PushNotifications: NSObject {
         }
     }
 
+    // MARK: - Initialization
+    
     private override init() {
         super.init()
     }
 
+    // MARK: - Private Properties
+    
     private let openCountRepromptTriggers = [4]
 
     private var currentOpenCount: Int {

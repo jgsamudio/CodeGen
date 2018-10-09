@@ -16,6 +16,8 @@ struct MovementStandardImage: Decodable {
         case imageUrl = "url"
     }
 
+    // MARK: - Public Properties
+    
     /// Title (/description) for the image.
     let title: String
 

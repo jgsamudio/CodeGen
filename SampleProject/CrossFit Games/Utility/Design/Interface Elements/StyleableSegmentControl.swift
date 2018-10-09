@@ -10,6 +10,8 @@ import UIKit
 
 final class StyleableSegmentControl: UISegmentedControl, Styleable {
 
+    // MARK: - Public Properties
+    
     @IBInspectable var row: Int = 1 {
         didSet {
             applyStyle()
@@ -48,6 +50,8 @@ final class StyleableSegmentControl: UISegmentedControl, Styleable {
         }
     }
 
+    // MARK: - Public Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 

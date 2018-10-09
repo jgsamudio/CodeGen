@@ -12,6 +12,8 @@ import Foundation
 /// refreshing sessions).
 struct SessionService {
 
+    // MARK: - Public Properties
+    
     /// Data store to get user login information from.
     let userDataStore: UserDataStore
 
@@ -21,6 +23,8 @@ struct SessionService {
     /// HTTP client for token refresh calls.
     let httpClient: HTTPClientProtocol
 
+    // MARK: - Private Properties
+    
     private let tokenRequestURL = "oauth2/token"
 
     /// Indicates whether the user is currently logged in, meaning: whether the user
@@ -54,6 +58,8 @@ struct SessionService {
         return date.timeIntervalSinceNow > 0
     }
 
+    // MARK: - Public Functions
+    
     /// Refreshes the current session if needed.
     ///
     /// - Parameters:

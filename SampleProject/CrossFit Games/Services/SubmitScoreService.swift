@@ -11,10 +11,16 @@ import UIKit
 /// Service for presenting score submission flows.
 struct SubmitScoreService {
 
+    // MARK: - Public Properties
+    
     let sessionService: SessionService
 
+    // MARK: - Private Properties
+    
     private static let submitScoreDelegate = SubmitScoreWebViewDelegate()
 
+    // MARK: - Public Functions
+    
     /// Refreshes the user's access token if required and if their user credentials were saved.
     ///
     /// - Parameters:

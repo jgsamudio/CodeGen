@@ -11,6 +11,8 @@ import Foundation
 /// A filter for leaderboards.
 struct LeaderboardFilter: Codable {
 
+    // MARK: - Public Properties
+    
     /// Config name for the year selection.
     static let yearConfigName = "year"
 
@@ -43,6 +45,8 @@ struct LeaderboardFilter: Codable {
     /// Data that contains filter selection options.
     let data: [LeaderboardFilterData]
 
+    // MARK: - Initialization
+    
     init(configName: String, name: String, label: String?, type: String, data: [LeaderboardFilterData]) {
         self.configName = configName
         self.name = name
@@ -93,6 +97,8 @@ struct LeaderboardFilter: Codable {
         self.data = data
     }
 
+    // MARK: - Public Functions
+    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
 

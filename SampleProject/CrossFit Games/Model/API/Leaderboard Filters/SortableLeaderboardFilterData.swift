@@ -17,6 +17,8 @@ struct SortableLeaderboardFilterData: LeaderboardFilterData {
         case display
     }
 
+    // MARK: - Public Properties
+    
     /// Controls by which the user can sort.
     let controls: [LeaderboardFilter]
 
@@ -24,6 +26,8 @@ struct SortableLeaderboardFilterData: LeaderboardFilterData {
 
     let display: String
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
@@ -35,6 +39,8 @@ struct SortableLeaderboardFilterData: LeaderboardFilterData {
         self.controls = controls
     }
 
+    // MARK: - Public Functions
+    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(controls, forKey: .controls)

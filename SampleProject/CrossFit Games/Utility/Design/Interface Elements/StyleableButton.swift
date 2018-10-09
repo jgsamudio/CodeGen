@@ -10,6 +10,8 @@ import UIKit
 
 final class StyleableButton: UIButton, Styleable {
 
+    // MARK: - Public Properties
+    
     /// Activity indicator of the button
     var activityIndicator: UIActivityIndicatorView!
     /// Original text/title of the button
@@ -56,6 +58,8 @@ final class StyleableButton: UIButton, Styleable {
         }
     }
 
+    // MARK: - Public Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 

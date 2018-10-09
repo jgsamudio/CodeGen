@@ -11,6 +11,8 @@ import Shimmer
 
 extension UIView {
 
+    // MARK: - Public Functions
+    
     /// Pin to superview. Ensure view is already added to view hierarchy. All nil values are ignored.
     ///
     /// - Parameters:
@@ -39,6 +41,9 @@ extension UIView {
     /// - Returns: List of NSLayoutConstraints applied in following order: top, leading, bottom, trailing
     @discardableResult
     func pinSize(width: CGFloat? = nil, height: CGFloat? = nil) -> [NSLayoutConstraint] {
+    
+    // MARK: - Public Properties
+    
         var constraintList = [NSLayoutConstraint]()
         translatesAutoresizingMaskIntoConstraints = false
         if let width = width {

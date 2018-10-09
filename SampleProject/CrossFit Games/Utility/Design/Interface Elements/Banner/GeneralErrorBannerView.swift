@@ -10,8 +10,12 @@ import UIKit
 
 final class GeneralErrorBannerView: UIView {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var textLabel: StyleableLabel!
 
+    // MARK: - Public Functions
+    
     /// Intanciate the view from the relavant nib file
     ///
     /// - Returns: General error banner view instance

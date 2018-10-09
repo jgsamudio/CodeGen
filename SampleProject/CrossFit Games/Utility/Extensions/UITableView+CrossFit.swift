@@ -10,11 +10,16 @@ import UIKit
 
 extension UITableView {
 
+    // MARK: - Public Functions
+    
     /// Registers list of nib objects containing a cell with the table view under a specified identifier.
     ///
     /// - Parameter cells: List of UITableViewCell types created as nibs to register
     func registerNibForCells(_ cells: [UITableViewCell.Type]) {
         cells.forEach {
+    
+    // MARK: - Public Properties
+    
             let name = String(describing: $0.self)
             register(UINib(nibName: name, bundle: nil), forCellReuseIdentifier: name)
         }

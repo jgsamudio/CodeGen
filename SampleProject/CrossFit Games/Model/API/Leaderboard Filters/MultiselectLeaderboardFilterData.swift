@@ -27,6 +27,8 @@ struct MultiselectLeaderboardFilterData: LeaderboardFilterData {
     /// Selection element of a multiselect filter data response.
     struct Selection: Codable {
 
+    // MARK: - Public Properties
+    
         /// Value of the selection for API requests.
         let value: String
 
@@ -36,6 +38,8 @@ struct MultiselectLeaderboardFilterData: LeaderboardFilterData {
         /// Regional ID for "fittest in region" filter.
         let regionalid: String?
 
+    // MARK: - Initialization
+    
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: SelectionCodingKeys.self)
 
@@ -45,6 +49,8 @@ struct MultiselectLeaderboardFilterData: LeaderboardFilterData {
             regionalid = try container.decodeIfPresent(String.self, forKey: .regionalid)
         }
 
+    // MARK: - Public Functions
+    
         func encode(to encoder: Encoder) throws {
             var container = encoder.container(keyedBy: SelectionCodingKeys.self)
 

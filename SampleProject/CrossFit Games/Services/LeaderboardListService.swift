@@ -11,6 +11,8 @@ import Foundation
 /// Service for retrieving leaderboard lists.
 struct LeaderboardListService {
 
+    // MARK: - Public Properties
+    
     /// Maximum page size of leaderboard pages.
     static let pageSize = 50
 
@@ -18,8 +20,12 @@ struct LeaderboardListService {
 
     let dataStore: LeaderboardDataStore
 
+    // MARK: - Private Properties
+    
     private static var leaderboardSizes: [CustomLeaderboard: Int] = [:]
 
+    // MARK: - Public Functions
+    
     /// Retrieves the number of athletes for the given leaderboard.
     ///
     /// - Parameter leaderboard: Leaderboard to get the number of athletes for.

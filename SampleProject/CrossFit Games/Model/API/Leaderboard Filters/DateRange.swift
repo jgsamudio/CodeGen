@@ -16,12 +16,16 @@ struct DateRange: Codable {
         case endDate = "end_date"
     }
 
+    // MARK: - Public Properties
+    
     /// Start date of the date range.
     let startDate: Date?
 
     /// End date of the date range.
     let endDate: Date?
 
+    // MARK: - Initialization
+    
     init(startDate: Date? = nil, endDate: Date? = nil) {
         self.startDate = startDate
         self.endDate = endDate
@@ -37,6 +41,8 @@ struct DateRange: Codable {
         endDate = endString.flatMap(CustomDateFormatter.apiDateFormatter.date)
     }
 
+    // MARK: - Public Functions
+    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
 

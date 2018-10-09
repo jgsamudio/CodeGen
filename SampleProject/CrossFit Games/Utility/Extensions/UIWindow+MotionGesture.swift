@@ -13,6 +13,8 @@ import UIKit
 
 extension UIWindow {
 
+    // MARK: - Public Functions
+    
     /// Function returning the amount of touch required to show Yoshi from a mulitple touch.
     /// Override this function to update the value.
     ///

@@ -12,13 +12,19 @@ import FirebaseRemoteConfig
 /// Service for setting up remote configuration of the app.
 final class RemoteConfigService {
 
+    // MARK: - Private Properties
+    
     private var config: FirebaseRemoteConfig.RemoteConfig
 
+    // MARK: - Initialization
+    
     init() {
         FirebaseInstance.setupIfNeeded()
         config = FirebaseRemoteConfig.RemoteConfig.remoteConfig()
     }
 
+    // MARK: - Public Functions
+    
     /// Runs the remote configuration, downloading the latest config.
     func remoteConfig() {
         config = FirebaseRemoteConfig.RemoteConfig.remoteConfig()

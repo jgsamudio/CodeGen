@@ -42,6 +42,8 @@ enum LeaderboardFilterSelection: Codable, Equatable {
         region: LeaderboardFilterData,
         nestedRegion: LeaderboardFilterData?)
 
+    // MARK: - Public Properties
+    
     /// Filter of `self`.
     var filter: LeaderboardFilter {
         switch self {
@@ -66,6 +68,8 @@ enum LeaderboardFilterSelection: Codable, Equatable {
         }
     }
 
+    // MARK: - Public Functions
+    
     /// Retrieves the selection options that are available for the given filter.
     ///
     /// - Parameter filter: Filter for which selection options should be retrieved.
@@ -102,6 +106,8 @@ enum LeaderboardFilterSelection: Codable, Equatable {
         return result
     }
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
@@ -200,6 +206,7 @@ enum LeaderboardFilterSelection: Codable, Equatable {
 }
 
 // MARK: - CustomDebugStringConvertible
+// MARK: - CustomStringConvertible
 extension LeaderboardFilterSelection: CustomStringConvertible {
 
     var description: String {

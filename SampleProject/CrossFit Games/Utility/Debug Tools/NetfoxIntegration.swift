@@ -14,9 +14,13 @@ import Foundation
 /// Manages integration of netfox pod into ios application. Allows any tester to view API logs directly within app
 struct NetfoxIntegration {
 
+    // MARK: - Public Properties
+    
     /// Shared instance to be used for interacting with instabug.
     static let shared = NetfoxIntegration()
 
+    // MARK: - Public Functions
+    
     /// Sets up pod and ensures gestures are controlled by yoshi only
     func setup() {
         #if !RELEASE
