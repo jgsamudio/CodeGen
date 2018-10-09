@@ -19,12 +19,18 @@ import UIKit
 /// <Real world example of how someone would use this class with code snippet>
 final class MenuDrawerItem: UIView {
 
+    // MARK: - Public Properties
+    
     weak var delegate: MenuDrawerItemDelegate?
 
+    // MARK: - Private Properties
+    
     private let textLabel = UILabel()
     
     private let type: MenuItemType
 
+    // MARK: - Initialization
+    
     init(theme: Theme, type: MenuItemType, delegate: MenuDrawerItemDelegate?) {
         self.type = type
         self.delegate = delegate
@@ -38,6 +44,7 @@ final class MenuDrawerItem: UIView {
     
 }
 
+// MARK: - Private Functions
 private extension MenuDrawerItem {
     
     func configureView(theme: Theme, text: String) {

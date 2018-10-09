@@ -20,6 +20,8 @@ import Pilas
 /// <Real world example of how someone would use this class with code snippet>
 final class MenuDrawerView: UIView {
 
+    // MARK: - Public Properties
+    
     /// Delegate.
     weak var delegate: MenuDrawerHeaderDelegate?
     
@@ -32,12 +34,16 @@ final class MenuDrawerView: UIView {
     /// Header view.
     private(set) var headerView: MenuDrawerHeaderView?
 
+    // MARK: - Private Properties
+    
     private let scrollView = PilasScrollView()
 
     // MARK: - Constants
 
     fileprivate static let closeButtonSize = 44
 
+    // MARK: - Initialization
+    
     init(theme: Theme, delegate: MenuDrawerHeaderDelegate?) {
         self.delegate = delegate
         super.init(frame: .zero)
@@ -50,6 +56,7 @@ final class MenuDrawerView: UIView {
 
 }
 
+// MARK: - Private Functions
 private extension MenuDrawerView {
     
     func configureView(theme: Theme) {

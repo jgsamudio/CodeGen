@@ -19,6 +19,8 @@ import UIKit
 /// <Real world example of how someone would use this class with code snippet>
 final class MenuDrawerHeaderView: BuildableView {
 
+    // MARK: - Public Properties
+    
     /// Updates the profile image.
     var profileImageURLString: String? {
         didSet {
@@ -35,6 +37,8 @@ final class MenuDrawerHeaderView: BuildableView {
         return imageView
     }()
 
+    // MARK: - Private Properties
+    
     private let profileLabel = UILabel()
 
     // MARK: - Constants
@@ -43,6 +47,8 @@ final class MenuDrawerHeaderView: BuildableView {
     fileprivate static let verticalPadding: CGFloat = 18
     fileprivate static let profileImageSize = CGSize(width: 52, height: 52)
 
+    // MARK: - Initialization
+    
     override init(theme: Theme) {
         super.init(theme: theme)
         configureView(theme: theme)
@@ -52,6 +58,8 @@ final class MenuDrawerHeaderView: BuildableView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Public Functions
+    
     func configureView(theme: Theme) {
         backgroundColor = theme.colorTheme.primary
         setupProfileButton(theme: theme)
@@ -62,6 +70,7 @@ final class MenuDrawerHeaderView: BuildableView {
 
 }
 
+// MARK: - Private Functions
 private extension MenuDrawerHeaderView {
 
     func setupProfileButton(theme: Theme) {
