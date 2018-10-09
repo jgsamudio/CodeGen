@@ -15,4 +15,5 @@ enum Visitor: String, Decodable {
     case `extension`
     case initializer
     case variable
+    case constant
 }

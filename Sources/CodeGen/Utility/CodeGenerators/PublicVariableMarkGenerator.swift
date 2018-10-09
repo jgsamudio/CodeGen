@@ -25,7 +25,7 @@ class PublicVariableMarkGenerator: CodeGenerator {
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String]) -> FileModifier? {
         guard let insertions = generatorConfig.insertString, !markAdded,
-            let variableNode = node as? VariableDeclaration, variableNode.modifiers.isPublic else {
+            let variableNode = node as? DeclarationModifierProtocol, variableNode.modifiers.isPublic else {
                 return nil
         }
         markAdded = true
@@ -58,7 +58,7 @@ class PrivateVariableMarkGenerator: CodeGenerator {
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String]) -> FileModifier? {
         guard let insertions = generatorConfig.insertString, !markAdded,
-            let variableNode = node as? VariableDeclaration, !variableNode.modifiers.isPublic else {
+            let variableNode = node as? DeclarationModifierProtocol, !variableNode.modifiers.isPublic else {
                 return nil
         }
         markAdded = true
@@ -74,3 +74,13 @@ class PrivateVariableMarkGenerator: CodeGenerator {
     }
     
 }
+
+
+protocol DeclarationModifierProtocol {
+    
+    var modifiers: DeclarationModifiers { get }
+    
+}
+
+extension VariableDeclaration: DeclarationModifierProtocol {}
+extension ConstantDeclaration: DeclarationModifierProtocol {}

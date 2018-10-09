@@ -37,6 +37,8 @@ final class MenuDrawerHeaderView: BuildableView {
         return imageView
     }()
 
+    // MARK: - Private Properties
+    
     private let profileLabel = UILabel()
 
     // MARK: - Constants

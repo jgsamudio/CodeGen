@@ -77,6 +77,11 @@ final class CodeASTVisitor: ASTVisitor {
         visited(.variable, sourceLocation: declaration.sourceLocation, node: declaration)
         return true
     }
+    
+    func visit(_ declaration: ConstantDeclaration) throws -> Bool {
+        visited(.constant, sourceLocation: declaration.sourceLocation, node: declaration)
+        return true
+    }
 
 }
 

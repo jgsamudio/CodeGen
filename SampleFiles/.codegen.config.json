@@ -38,13 +38,13 @@
 			"name": "publicVariableMarkGenerator",
 			"enabled": true,
 			"insertString":["", "// MARK: - Public Properties", ""],
-			"visitors": ["variable"]
+			"visitors": ["variable", "constant"]
 		},
 		{
 			"name": "privateVariableMarkGenerator",
 			"enabled": true,
 			"insertString":["", "// MARK: - Private Properties", ""],
-			"visitors": ["variable"]
+			"visitors": ["variable", "constant"]
 		}
 	],
 	"excluded": [],

@@ -34,6 +34,8 @@ final class MenuDrawerView: UIView {
     /// Header view.
     private(set) var headerView: MenuDrawerHeaderView?
 
+    // MARK: - Private Properties
+    
     private let scrollView = PilasScrollView()
 
     // MARK: - Constants
