@@ -1,0 +1,3931 @@
+{
+   "currentpage" : 1,
+   "athletes" : [
+      {
+         "highlight" : 0,
+         "height" : "5'5\"",
+         "scores" : [
+            {
+               "scoredisplay" : "1",
+               "workoutrank" : "1",
+               "scoreidentifier" : "6a1c836ba9b8b8bba5e9",
+               "video" : "0",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "7036c18d302aa46e1e82",
+               "workoutrank" : "1",
+               "scoredisplay" : "262 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 915,
+                  "judge" : "Wayne Kim",
+                  "affiliate" : "CrossFit by Overload",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n22 Muscle-ups"
+               }
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "430 reps",
+                  "affiliate" : "CrossFit by Overload",
+                  "judge" : "Aaron Hunter",
+                  "time" : 1073
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "7",
+               "scoredisplay" : "17:53",
+               "video" : 0,
+               "scoreidentifier" : "fd0ab100f46dc75170be"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "CrossFit by Overload",
+                  "breakdown" : "",
+                  "time" : 166,
+                  "judge" : "Wayne Kim"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "2:46",
+               "workoutrank" : "9",
+               "scoreidentifier" : "bb8a7e3a60057d3f29d9",
+               "video" : 0
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "CrossFit by Overload",
+                  "breakdown" : "",
+                  "time" : 267,
+                  "judge" : "Aaron Hunter"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "5",
+               "scoredisplay" : "4:27",
+               "video" : 0,
+               "scoreidentifier" : "d716ce9a36419840e1c5"
+            }
+         ],
+         "affiliate" : "",
+         "overallscore" : "23",
+         "affiliateid" : "4368",
+         "regionid" : "16",
+         "userid" : "733584",
+         "name" : "Devyn Kim",
+         "weight" : "135 lb",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "region" : "Southern California",
+         "age" : 15,
+         "divisionid" : "15",
+         "overallrank" : "1",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/f7d70-P733584_1-184.jpg"
+      },
+      {
+         "divisionid" : "15",
+         "age" : 14,
+         "region" : "Europe",
+         "nextstage" : "accepted",
+         "weight" : "51 kg",
+         "division" : 15,
+         "name" : "Nina Ladvenicova",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/9aa72-P903379_2-184.jpg",
+         "overallrank" : "2",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "5",
+               "scoredisplay" : "5",
+               "video" : "0",
+               "scoreidentifier" : "9ada35c25619cf8426d8"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n16 Muscle-ups",
+                  "time" : 882
+               },
+               "scoreidentifier" : "ac4057caed8f8e46d9bb",
+               "video" : "1",
+               "scoredisplay" : "256 reps",
+               "workoutrank" : "7"
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "430 reps",
+                  "time" : 1039
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "1",
+               "scoredisplay" : "17:19",
+               "video" : "1",
+               "scoreidentifier" : "26dab7ae18ac7f228864"
+            },
+            {
+               "scoreidentifier" : "b45a783d020503223144",
+               "video" : "1",
+               "scoredisplay" : "2:09",
+               "workoutrank" : "1",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 129,
+                  "breakdown" : ""
+               }
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 307,
+                  "breakdown" : ""
+               },
+               "scoreidentifier" : "14e79bf724fdc1e2ea8c",
+               "video" : "1",
+               "scoredisplay" : "5:07",
+               "workoutrank" : "14"
+            }
+         ],
+         "height" : "163 cm",
+         "highlight" : 0,
+         "userid" : "903379",
+         "regionid" : "7",
+         "affiliateid" : "0",
+         "overallscore" : "28",
+         "affiliate" : ""
+      },
+      {
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "scoredisplay" : "2",
+               "workoutrank" : "2",
+               "scoreidentifier" : "3c90342713f00907926e",
+               "video" : "0"
+            },
+            {
+               "workoutrank" : "8",
+               "scoredisplay" : "255 reps",
+               "video" : 0,
+               "scoreidentifier" : "975071487d5c583ecf04",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n15 Muscle-ups",
+                  "affiliate" : "CrossFit Believe",
+                  "judge" : "Alan Joyner",
+                  "time" : 825
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoreidentifier" : "69917a4df6713c3efb2f",
+               "video" : 0,
+               "scoredisplay" : "19:03",
+               "workoutrank" : "15",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Brian Henry",
+                  "time" : 1143,
+                  "breakdown" : "430 reps",
+                  "affiliate" : "Cobra Command CrossFit"
+               }
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Believe",
+                  "judge" : "Alan Joyner",
+                  "time" : 174
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "12",
+               "scoredisplay" : "2:54",
+               "video" : 0,
+               "scoreidentifier" : "39961ec319dfe91b5827"
+            },
+            {
+               "scoredetails" : {
+                  "time" : 214,
+                  "judge" : "Alan Joyner",
+                  "affiliate" : "CrossFit Believe",
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "1",
+               "scoredisplay" : "3:34",
+               "video" : 0,
+               "scoreidentifier" : "d59444314d994d3cd8b4"
+            }
+         ],
+         "height" : "5'1\"",
+         "highlight" : 0,
+         "userid" : "716498",
+         "regionid" : "10",
+         "affiliateid" : "3387",
+         "overallscore" : "38",
+         "affiliate" : "",
+         "divisionid" : "15",
+         "age" : 15,
+         "region" : "North Central",
+         "weight" : "125 lb",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "name" : "Reagan Henry",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png",
+         "overallrank" : "3"
+      },
+      {
+         "highlight" : 0,
+         "height" : "5'8\"",
+         "scores" : [
+            {
+               "scoreidentifier" : "e68da9fae6aa77687365",
+               "video" : "0",
+               "scoredisplay" : "7",
+               "workoutrank" : "7",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Unlimited Crowley",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n21 Muscle-ups",
+                  "time" : 828,
+                  "judge" : "Kimberly Vincent"
+               },
+               "scoreidentifier" : "fb2e1307fbfeebd560b5",
+               "video" : 0,
+               "scoredisplay" : "261 reps",
+               "workoutrank" : "2"
+            },
+            {
+               "workoutrank" : "6",
+               "scoredisplay" : "17:50",
+               "video" : 0,
+               "scoreidentifier" : "4bb472619fcc808884c9",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Unlimited Jennings",
+                  "breakdown" : "430 reps",
+                  "time" : 1070,
+                  "judge" : "Kimberly Vincent"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredisplay" : "3:50",
+               "workoutrank" : "23",
+               "scoreidentifier" : "92ac50e93d83b3094779",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Unlimited Jennings",
+                  "judge" : "Kimberly Vincent",
+                  "time" : 230
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoreidentifier" : "dbfa6b5f60dd1ca3a588",
+               "video" : 0,
+               "scoredisplay" : "4:04",
+               "workoutrank" : "2",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 244,
+                  "judge" : "Kimberly Vincent",
+                  "affiliate" : "CrossFit Unlimited Jennings",
+                  "breakdown" : ""
+               }
+            }
+         ],
+         "overallscore" : "40",
+         "affiliate" : "",
+         "affiliateid" : "11374",
+         "regionid" : "14",
+         "userid" : "878483",
+         "name" : "Chloe Smith",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "weight" : "130 lb",
+         "region" : "South Central",
+         "age" : 15,
+         "divisionid" : "15",
+         "overallrank" : "4",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/651ba-P878483_4-184.jpg"
+      },
+      {
+         "overallrank" : "4",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/56175-P616496_7-184.jpg",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "weight" : "127 lb",
+         "name" : "Tessa Marquette",
+         "age" : 15,
+         "divisionid" : "15",
+         "region" : "South East",
+         "overallscore" : "40",
+         "affiliate" : "",
+         "regionid" : "15",
+         "userid" : "616496",
+         "affiliateid" : "2041",
+         "scores" : [
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {},
+               "scoreidentifier" : "b096c3edf15cb86c8629",
+               "video" : "0",
+               "scoredisplay" : "6",
+               "workoutrank" : "6"
+            },
+            {
+               "workoutrank" : "5",
+               "scoredisplay" : "257 reps",
+               "video" : 0,
+               "scoreidentifier" : "243438908b23d71dde83",
+               "scoredetails" : {
+                  "time" : 868,
+                  "judge" : "Aaron Weedo",
+                  "affiliate" : "CrossFit Lakewood Ranch",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n17 Muscle-ups"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Lakewood Ranch",
+                  "breakdown" : "430 reps",
+                  "time" : 1088,
+                  "judge" : "Aaron Weedo"
+               },
+               "video" : 0,
+               "scoreidentifier" : "1a1bd6158a4f6537f28a",
+               "workoutrank" : "9",
+               "scoredisplay" : "18:08"
+            },
+            {
+               "workoutrank" : "6",
+               "scoredisplay" : "2:40",
+               "video" : 0,
+               "scoreidentifier" : "69b340b941b965497c95",
+               "scoredetails" : {
+                  "time" : 160,
+                  "judge" : "Aaron Weedo",
+                  "affiliate" : "CrossFit Lakewood Ranch",
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredisplay" : "5:07",
+               "workoutrank" : "14",
+               "scoreidentifier" : "3d5e26b83b00eb793760",
+               "video" : 0,
+               "scoredetails" : {
+                  "judge" : "Aaron Weedo",
+                  "time" : 307,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Lakewood Ranch"
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "height" : "5'1\"",
+         "highlight" : 0
+      },
+      {
+         "overallrank" : "6",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/86700-P387788_6-184.jpg",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "weight" : "129 lb",
+         "name" : "Annalise Moore",
+         "divisionid" : "15",
+         "age" : 15,
+         "region" : "South Central",
+         "affiliate" : "",
+         "overallscore" : "43",
+         "userid" : "387788",
+         "regionid" : "14",
+         "affiliateid" : "5837",
+         "scores" : [
+            {
+               "video" : "0",
+               "scoreidentifier" : "152dc8b27cfe6656d0d7",
+               "workoutrank" : "2",
+               "scoredisplay" : "2",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Madison Campbell",
+                  "time" : 925,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n13 Muscle-ups",
+                  "affiliate" : "Forged Steele CrossFit"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "14",
+               "scoredisplay" : "253 reps",
+               "video" : 0,
+               "scoreidentifier" : "d920be3c3b25bbfeba6c"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Madison Campbell",
+                  "time" : 1164,
+                  "breakdown" : "4 Rounds\n25 Toes-to-bar\n50 Double-unders\n6 Cleans",
+                  "affiliate" : "Forged Steele CrossFit"
+               },
+               "video" : 0,
+               "scoreidentifier" : "4cdd74a95ff7ced47365",
+               "workoutrank" : "20",
+               "scoredisplay" : "429 reps"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Forged Steele CrossFit",
+                  "breakdown" : "",
+                  "time" : 136,
+                  "judge" : "Madison Campbell"
+               },
+               "scoreidentifier" : "3ea0a90a8583a5bc02e0",
+               "video" : 0,
+               "scoredisplay" : "2:16",
+               "workoutrank" : "2"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Forged Steele CrossFit",
+                  "judge" : "Julie Young",
+                  "time" : 267
+               },
+               "scoreidentifier" : "62049efb54c89820b10b",
+               "video" : 0,
+               "scoredisplay" : "4:27",
+               "workoutrank" : "5"
+            }
+         ],
+         "highlight" : 0,
+         "height" : "5'3\""
+      },
+      {
+         "overallscore" : "44",
+         "affiliate" : "",
+         "affiliateid" : "13888",
+         "regionid" : "10",
+         "userid" : "966652",
+         "height" : "5'2\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "video" : "0",
+               "scoreidentifier" : "cedb3dd6397dbe13d2f2",
+               "workoutrank" : "9",
+               "scoredisplay" : "9",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "a48d7f79a2e240fa3a54",
+               "workoutrank" : "9",
+               "scoredisplay" : "255 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Cobra Command CrossFit",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n15 Muscle-ups",
+                  "time" : 849,
+                  "judge" : "Russ Kerstetter"
+               }
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 1062,
+                  "judge" : "Russ Kerstetter",
+                  "affiliate" : "Cobra Command CrossFit",
+                  "breakdown" : "430 reps"
+               },
+               "scoreidentifier" : "5d773884c3ee9a999a48",
+               "video" : 0,
+               "scoredisplay" : "17:42",
+               "workoutrank" : "4"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "Cobra Command CrossFit",
+                  "breakdown" : "",
+                  "time" : 156,
+                  "judge" : "Russ Kerstetter"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "2:36",
+               "workoutrank" : "5",
+               "scoreidentifier" : "bf40c1395f48322e43d2",
+               "video" : 0
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Cobra Command CrossFit",
+                  "breakdown" : "",
+                  "time" : 316,
+                  "judge" : "Russ Kerstetter"
+               },
+               "video" : 0,
+               "scoreidentifier" : "f2853a65476302f3f941",
+               "workoutrank" : "17",
+               "scoredisplay" : "5:16"
+            }
+         ],
+         "overallrank" : "7",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/ecabe-P966652_2-184.jpg",
+         "name" : "Ellie Kerstetter",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "weight" : "115 lb",
+         "region" : "North Central",
+         "age" : 15,
+         "divisionid" : "15"
+      },
+      {
+         "division" : 15,
+         "nextstage" : "accepted",
+         "weight" : "58 kg",
+         "name" : "Luiza Marques",
+         "age" : 15,
+         "divisionid" : "15",
+         "region" : "Latin America",
+         "overallrank" : "8",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/631b1-P300613_3-184.jpg",
+         "scores" : [
+            {
+               "scoreidentifier" : "392923aed001acb08ca3",
+               "video" : "0",
+               "scoredisplay" : "10",
+               "workoutrank" : "10",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n11 Muscle-ups",
+                  "affiliate" : "Punk CrossFit",
+                  "judge" : "Ricardo Mendes",
+                  "time" : 1200
+               },
+               "scoreidentifier" : "f7aa344ffc1644d8d7f6",
+               "video" : 0,
+               "scoredisplay" : "251 reps",
+               "workoutrank" : "17"
+            },
+            {
+               "scoredisplay" : "18:19",
+               "workoutrank" : "11",
+               "scoreidentifier" : "652bc2cdc00d4ff281d1",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "430 reps",
+                  "affiliate" : "Punk CrossFit",
+                  "judge" : "Ricardo Mendes",
+                  "time" : 1099
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredisplay" : "2:32",
+               "workoutrank" : "4",
+               "scoreidentifier" : "8000dec31be6211f8080",
+               "video" : 0,
+               "scoredetails" : {
+                  "time" : 152,
+                  "judge" : "Ricardo Mendes",
+                  "affiliate" : "Punk CrossFit",
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutrank" : "13",
+               "scoredisplay" : "5:03",
+               "video" : 0,
+               "scoreidentifier" : "bdb6fbf8c4a865d88bfd",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Punk CrossFit",
+                  "judge" : "Ricardo Mendes",
+                  "time" : 303
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "height" : "154 cm",
+         "highlight" : 0,
+         "affiliate" : "",
+         "overallscore" : "55",
+         "regionid" : "8",
+         "userid" : "300613",
+         "affiliateid" : "5876"
+      },
+      {
+         "highlight" : 0,
+         "height" : "160 cm",
+         "scores" : [
+            {
+               "workoutrank" : "15",
+               "scoredisplay" : "15",
+               "video" : "0",
+               "scoreidentifier" : "6ceb93927d864f3f483e",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "workoutrank" : "4",
+               "scoredisplay" : "257 reps",
+               "video" : 0,
+               "scoreidentifier" : "7c401123a33d30449b55",
+               "scoredetails" : {
+                  "time" : 850,
+                  "judge" : "Panayiotis Georgiades",
+                  "affiliate" : "CrossFit Limassol",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n17 Muscle-ups"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "430 reps",
+                  "affiliate" : "CrossFit Limassol",
+                  "judge" : "Panayiotis Georgiades",
+                  "time" : 1154
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "19:14",
+               "workoutrank" : "16",
+               "scoreidentifier" : "1b2673ad8b3fbc5312cc",
+               "video" : 0
+            },
+            {
+               "scoredetails" : {
+                  "time" : 193,
+                  "judge" : "Panayiotis Georgiades",
+                  "affiliate" : "CrossFit Limassol",
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "14",
+               "scoredisplay" : "3:13",
+               "video" : 0,
+               "scoreidentifier" : "2094595c5378bd1f586c"
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Panayiotis Georgiades",
+                  "time" : 291,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Limassol"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "4:51",
+               "workoutrank" : "9",
+               "scoreidentifier" : "36641e6d6474fe8e678a",
+               "video" : 0
+            }
+         ],
+         "affiliateid" : "5992",
+         "userid" : "896201",
+         "regionid" : "7",
+         "overallscore" : "58",
+         "affiliate" : "",
+         "region" : "Europe",
+         "divisionid" : "15",
+         "age" : 14,
+         "name" : "Ilia Cleanthous",
+         "weight" : "52 kg",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "profilepic" : "https://profilepicsbucket.crossfit.com/53606-P896201_2-184.jpg",
+         "overallrank" : "9"
+      },
+      {
+         "region" : "North East",
+         "divisionid" : "15",
+         "age" : 15,
+         "name" : "Jackie Violette",
+         "nextstage" : "accepted",
+         "weight" : "115 lb",
+         "division" : 15,
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png",
+         "overallrank" : "10",
+         "highlight" : 0,
+         "height" : "5'2\"",
+         "scores" : [
+            {
+               "scoredisplay" : "4",
+               "workoutrank" : "4",
+               "scoreidentifier" : "2cc0446179702b12a827",
+               "video" : "0",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Guilford CrossFit",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n20 Muscle-ups",
+                  "time" : 791,
+                  "judge" : "Maureen Terwilliger"
+               },
+               "video" : 0,
+               "scoreidentifier" : "6e37dd838ca9119990d7",
+               "workoutrank" : "3",
+               "scoredisplay" : "260 reps"
+            },
+            {
+               "scoredisplay" : "18:10",
+               "workoutrank" : "10",
+               "scoreidentifier" : "deb7fb0de611a88c577f",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "430 reps",
+                  "affiliate" : "Guilford CrossFit",
+                  "judge" : "Maureen Terwilliger",
+                  "time" : 1090
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoreidentifier" : "3762d1d42c242ed7a1a5",
+               "video" : 0,
+               "scoredisplay" : "4:38",
+               "workoutrank" : "32",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Maureen Terwilliger",
+                  "time" : 278,
+                  "breakdown" : "",
+                  "affiliate" : "Guilford CrossFit"
+               }
+            },
+            {
+               "scoredisplay" : "5:00",
+               "workoutrank" : "11",
+               "scoreidentifier" : "2720aba4a158b26c8b71",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Guilford CrossFit",
+                  "judge" : "Maureen Terwilliger",
+                  "time" : 300
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "affiliateid" : "3344",
+         "userid" : "664961",
+         "regionid" : "11",
+         "affiliate" : "",
+         "overallscore" : "60"
+      },
+      {
+         "profilepic" : "https://profilepicsbucket.crossfit.com/23106-P878053_4-184.jpg",
+         "overallrank" : "11",
+         "region" : "Central East",
+         "age" : 15,
+         "divisionid" : "15",
+         "name" : "Mia Nightingale",
+         "nextstage" : "accepted",
+         "weight" : "133 lb",
+         "division" : 15,
+         "affiliateid" : "17731",
+         "regionid" : "6",
+         "userid" : "878053",
+         "affiliate" : "",
+         "overallscore" : "66",
+         "height" : "5'4\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {},
+               "video" : "0",
+               "scoreidentifier" : "64f156b58695b791bd5f",
+               "workoutrank" : "24",
+               "scoredisplay" : "24"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Deviate",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n14 Muscle-ups",
+                  "time" : 822,
+                  "judge" : "Jami Jordan"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "11",
+               "scoredisplay" : "254 reps",
+               "video" : 0,
+               "scoreidentifier" : "352171458c721be56e8d"
+            },
+            {
+               "scoredetails" : {
+                  "time" : 1081,
+                  "judge" : "Jessica Purdy",
+                  "affiliate" : "CrossFit Deviate",
+                  "breakdown" : "430 reps"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "8",
+               "scoredisplay" : "18:01",
+               "video" : 0,
+               "scoreidentifier" : "fd9a89973d8db45c3ad0"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Deviate",
+                  "breakdown" : "",
+                  "time" : 214,
+                  "judge" : "Jessica Purdy"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "3:34",
+               "workoutrank" : "20",
+               "scoreidentifier" : "0d1474b548494c705849",
+               "video" : 0
+            },
+            {
+               "workoutrank" : "3",
+               "scoredisplay" : "4:12",
+               "video" : 0,
+               "scoreidentifier" : "ff167af91d0ccd961dd3",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Deviate",
+                  "breakdown" : "",
+                  "time" : 252,
+                  "judge" : "Jessica Purdy"
+               },
+               "workoutresult" : "--"
+            }
+         ]
+      },
+      {
+         "region" : "Canada East",
+         "divisionid" : "15",
+         "age" : 14,
+         "name" : "Lea Malo",
+         "weight" : "114 lb",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "profilepic" : "https://profilepicsbucket.crossfit.com/3bbf0-P918828_3-184.jpg",
+         "overallrank" : "12",
+         "height" : "5'1\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {},
+               "video" : "0",
+               "scoreidentifier" : "4aa6b8d9e080a5697295",
+               "workoutrank" : "11",
+               "scoredisplay" : "11"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "4e0885fe6823eec9370a",
+               "workoutrank" : "13",
+               "scoredisplay" : "254 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n14 Muscle-ups",
+                  "affiliate" : "CrossFit Villeray",
+                  "judge" : "Karim El Hlimi",
+                  "time" : 986
+               }
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "430 reps",
+                  "affiliate" : "CrossFit Villeray",
+                  "judge" : "Mirakim Couvrette",
+                  "time" : 1133
+               },
+               "scoreidentifier" : "ad1a7ffe15427c481c6d",
+               "video" : 0,
+               "scoredisplay" : "18:53",
+               "workoutrank" : "13"
+            },
+            {
+               "scoreidentifier" : "4acb7f65d66f414f4349",
+               "video" : 0,
+               "scoredisplay" : "3:15",
+               "workoutrank" : "15",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Karim El Hlimi",
+                  "time" : 195,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Villeray"
+               }
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "3c21649fc0a329acd28d",
+               "workoutrank" : "16",
+               "scoredisplay" : "5:14",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit AF Joliette",
+                  "judge" : "Carolane Lefebvre Giroux",
+                  "time" : 314
+               }
+            }
+         ],
+         "affiliateid" : "11628",
+         "userid" : "918828",
+         "regionid" : "4",
+         "overallscore" : "68",
+         "affiliate" : ""
+      },
+      {
+         "scores" : [
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {},
+               "scoreidentifier" : "955669c83ccc46a54f1c",
+               "video" : "0",
+               "scoredisplay" : "23",
+               "workoutrank" : "23"
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n14 Muscle-ups",
+                  "time" : 931
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "12",
+               "scoredisplay" : "254 reps",
+               "video" : "1",
+               "scoreidentifier" : "f1aa4457857401ffbd0b"
+            },
+            {
+               "scoreidentifier" : "ca5edb0f67d416c06089",
+               "video" : "1",
+               "scoredisplay" : "427 reps",
+               "workoutrank" : "22",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 1144,
+                  "breakdown" : "4 Rounds\n25 Toes-to-bar\n50 Double-unders\n4 Cleans"
+               }
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "time" : 144
+               },
+               "video" : "1",
+               "scoreidentifier" : "a02971c765d08eb03360",
+               "workoutrank" : "3",
+               "scoredisplay" : "2:24"
+            },
+            {
+               "scoredisplay" : "5:00",
+               "workoutrank" : "11",
+               "scoreidentifier" : "6f0c6abe7e0bf3222d70",
+               "video" : "1",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "time" : 300
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "height" : "5'4\"",
+         "highlight" : 0,
+         "overallscore" : "71",
+         "affiliate" : "",
+         "regionid" : "15",
+         "userid" : "676825",
+         "affiliateid" : "1632",
+         "nextstage" : "accepted",
+         "weight" : "115 lb",
+         "division" : 15,
+         "name" : "Jen Heil",
+         "age" : 15,
+         "divisionid" : "15",
+         "region" : "South East",
+         "overallrank" : "13",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/4f767-P676825_6-184.jpg"
+      },
+      {
+         "affiliateid" : "15000",
+         "regionid" : "6",
+         "userid" : "720884",
+         "affiliate" : "",
+         "overallscore" : "81",
+         "height" : "5'7\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {},
+               "scoreidentifier" : "ce1dad02a33668a3f047",
+               "video" : "0",
+               "scoredisplay" : "33",
+               "workoutrank" : "33"
+            },
+            {
+               "scoreidentifier" : "98beb298d223f7cff3da",
+               "video" : 0,
+               "scoredisplay" : "257 reps",
+               "workoutrank" : "6",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Barbarian CrossFit",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n17 Muscle-ups",
+                  "time" : 886,
+                  "judge" : "Adam Paulsen"
+               }
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "430 reps",
+                  "affiliate" : "Barbarian CrossFit",
+                  "judge" : "Adam Paulsen",
+                  "time" : 1114
+               },
+               "scoreidentifier" : "2a8b89e27293462e716c",
+               "video" : 0,
+               "scoredisplay" : "18:34",
+               "workoutrank" : "12"
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Barbarian CrossFit",
+                  "judge" : "Adam Paulsen",
+                  "time" : 172
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "2:52",
+               "workoutrank" : "11",
+               "scoreidentifier" : "950295fcd77d4041d19a",
+               "video" : 0
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "caf40418694cd29b33db",
+               "workoutrank" : "19",
+               "scoredisplay" : "5:38",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Barbarian CrossFit",
+                  "judge" : "Adam Paulsen",
+                  "time" : 338
+               }
+            }
+         ],
+         "profilepic" : "https://profilepicsbucket.crossfit.com/972bb-P720884_1-184.jpg",
+         "overallrank" : "14",
+         "region" : "Central East",
+         "age" : 15,
+         "divisionid" : "15",
+         "name" : "Mikaela Senkus",
+         "weight" : "142 lb",
+         "nextstage" : "accepted",
+         "division" : 15
+      },
+      {
+         "height" : "5'4\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {},
+               "scoreidentifier" : "f68fd79215a0b3ea57b1",
+               "video" : "0",
+               "scoredisplay" : "13",
+               "workoutrank" : "13"
+            },
+            {
+               "scoreidentifier" : "b0a680c24635329b595b",
+               "video" : 0,
+               "scoredisplay" : "252 reps",
+               "workoutrank" : "15",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 822,
+                  "judge" : "Tony Lopez",
+                  "affiliate" : "Snake River CrossFit",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n12 Muscle-ups"
+               }
+            },
+            {
+               "workoutrank" : "19",
+               "scoredisplay" : "429 reps",
+               "video" : 0,
+               "scoreidentifier" : "82312c02d1f957d9016e",
+               "scoredetails" : {
+                  "judge" : "Tony Lopez",
+                  "time" : 1145,
+                  "breakdown" : "4 Rounds\n25 Toes-to-bar\n50 Double-unders\n6 Cleans",
+                  "affiliate" : "Snake River CrossFit"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "Snake River CrossFit",
+                  "breakdown" : "",
+                  "time" : 213,
+                  "judge" : "Tony Lopez"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "3:33",
+               "workoutrank" : "19",
+               "scoreidentifier" : "18e0c126d68d7d20e5dc",
+               "video" : 0
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Tony Lopez",
+                  "time" : 374,
+                  "breakdown" : "",
+                  "affiliate" : "Snake River CrossFit"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "24",
+               "scoredisplay" : "6:14",
+               "video" : 0,
+               "scoreidentifier" : "de04e546905bab47fb33"
+            }
+         ],
+         "affiliateid" : "4121",
+         "regionid" : "13",
+         "userid" : "861489",
+         "overallscore" : "90",
+         "affiliate" : "",
+         "region" : "North West",
+         "age" : 15,
+         "divisionid" : "15",
+         "name" : "Rylie Krahn",
+         "nextstage" : "accepted",
+         "weight" : "120 lb",
+         "division" : 15,
+         "profilepic" : "https://profilepicsbucket.crossfit.com/ac13a-P861489_25-184.jpg",
+         "overallrank" : "15"
+      },
+      {
+         "nextstage" : "accepted",
+         "weight" : "130 lb",
+         "division" : 15,
+         "name" : "Fransiela Jiménez",
+         "divisionid" : "15",
+         "age" : 15,
+         "region" : "Latin America",
+         "overallrank" : "16",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/72193-P745189_6-184.jpg",
+         "scores" : [
+            {
+               "scoredisplay" : "8",
+               "workoutrank" : "8",
+               "scoreidentifier" : "01a1bea76f5b34861d36",
+               "video" : "0",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "c2950c05e8138710c43d",
+               "workoutrank" : "23",
+               "scoredisplay" : "249 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n9 Muscle-ups",
+                  "affiliate" : "CrossFit Tigran",
+                  "judge" : "Gibran Rodriguez",
+                  "time" : 915
+               }
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "aea5d37f3e13d44c8575",
+               "workoutrank" : "33",
+               "scoredisplay" : "340 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Tigran",
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n50 Double-unders\n1 Cleans",
+                  "time" : 950,
+                  "judge" : "Gibran Rodriguez"
+               }
+            },
+            {
+               "scoreidentifier" : "e9a42413140237e8b9e4",
+               "video" : 0,
+               "scoredisplay" : "2:43",
+               "workoutrank" : "7",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Gibran Rodriguez",
+                  "time" : 163,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Tigran"
+               }
+            },
+            {
+               "workoutrank" : "23",
+               "scoredisplay" : "6:11",
+               "video" : 0,
+               "scoreidentifier" : "b9030e4f8c19e970ba4c",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Tigran",
+                  "judge" : "Gibran Rodriguez",
+                  "time" : 371
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "height" : "164 cm",
+         "highlight" : 0,
+         "overallscore" : "94",
+         "affiliate" : "",
+         "userid" : "745189",
+         "regionid" : "8",
+         "affiliateid" : "12073"
+      },
+      {
+         "highlight" : 0,
+         "height" : "5'2\"",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "scoredisplay" : "22",
+               "workoutrank" : "22",
+               "scoreidentifier" : "fa799563b6ea0b73461a",
+               "video" : "0"
+            },
+            {
+               "workoutrank" : "31",
+               "scoredisplay" : "247 reps",
+               "video" : 0,
+               "scoreidentifier" : "34703e909cc799f0fe12",
+               "scoredetails" : {
+                  "judge" : "Michael Reed",
+                  "time" : 941,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n7 Muscle-ups",
+                  "affiliate" : "CrossFit Pandemic"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n50 Double-unders\n7 Cleans",
+                  "affiliate" : "CrossFit Pandemic",
+                  "judge" : "Michael Reed",
+                  "time" : 960
+               },
+               "scoreidentifier" : "bf57af41542ad5f5902b",
+               "video" : 0,
+               "scoredisplay" : "346 reps",
+               "workoutrank" : "25"
+            },
+            {
+               "workoutrank" : "8",
+               "scoredisplay" : "2:45",
+               "video" : 0,
+               "scoreidentifier" : "d6966bcbfc8db9ae2b7d",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Pandemic",
+                  "breakdown" : "",
+                  "time" : 165,
+                  "judge" : "Michael Reed"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "c961f905334ba7bf8ead",
+               "workoutrank" : "8",
+               "scoredisplay" : "4:45",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Pandemic",
+                  "judge" : "Michael Reed",
+                  "time" : 285
+               }
+            }
+         ],
+         "affiliate" : "",
+         "overallscore" : "94",
+         "affiliateid" : "5938",
+         "regionid" : "16",
+         "userid" : "1092774",
+         "name" : "Ashby Johnston",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "weight" : "135 lb",
+         "region" : "Southern California",
+         "age" : 15,
+         "divisionid" : "15",
+         "overallrank" : "16",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/94afa-P1092774_2-184.jpg"
+      },
+      {
+         "overallrank" : "18",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/c62f5-P999075_1-184.jpg",
+         "weight" : "135 lb",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "name" : "Macey Damgar",
+         "age" : 14,
+         "divisionid" : "15",
+         "region" : "North Central",
+         "affiliate" : "",
+         "overallscore" : "100",
+         "regionid" : "10",
+         "userid" : "999075",
+         "affiliateid" : "13741",
+         "scores" : [
+            {
+               "video" : "0",
+               "scoreidentifier" : "655deff1187fa2e7c922",
+               "workoutrank" : "17",
+               "scoredisplay" : "17",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "scoreidentifier" : "1c3453fcbed22d6a0879",
+               "video" : 0,
+               "scoredisplay" : "244 reps",
+               "workoutrank" : "40",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 918,
+                  "judge" : "Jack Long",
+                  "affiliate" : "CrossFit HIDDENGYM",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n4 Muscle-ups"
+               }
+            },
+            {
+               "scoredisplay" : "423 reps",
+               "workoutrank" : "23",
+               "scoreidentifier" : "8d3454ce746289ce054b",
+               "video" : 0,
+               "scoredetails" : {
+                  "affiliate" : "CrossFit HIDDENGYM",
+                  "breakdown" : "4 Rounds\n25 Toes-to-bar\n50 Double-unders",
+                  "time" : 1199,
+                  "judge" : "Jack Long"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 197,
+                  "judge" : "Adam Clausen",
+                  "affiliate" : "CrossFit HIDDENGYM",
+                  "breakdown" : ""
+               },
+               "video" : 0,
+               "scoreidentifier" : "f9db11770923292dc834",
+               "workoutrank" : "16",
+               "scoredisplay" : "3:17"
+            },
+            {
+               "workoutrank" : "4",
+               "scoredisplay" : "4:19",
+               "video" : 0,
+               "scoreidentifier" : "f9f4f621f73d9f72f055",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit HIDDENGYM",
+                  "judge" : "Jack Long",
+                  "time" : 259
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "height" : "5'5\"",
+         "highlight" : 0
+      },
+      {
+         "highlight" : 0,
+         "height" : "163 cm",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "19",
+               "scoredisplay" : "19",
+               "video" : "0",
+               "scoreidentifier" : "d3e0718f859c3efc897e"
+            },
+            {
+               "workoutrank" : "10",
+               "scoredisplay" : "255 reps",
+               "video" : "1",
+               "scoreidentifier" : "2d509c5d4b944deb887e",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n15 Muscle-ups",
+                  "time" : 901
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutrank" : "26",
+               "scoredisplay" : "345 reps",
+               "video" : "1",
+               "scoreidentifier" : "92df76631747fb0b7906",
+               "scoredetails" : {
+                  "time" : 899,
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n50 Double-unders\n6 Cleans"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "video" : "1",
+               "scoreidentifier" : "8c852aaca876a665c40d",
+               "workoutrank" : "16",
+               "scoredisplay" : "3:17",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 197,
+                  "breakdown" : ""
+               }
+            },
+            {
+               "scoreidentifier" : "36ba9a391924fdef1575",
+               "video" : "1",
+               "scoredisplay" : "8:21",
+               "workoutrank" : "36",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 501,
+                  "breakdown" : ""
+               }
+            }
+         ],
+         "affiliate" : "",
+         "overallscore" : "107",
+         "affiliateid" : "8557",
+         "userid" : "861241",
+         "regionid" : "7",
+         "name" : "Jill Hermans",
+         "division" : 15,
+         "nextstage" : "accepted",
+         "weight" : "57 kg",
+         "region" : "Europe",
+         "divisionid" : "15",
+         "age" : 15,
+         "overallrank" : "19",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/3bbde-P861241_2-184.jpg"
+      },
+      {
+         "profilepic" : "https://profilepicsbucket.crossfit.com/1fba1-P902741_4-184.jpg",
+         "overallrank" : "20",
+         "region" : "South West",
+         "divisionid" : "15",
+         "age" : 15,
+         "name" : "Marya Drabicki",
+         "weight" : "160 lb",
+         "nextstage" : "accepted",
+         "division" : 15,
+         "affiliateid" : "4152",
+         "userid" : "902741",
+         "regionid" : "17",
+         "overallscore" : "108",
+         "affiliate" : "",
+         "height" : "5'7\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "12",
+               "scoredisplay" : "12",
+               "video" : "0",
+               "scoreidentifier" : "1df4ed822242115ffb3c"
+            },
+            {
+               "scoredisplay" : "249 reps",
+               "workoutrank" : "21",
+               "scoreidentifier" : "a4e1504acb7d176b9cd2",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n9 Muscle-ups",
+                  "affiliate" : "CrossFit Henderson",
+                  "judge" : "Mike Springer",
+                  "time" : 827
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "time" : 919,
+                  "judge" : "Mike Springer",
+                  "affiliate" : "CrossFit Henderson",
+                  "breakdown" : "4 Rounds\n25 Toes-to-bar\n44 Double-unders"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "24",
+               "scoredisplay" : "417 reps",
+               "video" : 0,
+               "scoreidentifier" : "a8a63e9b0d8566b837b5"
+            },
+            {
+               "scoredetails" : {
+                  "time" : 245,
+                  "judge" : "Mike Springer",
+                  "affiliate" : "CrossFit Modulus",
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "25",
+               "scoredisplay" : "4:05",
+               "video" : 0,
+               "scoreidentifier" : "e29ce64cead8763b3a9a"
+            },
+            {
+               "workoutrank" : "26",
+               "scoredisplay" : "6:29",
+               "video" : 0,
+               "scoreidentifier" : "39d017c3105610ee74cb",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Henderson",
+                  "judge" : "Mike Springer",
+                  "time" : 389
+               },
+               "workoutresult" : "--"
+            }
+         ]
+      },
+      {
+         "division" : 15,
+         "weight" : "100 lb",
+         "name" : "Livvy Massi",
+         "age" : 15,
+         "divisionid" : "15",
+         "region" : "Australia",
+         "overallrank" : "20",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/bd0fd-P707680_1-184.jpg",
+         "scores" : [
+            {
+               "scoredisplay" : "27",
+               "workoutrank" : "27",
+               "scoreidentifier" : "a6a62d75738e9082d280",
+               "video" : "0",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "workoutrank" : "19",
+               "scoredisplay" : "250 reps",
+               "video" : 0,
+               "scoreidentifier" : "82cfdc5ca8b9430283d0",
+               "scoredetails" : {
+                  "judge" : "Paul Walton",
+                  "time" : 946,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n10 Muscle-ups",
+                  "affiliate" : "CrossFit Athletic"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Athletic",
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n50 Double-unders\n5 Cleans",
+                  "time" : 906,
+                  "judge" : "Paul Walton"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "344 reps",
+               "workoutrank" : "27",
+               "scoreidentifier" : "f579964c9ae8e354b848",
+               "video" : 0
+            },
+            {
+               "scoredisplay" : "3:08",
+               "workoutrank" : "13",
+               "scoreidentifier" : "219d2a7385d6e43d0c4b",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Athletic",
+                  "judge" : "Jarrod Smith",
+                  "time" : 188
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "45150937c8fdded3db4a",
+               "workoutrank" : "22",
+               "scoredisplay" : "6:01",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Athletic",
+                  "judge" : "Harriet Roberts",
+                  "time" : 361
+               }
+            }
+         ],
+         "height" : "159 cm",
+         "highlight" : 0,
+         "affiliate" : "",
+         "overallscore" : "108",
+         "regionid" : "3",
+         "userid" : "707680",
+         "affiliateid" : "2414"
+      },
+      {
+         "highlight" : 0,
+         "height" : "5'10\"",
+         "scores" : [
+            {
+               "scoreidentifier" : "2259c82868d5b4843c89",
+               "video" : "0",
+               "scoredisplay" : "16",
+               "workoutrank" : "16",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "workoutrank" : "36",
+               "scoredisplay" : "245 reps",
+               "video" : 0,
+               "scoreidentifier" : "b0793d1faa9250f40de8",
+               "scoredetails" : {
+                  "time" : 874,
+                  "judge" : "Yashar Laghai Bonabi",
+                  "affiliate" : "CrossFit Waterloo",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n5 Muscle-ups"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Yashar Laghai Bonabi",
+                  "time" : 1040,
+                  "breakdown" : "430 reps",
+                  "affiliate" : "CrossFit Waterloo"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "17:20",
+               "workoutrank" : "2",
+               "scoreidentifier" : "6ee3ac485873f12bcea5",
+               "video" : 0
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Yashar Laghai Bonabi",
+                  "time" : 329,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Waterloo"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "5:29",
+               "workoutrank" : "50",
+               "scoreidentifier" : "4cfff9b2f411f5148766",
+               "video" : 0
+            },
+            {
+               "scoreidentifier" : "bac526f80ccf27f536df",
+               "video" : 0,
+               "scoredisplay" : "4:44",
+               "workoutrank" : "7",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Yashar Laghai Bonabi",
+                  "time" : 284,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Waterloo"
+               }
+            }
+         ],
+         "affiliateid" : "1567",
+         "userid" : "705770",
+         "regionid" : "4",
+         "overallscore" : "111",
+         "affiliate" : "",
+         "region" : "Canada East",
+         "divisionid" : "15",
+         "age" : 15,
+         "name" : "Mya Brubacher",
+         "weight" : "168 lb",
+         "division" : 15,
+         "profilepic" : "https://profilepicsbucket.crossfit.com/51cf6-P705770_4-184.jpg",
+         "overallrank" : "22"
+      },
+      {
+         "name" : "Sophia Grimmer",
+         "weight" : "",
+         "division" : 15,
+         "region" : "Central East",
+         "divisionid" : "15",
+         "age" : 15,
+         "overallrank" : "22",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/f7b49-P712238_2-184.jpg",
+         "highlight" : 0,
+         "height" : "5'8\"",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "20",
+               "scoredisplay" : "20",
+               "video" : "0",
+               "scoreidentifier" : "a2e5e6313c4c16cb4bef"
+            },
+            {
+               "workoutrank" : "57",
+               "scoredisplay" : "241 reps",
+               "video" : 0,
+               "scoreidentifier" : "d362b4393b263c3f402f",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n1 Muscle-ups",
+                  "affiliate" : "Muskegon CrossFit",
+                  "judge" : "Russell Mock",
+                  "time" : 807
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 1044,
+                  "judge" : "Russell Mock",
+                  "affiliate" : "Muskegon CrossFit",
+                  "breakdown" : "430 reps"
+               },
+               "scoreidentifier" : "cbd0ac5480c61ce2e132",
+               "video" : 0,
+               "scoredisplay" : "17:24",
+               "workoutrank" : "3"
+            },
+            {
+               "workoutrank" : "21",
+               "scoredisplay" : "3:44",
+               "video" : 0,
+               "scoreidentifier" : "04f48a6a2dc58c17bbc1",
+               "scoredetails" : {
+                  "time" : 224,
+                  "judge" : "Russell Mock",
+                  "affiliate" : "Muskegon CrossFit",
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "0933d195f56286e3d21c",
+               "workoutrank" : "10",
+               "scoredisplay" : "4:59",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Muskegon CrossFit",
+                  "breakdown" : "",
+                  "time" : 299,
+                  "judge" : "Russell Mock"
+               }
+            }
+         ],
+         "affiliate" : "",
+         "overallscore" : "111",
+         "affiliateid" : "5526",
+         "userid" : "712238",
+         "regionid" : "6"
+      },
+      {
+         "userid" : "964721",
+         "regionid" : "1",
+         "affiliateid" : "0",
+         "overallscore" : "122",
+         "affiliate" : "",
+         "scores" : [
+            {
+               "video" : "0",
+               "scoreidentifier" : "53e29de34f92a3e95b2f",
+               "workoutrank" : "21",
+               "scoredisplay" : "21",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "scoredisplay" : "244 reps",
+               "workoutrank" : "41",
+               "scoreidentifier" : "df0634312a7b550be453",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n4 Muscle-ups",
+                  "affiliate" : "CrossFit Polokwane",
+                  "judge" : "Ronel Neeleman",
+                  "time" : 1011
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "430 reps",
+                  "affiliate" : "CrossFit Polokwane",
+                  "judge" : "Ronel Neeleman",
+                  "time" : 1062
+               },
+               "scoreidentifier" : "1e20a9f961468644e446",
+               "video" : 0,
+               "scoredisplay" : "17:42",
+               "workoutrank" : "4"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 251,
+                  "judge" : "Ronel Neeleman",
+                  "affiliate" : "CrossFit Polokwane",
+                  "breakdown" : ""
+               },
+               "video" : 0,
+               "scoreidentifier" : "a0377bdf78c39a19d1a4",
+               "workoutrank" : "26",
+               "scoredisplay" : "4:11"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 412,
+                  "judge" : "David van Ryneveld",
+                  "affiliate" : "CrossFit Polokwane",
+                  "breakdown" : ""
+               },
+               "scoreidentifier" : "3fd32b9cb74802ebb0fb",
+               "video" : 0,
+               "scoredisplay" : "6:52",
+               "workoutrank" : "30"
+            }
+         ],
+         "highlight" : 0,
+         "height" : "160 cm",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/0f524-P964721_1-184.jpg",
+         "overallrank" : "24",
+         "divisionid" : "15",
+         "age" : 15,
+         "region" : "Africa",
+         "weight" : "63 kg",
+         "division" : 15,
+         "name" : "Ziamay Malan"
+      },
+      {
+         "regionid" : "6",
+         "userid" : "684541",
+         "affiliateid" : "358",
+         "overallscore" : "131",
+         "affiliate" : "",
+         "scores" : [
+            {
+               "video" : "0",
+               "scoreidentifier" : "8efa1bd6cf388b18d1d8",
+               "workoutrank" : "26",
+               "scoredisplay" : "26",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n9 Muscle-ups",
+                  "affiliate" : "CrossFit Rutherford",
+                  "judge" : "Christian Haynes",
+                  "time" : 954
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "249 reps",
+               "workoutrank" : "24",
+               "scoreidentifier" : "600aa68c3b075c24233a",
+               "video" : 0
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Rutherford",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n9 Cleans",
+                  "time" : 607,
+                  "judge" : "Christian Haynes"
+               },
+               "video" : 0,
+               "scoreidentifier" : "130c8b73a92f5b29cc52",
+               "workoutrank" : "39",
+               "scoredisplay" : "262 reps"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Rutherford",
+                  "breakdown" : "",
+                  "time" : 224,
+                  "judge" : "Christian Haynes"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "3:44",
+               "workoutrank" : "21",
+               "scoreidentifier" : "0b1c2a676678bf352e14",
+               "video" : 0
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "b58a38c63b0011d26fe5",
+               "workoutrank" : "21",
+               "scoredisplay" : "5:43",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Rutherford",
+                  "judge" : "Christian Haynes",
+                  "time" : 343
+               }
+            }
+         ],
+         "height" : "5'2\"",
+         "highlight" : 0,
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png",
+         "overallrank" : "25",
+         "age" : 15,
+         "divisionid" : "15",
+         "region" : "Central East",
+         "division" : 15,
+         "weight" : "125 lb",
+         "name" : "Karli Rutledge"
+      },
+      {
+         "name" : "Morgan Iverson",
+         "division" : 15,
+         "weight" : "140 lb",
+         "region" : "Central East",
+         "age" : 15,
+         "divisionid" : "15",
+         "overallrank" : "26",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png",
+         "highlight" : 0,
+         "height" : "5'3\"",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "scoredisplay" : "28",
+               "workoutrank" : "28",
+               "scoreidentifier" : "37abfbffe51192d6aabb",
+               "video" : "0"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 1043,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n6 Muscle-ups"
+               },
+               "scoreidentifier" : "e5c9aa32efa90e6f8a1d",
+               "video" : "1",
+               "scoredisplay" : "246 reps",
+               "workoutrank" : "35"
+            },
+            {
+               "video" : "1",
+               "scoreidentifier" : "6fbd6ee146986c913f51",
+               "workoutrank" : "17",
+               "scoredisplay" : "19:15",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "430 reps",
+                  "time" : 1155
+               }
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "time" : 168
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "2:48",
+               "workoutrank" : "10",
+               "scoreidentifier" : "748fbca4383c2261f45e",
+               "video" : "1"
+            },
+            {
+               "scoreidentifier" : "8271dd2423628e370989",
+               "video" : "1",
+               "scoredisplay" : "9:23",
+               "workoutrank" : "44",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "time" : 563
+               }
+            }
+         ],
+         "overallscore" : "134",
+         "affiliate" : "",
+         "affiliateid" : "4428",
+         "regionid" : "6",
+         "userid" : "392493"
+      },
+      {
+         "scores" : [
+            {
+               "video" : "0",
+               "scoreidentifier" : "217f6a7e6095cf02f2b4",
+               "workoutrank" : "14",
+               "scoredisplay" : "14",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "workoutrank" : "26",
+               "scoredisplay" : "249 reps",
+               "video" : 0,
+               "scoreidentifier" : "d0366dedc2a37fce7acb",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n9 Muscle-ups",
+                  "affiliate" : "CCMAF CrossFit",
+                  "judge" : "Katie Kelly",
+                  "time" : 978
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutrank" : "38",
+               "scoredisplay" : "262 reps",
+               "video" : 0,
+               "scoreidentifier" : "833c7abf9774a8a022fa",
+               "scoredetails" : {
+                  "judge" : "Jacquelyn Bego",
+                  "time" : 599,
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n9 Cleans",
+                  "affiliate" : "CCMAF CrossFit"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "CCMAF CrossFit",
+                  "breakdown" : "",
+                  "time" : 197,
+                  "judge" : "Jacquelyn Bego"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "16",
+               "scoredisplay" : "3:17",
+               "video" : 0,
+               "scoreidentifier" : "d259ddc1bfa4161a6583"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 637,
+                  "judge" : "Jacquelyn Bego",
+                  "affiliate" : "CCMAF CrossFit",
+                  "breakdown" : ""
+               },
+               "scoreidentifier" : "c253f950b6f2a7f44611",
+               "video" : 0,
+               "scoredisplay" : "10:37",
+               "workoutrank" : "55"
+            }
+         ],
+         "height" : "5'0\"",
+         "highlight" : 0,
+         "affiliate" : "",
+         "overallscore" : "149",
+         "userid" : "913941",
+         "regionid" : "6",
+         "affiliateid" : "11755",
+         "weight" : "115 lb",
+         "division" : 15,
+         "name" : "Lexi Neely",
+         "divisionid" : "15",
+         "age" : 14,
+         "region" : "Central East",
+         "overallrank" : "27",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/e80f1-P913941_1-184.jpg"
+      },
+      {
+         "overallrank" : "28",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/5b639-P696408_1-184.jpg",
+         "division" : 15,
+         "weight" : "145 lb",
+         "name" : "Reagan Russell",
+         "age" : 15,
+         "divisionid" : "15",
+         "region" : "North Central",
+         "overallscore" : "152",
+         "affiliate" : "",
+         "regionid" : "10",
+         "userid" : "696408",
+         "affiliateid" : "12367",
+         "scores" : [
+            {
+               "scoredisplay" : "25",
+               "workoutrank" : "25",
+               "scoreidentifier" : "b54a0e21bc4fc5f11223",
+               "video" : "0",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "CrossFit 447",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n7 Muscle-ups",
+                  "time" : 838,
+                  "judge" : "Brett Russell"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "247 reps",
+               "workoutrank" : "28",
+               "scoreidentifier" : "1b7ef645ce7f8b8aa747",
+               "video" : 0
+            },
+            {
+               "workoutrank" : "34",
+               "scoredisplay" : "340 reps",
+               "video" : 0,
+               "scoreidentifier" : "6ab630968edeb5f0ed3c",
+               "scoredetails" : {
+                  "judge" : "Brett Russell",
+                  "time" : 951,
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n50 Double-unders\n1 Cleans",
+                  "affiliate" : "CrossFit 447"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Brett Russell",
+                  "time" : 285,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit 447"
+               },
+               "scoreidentifier" : "04ee2f0b455de5da20f4",
+               "video" : 0,
+               "scoredisplay" : "4:45",
+               "workoutrank" : "36"
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit 447",
+                  "judge" : "Brett Russell",
+                  "time" : 405
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "6:45",
+               "workoutrank" : "29",
+               "scoreidentifier" : "108e14e395871f5381b6",
+               "video" : 0
+            }
+         ],
+         "height" : "5'7\"",
+         "highlight" : 0
+      },
+      {
+         "affiliateid" : "0",
+         "userid" : "644959",
+         "regionid" : "6",
+         "affiliate" : "",
+         "overallscore" : "160",
+         "height" : "5'6\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "39",
+               "scoredisplay" : "39",
+               "video" : "0",
+               "scoreidentifier" : "9fd1208addf688553d0d"
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Frank Wray",
+                  "time" : 905,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n3 Muscle-ups",
+                  "affiliate" : "KW CrossFit"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "243 reps",
+               "workoutrank" : "45",
+               "scoreidentifier" : "ab72d5cbc58cff64510c",
+               "video" : 0
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Frank Wray",
+                  "time" : 1136,
+                  "breakdown" : "430 reps",
+                  "affiliate" : "KW CrossFit"
+               },
+               "video" : 0,
+               "scoreidentifier" : "ef46715682ac9b131281",
+               "workoutrank" : "14",
+               "scoredisplay" : "18:56"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "cd66fd7d065a90515bea",
+               "workoutrank" : "31",
+               "scoredisplay" : "4:36",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "KW CrossFit",
+                  "breakdown" : "",
+                  "time" : 276,
+                  "judge" : "Frank Wray"
+               }
+            },
+            {
+               "scoreidentifier" : "1982795efa2532451922",
+               "video" : 0,
+               "scoredisplay" : "6:56",
+               "workoutrank" : "31",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Frank Wray",
+                  "time" : 416,
+                  "breakdown" : "",
+                  "affiliate" : "KW CrossFit"
+               }
+            }
+         ],
+         "profilepic" : "https://profilepicsbucket.crossfit.com/a23a2-P644959_1-184.jpg",
+         "overallrank" : "29",
+         "region" : "Central East",
+         "divisionid" : "15",
+         "age" : 15,
+         "name" : "Maggie Pairan",
+         "weight" : "145 lb",
+         "division" : 15
+      },
+      {
+         "name" : "Olivia Villasenor",
+         "division" : 15,
+         "weight" : "102 lb",
+         "region" : "South Central",
+         "age" : 14,
+         "divisionid" : "15",
+         "overallrank" : "30",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png",
+         "highlight" : 0,
+         "height" : "4'10\"",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "40",
+               "scoredisplay" : "40",
+               "video" : "0",
+               "scoreidentifier" : "8983c8070901e1de394c"
+            },
+            {
+               "workoutrank" : "16",
+               "scoredisplay" : "251 reps",
+               "video" : 0,
+               "scoreidentifier" : "00f3341ce7ec90913c51",
+               "scoredetails" : {
+                  "judge" : "Rickey Damiano",
+                  "time" : 967,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n11 Muscle-ups",
+                  "affiliate" : "Helotes CrossFit"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Geri Coleman",
+                  "time" : 934,
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n50 Double-unders\n3 Cleans",
+                  "affiliate" : "Helotes CrossFit"
+               },
+               "scoreidentifier" : "57cc1b7e1e10262a3ae0",
+               "video" : 0,
+               "scoredisplay" : "342 reps",
+               "workoutrank" : "28"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "Helotes CrossFit",
+                  "breakdown" : "",
+                  "time" : 262,
+                  "judge" : "Mike Trevino"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "4:22",
+               "workoutrank" : "28",
+               "scoreidentifier" : "d78a76262da5c604e684",
+               "video" : 0
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "Helotes CrossFit",
+                  "breakdown" : "",
+                  "time" : 615,
+                  "judge" : "Rickey Damiano"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "10:15",
+               "workoutrank" : "52",
+               "scoreidentifier" : "ceb4528f68dbafd117d7",
+               "video" : 0
+            }
+         ],
+         "overallscore" : "164",
+         "affiliate" : "",
+         "affiliateid" : "59",
+         "regionid" : "14",
+         "userid" : "1001076"
+      },
+      {
+         "affiliate" : "",
+         "overallscore" : "171",
+         "userid" : "1040188",
+         "regionid" : "6",
+         "affiliateid" : "12308",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "37",
+               "scoredisplay" : "37",
+               "video" : "0",
+               "scoreidentifier" : "21a7077d2fc7894dbe01"
+            },
+            {
+               "scoredetails" : {
+                  "time" : 962,
+                  "judge" : "Craig Nolletti",
+                  "affiliate" : "CrossFit 419",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n7 Muscle-ups"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "247 reps",
+               "workoutrank" : "32",
+               "scoreidentifier" : "6dfa85ff8157472b53b9",
+               "video" : 0
+            },
+            {
+               "workoutrank" : "47",
+               "scoredisplay" : "261 reps",
+               "video" : 0,
+               "scoreidentifier" : "8dbd05be68d5afb2e857",
+               "scoredetails" : {
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n8 Cleans",
+                  "affiliate" : "CrossFit 419",
+                  "judge" : "Nicholas Helms",
+                  "time" : 642
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutrank" : "30",
+               "scoredisplay" : "4:31",
+               "video" : 0,
+               "scoreidentifier" : "204f423e82d7d813379e",
+               "scoredetails" : {
+                  "time" : 271,
+                  "judge" : "Craig Nolletti",
+                  "affiliate" : "CrossFit 419",
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutrank" : "25",
+               "scoredisplay" : "6:16",
+               "video" : 0,
+               "scoreidentifier" : "91af73fe71f26f35ef47",
+               "scoredetails" : {
+                  "judge" : "Kasie Harris",
+                  "time" : 376,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit 419"
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "height" : "5'3\"",
+         "highlight" : 0,
+         "overallrank" : "31",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/2bd92-P1040188_14-184.jpg",
+         "weight" : "130 lb",
+         "division" : 15,
+         "name" : "Emma Etzwiler",
+         "divisionid" : "15",
+         "age" : 15,
+         "region" : "Central East"
+      },
+      {
+         "region" : "North West",
+         "divisionid" : "15",
+         "age" : 15,
+         "name" : "Quaye Dydasco",
+         "division" : 15,
+         "weight" : "145 lb",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/6881f-P734976_2-184.jpg",
+         "overallrank" : "32",
+         "highlight" : 0,
+         "height" : "5'5\"",
+         "scores" : [
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {},
+               "scoreidentifier" : "b3c300eb100d5e1ba445",
+               "video" : "0",
+               "scoredisplay" : "18",
+               "workoutrank" : "18"
+            },
+            {
+               "workoutrank" : "18",
+               "scoredisplay" : "250 reps",
+               "video" : 0,
+               "scoreidentifier" : "401d4ae997494562ece5",
+               "scoredetails" : {
+                  "judge" : "Hannah Gooding",
+                  "time" : 876,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n10 Muscle-ups",
+                  "affiliate" : "CrossFit Reflexion"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "a94dd0d88576bfb6d088",
+               "workoutrank" : "48",
+               "scoredisplay" : "261 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Reflexion",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n8 Cleans",
+                  "time" : 661,
+                  "judge" : "Shawn Wilson"
+               }
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Reflexion",
+                  "breakdown" : "",
+                  "time" : 279,
+                  "judge" : "Shawn Wilson"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "33",
+               "scoredisplay" : "4:39",
+               "video" : 0,
+               "scoreidentifier" : "730c251f1502658aabf4"
+            },
+            {
+               "scoredisplay" : "10:53",
+               "workoutrank" : "58",
+               "scoreidentifier" : "8b6653e792f9d862b0ed",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Reflexion",
+                  "judge" : "Shawn Wilson",
+                  "time" : 653
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "affiliateid" : "5058",
+         "userid" : "734976",
+         "regionid" : "13",
+         "affiliate" : "",
+         "overallscore" : "175"
+      },
+      {
+         "profilepic" : "https://profilepicsbucket.crossfit.com/3d62c-P910352_9-184.jpg",
+         "overallrank" : "33",
+         "region" : "Northern California",
+         "age" : 14,
+         "divisionid" : "15",
+         "name" : "Emma Spath",
+         "division" : 15,
+         "weight" : "124 lb",
+         "affiliateid" : "13532",
+         "regionid" : "12",
+         "userid" : "910352",
+         "overallscore" : "179",
+         "affiliate" : "",
+         "highlight" : 0,
+         "height" : "5'3\"",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "36",
+               "scoredisplay" : "36",
+               "video" : "0",
+               "scoreidentifier" : "9969285119f24610a913"
+            },
+            {
+               "workoutrank" : "34",
+               "scoredisplay" : "246 reps",
+               "video" : 0,
+               "scoreidentifier" : "7ba62495d54dc960a211",
+               "scoredetails" : {
+                  "time" : 1006,
+                  "judge" : "Nico Cianciarulo",
+                  "affiliate" : "CrossFit West",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n6 Muscle-ups"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredisplay" : "263 reps",
+               "workoutrank" : "37",
+               "scoreidentifier" : "78e11071c6549ad49093",
+               "video" : 0,
+               "scoredetails" : {
+                  "judge" : "Nico Cianciarulo",
+                  "time" : 644,
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n10 Cleans",
+                  "affiliate" : "CrossFit West"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Nico Cianciarulo",
+                  "time" : 284,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit West"
+               },
+               "scoreidentifier" : "fd955d5ba6b524a0ec74",
+               "video" : 0,
+               "scoredisplay" : "4:44",
+               "workoutrank" : "34"
+            },
+            {
+               "workoutrank" : "38",
+               "scoredisplay" : "8:51",
+               "video" : 0,
+               "scoreidentifier" : "d7d5a07ef8c401301fb0",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit West",
+                  "judge" : "Nico Cianciarulo",
+                  "time" : 531
+               },
+               "workoutresult" : "--"
+            }
+         ]
+      },
+      {
+         "scores" : [
+            {
+               "video" : "0",
+               "scoreidentifier" : "385e9b28e79470b4b6f6",
+               "workoutrank" : "35",
+               "scoredisplay" : "35",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "scoredetails" : {
+                  "time" : 898,
+                  "judge" : "Charles McAvoy",
+                  "affiliate" : "Fallbrook CrossFit",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n2 Muscle-ups"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "242 reps",
+               "workoutrank" : "52",
+               "scoreidentifier" : "38294315ae3e0a4bab19",
+               "video" : 0
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Fallbrook CrossFit",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n9 Cleans",
+                  "time" : 652,
+                  "judge" : "Charles McAvoy"
+               },
+               "scoreidentifier" : "475a2104b3e138fdf3a8",
+               "video" : 0,
+               "scoredisplay" : "262 reps",
+               "workoutrank" : "41"
+            },
+            {
+               "scoredisplay" : "4:57",
+               "workoutrank" : "41",
+               "scoreidentifier" : "76a174f6963e4ab29d2d",
+               "video" : 0,
+               "scoredetails" : {
+                  "judge" : "Charles McAvoy",
+                  "time" : 297,
+                  "breakdown" : "",
+                  "affiliate" : "Fallbrook CrossFit"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutrank" : "20",
+               "scoredisplay" : "5:42",
+               "video" : 0,
+               "scoreidentifier" : "bc336763483c082c8f0f",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Fallbrook CrossFit",
+                  "judge" : "Charles McAvoy",
+                  "time" : 342
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "highlight" : 0,
+         "height" : "5'2\"",
+         "regionid" : "16",
+         "userid" : "653987",
+         "affiliateid" : "4557",
+         "overallscore" : "189",
+         "affiliate" : "",
+         "age" : 15,
+         "divisionid" : "15",
+         "region" : "Southern California",
+         "division" : 15,
+         "weight" : "117 lb",
+         "name" : "Ashley Reese",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/73f5f-P653987_1-184.jpg",
+         "overallrank" : "34"
+      },
+      {
+         "name" : "Zoë Kerr",
+         "weight" : "60 kg",
+         "division" : 15,
+         "region" : "Europe",
+         "divisionid" : "15",
+         "age" : 15,
+         "overallrank" : "35",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png",
+         "height" : "162 cm",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "scoreidentifier" : "c94c908781e9aec958bf",
+               "video" : "0",
+               "scoredisplay" : "48",
+               "workoutrank" : "48",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Lynsey Miller",
+                  "time" : 971,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n1 Muscle-ups",
+                  "affiliate" : "CrossFit MCI"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "59",
+               "scoredisplay" : "241 reps",
+               "video" : 0,
+               "scoreidentifier" : "0c9e1953625af972811e"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 942,
+                  "judge" : "Mark Thompson",
+                  "affiliate" : "CrossFit MCI",
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n50 Double-unders\n3 Cleans"
+               },
+               "video" : 0,
+               "scoreidentifier" : "be351d964782cdf645c4",
+               "workoutrank" : "29",
+               "scoredisplay" : "342 reps"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "bbb86879a123f70d2242",
+               "workoutrank" : "63",
+               "scoredisplay" : "6:15",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Mark Thompson",
+                  "time" : 375,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit MCI"
+               }
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit MCI",
+                  "breakdown" : "",
+                  "time" : 328,
+                  "judge" : "Mark Thompson"
+               },
+               "scoreidentifier" : "15c53d66016c98b57089",
+               "video" : 0,
+               "scoredisplay" : "5:28",
+               "workoutrank" : "18"
+            }
+         ],
+         "affiliate" : "",
+         "overallscore" : "217",
+         "affiliateid" : "7228",
+         "userid" : "878282",
+         "regionid" : "7"
+      },
+      {
+         "height" : "",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "workoutrank" : "45",
+               "scoredisplay" : "45",
+               "video" : "0",
+               "scoreidentifier" : "3d681bd4662a4fb462a6",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "fdd431c814adedc6f5ff",
+               "workoutrank" : "22",
+               "scoredisplay" : "249 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Alexander Felagai",
+                  "time" : 914,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n9 Muscle-ups",
+                  "affiliate" : "Wiser 1 CrossFit"
+               }
+            },
+            {
+               "scoredetails" : {
+                  "time" : 924,
+                  "judge" : "Alexander Felagai",
+                  "affiliate" : "Wiser 1 CrossFit",
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n50 Double-unders\n2 Cleans"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "341 reps",
+               "workoutrank" : "30",
+               "scoreidentifier" : "6f48d015811cbf5779ec",
+               "video" : 0
+            },
+            {
+               "workoutrank" : "85",
+               "scoredisplay" : "7:19",
+               "video" : 0,
+               "scoreidentifier" : "3c06b8490b2cee504436",
+               "scoredetails" : {
+                  "judge" : "Alexander Felagai",
+                  "time" : 439,
+                  "breakdown" : "",
+                  "affiliate" : "Wiser 1 CrossFit"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredisplay" : "8:35",
+               "workoutrank" : "37",
+               "scoreidentifier" : "5b9c17a695da5a8c1fd9",
+               "video" : 0,
+               "scoredetails" : {
+                  "judge" : "Alexander Felagai",
+                  "time" : 515,
+                  "breakdown" : "",
+                  "affiliate" : "Wiser 1 CrossFit"
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "affiliate" : "",
+         "overallscore" : "219",
+         "affiliateid" : "0",
+         "userid" : "1011675",
+         "regionid" : "3",
+         "name" : "Sophie Wann",
+         "division" : 15,
+         "weight" : "55 kg",
+         "region" : "Australia",
+         "divisionid" : "15",
+         "age" : 14,
+         "overallrank" : "36",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png"
+      },
+      {
+         "affiliateid" : "6082",
+         "regionid" : "11",
+         "userid" : "717066",
+         "affiliate" : "",
+         "overallscore" : "236",
+         "highlight" : 0,
+         "height" : "5'4\"",
+         "scores" : [
+            {
+               "workoutrank" : "42",
+               "scoredisplay" : "42",
+               "video" : "0",
+               "scoreidentifier" : "0828e42d754f96895791",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Adrian Valentino",
+                  "time" : 991,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n5 Muscle-ups",
+                  "affiliate" : "CrossFit Finest"
+               },
+               "scoreidentifier" : "78450bd255931abb9fb1",
+               "video" : 0,
+               "scoredisplay" : "245 reps",
+               "workoutrank" : "37"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Finest",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n5 Cleans",
+                  "time" : 670,
+                  "judge" : "Adrian Valentino"
+               },
+               "scoreidentifier" : "d8a9c106751721406210",
+               "video" : 0,
+               "scoredisplay" : "258 reps",
+               "workoutrank" : "57"
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Finest",
+                  "judge" : "Adrian Valentino",
+                  "time" : 296
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "4:56",
+               "workoutrank" : "40",
+               "scoreidentifier" : "af77659d4a6ed59ba0c4",
+               "video" : 0
+            },
+            {
+               "workoutrank" : "60",
+               "scoredisplay" : "11:01",
+               "video" : 0,
+               "scoreidentifier" : "6977f895ca00b605a6c8",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Finest",
+                  "breakdown" : "",
+                  "time" : 661,
+                  "judge" : "Adrian Valentino"
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "profilepic" : "https://profilepicsbucket.crossfit.com/1d8ff-P717066_1-184.jpg",
+         "overallrank" : "37",
+         "region" : "North East",
+         "age" : 15,
+         "divisionid" : "15",
+         "name" : "Julia Martorano",
+         "division" : 15,
+         "weight" : "120 lb"
+      },
+      {
+         "weight" : "",
+         "division" : 15,
+         "name" : "Ashley Schroeder",
+         "age" : 14,
+         "divisionid" : "15",
+         "region" : "North Central",
+         "overallrank" : "38",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/e69f1-P951647_1-184.jpg",
+         "scores" : [
+            {
+               "workoutrank" : "31",
+               "scoredisplay" : "31",
+               "video" : "0",
+               "scoreidentifier" : "ce8935f69ba011e625a9",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees",
+                  "time" : 938
+               },
+               "video" : "1",
+               "scoreidentifier" : "40cbc181b7e8b5648b74",
+               "workoutrank" : "80",
+               "scoredisplay" : "240 reps"
+            },
+            {
+               "workoutrank" : "31",
+               "scoredisplay" : "341 reps",
+               "video" : "1",
+               "scoreidentifier" : "a68a8ef3b064230f904f",
+               "scoredetails" : {
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n50 Double-unders\n2 Cleans",
+                  "time" : 926
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "time" : 387
+               },
+               "video" : "1",
+               "scoreidentifier" : "ef03d651596a9b5a0f9f",
+               "workoutrank" : "67",
+               "scoredisplay" : "6:27"
+            },
+            {
+               "scoreidentifier" : "fa1de1320e14ced34592",
+               "video" : "1",
+               "scoredisplay" : "6:36",
+               "workoutrank" : "28",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 396,
+                  "breakdown" : ""
+               }
+            }
+         ],
+         "height" : "5'6\"",
+         "highlight" : 0,
+         "overallscore" : "237",
+         "affiliate" : "",
+         "regionid" : "10",
+         "userid" : "951647",
+         "affiliateid" : "316"
+      },
+      {
+         "affiliate" : "",
+         "overallscore" : "239",
+         "affiliateid" : "14924",
+         "regionid" : "17",
+         "userid" : "1010404",
+         "highlight" : 0,
+         "height" : "5'5\"",
+         "scores" : [
+            {
+               "workoutrank" : "54",
+               "scoredisplay" : "54",
+               "video" : "0",
+               "scoreidentifier" : "0d49ea88b62bd50813cf",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n10 Muscle-ups",
+                  "affiliate" : "Ute CrossFit Downtown",
+                  "judge" : "Mitch Probert",
+                  "time" : 976
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "20",
+               "scoredisplay" : "250 reps",
+               "video" : 0,
+               "scoreidentifier" : "8f80e1f9db071f11c92a"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Mitch Probert",
+                  "time" : 602,
+                  "breakdown" : "3 Rounds\n25 Toes-to-bar\n39 Double-unders",
+                  "affiliate" : "Ute CrossFit Downtown"
+               },
+               "scoreidentifier" : "8cb653e4bd6f6fa6f767",
+               "video" : 0,
+               "scoredisplay" : "328 reps",
+               "workoutrank" : "35"
+            },
+            {
+               "scoredisplay" : "5:28",
+               "workoutrank" : "49",
+               "scoreidentifier" : "4b53ec8bd3da1717ec5f",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Ute CrossFit Downtown",
+                  "judge" : "Mitch Probert",
+                  "time" : 328
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredisplay" : "14:06",
+               "workoutrank" : "81",
+               "scoreidentifier" : "ab9a242510859579906e",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Ute CrossFit Downtown",
+                  "judge" : "Mitch Probert",
+                  "time" : 846
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "overallrank" : "39",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/86669-P1010404_5-184.jpg",
+         "name" : "Caylee Caldwell",
+         "weight" : "125 lb",
+         "division" : 15,
+         "region" : "South West",
+         "age" : 14,
+         "divisionid" : "15"
+      },
+      {
+         "name" : "Symantha Donaldson",
+         "division" : 15,
+         "weight" : "120 lb",
+         "region" : "South Central",
+         "divisionid" : "15",
+         "age" : 14,
+         "overallrank" : "40",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/38b05-P616814_1-184.jpg",
+         "highlight" : 0,
+         "height" : "5'3\"",
+         "scores" : [
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {},
+               "scoreidentifier" : "a9d3018cd0c7a718fcf0",
+               "video" : "0",
+               "scoredisplay" : "49",
+               "workoutrank" : "49"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "a1ac687bf2d1aae16614",
+               "workoutrank" : "38",
+               "scoredisplay" : "245 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Kurt Revels",
+                  "time" : 1005,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n5 Muscle-ups",
+                  "affiliate" : "CrossFit Vertigo"
+               }
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "038776d57765c790572b",
+               "workoutrank" : "18",
+               "scoredisplay" : "19:51",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 1191,
+                  "judge" : "Kurt Revels",
+                  "affiliate" : "CrossFit Vertigo",
+                  "breakdown" : "430 reps"
+               }
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 502,
+                  "judge" : "Kurt Revels",
+                  "affiliate" : "CrossFit Vertigo",
+                  "breakdown" : ""
+               },
+               "video" : 0,
+               "scoreidentifier" : "c4099d10141625424766",
+               "workoutrank" : "106",
+               "scoredisplay" : "8:22"
+            },
+            {
+               "scoreidentifier" : "fdd2195e4eb047f22725",
+               "video" : 0,
+               "scoredisplay" : "7:47",
+               "workoutrank" : "34",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit Vertigo",
+                  "judge" : "Kurt Revels",
+                  "time" : 467
+               }
+            }
+         ],
+         "overallscore" : "245",
+         "affiliate" : "",
+         "affiliateid" : "7300",
+         "userid" : "616814",
+         "regionid" : "14"
+      },
+      {
+         "affiliate" : "",
+         "overallscore" : "258",
+         "userid" : "995236",
+         "regionid" : "11",
+         "affiliateid" : "2945",
+         "scores" : [
+            {
+               "scoreidentifier" : "8ce3a10866b99fa2eac2",
+               "video" : "0",
+               "scoredisplay" : "30",
+               "workoutrank" : "30",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "4875eb9c2ca3c7b2e80f",
+               "workoutrank" : "25",
+               "scoredisplay" : "249 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit 508",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n9 Muscle-ups",
+                  "time" : 977,
+                  "judge" : "Adam Izzo"
+               }
+            },
+            {
+               "scoredisplay" : "218 reps",
+               "workoutrank" : "78",
+               "scoreidentifier" : "b8e3ca875d718d8478a9",
+               "video" : 0,
+               "scoredetails" : {
+                  "time" : 418,
+                  "judge" : "Adam Izzo",
+                  "affiliate" : "CrossFit 508",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n15 Double-unders"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Adam Izzo",
+                  "time" : 316,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit 508"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "5:16",
+               "workoutrank" : "45",
+               "scoreidentifier" : "4859314866e8b810a4f5",
+               "video" : 0
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Adam Izzo",
+                  "time" : 840,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit 508"
+               },
+               "scoreidentifier" : "e9348a66a04d5defe66a",
+               "video" : 0,
+               "scoredisplay" : "14:00",
+               "workoutrank" : "80"
+            }
+         ],
+         "highlight" : 0,
+         "height" : "",
+         "overallrank" : "41",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/91a86-P995236_1-184.jpg",
+         "weight" : "125 lb",
+         "division" : 15,
+         "name" : "Kiera Murray",
+         "divisionid" : "15",
+         "age" : 14,
+         "region" : "North East"
+      },
+      {
+         "name" : "Ellie Etzwiler",
+         "weight" : "133 lb",
+         "division" : 15,
+         "region" : "Central East",
+         "divisionid" : "15",
+         "age" : 15,
+         "overallrank" : "42",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/d92ad-P1040338_8-184.jpg",
+         "height" : "5'4\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "workoutrank" : "69",
+               "scoredisplay" : "69",
+               "video" : "0",
+               "scoreidentifier" : "ea334aa4eb3c4fae0941",
+               "scoredetails" : {},
+               "workoutresult" : "--"
+            },
+            {
+               "scoredisplay" : "242 reps",
+               "workoutrank" : "53",
+               "scoreidentifier" : "f20547e2c902f729b085",
+               "video" : 0,
+               "scoredetails" : {
+                  "affiliate" : "CrossFit 419",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n2 Muscle-ups",
+                  "time" : 959,
+                  "judge" : "Maxwell Shawver"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "7500623c3d87667b9bca",
+               "workoutrank" : "81",
+               "scoredisplay" : "177 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit 419",
+                  "breakdown" : "1 Rounds\n25 Toes-to-bar\n50 Double-unders\n12 Cleans",
+                  "time" : 421,
+                  "judge" : "Craig Nolletti"
+               }
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "7cc748d5c9a4c2ceaee2",
+               "workoutrank" : "39",
+               "scoredisplay" : "4:53",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Craig Nolletti",
+                  "time" : 293,
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit 419"
+               }
+            },
+            {
+               "workoutrank" : "27",
+               "scoredisplay" : "6:35",
+               "video" : 0,
+               "scoreidentifier" : "85cc905d403e27887fd1",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "CrossFit 419",
+                  "judge" : "Craig Nolletti",
+                  "time" : 395
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "affiliate" : "",
+         "overallscore" : "269",
+         "affiliateid" : "12308",
+         "userid" : "1040338",
+         "regionid" : "6"
+      },
+      {
+         "overallrank" : "43",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png",
+         "name" : "Ana Hernandez",
+         "division" : 15,
+         "weight" : "",
+         "region" : "Latin America",
+         "age" : 15,
+         "divisionid" : "15",
+         "affiliate" : "",
+         "overallscore" : "278",
+         "affiliateid" : "17073",
+         "regionid" : "8",
+         "userid" : "928055",
+         "highlight" : 0,
+         "height" : "",
+         "scores" : [
+            {
+               "video" : "0",
+               "scoreidentifier" : "64b12e2811e3cf707699",
+               "workoutrank" : "53",
+               "scoredisplay" : "53",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "video" : 0,
+               "scoreidentifier" : "e8c8397408498183d741",
+               "workoutrank" : "44",
+               "scoredisplay" : "244 reps",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Morro CrossFit",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n4 Muscle-ups",
+                  "time" : 1060,
+                  "judge" : "David Jesus"
+               }
+            },
+            {
+               "workoutrank" : "59",
+               "scoredisplay" : "257 reps",
+               "video" : 0,
+               "scoreidentifier" : "5fdb454ae5a1d8398e15",
+               "scoredetails" : {
+                  "affiliate" : "Morro CrossFit",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n4 Cleans",
+                  "time" : 598,
+                  "judge" : "David Jesus"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "David Jesus",
+                  "time" : 239,
+                  "breakdown" : "",
+                  "affiliate" : "Morro CrossFit"
+               },
+               "video" : 0,
+               "scoreidentifier" : "ceea42b03fc719df315f",
+               "workoutrank" : "24",
+               "scoredisplay" : "3:59"
+            },
+            {
+               "scoredetails" : {
+                  "time" : 1012,
+                  "judge" : "David Jesus",
+                  "affiliate" : "Morro CrossFit",
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "98",
+               "scoredisplay" : "16:52",
+               "video" : 0,
+               "scoreidentifier" : "de0d4c8b4ba06c43564d"
+            }
+         ]
+      },
+      {
+         "overallscore" : "280",
+         "affiliate" : "",
+         "userid" : "871063",
+         "regionid" : "17",
+         "affiliateid" : "11996",
+         "scores" : [
+            {
+               "video" : "0",
+               "scoreidentifier" : "47766792b8020a4fa736",
+               "workoutrank" : "44",
+               "scoredisplay" : "44",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Nebo CrossFit",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n3 Muscle-ups",
+                  "time" : 927,
+                  "judge" : "Tyler Hardy"
+               },
+               "video" : 0,
+               "scoreidentifier" : "4681230a9561303c5ceb",
+               "workoutrank" : "46",
+               "scoredisplay" : "243 reps"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Nebo CrossFit",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n13 Double-unders",
+                  "time" : 412,
+                  "judge" : "Tyler Hardy"
+               },
+               "scoreidentifier" : "4f2ded7d85f6ddfc3d32",
+               "video" : 0,
+               "scoredisplay" : "216 reps",
+               "workoutrank" : "79"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "Nebo CrossFit",
+                  "breakdown" : "",
+                  "time" : 338,
+                  "judge" : "Tyler Hardy"
+               },
+               "scoreidentifier" : "40747baaa53c7ec02562",
+               "video" : 0,
+               "scoredisplay" : "5:38",
+               "workoutrank" : "54"
+            },
+            {
+               "workoutrank" : "57",
+               "scoredisplay" : "10:52",
+               "video" : 0,
+               "scoreidentifier" : "a6b24d9662ebb7d55897",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Nebo CrossFit",
+                  "judge" : "Scott Preston",
+                  "time" : 652
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "height" : "5'9\"",
+         "highlight" : 0,
+         "overallrank" : "44",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/d0f9b-P871063_2-184.jpg",
+         "weight" : "135 lb",
+         "division" : 15,
+         "name" : "Jaylee Johnson",
+         "divisionid" : "15",
+         "age" : 15,
+         "region" : "South West"
+      },
+      {
+         "weight" : "46 kg",
+         "division" : 15,
+         "name" : "Bianca Sá",
+         "divisionid" : "15",
+         "age" : 15,
+         "region" : "Latin America",
+         "overallrank" : "45",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "63",
+               "scoredisplay" : "63",
+               "video" : "0",
+               "scoreidentifier" : "735d95ff233600871eb1"
+            },
+            {
+               "scoreidentifier" : "97c8f56d9fea4a3c0ca8",
+               "video" : 0,
+               "scoredisplay" : "244 reps",
+               "workoutrank" : "42",
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 1022,
+                  "judge" : "Danilo Vecchio",
+                  "affiliate" : "CrossFit Chácara",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n4 Muscle-ups"
+               }
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Chácara",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n3 Cleans",
+                  "time" : 430,
+                  "judge" : "Danilo Vecchio"
+               },
+               "scoreidentifier" : "bc26fa9f16af62a75881",
+               "video" : 0,
+               "scoredisplay" : "256 reps",
+               "workoutrank" : "66"
+            },
+            {
+               "scoredisplay" : "6:53",
+               "workoutrank" : "77",
+               "scoreidentifier" : "cfa4ffe6682845741cf7",
+               "video" : 0,
+               "scoredetails" : {
+                  "affiliate" : "CrossFit Chácara",
+                  "breakdown" : "",
+                  "time" : 413,
+                  "judge" : "Danilo Vecchio"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 463,
+                  "judge" : "Danilo Vecchio",
+                  "affiliate" : "CrossFit Chácara",
+                  "breakdown" : ""
+               },
+               "scoreidentifier" : "68380d50225a274a8c25",
+               "video" : 0,
+               "scoredisplay" : "7:43",
+               "workoutrank" : "33"
+            }
+         ],
+         "highlight" : 0,
+         "height" : "157 cm",
+         "affiliate" : "",
+         "overallscore" : "281",
+         "userid" : "918031",
+         "regionid" : "8",
+         "affiliateid" : "3583"
+      },
+      {
+         "name" : "Madison Farley",
+         "division" : 15,
+         "weight" : "58 kg",
+         "region" : "Europe",
+         "divisionid" : "15",
+         "age" : 15,
+         "overallrank" : "46",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/76efe-P672147_3-184.jpg",
+         "highlight" : 0,
+         "height" : "5'5\"",
+         "scores" : [
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {},
+               "scoreidentifier" : "f2088a4fb00f63f77c6f",
+               "video" : "0",
+               "scoredisplay" : "52",
+               "workoutrank" : "52"
+            },
+            {
+               "scoredisplay" : "240 reps",
+               "workoutrank" : "100",
+               "scoreidentifier" : "6331287fe060a3a8f634",
+               "video" : "1",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees",
+                  "time" : 1020
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "breakdown" : "4 Rounds\n25 Toes-to-bar\n50 Double-unders\n6 Cleans",
+                  "affiliate" : "Reebok CrossFit Connect",
+                  "judge" : "Lorna Hadley",
+                  "time" : 1166
+               },
+               "video" : 0,
+               "scoreidentifier" : "1fa5fc76bab1ebeddc2c",
+               "workoutrank" : "21",
+               "scoredisplay" : "429 reps"
+            },
+            {
+               "scoredisplay" : "6:10",
+               "workoutrank" : "61",
+               "scoreidentifier" : "2c35b3ff2b7b5d8c2ad9",
+               "video" : "1",
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "time" : 370
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "time" : 592,
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "9:52",
+               "workoutrank" : "50",
+               "scoreidentifier" : "4dc1a54069e104b01c6c",
+               "video" : "1"
+            }
+         ],
+         "affiliate" : "",
+         "overallscore" : "284",
+         "affiliateid" : "2695",
+         "userid" : "672147",
+         "regionid" : "7"
+      },
+      {
+         "affiliateid" : "2274",
+         "regionid" : "12",
+         "userid" : "932184",
+         "overallscore" : "285",
+         "affiliate" : "",
+         "height" : "4'9\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "scoreidentifier" : "465ec7300f3baa5659c8",
+               "video" : "0",
+               "scoredisplay" : "111",
+               "workoutrank" : "111",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Charlie Zamora",
+                  "time" : 1042,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n2 Muscle-ups",
+                  "affiliate" : "Warriorz CrossFit"
+               },
+               "scoreidentifier" : "9f3939344f4a16431c5c",
+               "video" : 0,
+               "scoredisplay" : "242 reps",
+               "workoutrank" : "55"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "time" : 430,
+                  "judge" : "Charlie Zamora",
+                  "affiliate" : "Warriorz CrossFit",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n7 Cleans"
+               },
+               "video" : 0,
+               "scoreidentifier" : "ad6e99be4183486e3bb0",
+               "workoutrank" : "49",
+               "scoredisplay" : "260 reps"
+            },
+            {
+               "scoredisplay" : "4:51",
+               "workoutrank" : "38",
+               "scoreidentifier" : "6d29194057925d63cc95",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Warriorz CrossFit",
+                  "judge" : "Charlie Zamora",
+                  "time" : 291
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Charlie Zamora",
+                  "time" : 450,
+                  "breakdown" : "",
+                  "affiliate" : "Warriorz CrossFit"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "32",
+               "scoredisplay" : "7:30",
+               "video" : 0,
+               "scoreidentifier" : "3a6bb9e60494d49176a1"
+            }
+         ],
+         "profilepic" : "https://profilepicsbucket.crossfit.com/806a8-P932184_1-184.jpg",
+         "overallrank" : "47",
+         "region" : "Northern California",
+         "age" : 14,
+         "divisionid" : "15",
+         "name" : "Lillian Rodriguez",
+         "division" : 15,
+         "weight" : "98 lb"
+      },
+      {
+         "userid" : "877893",
+         "regionid" : "7",
+         "affiliateid" : "4850",
+         "overallscore" : "292",
+         "affiliate" : "",
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "scoredisplay" : "71",
+               "workoutrank" : "71",
+               "scoreidentifier" : "404fe074c16055ea28da",
+               "video" : "0"
+            },
+            {
+               "workoutrank" : "58",
+               "scoredisplay" : "241 reps",
+               "video" : 0,
+               "scoreidentifier" : "b2bb2ff35d86b22f50c9",
+               "scoredetails" : {
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n1 Muscle-ups",
+                  "affiliate" : "White Cliffs CrossFit",
+                  "judge" : "Ben Stroud",
+                  "time" : 926
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "time" : 662,
+                  "judge" : "Ben Stroud",
+                  "affiliate" : "White Cliffs CrossFit",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n9 Cleans"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "42",
+               "scoredisplay" : "262 reps",
+               "video" : 0,
+               "scoreidentifier" : "a8233f8802f6eda657ee"
+            },
+            {
+               "scoredetails" : {
+                  "judge" : "Ben Stroud",
+                  "time" : 284,
+                  "breakdown" : "",
+                  "affiliate" : "White Cliffs CrossFit"
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "34",
+               "scoredisplay" : "4:44",
+               "video" : 0,
+               "scoreidentifier" : "7e1f1c56c1cf66bf07cc"
+            },
+            {
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "White Cliffs CrossFit",
+                  "judge" : "Ben Stroud",
+                  "time" : 924
+               },
+               "workoutresult" : "--",
+               "workoutrank" : "87",
+               "scoredisplay" : "15:24",
+               "video" : 0,
+               "scoreidentifier" : "d2a3d92a6cafb159c823"
+            }
+         ],
+         "height" : "165 cm",
+         "highlight" : 0,
+         "profilepic" : "https://profilepicsbucket.crossfit.com/123e5-P877893_1-184.jpg",
+         "overallrank" : "48",
+         "divisionid" : "15",
+         "age" : 14,
+         "region" : "Europe",
+         "division" : 15,
+         "weight" : "58 kg",
+         "name" : "Cj Barr"
+      },
+      {
+         "overallrank" : "49",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/pukie.png",
+         "name" : "Renee Wann",
+         "division" : 15,
+         "weight" : "",
+         "region" : "Australia",
+         "divisionid" : "15",
+         "age" : 14,
+         "overallscore" : "293",
+         "affiliate" : "",
+         "affiliateid" : "0",
+         "userid" : "925354",
+         "regionid" : "3",
+         "height" : "155 cm",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "scoredetails" : {},
+               "workoutresult" : "--",
+               "workoutrank" : "54",
+               "scoredisplay" : "54",
+               "video" : "0",
+               "scoreidentifier" : "bff72efa32a2b6115f8d"
+            },
+            {
+               "scoredisplay" : "247 reps",
+               "workoutrank" : "30",
+               "scoreidentifier" : "350c31cb1abb7a579094",
+               "video" : 0,
+               "scoredetails" : {
+                  "time" : 910,
+                  "judge" : "Alexander Felagai",
+                  "affiliate" : "Wiser 1 CrossFit",
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees\n7 Muscle-ups"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "workoutrank" : "61",
+               "scoredisplay" : "257 reps",
+               "video" : 0,
+               "scoreidentifier" : "e5e10a6e437e54cecbbb",
+               "scoredetails" : {
+                  "affiliate" : "Wiser 1 CrossFit",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n4 Cleans",
+                  "time" : 674,
+                  "judge" : "Alexander Felagai"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredisplay" : "6:19",
+               "workoutrank" : "65",
+               "scoreidentifier" : "7ae4866848878da9f3ff",
+               "video" : 0,
+               "scoredetails" : {
+                  "breakdown" : "",
+                  "affiliate" : "Wiser 1 CrossFit",
+                  "judge" : "Alexander Felagai",
+                  "time" : 379
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredetails" : {
+                  "affiliate" : "Wiser 1 CrossFit",
+                  "breakdown" : "",
+                  "time" : 875,
+                  "judge" : "Alexander Felagai"
+               },
+               "workoutresult" : "--",
+               "scoredisplay" : "14:35",
+               "workoutrank" : "83",
+               "scoreidentifier" : "d243542436a481dcd503",
+               "video" : 0
+            }
+         ]
+      },
+      {
+         "height" : "5'2\"",
+         "highlight" : 0,
+         "scores" : [
+            {
+               "scoreidentifier" : "7aa5f15b00b75713726f",
+               "video" : "0",
+               "scoredisplay" : "61",
+               "workoutrank" : "61",
+               "workoutresult" : "--",
+               "scoredetails" : {}
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "judge" : "Luc Cyr",
+                  "time" : 850,
+                  "breakdown" : "100 DB Snatches\n80 Calories\n60 Burpees",
+                  "affiliate" : "CrossFit F&L Edmundston"
+               },
+               "scoreidentifier" : "f183604035195898850d",
+               "video" : 0,
+               "scoredisplay" : "240 reps",
+               "workoutrank" : "65"
+            },
+            {
+               "workoutresult" : "--",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit F&L Edmundston",
+                  "breakdown" : "2 Rounds\n25 Toes-to-bar\n50 Double-unders\n9 Cleans",
+                  "time" : 627,
+                  "judge" : "Luc Cyr"
+               },
+               "video" : 0,
+               "scoreidentifier" : "927d87b220489d3712e7",
+               "workoutrank" : "40",
+               "scoredisplay" : "262 reps"
+            },
+            {
+               "workoutrank" : "29",
+               "scoredisplay" : "4:24",
+               "video" : 0,
+               "scoreidentifier" : "d551c1f9c9acf0006715",
+               "scoredetails" : {
+                  "affiliate" : "CrossFit F&L Edmundston",
+                  "breakdown" : "",
+                  "time" : 264,
+                  "judge" : "Luc Cyr"
+               },
+               "workoutresult" : "--"
+            },
+            {
+               "scoredisplay" : "17:16",
+               "workoutrank" : "99",
+               "scoreidentifier" : "be2eb858e3e0bceb7cf6",
+               "video" : 0,
+               "scoredetails" : {
+                  "time" : 1036,
+                  "judge" : "Luc Cyr",
+                  "affiliate" : "CrossFit F&L Edmundston",
+                  "breakdown" : ""
+               },
+               "workoutresult" : "--"
+            }
+         ],
+         "affiliate" : "",
+         "overallscore" : "294",
+         "affiliateid" : "14844",
+         "regionid" : "4",
+         "userid" : "955552",
+         "name" : "Chloé Hebert",
+         "weight" : "113 lb",
+         "division" : 15,
+         "region" : "Canada East",
+         "age" : 15,
+         "divisionid" : "15",
+         "overallrank" : "50",
+         "profilepic" : "https://profilepicsbucket.crossfit.com/cd4aa-P955552_13-184.jpg"
+      }
+   ],
+   "qualifiedathletes" : 20,
+   "totalpages" : 4
+}

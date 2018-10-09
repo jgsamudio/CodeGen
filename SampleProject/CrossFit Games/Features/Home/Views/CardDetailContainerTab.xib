@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardDetailContainerTab" customModule="CrossFit_Games" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ki0-0p-QAx">
+                    <rect key="frame" x="21.5" y="38" width="122" height="2"/>
+                    <color key="backgroundColor" red="0.0" green="0.3411764705882353" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Wko-mj-C5Z"/>
+                        <constraint firstAttribute="width" priority="750" constant="122" id="hiA-G4-G6M"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="800" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTP-pp-WJS" customClass="StyleableLabel" customModule="CrossFit_Games" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="165" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="Nyn-FT-sIZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="row">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="column">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="weight">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ki0-0p-QAx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" priority="800" constant="38" id="6Jh-DO-DWo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mTP-pp-WJS" secondAttribute="trailing" id="FUk-uR-JWj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ki0-0p-QAx" secondAttribute="trailing" id="Smn-4b-VOE"/>
+                <constraint firstItem="mTP-pp-WJS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" priority="240" id="ViG-tv-YcO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ki0-0p-QAx" secondAttribute="bottom" id="caO-c9-EMo"/>
+                <constraint firstItem="ki0-0p-QAx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eFV-zr-37g"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mTP-pp-WJS" secondAttribute="bottom" constant="6" id="gom-ig-6Qh"/>
+                <constraint firstItem="ki0-0p-QAx" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="oyA-0W-8te"/>
+                <constraint firstItem="mTP-pp-WJS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pEd-CG-8H3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="label" destination="mTP-pp-WJS" id="wYC-Tz-YTE"/>
+                <outlet property="underlineView" destination="ki0-0p-QAx" id="qrV-d1-lIr"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="35"/>
+        </view>
+    </objects>
+</document>

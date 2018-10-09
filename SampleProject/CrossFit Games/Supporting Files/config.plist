@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>environments</key>
+	<dict>
+		<key>generalStageTemp</key>
+		<string>http://games-stage-tmp.crossfit.com/</string>
+		<key>authBeta</key>
+		<string>https://mainsite-stage.crossfit.com/sso/api/v1/</string>
+		<key>authProd</key>
+		<string>https://crossfit.com/sso/api/v1/</string>
+		<key>generalProd</key>
+		<string>https://games.crossfit.com/</string>
+		<key>generalStage</key>
+		<string>https://games-stage.crossfit.com</string>
+	</dict>
+</dict>
+</plist>

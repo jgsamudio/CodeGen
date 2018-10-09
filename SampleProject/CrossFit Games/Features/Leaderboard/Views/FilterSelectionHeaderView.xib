@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FilterSelectionHeaderView" customModule="CrossFit_Games" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="safddadasdasdsa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z8b-u8-WnZ" customClass="StyleableLabel" customModule="CrossFit_Games" customModuleProvider="target">
+                    <rect key="frame" x="19" y="6" width="135" height="74"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="row">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="column">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="weight">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faN-Ez-fJx" customClass="StyleableButton" customModule="CrossFit_Games" customModuleProvider="target">
+                    <rect key="frame" x="318" y="29" width="39" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="Ob4-td-W2V"/>
+                    </constraints>
+                    <state key="normal" title="Filter"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="row">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="column">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="weight">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didSelectFilters" destination="iN0-l3-epB" eventType="touchUpInside" id="Xk0-qw-igz"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ya-VR-Hjt">
+                    <rect key="frame" x="16" y="79.5" width="343" height="0.5"/>
+                    <color key="backgroundColor" red="0.72941176470000002" green="0.73333333329999995" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Ny8-sm-Naa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0ya-VR-Hjt" secondAttribute="bottom" id="2I0-OX-JJH"/>
+                <constraint firstItem="Z8b-u8-WnZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="AqZ-K9-ogZ"/>
+                <constraint firstItem="Z8b-u8-WnZ" firstAttribute="centerY" secondItem="faN-Ez-fJx" secondAttribute="centerY" id="Bey-Q5-hrQ"/>
+                <constraint firstItem="0ya-VR-Hjt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="CjT-vn-NUN"/>
+                <constraint firstItem="faN-Ez-fJx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="29" id="UWg-DC-i28"/>
+                <constraint firstItem="Z8b-u8-WnZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" priority="750" constant="4" id="eBU-h1-fEK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="faN-Ez-fJx" secondAttribute="bottom" constant="23" id="fh9-rc-zun"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Z8b-u8-WnZ" secondAttribute="bottom" id="ghq-UZ-hMA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="faN-Ez-fJx" secondAttribute="trailing" constant="18" id="lVw-ca-9v0"/>
+                <constraint firstItem="faN-Ez-fJx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Z8b-u8-WnZ" secondAttribute="trailing" id="meg-M9-0he"/>
+                <constraint firstAttribute="trailing" secondItem="0ya-VR-Hjt" secondAttribute="trailing" constant="16" id="r3Q-kd-q9G"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="filterButton" destination="faN-Ez-fJx" id="Mht-5O-6ib"/>
+                <outlet property="filterSelectionLabel" destination="Z8b-u8-WnZ" id="ffY-kB-dUX"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="-237"/>
+        </view>
+    </objects>
+</document>

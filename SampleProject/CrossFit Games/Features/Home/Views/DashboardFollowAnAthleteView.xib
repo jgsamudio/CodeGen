@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DashboardFollowAnAthleteView" customModule="CrossFit_Games" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="176"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4X-SC-nhm">
+                    <rect key="frame" x="6" y="6" width="331" height="164"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YnV-kM-GFP">
+                            <rect key="frame" x="145" y="18" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="g5i-q9-o4h"/>
+                                <constraint firstAttribute="width" constant="40" id="tuG-4B-CwI"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K2-TE-ZDh" customClass="StyleableLabel" customModule="CrossFit_Games" customModuleProvider="target">
+                            <rect key="frame" x="144" y="66" width="42" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="wMn-PE-VXx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="row">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="column">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="weight">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjZ-CO-lvV" customClass="StyleableLabel" customModule="CrossFit_Games" customModuleProvider="target">
+                            <rect key="frame" x="69" y="126" width="42" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Vx0-9R-N1X"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="row">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="column">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="weight">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCb-mR-Uae" customClass="StyleableLabel" customModule="CrossFit_Games" customModuleProvider="target">
+                            <rect key="frame" x="144" y="126" width="42" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Q9k-eX-GTv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="row">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="column">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="weight">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest Event Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flA-vp-8YD" customClass="StyleableLabel" customModule="CrossFit_Games" customModuleProvider="target">
+                            <rect key="frame" x="92" y="102" width="147" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="sq8-y5-VI1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="row">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="column">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="weight">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7b-OG-Loh" customClass="StyleableLabel" customModule="CrossFit_Games" customModuleProvider="target">
+                            <rect key="frame" x="219" y="126" width="42" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="cwy-iw-13C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="row">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="column">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="weight">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="FCb-mR-Uae" firstAttribute="bottom" secondItem="sjZ-CO-lvV" secondAttribute="bottom" id="0R4-1R-uJW"/>
+                        <constraint firstItem="H7b-OG-Loh" firstAttribute="bottom" secondItem="sjZ-CO-lvV" secondAttribute="bottom" id="1zT-a5-iar"/>
+                        <constraint firstItem="sjZ-CO-lvV" firstAttribute="top" secondItem="flA-vp-8YD" secondAttribute="bottom" constant="4" id="7kq-Be-CQY"/>
+                        <constraint firstItem="YnV-kM-GFP" firstAttribute="centerX" secondItem="c4X-SC-nhm" secondAttribute="centerX" id="Bh8-Oo-hbK"/>
+                        <constraint firstItem="YnV-kM-GFP" firstAttribute="top" secondItem="c4X-SC-nhm" secondAttribute="top" constant="18" id="L3Y-uV-B43"/>
+                        <constraint firstItem="1K2-TE-ZDh" firstAttribute="centerX" secondItem="c4X-SC-nhm" secondAttribute="centerX" id="NUJ-1g-3BG"/>
+                        <constraint firstItem="FCb-mR-Uae" firstAttribute="leading" secondItem="sjZ-CO-lvV" secondAttribute="trailing" constant="33" id="Qeo-RD-enn"/>
+                        <constraint firstItem="1K2-TE-ZDh" firstAttribute="top" secondItem="YnV-kM-GFP" secondAttribute="bottom" constant="8" id="aXt-zA-dlr"/>
+                        <constraint firstItem="H7b-OG-Loh" firstAttribute="leading" secondItem="FCb-mR-Uae" secondAttribute="trailing" constant="33" id="deq-mk-rru"/>
+                        <constraint firstItem="FCb-mR-Uae" firstAttribute="centerX" secondItem="c4X-SC-nhm" secondAttribute="centerX" id="gca-1u-V7n"/>
+                        <constraint firstItem="flA-vp-8YD" firstAttribute="centerX" secondItem="c4X-SC-nhm" secondAttribute="centerX" id="rqN-H0-Upt"/>
+                        <constraint firstItem="flA-vp-8YD" firstAttribute="top" secondItem="1K2-TE-ZDh" secondAttribute="bottom" constant="16" id="vdP-j4-qdm"/>
+                        <constraint firstAttribute="bottom" secondItem="sjZ-CO-lvV" secondAttribute="bottom" constant="14" id="wJK-VE-hQv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="c4X-SC-nhm" secondAttribute="bottom" constant="6" id="HJ8-mR-17q"/>
+                <constraint firstItem="c4X-SC-nhm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="O0i-My-B33"/>
+                <constraint firstItem="c4X-SC-nhm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="6" id="oYf-xo-Azn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c4X-SC-nhm" secondAttribute="trailing" constant="6" id="sMX-D3-wox"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="innerView" destination="c4X-SC-nhm" id="p6c-Sd-Yx1"/>
+                <outlet property="nameLabel" destination="1K2-TE-ZDh" id="3Xl-dx-vIJ"/>
+                <outlet property="profileImageView" destination="YnV-kM-GFP" id="Fce-cc-IBZ"/>
+                <outlet property="workoutRankLabel" destination="FCb-mR-Uae" id="S1U-zv-tEG"/>
+                <outlet property="workoutScoreLabel" destination="H7b-OG-Loh" id="smv-jn-R4h"/>
+                <outlet property="workoutTitleLabel" destination="sjZ-CO-lvV" id="W04-if-gSn"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="123"/>
+        </view>
+    </objects>
+</document>

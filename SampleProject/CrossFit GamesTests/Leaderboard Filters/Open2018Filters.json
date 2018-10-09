@@ -1,0 +1,3352 @@
+{
+   "start_date" : "2018-02-23T01:00:00+0000",
+   "year" : "2018",
+   "config" : {
+      "registration" : {
+         "end_date" : "2018-03-27T01:00:00+0000",
+         "start_date" : "2018-01-12T01:00:00+0000"
+      },
+      "competition_name" : "Reebok CrossFit Games Open",
+      "team_roster" : {
+         "start_date" : "2018-01-12T01:00:00+0000",
+         "end_date" : "2018-02-27T01:00:00+0000"
+      },
+      "soft_launch_token" : "d944713c75c93e14bba4",
+      "controls" : [
+         "competition",
+         "year",
+         "division",
+         "scaled",
+         "sort",
+         "region",
+         "region_search",
+         "occupation",
+         "athlete"
+      ],
+      "scoring_queue" : {
+         "PRODUCTION" : "https://sqs.us-east-1.amazonaws.com/405288753372/ScoringVM-RequestQ",
+         "DEVELOPMENT" : "https://sqs.us-east-1.amazonaws.com/405288753372/ScoringVM-RequestQ-stage"
+      },
+      "individual" : {
+         "sku" : "GOX-XX-2283194-GMOP"
+      },
+      "team" : {
+         "sku" : "GOT-XX-2283194-GMOP"
+      }
+   },
+   "name" : "Open",
+   "identifier" : "356fc38aff3100c00b2b",
+   "end_date" : "2018-03-27T01:00:00+0000",
+   "controls" : [
+      {
+         "config_name" : "competition",
+         "label" : "Competition",
+         "name" : "competition",
+         "data" : [
+            {
+               "display" : "Open",
+               "value" : "1"
+            },
+            {
+               "display" : "Online Qualifier",
+               "value" : "4"
+            },
+            {
+               "display" : "Regionals",
+               "value" : "2"
+            },
+            {
+               "value" : "3",
+               "display" : "Games"
+            },
+            {
+               "display" : "Team Series",
+               "value" : "5"
+            },
+            {
+               "display" : "Liftoff",
+               "value" : "6"
+            }
+         ],
+         "type" : "select"
+      },
+      {
+         "data" : [
+            {
+               "display" : "2018",
+               "value" : 2018
+            },
+            {
+               "value" : 2017,
+               "display" : "2017"
+            },
+            {
+               "display" : "2016",
+               "value" : 2016
+            },
+            {
+               "display" : "2015",
+               "value" : 2015
+            },
+            {
+               "display" : "2014",
+               "value" : 2014
+            },
+            {
+               "value" : 2013,
+               "display" : "2013"
+            },
+            {
+               "display" : "2012",
+               "value" : 2012
+            },
+            {
+               "display" : "2011",
+               "value" : 2011
+            }
+         ],
+         "type" : "select",
+         "name" : "year",
+         "config_name" : "year",
+         "label" : "Year"
+      },
+      {
+         "name" : "scaled",
+         "label" : "Workout Type",
+         "config_name" : "scaled",
+         "type" : "select",
+         "data" : [
+            {
+               "display" : "Rx'd",
+               "value" : 0
+            },
+            {
+               "display" : "Scaled",
+               "value" : 1
+            }
+         ]
+      },
+      {
+         "label" : "Occupation",
+         "config_name" : "occupation",
+         "name" : "occupation",
+         "type" : "select",
+         "data" : [
+            {
+               "code" : "0",
+               "value" : "0",
+               "display" : "All"
+            },
+            {
+               "display" : "Military Servicemember",
+               "value" : "1",
+               "code" : "1"
+            },
+            {
+               "value" : "2",
+               "code" : "2",
+               "display" : "Law Enforcement Officer"
+            },
+            {
+               "value" : "3",
+               "code" : "4",
+               "display" : "Firefighter"
+            },
+            {
+               "value" : "4",
+               "code" : "8",
+               "display" : "EMT / Paramedic"
+            },
+            {
+               "display" : "Registered Nurse",
+               "value" : "5",
+               "code" : "16"
+            },
+            {
+               "display" : "Medical Doctor",
+               "code" : "32",
+               "value" : "6"
+            },
+            {
+               "value" : "7",
+               "code" : "64",
+               "display" : "School Teacher"
+            },
+            {
+               "display" : "Student",
+               "code" : "128",
+               "value" : "8"
+            },
+            {
+               "value" : "9",
+               "code" : "256",
+               "display" : "Garage CrossFitter"
+            }
+         ]
+      },
+      {
+         "name" : "athlete",
+         "config_name" : "athlete",
+         "label" : "Search",
+         "data" : null,
+         "type" : "search"
+      },
+      {
+         "label" : "Division",
+         "config_name" : "division",
+         "name" : "division",
+         "type" : "select",
+         "data" : [
+            {
+               "value" : "2",
+               "display" : "Women",
+               "controls" : [
+                  {
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        }
+                     ],
+                     "type" : "select",
+                     "config_name" : "sort",
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "frontpage" : 1
+                  }
+               ]
+            },
+            {
+               "controls" : [
+                  {
+                     "frontpage" : 1,
+                     "name" : "sort",
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ]
+                  }
+               ],
+               "display" : "Men",
+               "value" : "1"
+            },
+            {
+               "value" : "11",
+               "display" : "Team",
+               "controls" : [
+                  {
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        }
+                     ],
+                     "type" : "select",
+                     "config_name" : "sort",
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "frontpage" : 1
+                  }
+               ]
+            },
+            {
+               "controls" : [
+                  {
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "frontpage" : 1,
+                     "name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ]
+                  }
+               ],
+               "display" : "Girls (14-15)",
+               "value" : "15"
+            },
+            {
+               "value" : "14",
+               "display" : "Boys (14-15)",
+               "controls" : [
+                  {
+                     "frontpage" : 1,
+                     "name" : "sort",
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "value" : "17",
+               "controls" : [
+                  {
+                     "config_name" : "sort",
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        }
+                     ],
+                     "type" : "select"
+                  }
+               ],
+               "display" : "Girls (16-17)"
+            },
+            {
+               "controls" : [
+                  {
+                     "config_name" : "sort",
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        }
+                     ],
+                     "type" : "select"
+                  }
+               ],
+               "display" : "Boys (16-17)",
+               "value" : "16"
+            },
+            {
+               "value" : "19",
+               "controls" : [
+                  {
+                     "config_name" : "sort",
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        }
+                     ],
+                     "type" : "select"
+                  }
+               ],
+               "display" : "Women (35-39)"
+            },
+            {
+               "controls" : [
+                  {
+                     "config_name" : "sort",
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        }
+                     ],
+                     "type" : "select"
+                  }
+               ],
+               "display" : "Men (35-39)",
+               "value" : "18"
+            },
+            {
+               "value" : "13",
+               "controls" : [
+                  {
+                     "config_name" : "sort",
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        }
+                     ],
+                     "type" : "select"
+                  }
+               ],
+               "display" : "Women (40-44)"
+            },
+            {
+               "controls" : [
+                  {
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "frontpage" : 1,
+                     "name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ]
+                  }
+               ],
+               "display" : "Men (40-44)",
+               "value" : "12"
+            },
+            {
+               "controls" : [
+                  {
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ],
+                     "type" : "select",
+                     "name" : "sort",
+                     "frontpage" : 1,
+                     "config_name" : "sort",
+                     "label" : "Sort"
+                  }
+               ],
+               "display" : "Women (45-49)",
+               "value" : "4"
+            },
+            {
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        }
+                     ],
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "frontpage" : 1,
+                     "name" : "sort"
+                  }
+               ],
+               "display" : "Men (45-49)",
+               "value" : "3"
+            },
+            {
+               "display" : "Women (50-54)",
+               "controls" : [
+                  {
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ],
+                     "type" : "select",
+                     "config_name" : "sort",
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "frontpage" : 1
+                  }
+               ],
+               "value" : "6"
+            },
+            {
+               "value" : "5",
+               "display" : "Men (50-54)",
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ],
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "frontpage" : 1,
+                     "name" : "sort"
+                  }
+               ]
+            },
+            {
+               "value" : "8",
+               "display" : "Women (55-59)",
+               "controls" : [
+                  {
+                     "frontpage" : 1,
+                     "name" : "sort",
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "display" : "Men (55-59)",
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "name" : "sort",
+                     "label" : "Sort",
+                     "config_name" : "sort"
+                  }
+               ],
+               "value" : "7"
+            },
+            {
+               "display" : "Women (60+)",
+               "controls" : [
+                  {
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "frontpage" : 1,
+                     "name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ]
+                  }
+               ],
+               "value" : "10"
+            },
+            {
+               "value" : "9",
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        }
+                     ],
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "frontpage" : 1,
+                     "name" : "sort"
+                  }
+               ],
+               "display" : "Men (60+)"
+            }
+         ]
+      },
+      {
+         "label" : "Region",
+         "config_name" : "region",
+         "name" : "region",
+         "type" : "select",
+         "data" : [
+            {
+               "display" : "Africa Middle East",
+               "value" : "25"
+            },
+            {
+               "value" : "20",
+               "display" : "Asia"
+            },
+            {
+               "display" : "Australasia",
+               "value" : "21"
+            },
+            {
+               "value" : "18",
+               "display" : "Canada East"
+            },
+            {
+               "display" : "Canada West",
+               "value" : "5"
+            },
+            {
+               "display" : "Central America",
+               "value" : "26"
+            },
+            {
+               "value" : "6",
+               "display" : "Central East"
+            },
+            {
+               "value" : "23",
+               "display" : "Europe Central"
+            },
+            {
+               "value" : "22",
+               "display" : "Europe North"
+            },
+            {
+               "value" : "24",
+               "display" : "Europe South"
+            },
+            {
+               "display" : "Mid Atlantic",
+               "value" : "9"
+            },
+            {
+               "value" : "10",
+               "display" : "North Central"
+            },
+            {
+               "value" : "11",
+               "display" : "North East"
+            },
+            {
+               "value" : "27",
+               "display" : "South America"
+            },
+            {
+               "value" : "14",
+               "display" : "South Central"
+            },
+            {
+               "value" : "15",
+               "display" : "South East"
+            },
+            {
+               "value" : "17",
+               "display" : "South West"
+            },
+            {
+               "display" : "West Coast",
+               "value" : "19"
+            }
+         ]
+      },
+      {
+         "data" : [
+            {
+               "display" : "Worldwide",
+               "value" : "0"
+            },
+            {
+               "display" : "Africa Middle East",
+               "regionalid" : "25",
+               "value" : "25"
+            },
+            {
+               "display" : "Asia",
+               "regionalid" : "20",
+               "value" : "20"
+            },
+            {
+               "value" : "21",
+               "regionalid" : "21",
+               "display" : "Australasia"
+            },
+            {
+               "regionalid" : "18",
+               "display" : "Canada East",
+               "value" : "18"
+            },
+            {
+               "regionalid" : "5",
+               "display" : "Canada West",
+               "value" : "5"
+            },
+            {
+               "display" : "Central America",
+               "regionalid" : "26",
+               "value" : "26"
+            },
+            {
+               "value" : "6",
+               "regionalid" : "6",
+               "display" : "Central East"
+            },
+            {
+               "value" : "23",
+               "display" : "Europe Central",
+               "regionalid" : "23"
+            },
+            {
+               "regionalid" : "22",
+               "display" : "Europe North",
+               "value" : "22"
+            },
+            {
+               "value" : "24",
+               "regionalid" : "24",
+               "display" : "Europe South"
+            },
+            {
+               "value" : "9",
+               "regionalid" : "9",
+               "display" : "Mid Atlantic"
+            },
+            {
+               "display" : "North Central",
+               "regionalid" : "10",
+               "value" : "10"
+            },
+            {
+               "regionalid" : "11",
+               "display" : "North East",
+               "value" : "11"
+            },
+            {
+               "value" : "27",
+               "display" : "South America",
+               "regionalid" : "27"
+            },
+            {
+               "regionalid" : "14",
+               "display" : "South Central",
+               "value" : "14"
+            },
+            {
+               "value" : "15",
+               "regionalid" : "15",
+               "display" : "South East"
+            },
+            {
+               "display" : "South West",
+               "regionalid" : "17",
+               "value" : "17"
+            },
+            {
+               "display" : "West Coast",
+               "regionalid" : "19",
+               "value" : "19"
+            },
+            {
+               "value" : "",
+               "display" : "Search by Country/State",
+               "controls" : [
+                  {
+                     "regionalid" : null,
+                     "name" : "region_search",
+                     "config_name" : "region_search",
+                     "data" : [
+                        {
+                           "display" : "Åland Islands",
+                           "name" : "Åland Islands",
+                           "value" : {
+                              "country" : "AX"
+                           },
+                           "code" : "AX"
+                        },
+                        {
+                           "value" : {
+                              "country" : "AF"
+                           },
+                           "code" : "AF",
+                           "name" : "Afghanistan",
+                           "display" : "Afghanistan"
+                        },
+                        {
+                           "display" : "Albania",
+                           "name" : "Albania",
+                           "code" : "AL",
+                           "value" : {
+                              "country" : "AL"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "DZ"
+                           },
+                           "code" : "DZ",
+                           "name" : "Algeria",
+                           "display" : "Algeria"
+                        },
+                        {
+                           "value" : {
+                              "country" : "AS"
+                           },
+                           "code" : "AS",
+                           "name" : "American Samoa",
+                           "display" : "American Samoa"
+                        },
+                        {
+                           "code" : "AD",
+                           "value" : {
+                              "country" : "AD"
+                           },
+                           "name" : "Andorra",
+                           "display" : "Andorra"
+                        },
+                        {
+                           "value" : {
+                              "country" : "AO"
+                           },
+                           "code" : "AO",
+                           "display" : "Angola",
+                           "name" : "Angola"
+                        },
+                        {
+                           "display" : "Anguilla",
+                           "name" : "Anguilla",
+                           "code" : "AI",
+                           "value" : {
+                              "country" : "AI"
+                           }
+                        },
+                        {
+                           "display" : "Antarctica",
+                           "name" : "Antarctica",
+                           "value" : {
+                              "country" : "AQ"
+                           },
+                           "code" : "AQ"
+                        },
+                        {
+                           "display" : "Antigua and Barbuda",
+                           "name" : "Antigua and Barbuda",
+                           "code" : "AG",
+                           "value" : {
+                              "country" : "AG"
+                           }
+                        },
+                        {
+                           "name" : "Argentina",
+                           "display" : "Argentina",
+                           "code" : "AR",
+                           "value" : {
+                              "country" : "AR"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "AM"
+                           },
+                           "code" : "AM",
+                           "name" : "Armenia",
+                           "display" : "Armenia"
+                        },
+                        {
+                           "name" : "Aruba",
+                           "display" : "Aruba",
+                           "code" : "AW",
+                           "value" : {
+                              "country" : "AW"
+                           }
+                        },
+                        {
+                           "code" : "AU",
+                           "value" : {
+                              "country" : "AU"
+                           },
+                           "name" : "Australia",
+                           "display" : "Australia"
+                        },
+                        {
+                           "display" : "Austria",
+                           "name" : "Austria",
+                           "value" : {
+                              "country" : "AT"
+                           },
+                           "code" : "AT"
+                        },
+                        {
+                           "code" : "AZ",
+                           "value" : {
+                              "country" : "AZ"
+                           },
+                           "display" : "Azerbaijan",
+                           "name" : "Azerbaijan"
+                        },
+                        {
+                           "value" : {
+                              "country" : "BS"
+                           },
+                           "code" : "BS",
+                           "display" : "Bahamas",
+                           "name" : "Bahamas"
+                        },
+                        {
+                           "display" : "Bahrain",
+                           "name" : "Bahrain",
+                           "code" : "BH",
+                           "value" : {
+                              "country" : "BH"
+                           }
+                        },
+                        {
+                           "display" : "Bangladesh",
+                           "name" : "Bangladesh",
+                           "value" : {
+                              "country" : "BD"
+                           },
+                           "code" : "BD"
+                        },
+                        {
+                           "code" : "BB",
+                           "value" : {
+                              "country" : "BB"
+                           },
+                           "name" : "Barbados",
+                           "display" : "Barbados"
+                        },
+                        {
+                           "value" : {
+                              "country" : "BY"
+                           },
+                           "code" : "BY",
+                           "display" : "Belarus",
+                           "name" : "Belarus"
+                        },
+                        {
+                           "display" : "Belgium",
+                           "name" : "Belgium",
+                           "value" : {
+                              "country" : "BE"
+                           },
+                           "code" : "BE"
+                        },
+                        {
+                           "name" : "Belize",
+                           "display" : "Belize",
+                           "value" : {
+                              "country" : "BZ"
+                           },
+                           "code" : "BZ"
+                        },
+                        {
+                           "name" : "Benin",
+                           "display" : "Benin",
+                           "code" : "BJ",
+                           "value" : {
+                              "country" : "BJ"
+                           }
+                        },
+                        {
+                           "display" : "Bermuda",
+                           "name" : "Bermuda",
+                           "value" : {
+                              "country" : "BM"
+                           },
+                           "code" : "BM"
+                        },
+                        {
+                           "name" : "Bhutan",
+                           "display" : "Bhutan",
+                           "value" : {
+                              "country" : "BT"
+                           },
+                           "code" : "BT"
+                        },
+                        {
+                           "display" : "Bolivia",
+                           "name" : "Bolivia",
+                           "value" : {
+                              "country" : "BO"
+                           },
+                           "code" : "BO"
+                        },
+                        {
+                           "display" : "Bonaire",
+                           "name" : "Bonaire",
+                           "value" : {
+                              "country" : "BQ"
+                           },
+                           "code" : "BQ"
+                        },
+                        {
+                           "value" : {
+                              "country" : "BA"
+                           },
+                           "code" : "BA",
+                           "name" : "Bosnia and Herzegovina",
+                           "display" : "Bosnia and Herzegovina"
+                        },
+                        {
+                           "display" : "Botswana",
+                           "name" : "Botswana",
+                           "code" : "BW",
+                           "value" : {
+                              "country" : "BW"
+                           }
+                        },
+                        {
+                           "code" : "BV",
+                           "value" : {
+                              "country" : "BV"
+                           },
+                           "name" : "Bouvet Island",
+                           "display" : "Bouvet Island"
+                        },
+                        {
+                           "name" : "Brazil",
+                           "display" : "Brazil",
+                           "code" : "BR",
+                           "value" : {
+                              "country" : "BR"
+                           }
+                        },
+                        {
+                           "code" : "IO",
+                           "value" : {
+                              "country" : "IO"
+                           },
+                           "display" : "British Indian Ocean Terr.",
+                           "name" : "British Indian Ocean Terr."
+                        },
+                        {
+                           "value" : {
+                              "country" : "BN"
+                           },
+                           "code" : "BN",
+                           "name" : "Brunei Darussalam",
+                           "display" : "Brunei Darussalam"
+                        },
+                        {
+                           "display" : "Bulgaria",
+                           "name" : "Bulgaria",
+                           "value" : {
+                              "country" : "BG"
+                           },
+                           "code" : "BG"
+                        },
+                        {
+                           "value" : {
+                              "country" : "BF"
+                           },
+                           "code" : "BF",
+                           "display" : "Burkina Faso",
+                           "name" : "Burkina Faso"
+                        },
+                        {
+                           "code" : "BI",
+                           "value" : {
+                              "country" : "BI"
+                           },
+                           "name" : "Burundi",
+                           "display" : "Burundi"
+                        },
+                        {
+                           "display" : "Côte d'Ivoire",
+                           "name" : "Côte d'Ivoire",
+                           "value" : {
+                              "country" : "CI"
+                           },
+                           "code" : "CI"
+                        },
+                        {
+                           "value" : {
+                              "country" : "KH"
+                           },
+                           "code" : "KH",
+                           "name" : "Cambodia",
+                           "display" : "Cambodia"
+                        },
+                        {
+                           "code" : "CM",
+                           "value" : {
+                              "country" : "CM"
+                           },
+                           "display" : "Cameroon",
+                           "name" : "Cameroon"
+                        },
+                        {
+                           "display" : "Canada",
+                           "name" : "Canada",
+                           "code" : "CA",
+                           "value" : {
+                              "country" : "CA"
+                           },
+                           "states" : [
+                              {
+                                 "value" : {
+                                    "country" : "CA",
+                                    "state" : "AB"
+                                 },
+                                 "code" : "AB",
+                                 "display" : "Alberta",
+                                 "name" : "Alberta"
+                              },
+                              {
+                                 "display" : "British Columbia",
+                                 "name" : "British Columbia",
+                                 "code" : "BC",
+                                 "value" : {
+                                    "country" : "CA",
+                                    "state" : "BC"
+                                 }
+                              },
+                              {
+                                 "code" : "MB",
+                                 "value" : {
+                                    "country" : "CA",
+                                    "state" : "MB"
+                                 },
+                                 "display" : "Manitoba",
+                                 "name" : "Manitoba"
+                              },
+                              {
+                                 "value" : {
+                                    "country" : "CA",
+                                    "state" : "NB"
+                                 },
+                                 "code" : "NB",
+                                 "display" : "New Brunswick",
+                                 "name" : "New Brunswick"
+                              },
+                              {
+                                 "code" : "NL",
+                                 "value" : {
+                                    "state" : "NL",
+                                    "country" : "CA"
+                                 },
+                                 "name" : "Newfoundland and Labrador",
+                                 "display" : "Newfoundland and Labrador"
+                              },
+                              {
+                                 "code" : "NT",
+                                 "value" : {
+                                    "state" : "NT",
+                                    "country" : "CA"
+                                 },
+                                 "name" : "Northwest Territories",
+                                 "display" : "Northwest Territories"
+                              },
+                              {
+                                 "display" : "Nova Scotia",
+                                 "name" : "Nova Scotia",
+                                 "value" : {
+                                    "state" : "NS",
+                                    "country" : "CA"
+                                 },
+                                 "code" : "NS"
+                              },
+                              {
+                                 "display" : "Nunavut",
+                                 "name" : "Nunavut",
+                                 "code" : "NU",
+                                 "value" : {
+                                    "state" : "NU",
+                                    "country" : "CA"
+                                 }
+                              },
+                              {
+                                 "display" : "Ontario",
+                                 "name" : "Ontario",
+                                 "code" : "ON",
+                                 "value" : {
+                                    "state" : "ON",
+                                    "country" : "CA"
+                                 }
+                              },
+                              {
+                                 "name" : "Prince Edward Island",
+                                 "display" : "Prince Edward Island",
+                                 "code" : "PE",
+                                 "value" : {
+                                    "state" : "PE",
+                                    "country" : "CA"
+                                 }
+                              },
+                              {
+                                 "display" : "Quebec",
+                                 "name" : "Quebec",
+                                 "code" : "QC",
+                                 "value" : {
+                                    "country" : "CA",
+                                    "state" : "QC"
+                                 }
+                              },
+                              {
+                                 "code" : "SK",
+                                 "value" : {
+                                    "country" : "CA",
+                                    "state" : "SK"
+                                 },
+                                 "name" : "Saskatchewan",
+                                 "display" : "Saskatchewan"
+                              },
+                              {
+                                 "display" : "Yukon",
+                                 "name" : "Yukon",
+                                 "code" : "YT",
+                                 "value" : {
+                                    "state" : "YT",
+                                    "country" : "CA"
+                                 }
+                              }
+                           ]
+                        },
+                        {
+                           "display" : "Cape Verde",
+                           "name" : "Cape Verde",
+                           "code" : "CV",
+                           "value" : {
+                              "country" : "CV"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "KY"
+                           },
+                           "code" : "KY",
+                           "display" : "Cayman Islands",
+                           "name" : "Cayman Islands"
+                        },
+                        {
+                           "code" : "CF",
+                           "value" : {
+                              "country" : "CF"
+                           },
+                           "name" : "Central African Republic",
+                           "display" : "Central African Republic"
+                        },
+                        {
+                           "display" : "Chad",
+                           "name" : "Chad",
+                           "code" : "TD",
+                           "value" : {
+                              "country" : "TD"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "CL"
+                           },
+                           "code" : "CL",
+                           "name" : "Chile",
+                           "display" : "Chile"
+                        },
+                        {
+                           "code" : "CN",
+                           "value" : {
+                              "country" : "CN"
+                           },
+                           "display" : "China",
+                           "name" : "China"
+                        },
+                        {
+                           "value" : {
+                              "country" : "CX"
+                           },
+                           "code" : "CX",
+                           "display" : "Christmas Island",
+                           "name" : "Christmas Island"
+                        },
+                        {
+                           "name" : "Cocos (Keeling) Islands",
+                           "display" : "Cocos (Keeling) Islands",
+                           "value" : {
+                              "country" : "CC"
+                           },
+                           "code" : "CC"
+                        },
+                        {
+                           "name" : "Colombia",
+                           "display" : "Colombia",
+                           "code" : "CO",
+                           "value" : {
+                              "country" : "CO"
+                           }
+                        },
+                        {
+                           "code" : "KM",
+                           "value" : {
+                              "country" : "KM"
+                           },
+                           "display" : "Comoros",
+                           "name" : "Comoros"
+                        },
+                        {
+                           "code" : "CD",
+                           "value" : {
+                              "country" : "CD"
+                           },
+                           "display" : "Congo, Democratic Republic of",
+                           "name" : "Congo, Democratic Republic of"
+                        },
+                        {
+                           "name" : "Congo, Republic of",
+                           "display" : "Congo, Republic of",
+                           "code" : "CG",
+                           "value" : {
+                              "country" : "CG"
+                           }
+                        },
+                        {
+                           "display" : "Cook Islands",
+                           "name" : "Cook Islands",
+                           "value" : {
+                              "country" : "CK"
+                           },
+                           "code" : "CK"
+                        },
+                        {
+                           "code" : "CR",
+                           "value" : {
+                              "country" : "CR"
+                           },
+                           "name" : "Costa Rica",
+                           "display" : "Costa Rica"
+                        },
+                        {
+                           "name" : "Croatia",
+                           "display" : "Croatia",
+                           "code" : "HR",
+                           "value" : {
+                              "country" : "HR"
+                           }
+                        },
+                        {
+                           "name" : "Curaçao",
+                           "display" : "Curaçao",
+                           "code" : "CW",
+                           "value" : {
+                              "country" : "CW"
+                           }
+                        },
+                        {
+                           "display" : "Cyprus",
+                           "name" : "Cyprus",
+                           "code" : "CY",
+                           "value" : {
+                              "country" : "CY"
+                           }
+                        },
+                        {
+                           "display" : "Czech Republic",
+                           "name" : "Czech Republic",
+                           "value" : {
+                              "country" : "CZ"
+                           },
+                           "code" : "CZ"
+                        },
+                        {
+                           "value" : {
+                              "country" : "DK"
+                           },
+                           "code" : "DK",
+                           "display" : "Denmark",
+                           "name" : "Denmark"
+                        },
+                        {
+                           "code" : "DJ",
+                           "value" : {
+                              "country" : "DJ"
+                           },
+                           "display" : "Djibouti",
+                           "name" : "Djibouti"
+                        },
+                        {
+                           "name" : "Dominica",
+                           "display" : "Dominica",
+                           "code" : "DM",
+                           "value" : {
+                              "country" : "DM"
+                           }
+                        },
+                        {
+                           "name" : "Dominican Republic",
+                           "display" : "Dominican Republic",
+                           "code" : "DO",
+                           "value" : {
+                              "country" : "DO"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "EC"
+                           },
+                           "code" : "EC",
+                           "name" : "Ecuador",
+                           "display" : "Ecuador"
+                        },
+                        {
+                           "name" : "Egypt",
+                           "display" : "Egypt",
+                           "value" : {
+                              "country" : "EG"
+                           },
+                           "code" : "EG"
+                        },
+                        {
+                           "display" : "El Salvador",
+                           "name" : "El Salvador",
+                           "value" : {
+                              "country" : "SV"
+                           },
+                           "code" : "SV"
+                        },
+                        {
+                           "code" : "GQ",
+                           "value" : {
+                              "country" : "GQ"
+                           },
+                           "display" : "Equatorial Guinea",
+                           "name" : "Equatorial Guinea"
+                        },
+                        {
+                           "code" : "ER",
+                           "value" : {
+                              "country" : "ER"
+                           },
+                           "display" : "Eritrea",
+                           "name" : "Eritrea"
+                        },
+                        {
+                           "code" : "EE",
+                           "value" : {
+                              "country" : "EE"
+                           },
+                           "display" : "Estonia",
+                           "name" : "Estonia"
+                        },
+                        {
+                           "value" : {
+                              "country" : "ET"
+                           },
+                           "code" : "ET",
+                           "display" : "Ethiopia",
+                           "name" : "Ethiopia"
+                        },
+                        {
+                           "name" : "Falkland Islands (Malvinas)",
+                           "display" : "Falkland Islands (Malvinas)",
+                           "value" : {
+                              "country" : "FK"
+                           },
+                           "code" : "FK"
+                        },
+                        {
+                           "display" : "Faroe Islands",
+                           "name" : "Faroe Islands",
+                           "code" : "FO",
+                           "value" : {
+                              "country" : "FO"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "FJ"
+                           },
+                           "code" : "FJ",
+                           "display" : "Fiji",
+                           "name" : "Fiji"
+                        },
+                        {
+                           "name" : "Finland",
+                           "display" : "Finland",
+                           "value" : {
+                              "country" : "FI"
+                           },
+                           "code" : "FI"
+                        },
+                        {
+                           "code" : "FR",
+                           "value" : {
+                              "country" : "FR"
+                           },
+                           "name" : "France",
+                           "display" : "France"
+                        },
+                        {
+                           "display" : "French Guiana",
+                           "name" : "French Guiana",
+                           "value" : {
+                              "country" : "GF"
+                           },
+                           "code" : "GF"
+                        },
+                        {
+                           "name" : "French Polynesia",
+                           "display" : "French Polynesia",
+                           "value" : {
+                              "country" : "PF"
+                           },
+                           "code" : "PF"
+                        },
+                        {
+                           "display" : "French Southern Terr.",
+                           "name" : "French Southern Terr.",
+                           "code" : "TF",
+                           "value" : {
+                              "country" : "TF"
+                           }
+                        },
+                        {
+                           "display" : "Gabon",
+                           "name" : "Gabon",
+                           "code" : "GA",
+                           "value" : {
+                              "country" : "GA"
+                           }
+                        },
+                        {
+                           "code" : "GM",
+                           "value" : {
+                              "country" : "GM"
+                           },
+                           "name" : "Gambia",
+                           "display" : "Gambia"
+                        },
+                        {
+                           "display" : "Georgia",
+                           "name" : "Georgia",
+                           "code" : "GE",
+                           "value" : {
+                              "country" : "GE"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "DE"
+                           },
+                           "code" : "DE",
+                           "name" : "Germany",
+                           "display" : "Germany"
+                        },
+                        {
+                           "code" : "GH",
+                           "value" : {
+                              "country" : "GH"
+                           },
+                           "name" : "Ghana",
+                           "display" : "Ghana"
+                        },
+                        {
+                           "display" : "Gibraltar",
+                           "name" : "Gibraltar",
+                           "code" : "GI",
+                           "value" : {
+                              "country" : "GI"
+                           }
+                        },
+                        {
+                           "name" : "Greece",
+                           "display" : "Greece",
+                           "value" : {
+                              "country" : "GR"
+                           },
+                           "code" : "GR"
+                        },
+                        {
+                           "value" : {
+                              "country" : "GL"
+                           },
+                           "code" : "GL",
+                           "display" : "Greenland",
+                           "name" : "Greenland"
+                        },
+                        {
+                           "display" : "Grenada",
+                           "name" : "Grenada",
+                           "value" : {
+                              "country" : "GD"
+                           },
+                           "code" : "GD"
+                        },
+                        {
+                           "name" : "Guadeloupe",
+                           "display" : "Guadeloupe",
+                           "value" : {
+                              "country" : "GP"
+                           },
+                           "code" : "GP"
+                        },
+                        {
+                           "display" : "Guam",
+                           "name" : "Guam",
+                           "code" : "GU",
+                           "value" : {
+                              "country" : "GU"
+                           }
+                        },
+                        {
+                           "code" : "GT",
+                           "value" : {
+                              "country" : "GT"
+                           },
+                           "name" : "Guatemala",
+                           "display" : "Guatemala"
+                        },
+                        {
+                           "value" : {
+                              "country" : "GG"
+                           },
+                           "code" : "GG",
+                           "display" : "Guernsey",
+                           "name" : "Guernsey"
+                        },
+                        {
+                           "value" : {
+                              "country" : "GN"
+                           },
+                           "code" : "GN",
+                           "display" : "Guinea",
+                           "name" : "Guinea"
+                        },
+                        {
+                           "value" : {
+                              "country" : "GW"
+                           },
+                           "code" : "GW",
+                           "display" : "Guinea-Bissau",
+                           "name" : "Guinea-Bissau"
+                        },
+                        {
+                           "display" : "Guyana",
+                           "name" : "Guyana",
+                           "code" : "GY",
+                           "value" : {
+                              "country" : "GY"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "HT"
+                           },
+                           "code" : "HT",
+                           "display" : "Haiti",
+                           "name" : "Haiti"
+                        },
+                        {
+                           "display" : "Heard Island and McDonald Islands",
+                           "name" : "Heard Island and McDonald Islands",
+                           "code" : "HM",
+                           "value" : {
+                              "country" : "HM"
+                           }
+                        },
+                        {
+                           "name" : "Holy See (Vatican)",
+                           "display" : "Holy See (Vatican)",
+                           "code" : "VA",
+                           "value" : {
+                              "country" : "VA"
+                           }
+                        },
+                        {
+                           "name" : "Honduras",
+                           "display" : "Honduras",
+                           "value" : {
+                              "country" : "HN"
+                           },
+                           "code" : "HN"
+                        },
+                        {
+                           "display" : "Hong Kong",
+                           "name" : "Hong Kong",
+                           "code" : "HK",
+                           "value" : {
+                              "country" : "HK"
+                           }
+                        },
+                        {
+                           "display" : "Hungary",
+                           "name" : "Hungary",
+                           "code" : "HU",
+                           "value" : {
+                              "country" : "HU"
+                           }
+                        },
+                        {
+                           "code" : "IS",
+                           "value" : {
+                              "country" : "IS"
+                           },
+                           "display" : "Iceland",
+                           "name" : "Iceland"
+                        },
+                        {
+                           "name" : "India",
+                           "display" : "India",
+                           "value" : {
+                              "country" : "IN"
+                           },
+                           "code" : "IN"
+                        },
+                        {
+                           "display" : "Indonesia",
+                           "name" : "Indonesia",
+                           "value" : {
+                              "country" : "ID"
+                           },
+                           "code" : "ID"
+                        },
+                        {
+                           "code" : "IQ",
+                           "value" : {
+                              "country" : "IQ"
+                           },
+                           "name" : "Iraq",
+                           "display" : "Iraq"
+                        },
+                        {
+                           "code" : "IE",
+                           "value" : {
+                              "country" : "IE"
+                           },
+                           "display" : "Ireland",
+                           "name" : "Ireland"
+                        },
+                        {
+                           "display" : "Isle of Man",
+                           "name" : "Isle of Man",
+                           "code" : "IM",
+                           "value" : {
+                              "country" : "IM"
+                           }
+                        },
+                        {
+                           "display" : "Israel",
+                           "name" : "Israel",
+                           "code" : "IL",
+                           "value" : {
+                              "country" : "IL"
+                           }
+                        },
+                        {
+                           "name" : "Italy",
+                           "display" : "Italy",
+                           "value" : {
+                              "country" : "IT"
+                           },
+                           "code" : "IT"
+                        },
+                        {
+                           "value" : {
+                              "country" : "JM"
+                           },
+                           "code" : "JM",
+                           "display" : "Jamaica",
+                           "name" : "Jamaica"
+                        },
+                        {
+                           "code" : "JP",
+                           "value" : {
+                              "country" : "JP"
+                           },
+                           "name" : "Japan",
+                           "display" : "Japan"
+                        },
+                        {
+                           "value" : {
+                              "country" : "JE"
+                           },
+                           "code" : "JE",
+                           "display" : "Jersey",
+                           "name" : "Jersey"
+                        },
+                        {
+                           "code" : "JO",
+                           "value" : {
+                              "country" : "JO"
+                           },
+                           "display" : "Jordan",
+                           "name" : "Jordan"
+                        },
+                        {
+                           "code" : "KZ",
+                           "value" : {
+                              "country" : "KZ"
+                           },
+                           "name" : "Kazakhstan",
+                           "display" : "Kazakhstan"
+                        },
+                        {
+                           "name" : "Kenya",
+                           "display" : "Kenya",
+                           "code" : "KE",
+                           "value" : {
+                              "country" : "KE"
+                           }
+                        },
+                        {
+                           "display" : "Kiribati",
+                           "name" : "Kiribati",
+                           "value" : {
+                              "country" : "KI"
+                           },
+                           "code" : "KI"
+                        },
+                        {
+                           "display" : "Korea, Republic of",
+                           "name" : "Korea, Republic of",
+                           "code" : "KR",
+                           "value" : {
+                              "country" : "KR"
+                           }
+                        },
+                        {
+                           "name" : "Kosovo",
+                           "display" : "Kosovo",
+                           "value" : {
+                              "country" : "XK"
+                           },
+                           "code" : "XK"
+                        },
+                        {
+                           "value" : {
+                              "country" : "KW"
+                           },
+                           "code" : "KW",
+                           "display" : "Kuwait",
+                           "name" : "Kuwait"
+                        },
+                        {
+                           "name" : "Kyrgyzstan",
+                           "display" : "Kyrgyzstan",
+                           "code" : "KG",
+                           "value" : {
+                              "country" : "KG"
+                           }
+                        },
+                        {
+                           "code" : "LA",
+                           "value" : {
+                              "country" : "LA"
+                           },
+                           "name" : "Laos",
+                           "display" : "Laos"
+                        },
+                        {
+                           "name" : "Latvia",
+                           "display" : "Latvia",
+                           "value" : {
+                              "country" : "LV"
+                           },
+                           "code" : "LV"
+                        },
+                        {
+                           "display" : "Lebanon",
+                           "name" : "Lebanon",
+                           "code" : "LB",
+                           "value" : {
+                              "country" : "LB"
+                           }
+                        },
+                        {
+                           "display" : "Lesotho",
+                           "name" : "Lesotho",
+                           "value" : {
+                              "country" : "LS"
+                           },
+                           "code" : "LS"
+                        },
+                        {
+                           "code" : "LR",
+                           "value" : {
+                              "country" : "LR"
+                           },
+                           "display" : "Liberia",
+                           "name" : "Liberia"
+                        },
+                        {
+                           "code" : "LY",
+                           "value" : {
+                              "country" : "LY"
+                           },
+                           "display" : "Libya",
+                           "name" : "Libya"
+                        },
+                        {
+                           "name" : "Liechtenstein",
+                           "display" : "Liechtenstein",
+                           "value" : {
+                              "country" : "LI"
+                           },
+                           "code" : "LI"
+                        },
+                        {
+                           "code" : "LT",
+                           "value" : {
+                              "country" : "LT"
+                           },
+                           "name" : "Lithuania",
+                           "display" : "Lithuania"
+                        },
+                        {
+                           "code" : "LU",
+                           "value" : {
+                              "country" : "LU"
+                           },
+                           "name" : "Luxembourg",
+                           "display" : "Luxembourg"
+                        },
+                        {
+                           "value" : {
+                              "country" : "MO"
+                           },
+                           "code" : "MO",
+                           "name" : "Macao",
+                           "display" : "Macao"
+                        },
+                        {
+                           "code" : "MK",
+                           "value" : {
+                              "country" : "MK"
+                           },
+                           "display" : "Macedonia",
+                           "name" : "Macedonia"
+                        },
+                        {
+                           "value" : {
+                              "country" : "MG"
+                           },
+                           "code" : "MG",
+                           "display" : "Madagascar",
+                           "name" : "Madagascar"
+                        },
+                        {
+                           "value" : {
+                              "country" : "MW"
+                           },
+                           "code" : "MW",
+                           "display" : "Malawi",
+                           "name" : "Malawi"
+                        },
+                        {
+                           "display" : "Malaysia",
+                           "name" : "Malaysia",
+                           "value" : {
+                              "country" : "MY"
+                           },
+                           "code" : "MY"
+                        },
+                        {
+                           "code" : "MV",
+                           "value" : {
+                              "country" : "MV"
+                           },
+                           "display" : "Maldives",
+                           "name" : "Maldives"
+                        },
+                        {
+                           "name" : "Mali",
+                           "display" : "Mali",
+                           "value" : {
+                              "country" : "ML"
+                           },
+                           "code" : "ML"
+                        },
+                        {
+                           "value" : {
+                              "country" : "MT"
+                           },
+                           "code" : "MT",
+                           "display" : "Malta",
+                           "name" : "Malta"
+                        },
+                        {
+                           "display" : "Marshall Islands",
+                           "name" : "Marshall Islands",
+                           "value" : {
+                              "country" : "MH"
+                           },
+                           "code" : "MH"
+                        },
+                        {
+                           "code" : "MQ",
+                           "value" : {
+                              "country" : "MQ"
+                           },
+                           "name" : "Martinique",
+                           "display" : "Martinique"
+                        },
+                        {
+                           "name" : "Mauritania",
+                           "display" : "Mauritania",
+                           "code" : "MR",
+                           "value" : {
+                              "country" : "MR"
+                           }
+                        },
+                        {
+                           "display" : "Mauritius",
+                           "name" : "Mauritius",
+                           "value" : {
+                              "country" : "MU"
+                           },
+                           "code" : "MU"
+                        },
+                        {
+                           "value" : {
+                              "country" : "YT"
+                           },
+                           "code" : "YT",
+                           "name" : "Mayotte",
+                           "display" : "Mayotte"
+                        },
+                        {
+                           "value" : {
+                              "country" : "MX"
+                           },
+                           "code" : "MX",
+                           "display" : "Mexico",
+                           "name" : "Mexico"
+                        },
+                        {
+                           "value" : {
+                              "country" : "FM"
+                           },
+                           "code" : "FM",
+                           "display" : "Micronesia",
+                           "name" : "Micronesia"
+                        },
+                        {
+                           "code" : "MD",
+                           "value" : {
+                              "country" : "MD"
+                           },
+                           "name" : "Moldova",
+                           "display" : "Moldova"
+                        },
+                        {
+                           "value" : {
+                              "country" : "MC"
+                           },
+                           "code" : "MC",
+                           "display" : "Monaco",
+                           "name" : "Monaco"
+                        },
+                        {
+                           "name" : "Mongolia",
+                           "display" : "Mongolia",
+                           "code" : "MN",
+                           "value" : {
+                              "country" : "MN"
+                           }
+                        },
+                        {
+                           "name" : "Montenegro",
+                           "display" : "Montenegro",
+                           "value" : {
+                              "country" : "ME"
+                           },
+                           "code" : "ME"
+                        },
+                        {
+                           "value" : {
+                              "country" : "MS"
+                           },
+                           "code" : "MS",
+                           "display" : "Montserrat",
+                           "name" : "Montserrat"
+                        },
+                        {
+                           "name" : "Morocco",
+                           "display" : "Morocco",
+                           "code" : "MA",
+                           "value" : {
+                              "country" : "MA"
+                           }
+                        },
+                        {
+                           "display" : "Mozambique",
+                           "name" : "Mozambique",
+                           "value" : {
+                              "country" : "MZ"
+                           },
+                           "code" : "MZ"
+                        },
+                        {
+                           "display" : "Myanmar",
+                           "name" : "Myanmar",
+                           "value" : {
+                              "country" : "MM"
+                           },
+                           "code" : "MM"
+                        },
+                        {
+                           "name" : "Namibia",
+                           "display" : "Namibia",
+                           "code" : "NA",
+                           "value" : {
+                              "country" : "NA"
+                           }
+                        },
+                        {
+                           "display" : "Nauru",
+                           "name" : "Nauru",
+                           "value" : {
+                              "country" : "NR"
+                           },
+                           "code" : "NR"
+                        },
+                        {
+                           "name" : "Nepal",
+                           "display" : "Nepal",
+                           "code" : "NP",
+                           "value" : {
+                              "country" : "NP"
+                           }
+                        },
+                        {
+                           "display" : "Netherlands",
+                           "name" : "Netherlands",
+                           "value" : {
+                              "country" : "NL"
+                           },
+                           "code" : "NL"
+                        },
+                        {
+                           "display" : "New Caledonia",
+                           "name" : "New Caledonia",
+                           "code" : "NC",
+                           "value" : {
+                              "country" : "NC"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "NZ"
+                           },
+                           "code" : "NZ",
+                           "display" : "New Zealand",
+                           "name" : "New Zealand"
+                        },
+                        {
+                           "display" : "Nicaragua",
+                           "name" : "Nicaragua",
+                           "value" : {
+                              "country" : "NI"
+                           },
+                           "code" : "NI"
+                        },
+                        {
+                           "display" : "Niger",
+                           "name" : "Niger",
+                           "value" : {
+                              "country" : "NE"
+                           },
+                           "code" : "NE"
+                        },
+                        {
+                           "display" : "Nigeria",
+                           "name" : "Nigeria",
+                           "value" : {
+                              "country" : "NG"
+                           },
+                           "code" : "NG"
+                        },
+                        {
+                           "name" : "Niue",
+                           "display" : "Niue",
+                           "value" : {
+                              "country" : "NU"
+                           },
+                           "code" : "NU"
+                        },
+                        {
+                           "name" : "Norfolk Island",
+                           "display" : "Norfolk Island",
+                           "code" : "NF",
+                           "value" : {
+                              "country" : "NF"
+                           }
+                        },
+                        {
+                           "code" : "MP",
+                           "value" : {
+                              "country" : "MP"
+                           },
+                           "display" : "Northern Mariana Islands",
+                           "name" : "Northern Mariana Islands"
+                        },
+                        {
+                           "display" : "Norway",
+                           "name" : "Norway",
+                           "value" : {
+                              "country" : "NO"
+                           },
+                           "code" : "NO"
+                        },
+                        {
+                           "code" : "OM",
+                           "value" : {
+                              "country" : "OM"
+                           },
+                           "display" : "Oman",
+                           "name" : "Oman"
+                        },
+                        {
+                           "name" : "Pakistan",
+                           "display" : "Pakistan",
+                           "value" : {
+                              "country" : "PK"
+                           },
+                           "code" : "PK"
+                        },
+                        {
+                           "value" : {
+                              "country" : "PW"
+                           },
+                           "code" : "PW",
+                           "display" : "Palau",
+                           "name" : "Palau"
+                        },
+                        {
+                           "name" : "Palestinian Territory",
+                           "display" : "Palestinian Territory",
+                           "code" : "PS",
+                           "value" : {
+                              "country" : "PS"
+                           }
+                        },
+                        {
+                           "display" : "Panama",
+                           "name" : "Panama",
+                           "value" : {
+                              "country" : "PA"
+                           },
+                           "code" : "PA"
+                        },
+                        {
+                           "display" : "Papua New Guinea",
+                           "name" : "Papua New Guinea",
+                           "value" : {
+                              "country" : "PG"
+                           },
+                           "code" : "PG"
+                        },
+                        {
+                           "display" : "Paraguay",
+                           "name" : "Paraguay",
+                           "code" : "PY",
+                           "value" : {
+                              "country" : "PY"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "PE"
+                           },
+                           "code" : "PE",
+                           "name" : "Peru",
+                           "display" : "Peru"
+                        },
+                        {
+                           "value" : {
+                              "country" : "PH"
+                           },
+                           "code" : "PH",
+                           "display" : "Philippines",
+                           "name" : "Philippines"
+                        },
+                        {
+                           "value" : {
+                              "country" : "PN"
+                           },
+                           "code" : "PN",
+                           "name" : "Pitcairn",
+                           "display" : "Pitcairn"
+                        },
+                        {
+                           "display" : "Poland",
+                           "name" : "Poland",
+                           "value" : {
+                              "country" : "PL"
+                           },
+                           "code" : "PL"
+                        },
+                        {
+                           "value" : {
+                              "country" : "PT"
+                           },
+                           "code" : "PT",
+                           "display" : "Portugal",
+                           "name" : "Portugal"
+                        },
+                        {
+                           "value" : {
+                              "country" : "PR"
+                           },
+                           "code" : "PR",
+                           "name" : "Puerto Rico",
+                           "display" : "Puerto Rico"
+                        },
+                        {
+                           "value" : {
+                              "country" : "QA"
+                           },
+                           "code" : "QA",
+                           "name" : "Qatar",
+                           "display" : "Qatar"
+                        },
+                        {
+                           "code" : "RE",
+                           "value" : {
+                              "country" : "RE"
+                           },
+                           "display" : "Réunion",
+                           "name" : "Réunion"
+                        },
+                        {
+                           "display" : "Romania",
+                           "name" : "Romania",
+                           "code" : "RO",
+                           "value" : {
+                              "country" : "RO"
+                           }
+                        },
+                        {
+                           "postal" : 1,
+                           "name" : "Russian Federation",
+                           "display" : "Russian Federation",
+                           "code" : "RU",
+                           "value" : {
+                              "country" : "RU"
+                           }
+                        },
+                        {
+                           "display" : "Rwanda",
+                           "name" : "Rwanda",
+                           "value" : {
+                              "country" : "RW"
+                           },
+                           "code" : "RW"
+                        },
+                        {
+                           "name" : "S Georgia/S Sandwich Is",
+                           "display" : "S Georgia/S Sandwich Is",
+                           "value" : {
+                              "country" : "GS"
+                           },
+                           "code" : "GS"
+                        },
+                        {
+                           "name" : "Saint Barthélemy",
+                           "display" : "Saint Barthélemy",
+                           "code" : "BL",
+                           "value" : {
+                              "country" : "BL"
+                           }
+                        },
+                        {
+                           "name" : "Saint Helena",
+                           "display" : "Saint Helena",
+                           "value" : {
+                              "country" : "SH"
+                           },
+                           "code" : "SH"
+                        },
+                        {
+                           "display" : "Saint Kitts and Nevis",
+                           "name" : "Saint Kitts and Nevis",
+                           "code" : "KN",
+                           "value" : {
+                              "country" : "KN"
+                           }
+                        },
+                        {
+                           "code" : "LC",
+                           "value" : {
+                              "country" : "LC"
+                           },
+                           "display" : "Saint Lucia",
+                           "name" : "Saint Lucia"
+                        },
+                        {
+                           "display" : "Saint Martin",
+                           "name" : "Saint Martin",
+                           "code" : "MF",
+                           "value" : {
+                              "country" : "MF"
+                           }
+                        },
+                        {
+                           "display" : "Saint Pierre and Miquelon",
+                           "name" : "Saint Pierre and Miquelon",
+                           "value" : {
+                              "country" : "PM"
+                           },
+                           "code" : "PM"
+                        },
+                        {
+                           "name" : "Saint Vincent and the Grenadines",
+                           "display" : "Saint Vincent and the Grenadines",
+                           "value" : {
+                              "country" : "VC"
+                           },
+                           "code" : "VC"
+                        },
+                        {
+                           "value" : {
+                              "country" : "WS"
+                           },
+                           "code" : "WS",
+                           "name" : "Samoa",
+                           "display" : "Samoa"
+                        },
+                        {
+                           "name" : "San Marino",
+                           "display" : "San Marino",
+                           "code" : "SM",
+                           "value" : {
+                              "country" : "SM"
+                           }
+                        },
+                        {
+                           "code" : "ST",
+                           "value" : {
+                              "country" : "ST"
+                           },
+                           "name" : "Sao Tome and Principe",
+                           "display" : "Sao Tome and Principe"
+                        },
+                        {
+                           "code" : "SA",
+                           "value" : {
+                              "country" : "SA"
+                           },
+                           "display" : "Saudi Arabia",
+                           "name" : "Saudi Arabia"
+                        },
+                        {
+                           "display" : "Senegal",
+                           "name" : "Senegal",
+                           "code" : "SN",
+                           "value" : {
+                              "country" : "SN"
+                           }
+                        },
+                        {
+                           "display" : "Serbia",
+                           "name" : "Serbia",
+                           "value" : {
+                              "country" : "RS"
+                           },
+                           "code" : "RS"
+                        },
+                        {
+                           "display" : "Seychelles",
+                           "name" : "Seychelles",
+                           "value" : {
+                              "country" : "SC"
+                           },
+                           "code" : "SC"
+                        },
+                        {
+                           "code" : "SL",
+                           "value" : {
+                              "country" : "SL"
+                           },
+                           "display" : "Sierra Leone",
+                           "name" : "Sierra Leone"
+                        },
+                        {
+                           "code" : "SG",
+                           "value" : {
+                              "country" : "SG"
+                           },
+                           "name" : "Singapore",
+                           "display" : "Singapore"
+                        },
+                        {
+                           "value" : {
+                              "country" : "SX"
+                           },
+                           "code" : "SX",
+                           "display" : "Sint Maarten",
+                           "name" : "Sint Maarten"
+                        },
+                        {
+                           "value" : {
+                              "country" : "SK"
+                           },
+                           "code" : "SK",
+                           "display" : "Slovakia",
+                           "name" : "Slovakia"
+                        },
+                        {
+                           "name" : "Slovenia",
+                           "display" : "Slovenia",
+                           "code" : "SI",
+                           "value" : {
+                              "country" : "SI"
+                           }
+                        },
+                        {
+                           "name" : "Solomon Islands",
+                           "display" : "Solomon Islands",
+                           "value" : {
+                              "country" : "SB"
+                           },
+                           "code" : "SB"
+                        },
+                        {
+                           "code" : "SO",
+                           "value" : {
+                              "country" : "SO"
+                           },
+                           "display" : "Somalia",
+                           "name" : "Somalia"
+                        },
+                        {
+                           "code" : "ZA",
+                           "value" : {
+                              "country" : "ZA"
+                           },
+                           "name" : "South Africa",
+                           "display" : "South Africa"
+                        },
+                        {
+                           "display" : "South Sudan",
+                           "name" : "South Sudan",
+                           "code" : "SS",
+                           "value" : {
+                              "country" : "SS"
+                           }
+                        },
+                        {
+                           "value" : {
+                              "country" : "ES"
+                           },
+                           "code" : "ES",
+                           "display" : "Spain",
+                           "name" : "Spain"
+                        },
+                        {
+                           "code" : "LK",
+                           "value" : {
+                              "country" : "LK"
+                           },
+                           "name" : "Sri Lanka",
+                           "display" : "Sri Lanka"
+                        },
+                        {
+                           "value" : {
+                              "country" : "SR"
+                           },
+                           "code" : "SR",
+                           "display" : "Suriname",
+                           "name" : "Suriname"
+                        },
+                        {
+                           "name" : "Svalbard and Jan Mayen",
+                           "display" : "Svalbard and Jan Mayen",
+                           "code" : "SJ",
+                           "value" : {
+                              "country" : "SJ"
+                           }
+                        },
+                        {
+                           "code" : "SZ",
+                           "value" : {
+                              "country" : "SZ"
+                           },
+                           "name" : "Swaziland",
+                           "display" : "Swaziland"
+                        },
+                        {
+                           "code" : "SE",
+                           "value" : {
+                              "country" : "SE"
+                           },
+                           "display" : "Sweden",
+                           "name" : "Sweden"
+                        },
+                        {
+                           "name" : "Switzerland",
+                           "display" : "Switzerland",
+                           "code" : "CH",
+                           "value" : {
+                              "country" : "CH"
+                           }
+                        },
+                        {
+                           "display" : "Taiwan",
+                           "name" : "Taiwan",
+                           "code" : "TW",
+                           "value" : {
+                              "country" : "TW"
+                           }
+                        },
+                        {
+                           "display" : "Tajikistan",
+                           "name" : "Tajikistan",
+                           "code" : "TJ",
+                           "value" : {
+                              "country" : "TJ"
+                           }
+                        },
+                        {
+                           "name" : "Tanzania",
+                           "display" : "Tanzania",
+                           "code" : "TZ",
+                           "value" : {
+                              "country" : "TZ"
+                           }
+                        },
+                        {
+                           "code" : "TH",
+                           "value" : {
+                              "country" : "TH"
+                           },
+                           "display" : "Thailand",
+                           "name" : "Thailand"
+                        },
+                        {
+                           "name" : "Timor-Leste",
+                           "display" : "Timor-Leste",
+                           "code" : "TL",
+                           "value" : {
+                              "country" : "TL"
+                           }
+                        },
+                        {
+                           "code" : "TG",
+                           "value" : {
+                              "country" : "TG"
+                           },
+                           "display" : "Togo",
+                           "name" : "Togo"
+                        },
+                        {
+                           "display" : "Tokelau",
+                           "name" : "Tokelau",
+                           "value" : {
+                              "country" : "TK"
+                           },
+                           "code" : "TK"
+                        },
+                        {
+                           "code" : "TO",
+                           "value" : {
+                              "country" : "TO"
+                           },
+                           "display" : "Tonga",
+                           "name" : "Tonga"
+                        },
+                        {
+                           "display" : "Trinidad and Tobago",
+                           "name" : "Trinidad and Tobago",
+                           "value" : {
+                              "country" : "TT"
+                           },
+                           "code" : "TT"
+                        },
+                        {
+                           "value" : {
+                              "country" : "TN"
+                           },
+                           "code" : "TN",
+                           "display" : "Tunisia",
+                           "name" : "Tunisia"
+                        },
+                        {
+                           "display" : "Turkey",
+                           "name" : "Turkey",
+                           "value" : {
+                              "country" : "TR"
+                           },
+                           "code" : "TR"
+                        },
+                        {
+                           "name" : "Turkmenistan",
+                           "display" : "Turkmenistan",
+                           "value" : {
+                              "country" : "TM"
+                           },
+                           "code" : "TM"
+                        },
+                        {
+                           "name" : "Turks and Caicos Islands",
+                           "display" : "Turks and Caicos Islands",
+                           "value" : {
+                              "country" : "TC"
+                           },
+                           "code" : "TC"
+                        },
+                        {
+                           "code" : "TV",
+                           "value" : {
+                              "country" : "TV"
+                           },
+                           "display" : "Tuvalu",
+                           "name" : "Tuvalu"
+                        },
+                        {
+                           "value" : {
+                              "country" : "UG"
+                           },
+                           "code" : "UG",
+                           "display" : "Uganda",
+                           "name" : "Uganda"
+                        },
+                        {
+                           "code" : "UA",
+                           "value" : {
+                              "country" : "UA"
+                           },
+                           "display" : "Ukraine",
+                           "name" : "Ukraine"
+                        },
+                        {
+                           "code" : "AE",
+                           "value" : {
+                              "country" : "AE"
+                           },
+                           "name" : "United Arab Emirates",
+                           "display" : "United Arab Emirates"
+                        },
+                        {
+                           "code" : "GB",
+                           "value" : {
+                              "country" : "GB"
+                           },
+                           "display" : "United Kingdom",
+                           "name" : "United Kingdom"
+                        },
+                        {
+                           "states" : [
+                              {
+                                 "display" : "Alabama",
+                                 "name" : "Alabama",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "AL"
+                                 },
+                                 "code" : "AL"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "AK",
+                                    "country" : "US"
+                                 },
+                                 "code" : "AK",
+                                 "display" : "Alaska",
+                                 "name" : "Alaska"
+                              },
+                              {
+                                 "display" : "Arizona",
+                                 "name" : "Arizona",
+                                 "code" : "AZ",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "AZ"
+                                 }
+                              },
+                              {
+                                 "name" : "Arkansas",
+                                 "display" : "Arkansas",
+                                 "code" : "AR",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "AR"
+                                 }
+                              },
+                              {
+                                 "display" : "Armed Forces Americas",
+                                 "name" : "Armed Forces Americas",
+                                 "code" : "AA",
+                                 "value" : {
+                                    "state" : "AA",
+                                    "country" : "US"
+                                 }
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "AE",
+                                    "country" : "US"
+                                 },
+                                 "code" : "AE",
+                                 "name" : "Armed Forces Europe",
+                                 "display" : "Armed Forces Europe"
+                              },
+                              {
+                                 "code" : "AP",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "AP"
+                                 },
+                                 "display" : "Armed Forces Pacific",
+                                 "name" : "Armed Forces Pacific"
+                              },
+                              {
+                                 "display" : "California",
+                                 "name" : "California",
+                                 "code" : "CA",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "CA"
+                                 }
+                              },
+                              {
+                                 "name" : "Colorado",
+                                 "display" : "Colorado",
+                                 "code" : "CO",
+                                 "value" : {
+                                    "state" : "CO",
+                                    "country" : "US"
+                                 }
+                              },
+                              {
+                                 "code" : "CT",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "CT"
+                                 },
+                                 "name" : "Connecticut",
+                                 "display" : "Connecticut"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "DE",
+                                    "country" : "US"
+                                 },
+                                 "code" : "DE",
+                                 "display" : "Delaware",
+                                 "name" : "Delaware"
+                              },
+                              {
+                                 "code" : "FL",
+                                 "value" : {
+                                    "state" : "FL",
+                                    "country" : "US"
+                                 },
+                                 "display" : "Florida",
+                                 "name" : "Florida"
+                              },
+                              {
+                                 "name" : "Georgia",
+                                 "display" : "Georgia",
+                                 "value" : {
+                                    "state" : "GA",
+                                    "country" : "US"
+                                 },
+                                 "code" : "GA"
+                              },
+                              {
+                                 "display" : "Hawaii",
+                                 "name" : "Hawaii",
+                                 "code" : "HI",
+                                 "value" : {
+                                    "state" : "HI",
+                                    "country" : "US"
+                                 }
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "ID",
+                                    "country" : "US"
+                                 },
+                                 "code" : "ID",
+                                 "name" : "Idaho",
+                                 "display" : "Idaho"
+                              },
+                              {
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "IL"
+                                 },
+                                 "code" : "IL",
+                                 "name" : "Illinois",
+                                 "display" : "Illinois"
+                              },
+                              {
+                                 "code" : "IN",
+                                 "value" : {
+                                    "state" : "IN",
+                                    "country" : "US"
+                                 },
+                                 "name" : "Indiana",
+                                 "display" : "Indiana"
+                              },
+                              {
+                                 "code" : "IA",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "IA"
+                                 },
+                                 "display" : "Iowa",
+                                 "name" : "Iowa"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "KS",
+                                    "country" : "US"
+                                 },
+                                 "code" : "KS",
+                                 "display" : "Kansas",
+                                 "name" : "Kansas"
+                              },
+                              {
+                                 "code" : "KY",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "KY"
+                                 },
+                                 "display" : "Kentucky",
+                                 "name" : "Kentucky"
+                              },
+                              {
+                                 "code" : "LA",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "LA"
+                                 },
+                                 "display" : "Louisiana",
+                                 "name" : "Louisiana"
+                              },
+                              {
+                                 "name" : "Maine",
+                                 "display" : "Maine",
+                                 "value" : {
+                                    "state" : "ME",
+                                    "country" : "US"
+                                 },
+                                 "code" : "ME"
+                              },
+                              {
+                                 "code" : "MD",
+                                 "value" : {
+                                    "state" : "MD",
+                                    "country" : "US"
+                                 },
+                                 "name" : "Maryland",
+                                 "display" : "Maryland"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "MA",
+                                    "country" : "US"
+                                 },
+                                 "code" : "MA",
+                                 "name" : "Massachusetts",
+                                 "display" : "Massachusetts"
+                              },
+                              {
+                                 "name" : "Michigan",
+                                 "display" : "Michigan",
+                                 "code" : "MI",
+                                 "value" : {
+                                    "state" : "MI",
+                                    "country" : "US"
+                                 }
+                              },
+                              {
+                                 "display" : "Minnesota",
+                                 "name" : "Minnesota",
+                                 "value" : {
+                                    "state" : "MN",
+                                    "country" : "US"
+                                 },
+                                 "code" : "MN"
+                              },
+                              {
+                                 "display" : "Mississippi",
+                                 "name" : "Mississippi",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "MS"
+                                 },
+                                 "code" : "MS"
+                              },
+                              {
+                                 "code" : "MO",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "MO"
+                                 },
+                                 "display" : "Missouri",
+                                 "name" : "Missouri"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "MT",
+                                    "country" : "US"
+                                 },
+                                 "code" : "MT",
+                                 "display" : "Montana",
+                                 "name" : "Montana"
+                              },
+                              {
+                                 "display" : "Nebraska",
+                                 "name" : "Nebraska",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "NE"
+                                 },
+                                 "code" : "NE"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "NV",
+                                    "country" : "US"
+                                 },
+                                 "code" : "NV",
+                                 "name" : "Nevada",
+                                 "display" : "Nevada"
+                              },
+                              {
+                                 "code" : "NH",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "NH"
+                                 },
+                                 "display" : "New Hampshire",
+                                 "name" : "New Hampshire"
+                              },
+                              {
+                                 "code" : "NJ",
+                                 "value" : {
+                                    "state" : "NJ",
+                                    "country" : "US"
+                                 },
+                                 "display" : "New Jersey",
+                                 "name" : "New Jersey"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "NM",
+                                    "country" : "US"
+                                 },
+                                 "code" : "NM",
+                                 "name" : "New Mexico",
+                                 "display" : "New Mexico"
+                              },
+                              {
+                                 "name" : "New York",
+                                 "display" : "New York",
+                                 "code" : "NY",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "NY"
+                                 }
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "NC",
+                                    "country" : "US"
+                                 },
+                                 "code" : "NC",
+                                 "display" : "North Carolina",
+                                 "name" : "North Carolina"
+                              },
+                              {
+                                 "name" : "North Dakota",
+                                 "display" : "North Dakota",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "ND"
+                                 },
+                                 "code" : "ND"
+                              },
+                              {
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "OH"
+                                 },
+                                 "code" : "OH",
+                                 "display" : "Ohio",
+                                 "name" : "Ohio"
+                              },
+                              {
+                                 "code" : "OK",
+                                 "value" : {
+                                    "state" : "OK",
+                                    "country" : "US"
+                                 },
+                                 "display" : "Oklahoma",
+                                 "name" : "Oklahoma"
+                              },
+                              {
+                                 "code" : "OR",
+                                 "value" : {
+                                    "state" : "OR",
+                                    "country" : "US"
+                                 },
+                                 "name" : "Oregon",
+                                 "display" : "Oregon"
+                              },
+                              {
+                                 "display" : "Pennsylvania",
+                                 "name" : "Pennsylvania",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "PA"
+                                 },
+                                 "code" : "PA"
+                              },
+                              {
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "PR"
+                                 },
+                                 "code" : "PR",
+                                 "name" : "Puerto Rico",
+                                 "display" : "Puerto Rico"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "RI",
+                                    "country" : "US"
+                                 },
+                                 "code" : "RI",
+                                 "name" : "Rhode Island",
+                                 "display" : "Rhode Island"
+                              },
+                              {
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "SC"
+                                 },
+                                 "code" : "SC",
+                                 "display" : "South Carolina",
+                                 "name" : "South Carolina"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "SD",
+                                    "country" : "US"
+                                 },
+                                 "code" : "SD",
+                                 "name" : "South Dakota",
+                                 "display" : "South Dakota"
+                              },
+                              {
+                                 "display" : "Tennessee",
+                                 "name" : "Tennessee",
+                                 "value" : {
+                                    "state" : "TN",
+                                    "country" : "US"
+                                 },
+                                 "code" : "TN"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "TX",
+                                    "country" : "US"
+                                 },
+                                 "code" : "TX",
+                                 "display" : "Texas",
+                                 "name" : "Texas"
+                              },
+                              {
+                                 "name" : "Utah",
+                                 "display" : "Utah",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "UT"
+                                 },
+                                 "code" : "UT"
+                              },
+                              {
+                                 "display" : "Vermont",
+                                 "name" : "Vermont",
+                                 "value" : {
+                                    "state" : "VT",
+                                    "country" : "US"
+                                 },
+                                 "code" : "VT"
+                              },
+                              {
+                                 "name" : "Virgin Islands",
+                                 "display" : "Virgin Islands",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "VI"
+                                 },
+                                 "code" : "VI"
+                              },
+                              {
+                                 "value" : {
+                                    "state" : "VA",
+                                    "country" : "US"
+                                 },
+                                 "code" : "VA",
+                                 "display" : "Virginia",
+                                 "name" : "Virginia"
+                              },
+                              {
+                                 "code" : "WA",
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "WA"
+                                 },
+                                 "display" : "Washington",
+                                 "name" : "Washington"
+                              },
+                              {
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "DC"
+                                 },
+                                 "code" : "DC",
+                                 "display" : "Washington DC",
+                                 "name" : "Washington DC"
+                              },
+                              {
+                                 "display" : "West Virginia",
+                                 "name" : "West Virginia",
+                                 "value" : {
+                                    "state" : "WV",
+                                    "country" : "US"
+                                 },
+                                 "code" : "WV"
+                              },
+                              {
+                                 "value" : {
+                                    "country" : "US",
+                                    "state" : "WI"
+                                 },
+                                 "code" : "WI",
+                                 "display" : "Wisconsin",
+                                 "name" : "Wisconsin"
+                              },
+                              {
+                                 "display" : "Wyoming",
+                                 "name" : "Wyoming",
+                                 "value" : {
+                                    "state" : "WY",
+                                    "country" : "US"
+                                 },
+                                 "code" : "WY"
+                              }
+                           ],
+                           "value" : {
+                              "country" : "US"
+                           },
+                           "code" : "US",
+                           "name" : "United States",
+                           "display" : "United States"
+                        },
+                        {
+                           "name" : "Uruguay",
+                           "display" : "Uruguay",
+                           "code" : "UY",
+                           "value" : {
+                              "country" : "UY"
+                           }
+                        },
+                        {
+                           "name" : "US Minor Outlying Islands",
+                           "display" : "US Minor Outlying Islands",
+                           "value" : {
+                              "country" : "UM"
+                           },
+                           "code" : "UM"
+                        },
+                        {
+                           "display" : "Uzbekistan",
+                           "name" : "Uzbekistan",
+                           "value" : {
+                              "country" : "UZ"
+                           },
+                           "code" : "UZ"
+                        },
+                        {
+                           "code" : "VU",
+                           "value" : {
+                              "country" : "VU"
+                           },
+                           "display" : "Vanuatu",
+                           "name" : "Vanuatu"
+                        },
+                        {
+                           "display" : "Venezuela",
+                           "name" : "Venezuela",
+                           "value" : {
+                              "country" : "VE"
+                           },
+                           "code" : "VE"
+                        },
+                        {
+                           "name" : "Vietnam",
+                           "display" : "Vietnam",
+                           "value" : {
+                              "country" : "VN"
+                           },
+                           "code" : "VN"
+                        },
+                        {
+                           "display" : "Virgin Islands (British)",
+                           "name" : "Virgin Islands (British)",
+                           "code" : "VG",
+                           "value" : {
+                              "country" : "VG"
+                           }
+                        },
+                        {
+                           "name" : "Virgin Islands (US)",
+                           "display" : "Virgin Islands (US)",
+                           "value" : {
+                              "country" : "VI"
+                           },
+                           "code" : "VI"
+                        },
+                        {
+                           "value" : {
+                              "country" : "WF"
+                           },
+                           "code" : "WF",
+                           "display" : "Wallis and Futuna",
+                           "name" : "Wallis and Futuna"
+                        },
+                        {
+                           "display" : "Western Sahara",
+                           "name" : "Western Sahara",
+                           "code" : "EH",
+                           "value" : {
+                              "country" : "EH"
+                           }
+                        },
+                        {
+                           "code" : "YE",
+                           "value" : {
+                              "country" : "YE"
+                           },
+                           "display" : "Yemen",
+                           "name" : "Yemen"
+                        },
+                        {
+                           "value" : {
+                              "country" : "ZM"
+                           },
+                           "code" : "ZM",
+                           "name" : "Zambia",
+                           "display" : "Zambia"
+                        },
+                        {
+                           "display" : "Zimbabwe",
+                           "name" : "Zimbabwe",
+                           "value" : {
+                              "country" : "ZW"
+                           },
+                           "code" : "ZW"
+                        }
+                     ],
+                     "type" : "search",
+                     "placeholder" : "Search by Country/State"
+                  }
+               ]
+            }
+         ],
+         "type" : "select",
+         "config_name" : "region",
+         "label" : "Fittest in",
+         "name" : "region"
+      }
+   ],
+   "parent_competition_id" : null,
+   "age_cutoff_date" : "2018-07-15",
+   "type" : "open",
+   "active" : "1",
+   "id" : "19"
+}

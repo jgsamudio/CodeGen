@@ -1,0 +1,2542 @@
+{
+   "identifier" : "9dbbbb4472bc8d502594",
+   "year" : "2017",
+   "name" : "Open",
+   "id" : "1",
+   "controls" : [
+      {
+         "name" : "competition",
+         "config_name" : "competition",
+         "data" : [
+            {
+               "value" : "1",
+               "display" : "Open"
+            },
+            {
+               "display" : "Online Qualifier",
+               "value" : "4"
+            },
+            {
+               "display" : "Regionals",
+               "value" : "2"
+            },
+            {
+               "value" : "3",
+               "display" : "Games"
+            },
+            {
+               "value" : "5",
+               "display" : "Team Series"
+            },
+            {
+               "value" : "6",
+               "display" : "Lift-Off"
+            }
+         ],
+         "label" : "Competition",
+         "type" : "select"
+      },
+      {
+         "type" : "select",
+         "label" : "Year",
+         "data" : [
+            {
+               "value" : 2017,
+               "display" : "2017"
+            },
+            {
+               "value" : 2016,
+               "display" : "2016"
+            },
+            {
+               "display" : "2015",
+               "value" : 2015
+            },
+            {
+               "display" : "2014",
+               "value" : 2014
+            },
+            {
+               "value" : 2013,
+               "display" : "2013"
+            },
+            {
+               "value" : 2012,
+               "display" : "2012"
+            },
+            {
+               "value" : 2011,
+               "display" : "2011"
+            }
+         ],
+         "name" : "year",
+         "config_name" : "year"
+      },
+      {
+         "name" : "scaled",
+         "config_name" : "scaled",
+         "type" : "select",
+         "label" : "Workout Type",
+         "data" : [
+            {
+               "display" : "Rx'd",
+               "value" : 0
+            },
+            {
+               "value" : 1,
+               "display" : "Scaled"
+            }
+         ]
+      },
+      {
+         "config_name" : "fittest",
+         "name" : "fittest",
+         "type" : "multiselect",
+         "data" : [
+            {
+               "code" : null,
+               "display" : "Region",
+               "selects" : [
+                  {
+                     "value" : 0,
+                     "display" : "Worldwide"
+                  },
+                  {
+                     "regionalid" : "5",
+                     "display" : "Africa",
+                     "value" : "1"
+                  },
+                  {
+                     "value" : "2",
+                     "regionalid" : "6",
+                     "display" : "Asia"
+                  },
+                  {
+                     "value" : "3",
+                     "display" : "Australia",
+                     "regionalid" : "6"
+                  },
+                  {
+                     "value" : "4",
+                     "display" : "Canada East",
+                     "regionalid" : "4"
+                  },
+                  {
+                     "value" : "5",
+                     "regionalid" : "8",
+                     "display" : "Canada West"
+                  },
+                  {
+                     "display" : "Central East",
+                     "regionalid" : "3",
+                     "value" : "6"
+                  },
+                  {
+                     "display" : "Europe",
+                     "regionalid" : "5",
+                     "value" : "7"
+                  },
+                  {
+                     "value" : "8",
+                     "regionalid" : "7",
+                     "display" : "Latin America"
+                  },
+                  {
+                     "value" : "9",
+                     "display" : "Mid Atlantic",
+                     "regionalid" : "1"
+                  },
+                  {
+                     "value" : "10",
+                     "regionalid" : "3",
+                     "display" : "North Central"
+                  },
+                  {
+                     "value" : "11",
+                     "regionalid" : "4",
+                     "display" : "North East"
+                  },
+                  {
+                     "regionalid" : "2",
+                     "display" : "Northern California",
+                     "value" : "12"
+                  },
+                  {
+                     "value" : "13",
+                     "display" : "North West",
+                     "regionalid" : "8"
+                  },
+                  {
+                     "value" : "14",
+                     "regionalid" : "7",
+                     "display" : "South Central"
+                  },
+                  {
+                     "regionalid" : "1",
+                     "display" : "South East",
+                     "value" : "15"
+                  },
+                  {
+                     "display" : "Southern California",
+                     "regionalid" : "2",
+                     "value" : "16"
+                  },
+                  {
+                     "value" : "17",
+                     "regionalid" : "7",
+                     "display" : "South West"
+                  }
+               ],
+               "value" : "1"
+            },
+            {
+               "selects" : [
+                  {
+                     "value" : "AF",
+                     "display" : "Afghanistan"
+                  },
+                  {
+                     "display" : "Albania",
+                     "value" : "AL"
+                  },
+                  {
+                     "display" : "Algeria",
+                     "value" : "DZ"
+                  },
+                  {
+                     "display" : "American Samoa",
+                     "value" : "AS"
+                  },
+                  {
+                     "display" : "Andorra",
+                     "value" : "AD"
+                  },
+                  {
+                     "display" : "Angola",
+                     "value" : "AO"
+                  },
+                  {
+                     "display" : "Anguilla",
+                     "value" : "AI"
+                  },
+                  {
+                     "value" : "AQ",
+                     "display" : "Antarctica"
+                  },
+                  {
+                     "value" : "AG",
+                     "display" : "Antigua and Barbuda"
+                  },
+                  {
+                     "display" : "Argentina",
+                     "value" : "AR"
+                  },
+                  {
+                     "value" : "AM",
+                     "display" : "Armenia"
+                  },
+                  {
+                     "value" : "AW",
+                     "display" : "Aruba"
+                  },
+                  {
+                     "value" : "AU",
+                     "display" : "Australia"
+                  },
+                  {
+                     "value" : "AT",
+                     "display" : "Austria"
+                  },
+                  {
+                     "value" : "AZ",
+                     "display" : "Azerbaijan"
+                  },
+                  {
+                     "display" : "Åland Islands",
+                     "value" : "AX"
+                  },
+                  {
+                     "value" : "BS",
+                     "display" : "Bahamas"
+                  },
+                  {
+                     "value" : "BH",
+                     "display" : "Bahrain"
+                  },
+                  {
+                     "value" : "BD",
+                     "display" : "Bangladesh"
+                  },
+                  {
+                     "value" : "BB",
+                     "display" : "Barbados"
+                  },
+                  {
+                     "value" : "BY",
+                     "display" : "Belarus"
+                  },
+                  {
+                     "display" : "Belgium",
+                     "value" : "BE"
+                  },
+                  {
+                     "value" : "BZ",
+                     "display" : "Belize"
+                  },
+                  {
+                     "value" : "BJ",
+                     "display" : "Benin"
+                  },
+                  {
+                     "value" : "BM",
+                     "display" : "Bermuda"
+                  },
+                  {
+                     "display" : "Bhutan",
+                     "value" : "BT"
+                  },
+                  {
+                     "display" : "Bolivia",
+                     "value" : "BO"
+                  },
+                  {
+                     "value" : "BQ",
+                     "display" : "Bonaire"
+                  },
+                  {
+                     "display" : "Bosnia and Herzegovina",
+                     "value" : "BA"
+                  },
+                  {
+                     "display" : "Botswana",
+                     "value" : "BW"
+                  },
+                  {
+                     "value" : "BV",
+                     "display" : "Bouvet Island"
+                  },
+                  {
+                     "value" : "BR",
+                     "display" : "Brazil"
+                  },
+                  {
+                     "display" : "British Indian Ocean Terr.",
+                     "value" : "IO"
+                  },
+                  {
+                     "display" : "Brunei Darussalam",
+                     "value" : "BN"
+                  },
+                  {
+                     "value" : "BG",
+                     "display" : "Bulgaria"
+                  },
+                  {
+                     "value" : "BF",
+                     "display" : "Burkina Faso"
+                  },
+                  {
+                     "display" : "Burundi",
+                     "value" : "BI"
+                  },
+                  {
+                     "display" : "Cambodia",
+                     "value" : "KH"
+                  },
+                  {
+                     "value" : "CM",
+                     "display" : "Cameroon"
+                  },
+                  {
+                     "value" : "CA",
+                     "display" : "Canada"
+                  },
+                  {
+                     "value" : "CV",
+                     "display" : "Cape Verde"
+                  },
+                  {
+                     "display" : "Cayman Islands",
+                     "value" : "KY"
+                  },
+                  {
+                     "display" : "Côte d'Ivoire",
+                     "value" : "CI"
+                  },
+                  {
+                     "value" : "CF",
+                     "display" : "Central African Republic"
+                  },
+                  {
+                     "display" : "Chad",
+                     "value" : "TD"
+                  },
+                  {
+                     "value" : "CL",
+                     "display" : "Chile"
+                  },
+                  {
+                     "value" : "CN",
+                     "display" : "China"
+                  },
+                  {
+                     "display" : "Christmas Island",
+                     "value" : "CX"
+                  },
+                  {
+                     "display" : "Cocos (Keeling) Islands",
+                     "value" : "CC"
+                  },
+                  {
+                     "display" : "Colombia",
+                     "value" : "CO"
+                  },
+                  {
+                     "display" : "Comoros",
+                     "value" : "KM"
+                  },
+                  {
+                     "value" : "CD",
+                     "display" : "Congo, Democratic Republic of"
+                  },
+                  {
+                     "value" : "CG",
+                     "display" : "Congo, Republic of"
+                  },
+                  {
+                     "display" : "Cook Islands",
+                     "value" : "CK"
+                  },
+                  {
+                     "value" : "CR",
+                     "display" : "Costa Rica"
+                  },
+                  {
+                     "value" : "HR",
+                     "display" : "Croatia"
+                  },
+                  {
+                     "display" : "Cuba",
+                     "value" : "CU"
+                  },
+                  {
+                     "value" : "CW",
+                     "display" : "Curaçao"
+                  },
+                  {
+                     "display" : "Cyprus",
+                     "value" : "CY"
+                  },
+                  {
+                     "display" : "Czech Republic",
+                     "value" : "CZ"
+                  },
+                  {
+                     "value" : "DK",
+                     "display" : "Denmark"
+                  },
+                  {
+                     "value" : "DJ",
+                     "display" : "Djibouti"
+                  },
+                  {
+                     "display" : "Dominica",
+                     "value" : "DM"
+                  },
+                  {
+                     "display" : "Dominican Republic",
+                     "value" : "DO"
+                  },
+                  {
+                     "display" : "Ecuador",
+                     "value" : "EC"
+                  },
+                  {
+                     "value" : "EG",
+                     "display" : "Egypt"
+                  },
+                  {
+                     "value" : "SV",
+                     "display" : "El Salvador"
+                  },
+                  {
+                     "display" : "Equatorial Guinea",
+                     "value" : "GQ"
+                  },
+                  {
+                     "display" : "Eritrea",
+                     "value" : "ER"
+                  },
+                  {
+                     "value" : "EE",
+                     "display" : "Estonia"
+                  },
+                  {
+                     "value" : "ET",
+                     "display" : "Ethiopia"
+                  },
+                  {
+                     "value" : "FK",
+                     "display" : "Falkland Islands (Malvinas)"
+                  },
+                  {
+                     "value" : "FO",
+                     "display" : "Faroe Islands"
+                  },
+                  {
+                     "value" : "FJ",
+                     "display" : "Fiji"
+                  },
+                  {
+                     "display" : "Finland",
+                     "value" : "FI"
+                  },
+                  {
+                     "value" : "FR",
+                     "display" : "France"
+                  },
+                  {
+                     "display" : "French Guiana",
+                     "value" : "GF"
+                  },
+                  {
+                     "value" : "PF",
+                     "display" : "French Polynesia"
+                  },
+                  {
+                     "value" : "TF",
+                     "display" : "French Southern Terr."
+                  },
+                  {
+                     "display" : "Gabon",
+                     "value" : "GA"
+                  },
+                  {
+                     "display" : "Gambia",
+                     "value" : "GM"
+                  },
+                  {
+                     "value" : "GE",
+                     "display" : "Georgia"
+                  },
+                  {
+                     "value" : "DE",
+                     "display" : "Germany"
+                  },
+                  {
+                     "value" : "GH",
+                     "display" : "Ghana"
+                  },
+                  {
+                     "value" : "GI",
+                     "display" : "Gibraltar"
+                  },
+                  {
+                     "display" : "Greece",
+                     "value" : "GR"
+                  },
+                  {
+                     "display" : "Greenland",
+                     "value" : "GL"
+                  },
+                  {
+                     "display" : "Grenada",
+                     "value" : "GD"
+                  },
+                  {
+                     "value" : "GP",
+                     "display" : "Guadeloupe"
+                  },
+                  {
+                     "value" : "GU",
+                     "display" : "Guam"
+                  },
+                  {
+                     "value" : "GT",
+                     "display" : "Guatemala"
+                  },
+                  {
+                     "value" : "GG",
+                     "display" : "Guernsey"
+                  },
+                  {
+                     "display" : "Guinea",
+                     "value" : "GN"
+                  },
+                  {
+                     "value" : "GW",
+                     "display" : "Guinea-Bissau"
+                  },
+                  {
+                     "display" : "Guyana",
+                     "value" : "GY"
+                  },
+                  {
+                     "display" : "Haiti",
+                     "value" : "HT"
+                  },
+                  {
+                     "display" : "Heard Island and McDonald Islands",
+                     "value" : "HM"
+                  },
+                  {
+                     "value" : "VA",
+                     "display" : "Holy See (Vatican)"
+                  },
+                  {
+                     "value" : "HN",
+                     "display" : "Honduras"
+                  },
+                  {
+                     "value" : "HK",
+                     "display" : "Hong Kong"
+                  },
+                  {
+                     "display" : "Hungary",
+                     "value" : "HU"
+                  },
+                  {
+                     "value" : "IS",
+                     "display" : "Iceland"
+                  },
+                  {
+                     "display" : "India",
+                     "value" : "IN"
+                  },
+                  {
+                     "value" : "ID",
+                     "display" : "Indonesia"
+                  },
+                  {
+                     "value" : "IR",
+                     "display" : "Iran"
+                  },
+                  {
+                     "display" : "Iraq",
+                     "value" : "IQ"
+                  },
+                  {
+                     "display" : "Ireland",
+                     "value" : "IE"
+                  },
+                  {
+                     "value" : "IM",
+                     "display" : "Isle of Man"
+                  },
+                  {
+                     "value" : "IL",
+                     "display" : "Israel"
+                  },
+                  {
+                     "value" : "IT",
+                     "display" : "Italy"
+                  },
+                  {
+                     "display" : "Jamaica",
+                     "value" : "JM"
+                  },
+                  {
+                     "value" : "JP",
+                     "display" : "Japan"
+                  },
+                  {
+                     "display" : "Jersey",
+                     "value" : "JE"
+                  },
+                  {
+                     "display" : "Jordan",
+                     "value" : "JO"
+                  },
+                  {
+                     "display" : "Kazakhstan",
+                     "value" : "KZ"
+                  },
+                  {
+                     "value" : "KE",
+                     "display" : "Kenya"
+                  },
+                  {
+                     "value" : "KI",
+                     "display" : "Kiribati"
+                  },
+                  {
+                     "value" : "KP",
+                     "display" : "Korea, Democratic People's Republic of"
+                  },
+                  {
+                     "display" : "Korea, Republic of",
+                     "value" : "KR"
+                  },
+                  {
+                     "value" : "XK",
+                     "display" : "Kosovo"
+                  },
+                  {
+                     "value" : "KW",
+                     "display" : "Kuwait"
+                  },
+                  {
+                     "display" : "Kyrgyzstan",
+                     "value" : "KG"
+                  },
+                  {
+                     "value" : "LA",
+                     "display" : "Laos"
+                  },
+                  {
+                     "display" : "Latvia",
+                     "value" : "LV"
+                  },
+                  {
+                     "value" : "LB",
+                     "display" : "Lebanon"
+                  },
+                  {
+                     "display" : "Lesotho",
+                     "value" : "LS"
+                  },
+                  {
+                     "display" : "Liberia",
+                     "value" : "LR"
+                  },
+                  {
+                     "display" : "Libya",
+                     "value" : "LY"
+                  },
+                  {
+                     "display" : "Liechtenstein",
+                     "value" : "LI"
+                  },
+                  {
+                     "value" : "LT",
+                     "display" : "Lithuania"
+                  },
+                  {
+                     "display" : "Luxembourg",
+                     "value" : "LU"
+                  },
+                  {
+                     "value" : "MO",
+                     "display" : "Macao"
+                  },
+                  {
+                     "value" : "MK",
+                     "display" : "Macedonia"
+                  },
+                  {
+                     "value" : "MG",
+                     "display" : "Madagascar"
+                  },
+                  {
+                     "value" : "MW",
+                     "display" : "Malawi"
+                  },
+                  {
+                     "value" : "MY",
+                     "display" : "Malaysia"
+                  },
+                  {
+                     "display" : "Maldives",
+                     "value" : "MV"
+                  },
+                  {
+                     "display" : "Mali",
+                     "value" : "ML"
+                  },
+                  {
+                     "display" : "Malta",
+                     "value" : "MT"
+                  },
+                  {
+                     "display" : "Marshall Islands",
+                     "value" : "MH"
+                  },
+                  {
+                     "value" : "MQ",
+                     "display" : "Martinique"
+                  },
+                  {
+                     "value" : "MR",
+                     "display" : "Mauritania"
+                  },
+                  {
+                     "value" : "MU",
+                     "display" : "Mauritius"
+                  },
+                  {
+                     "display" : "Mayotte",
+                     "value" : "YT"
+                  },
+                  {
+                     "display" : "Mexico",
+                     "value" : "MX"
+                  },
+                  {
+                     "value" : "FM",
+                     "display" : "Micronesia"
+                  },
+                  {
+                     "value" : "MD",
+                     "display" : "Moldova"
+                  },
+                  {
+                     "value" : "MC",
+                     "display" : "Monaco"
+                  },
+                  {
+                     "display" : "Mongolia",
+                     "value" : "MN"
+                  },
+                  {
+                     "display" : "Montenegro",
+                     "value" : "ME"
+                  },
+                  {
+                     "display" : "Montserrat",
+                     "value" : "MS"
+                  },
+                  {
+                     "display" : "Morocco",
+                     "value" : "MA"
+                  },
+                  {
+                     "display" : "Mozambique",
+                     "value" : "MZ"
+                  },
+                  {
+                     "display" : "Myanmar",
+                     "value" : "MM"
+                  },
+                  {
+                     "display" : "Namibia",
+                     "value" : "NA"
+                  },
+                  {
+                     "value" : "NR",
+                     "display" : "Nauru"
+                  },
+                  {
+                     "display" : "Nepal",
+                     "value" : "NP"
+                  },
+                  {
+                     "display" : "Netherlands",
+                     "value" : "NL"
+                  },
+                  {
+                     "value" : "NC",
+                     "display" : "New Caledonia"
+                  },
+                  {
+                     "value" : "NZ",
+                     "display" : "New Zealand"
+                  },
+                  {
+                     "value" : "NI",
+                     "display" : "Nicaragua"
+                  },
+                  {
+                     "display" : "Niger",
+                     "value" : "NE"
+                  },
+                  {
+                     "value" : "NG",
+                     "display" : "Nigeria"
+                  },
+                  {
+                     "value" : "NU",
+                     "display" : "Niue"
+                  },
+                  {
+                     "value" : "NF",
+                     "display" : "Norfolk Island"
+                  },
+                  {
+                     "value" : "MP",
+                     "display" : "Northern Mariana Islands"
+                  },
+                  {
+                     "value" : "NO",
+                     "display" : "Norway"
+                  },
+                  {
+                     "value" : "OM",
+                     "display" : "Oman"
+                  },
+                  {
+                     "value" : "PK",
+                     "display" : "Pakistan"
+                  },
+                  {
+                     "display" : "Palau",
+                     "value" : "PW"
+                  },
+                  {
+                     "value" : "PS",
+                     "display" : "Palestinian Territory"
+                  },
+                  {
+                     "value" : "PA",
+                     "display" : "Panama"
+                  },
+                  {
+                     "display" : "Papua New Guinea",
+                     "value" : "PG"
+                  },
+                  {
+                     "display" : "Paraguay",
+                     "value" : "PY"
+                  },
+                  {
+                     "display" : "Peru",
+                     "value" : "PE"
+                  },
+                  {
+                     "display" : "Philippines",
+                     "value" : "PH"
+                  },
+                  {
+                     "display" : "Pitcairn",
+                     "value" : "PN"
+                  },
+                  {
+                     "value" : "PL",
+                     "display" : "Poland"
+                  },
+                  {
+                     "value" : "PT",
+                     "display" : "Portugal"
+                  },
+                  {
+                     "value" : "PR",
+                     "display" : "Puerto Rico"
+                  },
+                  {
+                     "display" : "Qatar",
+                     "value" : "QA"
+                  },
+                  {
+                     "display" : "Réunion",
+                     "value" : "RE"
+                  },
+                  {
+                     "value" : "RO",
+                     "display" : "Romania"
+                  },
+                  {
+                     "value" : "RU",
+                     "display" : "Russian Federation"
+                  },
+                  {
+                     "value" : "RW",
+                     "display" : "Rwanda"
+                  },
+                  {
+                     "value" : "GS",
+                     "display" : "S Georgia/S Sandwich Is"
+                  },
+                  {
+                     "value" : "BL",
+                     "display" : "Saint Barthélemy"
+                  },
+                  {
+                     "value" : "SH",
+                     "display" : "Saint Helena"
+                  },
+                  {
+                     "display" : "Saint Kitts and Nevis",
+                     "value" : "KN"
+                  },
+                  {
+                     "display" : "Saint Lucia",
+                     "value" : "LC"
+                  },
+                  {
+                     "value" : "MF",
+                     "display" : "Saint Martin"
+                  },
+                  {
+                     "value" : "PM",
+                     "display" : "Saint Pierre and Miquelon"
+                  },
+                  {
+                     "value" : "VC",
+                     "display" : "Saint Vincent and the Grenadines"
+                  },
+                  {
+                     "value" : "WS",
+                     "display" : "Samoa"
+                  },
+                  {
+                     "display" : "San Marino",
+                     "value" : "SM"
+                  },
+                  {
+                     "display" : "Sao Tome and Principe",
+                     "value" : "ST"
+                  },
+                  {
+                     "value" : "SA",
+                     "display" : "Saudi Arabia"
+                  },
+                  {
+                     "value" : "SN",
+                     "display" : "Senegal"
+                  },
+                  {
+                     "value" : "RS",
+                     "display" : "Serbia"
+                  },
+                  {
+                     "value" : "SC",
+                     "display" : "Seychelles"
+                  },
+                  {
+                     "display" : "Sierra Leone",
+                     "value" : "SL"
+                  },
+                  {
+                     "value" : "SG",
+                     "display" : "Singapore"
+                  },
+                  {
+                     "display" : "Sint Maarten",
+                     "value" : "SX"
+                  },
+                  {
+                     "display" : "Slovakia",
+                     "value" : "SK"
+                  },
+                  {
+                     "display" : "Slovenia",
+                     "value" : "SI"
+                  },
+                  {
+                     "value" : "SB",
+                     "display" : "Solomon Islands"
+                  },
+                  {
+                     "value" : "SO",
+                     "display" : "Somalia"
+                  },
+                  {
+                     "value" : "ZA",
+                     "display" : "South Africa"
+                  },
+                  {
+                     "value" : "SS",
+                     "display" : "South Sudan"
+                  },
+                  {
+                     "value" : "ES",
+                     "display" : "Spain"
+                  },
+                  {
+                     "display" : "Sri Lanka",
+                     "value" : "LK"
+                  },
+                  {
+                     "value" : "SD",
+                     "display" : "Sudan"
+                  },
+                  {
+                     "display" : "Suriname",
+                     "value" : "SR"
+                  },
+                  {
+                     "display" : "Svalbard and Jan Mayen",
+                     "value" : "SJ"
+                  },
+                  {
+                     "display" : "Swaziland",
+                     "value" : "SZ"
+                  },
+                  {
+                     "value" : "SE",
+                     "display" : "Sweden"
+                  },
+                  {
+                     "display" : "Switzerland",
+                     "value" : "CH"
+                  },
+                  {
+                     "display" : "Syrian Arab Republic",
+                     "value" : "SY"
+                  },
+                  {
+                     "value" : "TW",
+                     "display" : "Taiwan"
+                  },
+                  {
+                     "display" : "Tajikistan",
+                     "value" : "TJ"
+                  },
+                  {
+                     "value" : "TZ",
+                     "display" : "Tanzania"
+                  },
+                  {
+                     "display" : "Thailand",
+                     "value" : "TH"
+                  },
+                  {
+                     "display" : "Timor-Leste",
+                     "value" : "TL"
+                  },
+                  {
+                     "value" : "TG",
+                     "display" : "Togo"
+                  },
+                  {
+                     "display" : "Tokelau",
+                     "value" : "TK"
+                  },
+                  {
+                     "value" : "TO",
+                     "display" : "Tonga"
+                  },
+                  {
+                     "display" : "Trinidad and Tobago",
+                     "value" : "TT"
+                  },
+                  {
+                     "display" : "Tunisia",
+                     "value" : "TN"
+                  },
+                  {
+                     "display" : "Turkey",
+                     "value" : "TR"
+                  },
+                  {
+                     "value" : "TM",
+                     "display" : "Turkmenistan"
+                  },
+                  {
+                     "display" : "Turks and Caicos Islands",
+                     "value" : "TC"
+                  },
+                  {
+                     "value" : "TV",
+                     "display" : "Tuvalu"
+                  },
+                  {
+                     "display" : "Uganda",
+                     "value" : "UG"
+                  },
+                  {
+                     "display" : "Ukraine",
+                     "value" : "UA"
+                  },
+                  {
+                     "value" : "AE",
+                     "display" : "United Arab Emirates"
+                  },
+                  {
+                     "value" : "GB",
+                     "display" : "United Kingdom"
+                  },
+                  {
+                     "value" : "US",
+                     "display" : "United States"
+                  },
+                  {
+                     "display" : "Uruguay",
+                     "value" : "UY"
+                  },
+                  {
+                     "display" : "US Minor Outlying Islands",
+                     "value" : "UM"
+                  },
+                  {
+                     "value" : "UZ",
+                     "display" : "Uzbekistan"
+                  },
+                  {
+                     "value" : "VU",
+                     "display" : "Vanuatu"
+                  },
+                  {
+                     "value" : "VE",
+                     "display" : "Venezuela"
+                  },
+                  {
+                     "value" : "VN",
+                     "display" : "Vietnam"
+                  },
+                  {
+                     "value" : "VG",
+                     "display" : "Virgin Islands (British)"
+                  },
+                  {
+                     "display" : "Virgin Islands (US)",
+                     "value" : "VI"
+                  },
+                  {
+                     "display" : "Wallis and Futuna",
+                     "value" : "WF"
+                  },
+                  {
+                     "display" : "Western Sahara",
+                     "value" : "EH"
+                  },
+                  {
+                     "display" : "Yemen",
+                     "value" : "YE"
+                  },
+                  {
+                     "display" : "Zambia",
+                     "value" : "ZM"
+                  },
+                  {
+                     "display" : "Zimbabwe",
+                     "value" : "ZW"
+                  }
+               ],
+               "value" : "2",
+               "code" : null,
+               "display" : "Country"
+            },
+            {
+               "selects" : [
+                  {
+                     "value" : "AK",
+                     "display" : "Alaska"
+                  },
+                  {
+                     "value" : "AL",
+                     "display" : "Alabama"
+                  },
+                  {
+                     "display" : "Arkansas",
+                     "value" : "AR"
+                  },
+                  {
+                     "value" : "AZ",
+                     "display" : "Arizona"
+                  },
+                  {
+                     "value" : "CA",
+                     "display" : "California"
+                  },
+                  {
+                     "value" : "CO",
+                     "display" : "Colorado"
+                  },
+                  {
+                     "value" : "CT",
+                     "display" : "Connecticut"
+                  },
+                  {
+                     "display" : "Washington DC",
+                     "value" : "DC"
+                  },
+                  {
+                     "value" : "DE",
+                     "display" : "Delaware"
+                  },
+                  {
+                     "display" : "Florida",
+                     "value" : "FL"
+                  },
+                  {
+                     "display" : "Georgia",
+                     "value" : "GA"
+                  },
+                  {
+                     "value" : "HI",
+                     "display" : "Hawaii"
+                  },
+                  {
+                     "value" : "IA",
+                     "display" : "Iowa"
+                  },
+                  {
+                     "value" : "ID",
+                     "display" : "Idaho"
+                  },
+                  {
+                     "value" : "IL",
+                     "display" : "Illinois"
+                  },
+                  {
+                     "display" : "Indiana",
+                     "value" : "IN"
+                  },
+                  {
+                     "display" : "Kansas",
+                     "value" : "KS"
+                  },
+                  {
+                     "display" : "Kentucky",
+                     "value" : "KY"
+                  },
+                  {
+                     "value" : "LA",
+                     "display" : "Louisiana"
+                  },
+                  {
+                     "display" : "Massachusetts",
+                     "value" : "MA"
+                  },
+                  {
+                     "display" : "Maryland",
+                     "value" : "MD"
+                  },
+                  {
+                     "value" : "ME",
+                     "display" : "Maine"
+                  },
+                  {
+                     "display" : "Michigan",
+                     "value" : "MI"
+                  },
+                  {
+                     "display" : "Minnesota",
+                     "value" : "MN"
+                  },
+                  {
+                     "display" : "Missouri",
+                     "value" : "MO"
+                  },
+                  {
+                     "display" : "Mississippi",
+                     "value" : "MS"
+                  },
+                  {
+                     "value" : "MT",
+                     "display" : "Montana"
+                  },
+                  {
+                     "display" : "North Carolina",
+                     "value" : "NC"
+                  },
+                  {
+                     "display" : "North Dakota",
+                     "value" : "ND"
+                  },
+                  {
+                     "display" : "Nebraska",
+                     "value" : "NE"
+                  },
+                  {
+                     "display" : "New Hampshire",
+                     "value" : "NH"
+                  },
+                  {
+                     "display" : "New Jersey",
+                     "value" : "NJ"
+                  },
+                  {
+                     "value" : "NM",
+                     "display" : "New Mexico"
+                  },
+                  {
+                     "display" : "Nevada",
+                     "value" : "NV"
+                  },
+                  {
+                     "value" : "NY",
+                     "display" : "New York"
+                  },
+                  {
+                     "display" : "Ohio",
+                     "value" : "OH"
+                  },
+                  {
+                     "value" : "OK",
+                     "display" : "Oklahoma"
+                  },
+                  {
+                     "display" : "Oregon",
+                     "value" : "OR"
+                  },
+                  {
+                     "value" : "PA",
+                     "display" : "Pennsylvania"
+                  },
+                  {
+                     "display" : "Rhode Island",
+                     "value" : "RI"
+                  },
+                  {
+                     "value" : "SC",
+                     "display" : "South Carolina"
+                  },
+                  {
+                     "display" : "South Dakota",
+                     "value" : "SD"
+                  },
+                  {
+                     "value" : "TN",
+                     "display" : "Tennessee"
+                  },
+                  {
+                     "value" : "TX",
+                     "display" : "Texas"
+                  },
+                  {
+                     "value" : "UT",
+                     "display" : "Utah"
+                  },
+                  {
+                     "display" : "Virginia",
+                     "value" : "VA"
+                  },
+                  {
+                     "display" : "Vermont",
+                     "value" : "VT"
+                  },
+                  {
+                     "display" : "Washington",
+                     "value" : "WA"
+                  },
+                  {
+                     "display" : "Wisconsin",
+                     "value" : "WI"
+                  },
+                  {
+                     "value" : "WV",
+                     "display" : "West Virginia"
+                  },
+                  {
+                     "display" : "Wyoming",
+                     "value" : "WY"
+                  }
+               ],
+               "value" : "3",
+               "code" : "US",
+               "display" : "US States"
+            },
+            {
+               "code" : "CA",
+               "display" : "Canadian Provinces",
+               "selects" : [
+                  {
+                     "display" : "Alberta",
+                     "value" : "AB"
+                  },
+                  {
+                     "display" : "British Columbia",
+                     "value" : "BC"
+                  },
+                  {
+                     "value" : "MB",
+                     "display" : "Manitoba"
+                  },
+                  {
+                     "display" : "New Brunswick",
+                     "value" : "NB"
+                  },
+                  {
+                     "value" : "NL",
+                     "display" : "Newfoundland and Labrador"
+                  },
+                  {
+                     "value" : "NS",
+                     "display" : "Nova Scotia"
+                  },
+                  {
+                     "display" : "Northwest Territories",
+                     "value" : "NT"
+                  },
+                  {
+                     "display" : "Nonavut",
+                     "value" : "NU"
+                  },
+                  {
+                     "value" : "ON",
+                     "display" : "Ontario"
+                  },
+                  {
+                     "display" : "Prince Edward Island",
+                     "value" : "PE"
+                  },
+                  {
+                     "value" : "QC",
+                     "display" : "Quebec"
+                  },
+                  {
+                     "display" : "Saskatchewan",
+                     "value" : "SK"
+                  },
+                  {
+                     "display" : "Yukon",
+                     "value" : "YT"
+                  }
+               ],
+               "value" : "4"
+            },
+            {
+               "value" : "5",
+               "selects" : [
+                  {
+                     "value" : "ACT",
+                     "display" : "Australian Capital Territory"
+                  },
+                  {
+                     "value" : "NSW",
+                     "display" : "New South Wales"
+                  },
+                  {
+                     "value" : "NT",
+                     "display" : "Northern Territory"
+                  },
+                  {
+                     "display" : "Queensland",
+                     "value" : "QLD"
+                  },
+                  {
+                     "display" : "South Australia",
+                     "value" : "SA"
+                  },
+                  {
+                     "display" : "Tasmania",
+                     "value" : "TAS"
+                  },
+                  {
+                     "display" : "Victoria",
+                     "value" : "VIC"
+                  },
+                  {
+                     "value" : "WA",
+                     "display" : "Western Australia"
+                  }
+               ],
+               "display" : "Australian States",
+               "code" : "AU"
+            }
+         ],
+         "label" : "Fittest in"
+      },
+      {
+         "label" : "Occupation",
+         "data" : [
+            {
+               "display" : "All",
+               "code" : "0",
+               "value" : "0"
+            },
+            {
+               "value" : "1",
+               "code" : "1",
+               "display" : "Military Servicemember"
+            },
+            {
+               "value" : "2",
+               "code" : "2",
+               "display" : "Law Enforcement Officer"
+            },
+            {
+               "display" : "Firefighter",
+               "code" : "4",
+               "value" : "3"
+            },
+            {
+               "value" : "4",
+               "code" : "8",
+               "display" : "EMT / Paramedic"
+            },
+            {
+               "display" : "Registered Nurse",
+               "code" : "16",
+               "value" : "5"
+            },
+            {
+               "display" : "Medical Doctor",
+               "code" : "32",
+               "value" : "6"
+            },
+            {
+               "display" : "School Teacher",
+               "code" : "64",
+               "value" : "7"
+            },
+            {
+               "value" : "8",
+               "code" : "128",
+               "display" : "Student"
+            },
+            {
+               "value" : "9",
+               "code" : "256",
+               "display" : "Garage CrossFitter"
+            }
+         ],
+         "type" : "select",
+         "config_name" : "occupation",
+         "name" : "occupation"
+      },
+      {
+         "name" : "division",
+         "config_name" : "division",
+         "type" : "select",
+         "data" : [
+            {
+               "value" : "2",
+               "controls" : [
+                  {
+                     "name" : "sort",
+                     "config_name" : "sort",
+                     "type" : "select",
+                     "label" : "Sort",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "value" : "1",
+                           "id" : "1",
+                           "display" : "17.1",
+                           "sequence" : "1"
+                        },
+                        {
+                           "value" : "2",
+                           "id" : "2",
+                           "display" : "17.2",
+                           "sequence" : "2"
+                        },
+                        {
+                           "display" : "17.3",
+                           "sequence" : "3",
+                           "value" : "3",
+                           "id" : "3"
+                        },
+                        {
+                           "display" : "17.4",
+                           "sequence" : "4",
+                           "value" : "4",
+                           "id" : "4"
+                        },
+                        {
+                           "id" : "5",
+                           "value" : "5",
+                           "sequence" : "5",
+                           "display" : "17.5"
+                        }
+                     ],
+                     "frontpage" : 1
+                  }
+               ],
+               "display" : "Individual Women"
+            },
+            {
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "label" : "Sort",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "display" : "17.1",
+                           "sequence" : "1",
+                           "id" : "1",
+                           "value" : "1"
+                        },
+                        {
+                           "value" : "2",
+                           "id" : "2",
+                           "sequence" : "2",
+                           "display" : "17.2"
+                        },
+                        {
+                           "value" : "3",
+                           "id" : "3",
+                           "display" : "17.3",
+                           "sequence" : "3"
+                        },
+                        {
+                           "value" : "4",
+                           "id" : "4",
+                           "display" : "17.4",
+                           "sequence" : "4"
+                        },
+                        {
+                           "id" : "5",
+                           "value" : "5",
+                           "sequence" : "5",
+                           "display" : "17.5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "name" : "sort",
+                     "config_name" : "sort"
+                  }
+               ],
+               "display" : "Individual Men",
+               "value" : "1"
+            },
+            {
+               "value" : "11",
+               "display" : "Team",
+               "controls" : [
+                  {
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        },
+                        {
+                           "sequence" : "1",
+                           "display" : "17.1",
+                           "id" : "1",
+                           "value" : "1"
+                        },
+                        {
+                           "sequence" : "2",
+                           "display" : "17.2",
+                           "id" : "2",
+                           "value" : "2"
+                        },
+                        {
+                           "id" : "3",
+                           "value" : "3",
+                           "display" : "17.3",
+                           "sequence" : "3"
+                        },
+                        {
+                           "id" : "4",
+                           "value" : "4",
+                           "sequence" : "4",
+                           "display" : "17.4"
+                        },
+                        {
+                           "id" : "5",
+                           "value" : "5",
+                           "display" : "17.5",
+                           "sequence" : "5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "label" : "Sort",
+                     "type" : "select",
+                     "name" : "sort",
+                     "config_name" : "sort"
+                  }
+               ]
+            },
+            {
+               "value" : "15",
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        },
+                        {
+                           "sequence" : "1",
+                           "display" : "17.1",
+                           "id" : "1",
+                           "value" : "1"
+                        },
+                        {
+                           "sequence" : "2",
+                           "display" : "17.2",
+                           "value" : "2",
+                           "id" : "2"
+                        },
+                        {
+                           "sequence" : "3",
+                           "display" : "17.3",
+                           "id" : "3",
+                           "value" : "3"
+                        },
+                        {
+                           "sequence" : "4",
+                           "display" : "17.4",
+                           "id" : "4",
+                           "value" : "4"
+                        },
+                        {
+                           "value" : "5",
+                           "id" : "5",
+                           "sequence" : "5",
+                           "display" : "17.5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "config_name" : "sort"
+                  }
+               ],
+               "display" : "Teenage Girls (14-15)"
+            },
+            {
+               "value" : "14",
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "sequence" : "1",
+                           "display" : "17.1",
+                           "value" : "1",
+                           "id" : "1"
+                        },
+                        {
+                           "display" : "17.2",
+                           "sequence" : "2",
+                           "id" : "2",
+                           "value" : "2"
+                        },
+                        {
+                           "id" : "3",
+                           "value" : "3",
+                           "sequence" : "3",
+                           "display" : "17.3"
+                        },
+                        {
+                           "sequence" : "4",
+                           "display" : "17.4",
+                           "id" : "4",
+                           "value" : "4"
+                        },
+                        {
+                           "display" : "17.5",
+                           "sequence" : "5",
+                           "value" : "5",
+                           "id" : "5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "name" : "sort"
+                  }
+               ],
+               "display" : "Teenage Boys (14-15)"
+            },
+            {
+               "value" : "17",
+               "display" : "Teenage Girls (16-17)",
+               "controls" : [
+                  {
+                     "name" : "sort",
+                     "config_name" : "sort",
+                     "type" : "select",
+                     "label" : "Sort",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "sequence" : "1",
+                           "display" : "17.1",
+                           "value" : "1",
+                           "id" : "1"
+                        },
+                        {
+                           "display" : "17.2",
+                           "sequence" : "2",
+                           "value" : "2",
+                           "id" : "2"
+                        },
+                        {
+                           "sequence" : "3",
+                           "display" : "17.3",
+                           "id" : "3",
+                           "value" : "3"
+                        },
+                        {
+                           "display" : "17.4",
+                           "sequence" : "4",
+                           "id" : "4",
+                           "value" : "4"
+                        },
+                        {
+                           "value" : "5",
+                           "id" : "5",
+                           "display" : "17.5",
+                           "sequence" : "5"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "display" : "Teenage Boys (16-17)",
+               "controls" : [
+                  {
+                     "config_name" : "sort",
+                     "name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "id" : "1",
+                           "value" : "1",
+                           "display" : "17.1",
+                           "sequence" : "1"
+                        },
+                        {
+                           "display" : "17.2",
+                           "sequence" : "2",
+                           "value" : "2",
+                           "id" : "2"
+                        },
+                        {
+                           "sequence" : "3",
+                           "display" : "17.3",
+                           "value" : "3",
+                           "id" : "3"
+                        },
+                        {
+                           "value" : "4",
+                           "id" : "4",
+                           "display" : "17.4",
+                           "sequence" : "4"
+                        },
+                        {
+                           "value" : "5",
+                           "id" : "5",
+                           "sequence" : "5",
+                           "display" : "17.5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "label" : "Sort"
+                  }
+               ],
+               "value" : "16"
+            },
+            {
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "label" : "Sort",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        },
+                        {
+                           "value" : "1",
+                           "id" : "1",
+                           "display" : "17.1",
+                           "sequence" : "1"
+                        },
+                        {
+                           "value" : "2",
+                           "id" : "2",
+                           "sequence" : "2",
+                           "display" : "17.2"
+                        },
+                        {
+                           "value" : "3",
+                           "id" : "3",
+                           "sequence" : "3",
+                           "display" : "17.3"
+                        },
+                        {
+                           "display" : "17.4",
+                           "sequence" : "4",
+                           "id" : "4",
+                           "value" : "4"
+                        },
+                        {
+                           "sequence" : "5",
+                           "display" : "17.5",
+                           "id" : "5",
+                           "value" : "5"
+                        }
+                     ],
+                     "name" : "sort",
+                     "config_name" : "sort"
+                  }
+               ],
+               "display" : "Masters Women (35-39)",
+               "value" : "19"
+            },
+            {
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "label" : "Sort",
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        },
+                        {
+                           "value" : "1",
+                           "id" : "1",
+                           "display" : "17.1",
+                           "sequence" : "1"
+                        },
+                        {
+                           "sequence" : "2",
+                           "display" : "17.2",
+                           "value" : "2",
+                           "id" : "2"
+                        },
+                        {
+                           "value" : "3",
+                           "id" : "3",
+                           "sequence" : "3",
+                           "display" : "17.3"
+                        },
+                        {
+                           "value" : "4",
+                           "id" : "4",
+                           "display" : "17.4",
+                           "sequence" : "4"
+                        },
+                        {
+                           "id" : "5",
+                           "value" : "5",
+                           "sequence" : "5",
+                           "display" : "17.5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "config_name" : "sort",
+                     "name" : "sort"
+                  }
+               ],
+               "display" : "Masters Men (35-39)",
+               "value" : "18"
+            },
+            {
+               "value" : "13",
+               "display" : "Masters Women (40-44)",
+               "controls" : [
+                  {
+                     "name" : "sort",
+                     "config_name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "value" : "1",
+                           "id" : "1",
+                           "display" : "17.1",
+                           "sequence" : "1"
+                        },
+                        {
+                           "id" : "2",
+                           "value" : "2",
+                           "display" : "17.2",
+                           "sequence" : "2"
+                        },
+                        {
+                           "sequence" : "3",
+                           "display" : "17.3",
+                           "id" : "3",
+                           "value" : "3"
+                        },
+                        {
+                           "sequence" : "4",
+                           "display" : "17.4",
+                           "value" : "4",
+                           "id" : "4"
+                        },
+                        {
+                           "value" : "5",
+                           "id" : "5",
+                           "sequence" : "5",
+                           "display" : "17.5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "label" : "Sort"
+                  }
+               ]
+            },
+            {
+               "display" : "Masters Men (40-44)",
+               "controls" : [
+                  {
+                     "name" : "sort",
+                     "config_name" : "sort",
+                     "type" : "select",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        },
+                        {
+                           "sequence" : "1",
+                           "display" : "17.1",
+                           "value" : "1",
+                           "id" : "1"
+                        },
+                        {
+                           "sequence" : "2",
+                           "display" : "17.2",
+                           "id" : "2",
+                           "value" : "2"
+                        },
+                        {
+                           "sequence" : "3",
+                           "display" : "17.3",
+                           "value" : "3",
+                           "id" : "3"
+                        },
+                        {
+                           "id" : "4",
+                           "value" : "4",
+                           "sequence" : "4",
+                           "display" : "17.4"
+                        },
+                        {
+                           "display" : "17.5",
+                           "sequence" : "5",
+                           "value" : "5",
+                           "id" : "5"
+                        }
+                     ],
+                     "label" : "Sort"
+                  }
+               ],
+               "value" : "12"
+            },
+            {
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        },
+                        {
+                           "value" : "1",
+                           "id" : "1",
+                           "display" : "17.1",
+                           "sequence" : "1"
+                        },
+                        {
+                           "sequence" : "2",
+                           "display" : "17.2",
+                           "id" : "2",
+                           "value" : "2"
+                        },
+                        {
+                           "id" : "3",
+                           "value" : "3",
+                           "sequence" : "3",
+                           "display" : "17.3"
+                        },
+                        {
+                           "sequence" : "4",
+                           "display" : "17.4",
+                           "id" : "4",
+                           "value" : "4"
+                        },
+                        {
+                           "sequence" : "5",
+                           "display" : "17.5",
+                           "id" : "5",
+                           "value" : "5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "config_name" : "sort"
+                  }
+               ],
+               "display" : "Masters Women (45-49)",
+               "value" : "4"
+            },
+            {
+               "display" : "Masters Men (45-49)",
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "sequence" : "1",
+                           "display" : "17.1",
+                           "value" : "1",
+                           "id" : "1"
+                        },
+                        {
+                           "display" : "17.2",
+                           "sequence" : "2",
+                           "id" : "2",
+                           "value" : "2"
+                        },
+                        {
+                           "sequence" : "3",
+                           "display" : "17.3",
+                           "id" : "3",
+                           "value" : "3"
+                        },
+                        {
+                           "value" : "4",
+                           "id" : "4",
+                           "sequence" : "4",
+                           "display" : "17.4"
+                        },
+                        {
+                           "sequence" : "5",
+                           "display" : "17.5",
+                           "value" : "5",
+                           "id" : "5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "label" : "Sort",
+                     "config_name" : "sort",
+                     "name" : "sort"
+                  }
+               ],
+               "value" : "3"
+            },
+            {
+               "controls" : [
+                  {
+                     "name" : "sort",
+                     "config_name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        },
+                        {
+                           "display" : "17.1",
+                           "sequence" : "1",
+                           "value" : "1",
+                           "id" : "1"
+                        },
+                        {
+                           "sequence" : "2",
+                           "display" : "17.2",
+                           "id" : "2",
+                           "value" : "2"
+                        },
+                        {
+                           "id" : "3",
+                           "value" : "3",
+                           "sequence" : "3",
+                           "display" : "17.3"
+                        },
+                        {
+                           "id" : "4",
+                           "value" : "4",
+                           "display" : "17.4",
+                           "sequence" : "4"
+                        },
+                        {
+                           "display" : "17.5",
+                           "sequence" : "5",
+                           "value" : "5",
+                           "id" : "5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "label" : "Sort"
+                  }
+               ],
+               "display" : "Masters Women (50-54)",
+               "value" : "6"
+            },
+            {
+               "value" : "5",
+               "controls" : [
+                  {
+                     "config_name" : "sort",
+                     "name" : "sort",
+                     "type" : "select",
+                     "data" : [
+                        {
+                           "display" : "Overall",
+                           "value" : 0
+                        },
+                        {
+                           "display" : "17.1",
+                           "sequence" : "1",
+                           "value" : "1",
+                           "id" : "1"
+                        },
+                        {
+                           "value" : "2",
+                           "id" : "2",
+                           "display" : "17.2",
+                           "sequence" : "2"
+                        },
+                        {
+                           "value" : "3",
+                           "id" : "3",
+                           "sequence" : "3",
+                           "display" : "17.3"
+                        },
+                        {
+                           "sequence" : "4",
+                           "display" : "17.4",
+                           "id" : "4",
+                           "value" : "4"
+                        },
+                        {
+                           "value" : "5",
+                           "id" : "5",
+                           "sequence" : "5",
+                           "display" : "17.5"
+                        }
+                     ],
+                     "frontpage" : 1,
+                     "label" : "Sort"
+                  }
+               ],
+               "display" : "Masters Men (50-54)"
+            },
+            {
+               "display" : "Masters Women (55-59)",
+               "controls" : [
+                  {
+                     "label" : "Sort",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "sequence" : "1",
+                           "display" : "17.1",
+                           "id" : "1",
+                           "value" : "1"
+                        },
+                        {
+                           "value" : "2",
+                           "id" : "2",
+                           "sequence" : "2",
+                           "display" : "17.2"
+                        },
+                        {
+                           "value" : "3",
+                           "id" : "3",
+                           "sequence" : "3",
+                           "display" : "17.3"
+                        },
+                        {
+                           "id" : "4",
+                           "value" : "4",
+                           "sequence" : "4",
+                           "display" : "17.4"
+                        },
+                        {
+                           "value" : "5",
+                           "id" : "5",
+                           "sequence" : "5",
+                           "display" : "17.5"
+                        }
+                     ],
+                     "type" : "select",
+                     "config_name" : "sort",
+                     "name" : "sort"
+                  }
+               ],
+               "value" : "8"
+            },
+            {
+               "value" : "7",
+               "display" : "Masters Men (55-59)",
+               "controls" : [
+                  {
+                     "type" : "select",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "sequence" : "1",
+                           "display" : "17.1",
+                           "id" : "1",
+                           "value" : "1"
+                        },
+                        {
+                           "id" : "2",
+                           "value" : "2",
+                           "sequence" : "2",
+                           "display" : "17.2"
+                        },
+                        {
+                           "id" : "3",
+                           "value" : "3",
+                           "display" : "17.3",
+                           "sequence" : "3"
+                        },
+                        {
+                           "sequence" : "4",
+                           "display" : "17.4",
+                           "id" : "4",
+                           "value" : "4"
+                        },
+                        {
+                           "display" : "17.5",
+                           "sequence" : "5",
+                           "id" : "5",
+                           "value" : "5"
+                        }
+                     ],
+                     "label" : "Sort",
+                     "name" : "sort",
+                     "config_name" : "sort"
+                  }
+               ]
+            },
+            {
+               "controls" : [
+                  {
+                     "config_name" : "sort",
+                     "name" : "sort",
+                     "type" : "select",
+                     "label" : "Sort",
+                     "frontpage" : 1,
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "id" : "1",
+                           "value" : "1",
+                           "sequence" : "1",
+                           "display" : "17.1"
+                        },
+                        {
+                           "id" : "2",
+                           "value" : "2",
+                           "sequence" : "2",
+                           "display" : "17.2"
+                        },
+                        {
+                           "sequence" : "3",
+                           "display" : "17.3",
+                           "value" : "3",
+                           "id" : "3"
+                        },
+                        {
+                           "id" : "4",
+                           "value" : "4",
+                           "sequence" : "4",
+                           "display" : "17.4"
+                        },
+                        {
+                           "id" : "5",
+                           "value" : "5",
+                           "display" : "17.5",
+                           "sequence" : "5"
+                        }
+                     ]
+                  }
+               ],
+               "display" : "Masters Women (60+)",
+               "value" : "10"
+            },
+            {
+               "display" : "Masters Men (60+)",
+               "controls" : [
+                  {
+                     "config_name" : "sort",
+                     "name" : "sort",
+                     "type" : "select",
+                     "label" : "Sort",
+                     "data" : [
+                        {
+                           "value" : 0,
+                           "display" : "Overall"
+                        },
+                        {
+                           "sequence" : "1",
+                           "display" : "17.1",
+                           "id" : "1",
+                           "value" : "1"
+                        },
+                        {
+                           "sequence" : "2",
+                           "display" : "17.2",
+                           "id" : "2",
+                           "value" : "2"
+                        },
+                        {
+                           "id" : "3",
+                           "value" : "3",
+                           "sequence" : "3",
+                           "display" : "17.3"
+                        },
+                        {
+                           "display" : "17.4",
+                           "sequence" : "4",
+                           "value" : "4",
+                           "id" : "4"
+                        },
+                        {
+                           "value" : "5",
+                           "id" : "5",
+                           "sequence" : "5",
+                           "display" : "17.5"
+                        }
+                     ],
+                     "frontpage" : 1
+                  }
+               ],
+               "value" : "9"
+            }
+         ],
+         "label" : "Division"
+      }
+   ],
+   "config" : {
+      "edit_profile" : {
+         "end_date" : "2017-02-28T01:00:00+0000",
+         "start_date" : "2017-01-12T00:00:00+0000"
+      },
+      "controls" : [
+         "competition",
+         "year",
+         "division",
+         "scaled",
+         "sort",
+         "fittest",
+         "occupation"
+      ],
+      "team_roster" : {
+         "start_date" : "2017-01-12T00:00:00+0000",
+         "end_date" : "2017-02-28T00:00:00+0000"
+      },
+      "scoring_queue" : {
+         "DEVELOPMENT" : "https://sqs.us-east-1.amazonaws.com/405288753372/ScoringVM-RequestQ-stage",
+         "PRODUCTION" : "https://sqs.us-east-1.amazonaws.com/405288753372/ScoringVM-RequestQ"
+      },
+      "registration" : {
+         "end_date" : "2017-03-28T00:00:00+0000",
+         "start_date" : "2017-01-12T00:00:00+0000"
+      }
+   },
+   "end_date" : "-0001-11-30T00:00:00+0000",
+   "type" : "open",
+   "age_cutoff_date" : "2017-07-15",
+   "start_date" : "2015-12-30T01:00:00+0000",
+   "parent_competition_id" : null,
+   "active" : "0"
+}
