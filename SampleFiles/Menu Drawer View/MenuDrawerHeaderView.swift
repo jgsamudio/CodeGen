@@ -58,10 +58,7 @@ final class MenuDrawerHeaderView: BuildableView {
         fatalError("init(coder:) has not been implemented")
     }
 
-}
-
-// MARK: - Private Functions
-private extension MenuDrawerHeaderView {
+    // MARK: - Public Functions
     
     func configureView(theme: Theme) {
         backgroundColor = theme.colorTheme.primary
@@ -70,6 +67,11 @@ private extension MenuDrawerHeaderView {
         addDividerView(leadingOffset: ViewConstants.profileDrawerInset,
                        color: theme.colorTheme.invertTertiary.withAlphaComponent(0.1))
     }
+
+}
+
+// MARK: - Private Functions
+private extension MenuDrawerHeaderView {
 
     func setupProfileButton(theme: Theme) {
         addSubview(profileImageView)
