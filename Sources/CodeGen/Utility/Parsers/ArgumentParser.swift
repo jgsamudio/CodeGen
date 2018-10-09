@@ -41,7 +41,7 @@ final class ArgumentParser {
             _ = try? visitor.traverse(topLevelDecl)
 
             // Update files with modifications.
-            var updatedFileComponents = [String]()
+            let updatedComponentList = LinkedList<String>()
             for i in 0..<fileComponents.count {
                 let fileComponent = fileComponents[i]
                 var replaceCurrentLine = false
@@ -50,7 +50,7 @@ final class ArgumentParser {
                 for modIndex in 0..<visitor.modifications.count {
                     let modification = visitor.modifications[modIndex]
                     if modification.startIndex == i {
-                        updatedFileComponents.append(modification.insertions.joined(separator: "\n"))
+                        updatedComponentList.append(modification.insertions.joined(separator: "\n"))
                         replaceCurrentLine = modification.replaceCurrentLine
                         // Deletions should be a range
                     }
@@ -58,10 +58,10 @@ final class ArgumentParser {
 
                 // Append line if needed.
                 if !replaceCurrentLine {
-                    updatedFileComponents.append(fileComponent)
+                    updatedComponentList.append(fileComponent)
                 }
             }
-            updatedFileComponents.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
+            updatedComponentList.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
         }
 
         // Store config generators for next run.

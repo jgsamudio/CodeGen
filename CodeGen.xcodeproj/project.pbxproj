@@ -30,6 +30,8 @@
 		20437D802152BB7A006EC083 /* DelegateExtensionMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */; };
 		20437D812152BB7D006EC083 /* PrivateExtensionMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */; };
 		204DDE1B216D345D00A51F52 /* GeneratorConfigExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204DDE19216D344F00A51F52 /* GeneratorConfigExtension.swift */; };
+		204DDE21216D3B0000A51F52 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204DDE1E216D3AD800A51F52 /* LinkedList.swift */; };
+		204DDE22216D3B0000A51F52 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204DDE1D216D3AD800A51F52 /* LinkedListNode.swift */; };
 		20FA3C34216BB408009AD3A2 /* InitializationMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C32216BB3F7009AD3A2 /* InitializationMarkGenerator.swift */; };
 		20FA3C38216BB97D009AD3A2 /* TabFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C36216BB974009AD3A2 /* TabFormat.swift */; };
 		20FA3C3A216BB995009AD3A2 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C39216BB995009AD3A2 /* ArrayExtension.swift */; };
@@ -512,6 +514,8 @@
 		20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateExtensionMarkGenerator.swift; sourceTree = "<group>"; };
 		20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateExtensionMarkGenerator.swift; sourceTree = "<group>"; };
 		204DDE19216D344F00A51F52 /* GeneratorConfigExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorConfigExtension.swift; sourceTree = "<group>"; };
+		204DDE1D216D3AD800A51F52 /* LinkedListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
+		204DDE1E216D3AD800A51F52 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		20FA3C32216BB3F7009AD3A2 /* InitializationMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializationMarkGenerator.swift; sourceTree = "<group>"; };
 		20FA3C36216BB974009AD3A2 /* TabFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFormat.swift; sourceTree = "<group>"; };
 		20FA3C39216BB995009AD3A2 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
@@ -839,6 +843,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204DDE1C216D3AC900A51F52 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				204DDE1E216D3AD800A51F52 /* LinkedList.swift */,
+				204DDE1D216D3AD800A51F52 /* LinkedListNode.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		20FA3C35216BB968009AD3A2 /* Code Format */ = {
 			isa = PBXGroup;
 			children = (
@@ -956,6 +969,7 @@
 		OBJ_12 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				204DDE1C216D3AC900A51F52 /* LinkedList */,
 				20FA3C47216CFF37009AD3A2 /* Protocols */,
 				20FA3C3D216BF18B009AD3A2 /* Regex */,
 				OBJ_13 /* CodeGenerators */,
@@ -1952,6 +1966,7 @@
 				OBJ_458 /* DataDecoder.swift in Sources */,
 				204DDE1B216D345D00A51F52 /* GeneratorConfigExtension.swift in Sources */,
 				OBJ_459 /* Visitor.swift in Sources */,
+				204DDE21216D3B0000A51F52 /* LinkedList.swift in Sources */,
 				20FA3C4B216CFF68009AD3A2 /* PrivateVariableMarkGenerator.swift in Sources */,
 				20FA3C38216BB97D009AD3A2 /* TabFormat.swift in Sources */,
 				OBJ_460 /* StringExtension.swift in Sources */,
@@ -1967,6 +1982,7 @@
 				OBJ_464 /* GeneratorConfig.swift in Sources */,
 				20FA3C4E216D20FF009AD3A2 /* ExtensionDeclarationExtension.swift in Sources */,
 				OBJ_465 /* ArgumentParser.swift in Sources */,
+				204DDE22216D3B0000A51F52 /* LinkedListNode.swift in Sources */,
 				OBJ_466 /* main.swift in Sources */,
 				20FA3C3F216BF19A009AD3A2 /* Regex.swift in Sources */,
 			);
