@@ -39,6 +39,12 @@
 			"enabled": true,
 			"insertString":["", "// MARK: - Public Properties", ""],
 			"visitors": ["variable"]
+		},
+		{
+			"name": "privateVariableMarkGenerator",
+			"enabled": true,
+			"insertString":["", "// MARK: - Private Properties", ""],
+			"visitors": ["variable"]
 		}
 	],
 	"excluded": [],

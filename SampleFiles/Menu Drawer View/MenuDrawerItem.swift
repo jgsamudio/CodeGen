@@ -23,8 +23,6 @@ final class MenuDrawerItem: UIView {
     
     weak var delegate: MenuDrawerItemDelegate?
 
-    // MARK: - Private Properties
-
     private let textLabel = UILabel()
     
     private let type: MenuItemType

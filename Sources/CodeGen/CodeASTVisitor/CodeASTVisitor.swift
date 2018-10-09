@@ -23,7 +23,8 @@ final class CodeASTVisitor: ASTVisitor {
                 PrivateExtensionMarkGenerator.self,
                 DelegateExtensionMarkGenerator.self,
                 InitializationMarkGenerator.self,
-                PublicVariableMarkGenerator.self]
+                PublicVariableMarkGenerator.self,
+                PrivateVariableMarkGenerator.self]
     }
 
     init(fileComponents: [String], config: Configuration?) {

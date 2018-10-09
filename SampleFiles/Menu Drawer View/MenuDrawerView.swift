@@ -25,8 +25,6 @@ final class MenuDrawerView: UIView {
     /// Delegate.
     weak var delegate: MenuDrawerHeaderDelegate?
     
-    // MARK: - Public Properties
-    
     var profileImageURLString: String? {
         didSet {
             headerView?.profileImageURLString = profileImageURLString
@@ -35,8 +33,6 @@ final class MenuDrawerView: UIView {
     
     /// Header view.
     private(set) var headerView: MenuDrawerHeaderView?
-
-    // MARK: - Private Properties
 
     private let scrollView = PilasScrollView()
 
