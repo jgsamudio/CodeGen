@@ -15,17 +15,11 @@ import Keys
 /// Interface for interaction with Instabug.
 struct InstabugIntegration {
 
-    // MARK: - Public Properties
-    
     /// Shared instance to be used for interacting with instabug.
     static let shared = InstabugIntegration()
 
-    // MARK: - Initialization
-    
     private init() {}
 
-    // MARK: - Public Functions
-    
     /// Sets up instabug to use the right app ID for bug logging.
     func prepare() {
         #if !RELEASE

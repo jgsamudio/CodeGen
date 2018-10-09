@@ -11,26 +11,18 @@ import Foundation
 /// Service for getting general information about competitions.
 struct CompetitionInfoService {
 
-    // MARK: - Private Properties
-    
     private let dataStore: CompetitionInfoDataStore
 
-    // MARK: - Initialization
-    
     init(dataStore: CompetitionInfoDataStore) {
         self.dataStore = dataStore
     }
 
-    // MARK: - Public Properties
-    
     var allCompetitions: [(String, String)] {
         return dataStore.activeStates.map({ (pair) -> (String, String) in
             return (pair.key.type, pair.key.year)
         })
     }
 
-    // MARK: - Public Functions
-    
     /// Returns the start date for the given competition type in the given year.
     ///
     /// - Parameters:

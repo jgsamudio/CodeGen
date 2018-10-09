@@ -11,13 +11,9 @@ import UIKit
 /// Shows loader for leaderboard result
 final class LeaderboardResultLoaderTableViewCell: UITableViewCell {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var circleView: UIView!
     @IBOutlet private weak var topSeparatorView: UIView!
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         circleView.layer.masksToBounds = true

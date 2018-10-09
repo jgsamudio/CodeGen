@@ -10,16 +10,12 @@ import Foundation
 
 final class LeaderboardFilterService {
 
-    // MARK: - Public Properties
-    
     /// HTTP client for network communication.
     let httpClient: HTTPClientProtocol
 
     /// Competition info service to update competition info when filters are downloaded.
     let competitionInfoService: CompetitionInfoService
 
-    // MARK: - Initialization
-    
     /// Creates a leaderboard filter service to generate filters.
     ///
     /// - Parameters:
@@ -29,8 +25,6 @@ final class LeaderboardFilterService {
         self.httpClient = httpClient
     }
 
-    // MARK: - Public Functions
-    
     /// Retrieves leaderboard filters for the given year and competition.
     ///
     /// - Parameters:

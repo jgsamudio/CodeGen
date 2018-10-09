@@ -12,19 +12,13 @@ import KeychainAccess
 /// Service for interacting with the secure keychain.
 struct KeychainService {
 
-    // MARK: - Private Properties
-    
     /// Keychain data store to interact with.
     private let keychainDataStore: KeychainDataStore
 
-    // MARK: - Initialization
-    
     init(keychainDataStore: KeychainDataStore) {
         self.keychainDataStore = keychainDataStore
     }
 
-    // MARK: - Public Functions
-    
     /// Retrieves a value from the keychain (if possible).
     ///
     /// - Parameter key: Key whose value has to be stored.

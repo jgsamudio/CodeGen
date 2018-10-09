@@ -11,8 +11,6 @@ import UIKit
 /// Cell displayed for a dashboard card.
 final class DashboardCardCell: UICollectionViewCell {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var yearLabel: UILabel!
 
     @IBOutlet private weak var divisionNameLabel: UILabel!
@@ -29,8 +27,6 @@ final class DashboardCardCell: UICollectionViewCell {
 
     @IBOutlet private weak var dashboardSlash: UIImageView!
 
-    // MARK: - Public Properties
-    
     /// Year displayed in `self`.
     var year: String? {
         didSet {
@@ -94,8 +90,6 @@ final class DashboardCardCell: UICollectionViewCell {
 
     private let parallaxOffset: CGFloat = -70
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
 

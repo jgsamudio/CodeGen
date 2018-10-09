@@ -10,8 +10,6 @@ import Foundation
 
 extension FloatingPoint {
 
-    // MARK: - Public Functions
-    
     /// Clamps `self` within `[minimum, maximum]` and returns the result.
     ///
     /// Examples:

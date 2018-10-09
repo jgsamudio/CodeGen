@@ -11,12 +11,8 @@ import Foundation
 /// Helper structure for managing dashboard refresh.
 final class DashboardRefreshCoordinator {
 
-    // MARK: - Private Properties
-    
     private static let refreshInterval = 600.0
 
-    // MARK: - Public Properties
-    
     /// Last refresh date of the dashboard.
     var lastRefresh: Date? {
         get {

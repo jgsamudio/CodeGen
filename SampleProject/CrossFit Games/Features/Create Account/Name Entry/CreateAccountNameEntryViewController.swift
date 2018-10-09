@@ -11,8 +11,6 @@ import UIKit
 
 final class CreateAccountNameEntryViewController: BaseAuthViewController {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var firstNameTextField: StyleableTextField!
     @IBOutlet private weak var lastNameTextField: StyleableTextField!
@@ -24,15 +22,11 @@ final class CreateAccountNameEntryViewController: BaseAuthViewController {
     @IBOutlet private weak var agreementlabel: TappableLabel!
     @IBOutlet private weak var stepLabel: StyleableLabel!
 
-    // MARK: - Public Properties
-    
     var viewModel: CreateAccountNameEntryViewModel!
 
     let localization = CreateAccountNameEntryLocalization()
     let generalLocalization = GeneralLocalization()
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()

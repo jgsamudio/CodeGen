@@ -13,17 +13,11 @@ import Fabric
 /// Struct for interaction with Crashlytics SDK.
 struct CrashlyticsIntegration {
 
-    // MARK: - Public Properties
-    
     /// Shared instance.
     static let shared = CrashlyticsIntegration()
 
-    // MARK: - Initialization
-    
     private init() {}
 
-    // MARK: - Public Functions
-    
     /// Sets up Crashlytics for crash logging.
     func setup() {
         Fabric.with([Crashlytics.self])

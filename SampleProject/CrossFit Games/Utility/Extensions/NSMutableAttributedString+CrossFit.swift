@@ -10,15 +10,10 @@ import Foundation
 
 extension NSMutableAttributedString {
 
-    // MARK: - Public Functions
-    
     /// Trims charactes from beginning and end of `self`.
     ///
     /// - Parameter charSet: Character set to trim characters from.
     func trimCharacters(inCharSet charSet: CharacterSet) {
-    
-    // MARK: - Public Properties
-    
         var range = (string as NSString).rangeOfCharacter(from: charSet)
 
         // Trim leading characters from character set.

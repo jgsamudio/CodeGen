@@ -12,8 +12,6 @@ import Lottie
 /// Coach mark to prompt users to tap on something.
 final class CoachMark: UIView {
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -45,9 +43,6 @@ final class CoachMark: UIView {
     }
 
     private func setupLabel() {
-    
-    // MARK: - Public Properties
-    
         let label = StyleableLabel(frame: bounds)
         label.text = DashboardLocalization().tap
         label.textAlignment = .center

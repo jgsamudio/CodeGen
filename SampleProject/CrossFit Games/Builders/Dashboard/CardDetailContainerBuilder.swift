@@ -10,12 +10,8 @@ import UIKit
 
 struct CardDetailContainerBuilder: Builder {
 
-    // MARK: - Public Properties
-    
     let viewModel: CardDetailContainerViewModel
 
-    // MARK: - Public Functions
-    
     func build() -> UIViewController {
         let viewController: CardDetailContainerViewController = UIStoryboard(name: "Dashboard", bundle: nil).instantiateViewController()
         viewController.viewModel = viewModel

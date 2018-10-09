@@ -11,17 +11,11 @@ import UIKit
 /// Cell to display Search information
 final class SearchTableViewCell: UITableViewCell {
 
-    // MARK: - Public Properties
-    
     static let heightEstimate = CGFloat(72)
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var topLabel: UILabel!
     @IBOutlet private weak var bottomLabel: UILabel!
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

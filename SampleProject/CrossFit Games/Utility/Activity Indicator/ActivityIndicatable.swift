@@ -25,20 +25,14 @@ protocol ActivityIndicatable {
 }
 
 // MARK: - UIView ActivityIndicatable
-// MARK: - ActivityIndicatable
 extension UIView: ActivityIndicatable {
 
-    // MARK: - Public Functions
-    
     /// Starts the Activity Indicator.
     func startActivityIndicator() {
         guard !isAnimating() else {
             return
         }
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-    
-    // MARK: - Public Properties
-    
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityIndicator.backgroundColor = .clear
         addSubview(activityIndicator)
@@ -63,7 +57,6 @@ extension UIView: ActivityIndicatable {
 }
 
 // MARK: - UIViewController ActivityIndicatable
-// MARK: - ActivityIndicatable
 extension UIViewController: ActivityIndicatable {
 
     /// Starts the Activity Indicator.

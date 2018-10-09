@@ -10,12 +10,8 @@ import UIKit
 
 struct LeaderboardResultBuilder: Builder {
 
-    // MARK: - Public Properties
-    
     let layout: LeaderboardResultLayout
 
-    // MARK: - Public Functions
-    
     func build() -> UIViewController {
         let viewController: LeaderboardResultViewController = UIStoryboard(name: "Leaderboard", bundle: nil).instantiateViewController()
         injectDependencies(for: viewController)

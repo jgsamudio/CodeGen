@@ -10,8 +10,6 @@ import UIKit
 
 final class FixedSizeTableView: UITableView {
 
-    // MARK: - Public Functions
-    
     override func layoutSubviews() {
         super.layoutSubviews()
 
@@ -20,8 +18,6 @@ final class FixedSizeTableView: UITableView {
         }
     }
 
-    // MARK: - Public Properties
-    
     override var intrinsicContentSize: CGSize {
         return contentSize
     }

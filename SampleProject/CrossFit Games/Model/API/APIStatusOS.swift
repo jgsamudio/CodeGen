@@ -10,16 +10,12 @@ import Foundation
 
 struct APIStatusOS: Decodable {
 
-    // MARK: - Public Properties
-    
     let iOS: APIStatus
 
     private enum CodingKeys: String, CodingKey {
         case iOS
     }
 
-    // MARK: - Initialization
-    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         do {

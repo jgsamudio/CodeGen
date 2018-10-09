@@ -12,15 +12,10 @@ import UIKit
 
 class LandingViewController: BaseAuthViewController {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var videoView: UIView!
     @IBOutlet private weak var loginButton: StyleableButton!
     @IBOutlet private weak var createAccountButton: StyleableButton!
     @IBOutlet private weak var skipButton: StyleableButton!
-    
-    // MARK: - Public Properties
-    
     /// View model
     var viewModel: RootViewModel!
 
@@ -28,8 +23,6 @@ class LandingViewController: BaseAuthViewController {
 
     private weak var videoPlayer: AVPlayer?
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()

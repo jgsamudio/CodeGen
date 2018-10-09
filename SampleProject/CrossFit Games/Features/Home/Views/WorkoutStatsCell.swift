@@ -11,15 +11,11 @@ import Lottie
 
 final class WorkoutStatsCell: UITableViewCell {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var scoreValueLabel: StyleableLabel!
     @IBOutlet private weak var percentileValueLabel: StyleableLabel!
     @IBOutlet private weak var rankValueLabel: StyleableLabel!
     @IBOutlet private weak var workoutNameLabel: StyleableLabel!
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         config()

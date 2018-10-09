@@ -16,8 +16,6 @@ enum LeaderboardPresentationRouter {
 
     case pushingIn(navigationController: UINavigationController?, title: String?, subtitle: String?, isAffiliateLeaderboard: Bool)
 
-    // MARK: - Public Functions
-    
     /// Presents a custom leaderboard on the leaderboard screen, searching for the provided athlete ID.
     ///
     /// - Parameters:
@@ -63,8 +61,6 @@ enum LeaderboardPresentationRouter {
                 return
         }
 
-    // MARK: - Public Properties
-    
         let viewModelToLoad = LeaderboardResultViewModel(customLeaderboard: leaderboard)
         let newFilterViewModel = LeaderboardFilterContent(leaderboard: leaderboard)
         viewModelToLoad.retrieveLeaderboardList(searchingFor: athleteId, onPage: page) { (_, _) in

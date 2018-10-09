@@ -11,12 +11,8 @@ import Simcoe
 
 final class SearchViewController: BaseViewController {
 
-    // MARK: - Public Properties
-    
     var viewModel: SearchViewModel!
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var searchBarView: UIView!
     @IBOutlet private weak var searchTextField: UITextField!
@@ -25,8 +21,6 @@ final class SearchViewController: BaseViewController {
     @IBOutlet private weak var filterLabel: UILabel!
     @IBOutlet private weak var zeroResultsLabel: StyleableLabel!
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBarView.transform = offsetTranslation

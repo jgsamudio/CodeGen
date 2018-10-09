@@ -13,8 +13,6 @@ import UIKit
 /// value specified on the Top Most View Controller, or the default.
 extension UINavigationController {
 
-    // MARK: - Public Properties
-    
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         return topViewController?.preferredStatusBarStyle ?? .default
     }

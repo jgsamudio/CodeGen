@@ -13,13 +13,9 @@ import Foundation
 /// tasks.
 struct ServiceFactory {
 
-    // MARK: - Public Properties
-    
     /// Shared instance of `self`.
     static let shared = ServiceFactory()
 
-    // MARK: - Private Properties
-    
     private let authHttpClient: AuthHTTPClient
     private let defaultHTTPClient: HTTPClientProtocol
     private let userDataStore: UserDataStore
@@ -28,8 +24,6 @@ struct ServiceFactory {
     private let workoutDataStore: WorkoutDataStore
     private let competitionInfoDataStore: CompetitionInfoDataStore
 
-    // MARK: - Initialization
-    
     private init() {
         authHttpClient = AuthHTTPClient(sessionManager: ServiceFactory.createSessionManager())
         defaultHTTPClient = DefaultHTTPClient(sessionManager: ServiceFactory.createSessionManager())
@@ -41,8 +35,6 @@ struct ServiceFactory {
         userDataStore.keychainDataStore = keychainDataStore
     }
 
-    // MARK: - Public Functions
-    
     /// Creates a service that is capable of creating new user account.
     ///
     /// - Returns: New instance of the requested service.

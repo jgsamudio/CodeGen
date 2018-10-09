@@ -15,15 +15,11 @@ private enum WorkoutLoaderCellIndexPath {
 
 final class WorkoutLoaderViewController: UIViewController {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var shimmerView: UIView!
     @IBOutlet private weak var tableView: UITableView!
 
     @IBOutlet private weak var tableViewTopConstraint: NSLayoutConstraint!
 
-    // MARK: - Public Properties
-    
     // This is the height of the shrinkableTopView on `WorkoutsViewController`,
     // and is static specifically during the `WorkoutLoaderViewController` state.
     internal static var shrinkableTopViewHeight: CGFloat = 46.0
@@ -35,8 +31,6 @@ final class WorkoutLoaderViewController: UIViewController {
     }
 
     private let cellList: [WorkoutLoaderCellIndexPath] = [.small, .large, .small, .large, .large]
-    
-    // MARK: - Public Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()

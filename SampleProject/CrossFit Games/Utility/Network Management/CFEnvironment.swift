@@ -12,8 +12,6 @@ import Foundation
 /// Crossfit application.
 struct CFEnvironment: HTTPEnvironment {
 
-    // MARK: - Public Properties
-    
     /// Title to be visualized in debug menu items
     let title: String
 

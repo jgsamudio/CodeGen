@@ -13,8 +13,6 @@ typealias LeaderboardInfo = (leaderboard: CustomLeaderboard?, region: String?, d
 /// View model for a single dashboard card.
 struct DashboardCardViewModel {
 
-    // MARK: - Public Properties
-    
     /// User's ID.
     let userId: String
 
@@ -71,8 +69,6 @@ struct DashboardCardViewModel {
         }
     }
 
-    // MARK: - Private Properties
-    
     private let customName: String
 
     private let leaderboardFilterService: LeaderboardFilterService
@@ -81,8 +77,6 @@ struct DashboardCardViewModel {
 
     private let localization = DashboardLocalization()
 
-    // MARK: - Public Functions
-    
     static func worldWideDivisionViewModel(personalizedLeaderboard: PersonalizedLeaderboard) -> DashboardCardViewModel? {
         guard isLatestPersonalizedLeaderboardRecentEnough(personalizedLeaderboard) else {
             return nil

@@ -25,8 +25,6 @@ struct LeaderboardControls: Codable, Equatable {
         case config
     }
 
-    // MARK: - Public Properties
-    
     /// ID of the competition
     let id: String
 
@@ -62,8 +60,6 @@ struct LeaderboardControls: Codable, Equatable {
         return active == "1"
     }
 
-    // MARK: - Initialization
-    
     init(id: String,
          identifier: String,
          name: String,
@@ -129,8 +125,6 @@ struct LeaderboardControls: Codable, Equatable {
 
 }
 
-    // MARK: - Public Functions
-    
 func == (_ lhs: LeaderboardControls, _ rhs: LeaderboardControls) -> Bool {
     return lhs.id == rhs.id
         && lhs.type == rhs.type

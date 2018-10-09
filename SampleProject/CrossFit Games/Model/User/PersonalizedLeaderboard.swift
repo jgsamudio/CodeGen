@@ -39,8 +39,6 @@ struct PersonalizedLeaderboard: Codable {
         case stats
     }
 
-    // MARK: - Public Properties
-    
     let competitorId: Int
     let competitorName: String
     let professionId: Int?
@@ -79,8 +77,6 @@ struct PersonalizedLeaderboard: Codable {
         return mostRecentOpenCompetitions.first
     }
 
-    // MARK: - Public Functions
-    
     /// Most recent competition which has started.
     func mostRecentStartedOpenCompetition(using competitionInfoService: CompetitionInfoService) -> PersonalizedLeaderboardAllCompetitionResult? {
         return mostRecentOpenCompetitions.first(where: { (result) -> Bool in
@@ -101,8 +97,6 @@ struct PersonalizedLeaderboard: Codable {
         return mostRecentOpenCompetition != nil && mostRecentOpenCompetition?.worldWide == nil && !nextMostRecentOpenInvalid
     }
 
-    // MARK: - Initialization
-    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 

@@ -11,8 +11,6 @@ import Foundation
 /// Localization constants for landing feature.
 struct LandingLocalization {
 
-    // MARK: - Public Properties
-    
     /// "Login" string for button CTA.
     let login = "LANDING_LOGIN".localized
 

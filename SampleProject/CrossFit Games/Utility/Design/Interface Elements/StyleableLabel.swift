@@ -10,8 +10,6 @@ import UIKit
 
 class StyleableLabel: UILabel, Styleable {
 
-    // MARK: - Public Properties
-    
     @IBInspectable var row: Int = 1 {
         didSet {
             applyStyle()
@@ -42,8 +40,6 @@ class StyleableLabel: UILabel, Styleable {
         }
     }
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
 

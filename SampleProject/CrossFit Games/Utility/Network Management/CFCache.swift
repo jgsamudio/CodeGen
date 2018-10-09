@@ -10,24 +10,16 @@ import UIKit
 
 private class Container: NSDiscardableContent {
 
-    // MARK: - Public Properties
-    
     let key: NSURLRequest
     let value: Decodable
 
-    // MARK: - Private Properties
-    
     private let createDate = Date()
 
-    // MARK: - Initialization
-    
     init(key: NSURLRequest, value: Decodable) {
         self.key = key
         self.value = value
     }
 
-    // MARK: - Public Functions
-    
     func beginContentAccess() -> Bool {
         return true
     }

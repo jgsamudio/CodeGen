@@ -11,12 +11,8 @@ import UIKit
 /// Debounces based on delay and previous text
 final class TextDebouncer: Debouncer {
 
-    // MARK: - Private Properties
-    
     fileprivate var previousText = ""
 
-    // MARK: - Public Functions
-    
     /// Triggers callback for Text based debouncers
     ///
     /// - Parameters:
@@ -27,9 +23,6 @@ final class TextDebouncer: Debouncer {
         if previousText == text {
             timer?.invalidate()
         } else {
-    
-    // MARK: - Public Properties
-    
             let callbackWrapper = {
                 self.previousText = text
                 callback()

@@ -11,25 +11,16 @@ import Foundation
 /// Contains the functions regarding following an athlete
 struct FolllowAnAthleteService {
 
-    // MARK: - Private Properties
-    
     private var leaderboardListService: LeaderboardListService
 
-    // MARK: - Initialization
-    
     init() {
         leaderboardListService = ServiceFactory.shared.createLeaderboardListService()
     }
 
-    // MARK: - Public Functions
-    
     /// Saves the athlete id which would be follown
     ///
     /// - Parameter viewModel: LeaderboardAthleteResultCellViewModel
     func followAthlete(with viewModel: LeaderboardAthleteResultCellViewModel) {
-    
-    // MARK: - Public Properties
-    
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(viewModel) {
             UserDefaultsManager.shared.setValue(withKey: .followingAthleteViewModel, value: encoded)

@@ -11,8 +11,6 @@ import Foundation
 /// Config for leaderboard controls
 struct LeaderboardControlsConfig: Codable {
 
-    // MARK: - Public Properties
-    
     /// Registration date range.
     let registration: DateRange?
 

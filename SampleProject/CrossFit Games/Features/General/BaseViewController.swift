@@ -12,8 +12,6 @@ import Simcoe
 /// Includes common UI aspects that all the view controllers need
 class BaseViewController: UIViewController {
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         Simcoe.track(event: .trackScreen,
@@ -26,9 +24,6 @@ class BaseViewController: UIViewController {
 
     /// Show random emoji for features in development
     func showEmoji() {
-    
-    // MARK: - Public Properties
-    
         let alert = UIAlertController(title: "", message: .randomEmoji(), preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Almost there!", style: .default) { _ in
             alert.dismiss(animated: true)

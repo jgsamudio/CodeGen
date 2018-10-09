@@ -9,9 +9,6 @@
 import Foundation
 
 struct APIStatus: Decodable {
-    
-    // MARK: - Public Properties
-    
     /// Specifies if an API is inactive
     let apiActive: Bool?
 
@@ -35,8 +32,6 @@ struct APIStatus: Decodable {
         case minVersion
     }
 
-    // MARK: - Initialization
-    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         do {

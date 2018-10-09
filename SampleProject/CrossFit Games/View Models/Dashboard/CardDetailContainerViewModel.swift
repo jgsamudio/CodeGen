@@ -11,8 +11,6 @@ import UIKit
 /// View model for a card detail view container.
 struct CardDetailContainerViewModel {
 
-    // MARK: - Public Properties
-    
     /// View controllers to be displayed in the associated view controller.
     let viewControllers: [UIViewController]
 

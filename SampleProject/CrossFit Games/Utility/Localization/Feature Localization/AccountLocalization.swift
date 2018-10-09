@@ -9,8 +9,6 @@
 /// Account Localization
 struct AccountLocalization {
 
-    // MARK: - Public Properties
-    
     /// Account Faq
     let help = "ACCOUNT_HELP".localized
 

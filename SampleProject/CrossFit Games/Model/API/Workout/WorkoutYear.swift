@@ -11,8 +11,6 @@ import Foundation
 /// Represents the workout Year details
 struct WorkoutYear: Decodable {
 
-    // MARK: - Public Properties
-    
     /// Title of the year property
     let label: String
     

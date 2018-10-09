@@ -11,8 +11,6 @@ import Foundation
 /// Date Formatters are expensive to create. In an effort to reduce overhead, static formatters are created per style.
 struct CustomDateFormatter {
 
-    // MARK: - Public Properties
-    
     /// Date Formatters for any birthdays
     static let birthDateFormatter: Foundation.DateFormatter = {
         let dateFormatter = Foundation.DateFormatter()

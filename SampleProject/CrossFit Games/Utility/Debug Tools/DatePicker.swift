@@ -12,9 +12,6 @@ import Foundation
 final class DatePicker {
 
     #if DEBUG || ALPHA || BETA
-    
-    // MARK: - Public Properties
-    
     var dateValue = Date()
     #endif
 

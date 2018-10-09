@@ -11,12 +11,8 @@ import UIKit
 /// View to display in the stack view used for button items on the dashboard screen.
 final class DashboardPromoItem: UIView {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var label: UILabel!
 
-    // MARK: - Public Properties
-    
     /// Text displayed on `self`.
     var text: String? {
         didSet {
@@ -27,8 +23,6 @@ final class DashboardPromoItem: UIView {
     /// Action that is performed when a user taps on `self`.
     var tapAction: () -> Void = {}
 
-    // MARK: - Initialization
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupForStoryboardUse()
@@ -38,8 +32,6 @@ final class DashboardPromoItem: UIView {
         super.init(frame: frame)
     }
 
-    // MARK: - Public Functions
-    
     /// Triggers `tapAction` and can be used as selector for a gesture recognizer.
     @objc func triggerTap() {
         tapAction()

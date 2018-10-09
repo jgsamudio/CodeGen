@@ -11,8 +11,6 @@ import Foundation
 /// View model for the dashboard follow an athlete
 struct DashboardFollowAnAthleteViewModel {
 
-    // MARK: - Public Properties
-    
     /// Athlete Id
     let id: String
 
@@ -60,8 +58,6 @@ struct DashboardFollowAnAthleteViewModel {
         return ordinalMapArray
     }
 
-    // MARK: - Public Functions
-    
     /// Removes the current following athlete
     func unfollowAthlete() {
         let followAthleteService = ServiceFactory.shared.createFollowAnAthleteService()

@@ -11,8 +11,6 @@ import Foundation
 /// Data store for leaderboard information.
 final class LeaderboardDataStore {
 
-    // MARK: - Public Properties
-    
     /// Selections made on leaderboards
     var leaderboardSelections: [String: CustomLeaderboard] {
         get {

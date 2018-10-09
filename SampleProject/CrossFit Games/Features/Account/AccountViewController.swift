@@ -13,20 +13,13 @@ import Simcoe
 /// Displays Account information
 final class AccountViewController: BaseViewController {
 
-    // MARK: - Public Properties
-    
     /// View Model
     var viewModel: AccountViewModel!
-    
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var nameLabel: StyleableLabel!
     @IBOutlet private weak var emailLabel: StyleableLabel!
     private let localization = AccountLocalization()
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension

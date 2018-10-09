@@ -12,8 +12,6 @@ import Foundation
 /// in: "Individual Women") and the filter name ("fittest_in" for fittest in filter).
 struct FilterOptionName: CustomStringConvertible {
 
-    // MARK: - Public Properties
-    
     /// ID of the filter option ("2" for individual women for example)
     let id: String
 

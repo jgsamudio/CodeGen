@@ -16,8 +16,6 @@ struct LeaderboardOrdinal: Codable {
         case displayName = "columnName"
     }
 
-    // MARK: - Public Properties
-    
     /// ID of `self`.
     let id: String
 

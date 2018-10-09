@@ -10,8 +10,6 @@ import Foundation
 
 struct DashboardLocalization {
 
-    // MARK: - Public Properties
-    
     /// Account text
     let accountYour = "DASHBOARD_ACCOUNT_YOUR".localized
 
@@ -23,8 +21,6 @@ struct DashboardLocalization {
 
     let tap = "DASHBOARD_COACHMARK_TAP".localized
 
-    // MARK: - Public Functions
-    
     /// Appends "Rank" to a given string (like: Worldwide + Rank = "Worldwide Rank")
     ///
     /// - Parameter string: String that needs Rank appended to it.

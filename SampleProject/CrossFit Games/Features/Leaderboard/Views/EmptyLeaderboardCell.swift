@@ -10,12 +10,8 @@ import UIKit
 
 final class EmptyLeaderboardCell: UITableViewCell {
 
-    // MARK: - Public Properties
-    
     @IBOutlet weak var noResultsLabel: StyleableLabel!
 
-    // MARK: - Public Functions
-    
     func setNoResultsLabelText(text: String) {
         noResultsLabel.text = text
     }

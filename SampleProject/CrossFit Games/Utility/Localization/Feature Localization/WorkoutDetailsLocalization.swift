@@ -10,8 +10,6 @@ import Foundation
 
 struct WorkoutDetailsLocalization {
 
-    // MARK: - Public Properties
-    
     /// Equioment text
     let equipment = "WORKOUT_DETAILS_EQUIPMENT".localized
 
@@ -36,8 +34,6 @@ struct WorkoutDetailsLocalization {
     /// Submit score text
     let submitScore = "WORKOUTS_SUBMIT_SCORE".localized
 
-    // MARK: - Public Functions
-    
     /// Returns a string à la "1 of 15".
     ///
     /// - Parameters:

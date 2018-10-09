@@ -10,14 +10,9 @@ import UIKit
 
 struct SearchViewModel {
 
-    // MARK: - Private Properties
-    
     private let service = ServiceFactory.shared.createLeaderboardSearchService()
     private let textDebouncer = TextDebouncer()
     private let customLeaderboard: CustomLeaderboard
-    
-    // MARK: - Public Properties
-    
     var leaderboardSearchResults = [LeaderboardSearch]() {
         didSet {
             leaderboardSearchResults =  leaderboardSearchResults.sorted(by: { $0.lastname < $1.lastname })
@@ -44,8 +39,6 @@ struct SearchViewModel {
         return GeneralLocalization().inString(suffix: filters)
     }
 
-    // MARK: - Initialization
-    
     /// Initalizer
     ///
     /// - Parameter customLeaderboard: CustomLeaderboard to initalize
@@ -53,8 +46,6 @@ struct SearchViewModel {
         self.customLeaderboard = customLeaderboard
     }
 
-    // MARK: - Public Functions
-    
     /// Search to trigger network request (internally uses debouncer)
     ///
     /// - Parameters:

@@ -17,8 +17,6 @@ enum EnvironmentName: String {
     case generalStageTemp = "Staging Temp"
     case generalStage = "Staging"
 
-    // MARK: - Initialization
-    
     init?(name: String) {
         switch name {
         case "authBeta":
@@ -36,8 +34,6 @@ enum EnvironmentName: String {
         }
     }
 
-    // MARK: - Public Functions
-    
     /// Converts an environment name to string
     ///
     /// - Parameter name: environment name

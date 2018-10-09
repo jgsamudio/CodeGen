@@ -11,8 +11,6 @@ import Foundation
 /// Represents the user object model
 struct User {
 
-    // MARK: - Public Properties
-    
     /// First name of the user
     let firstName: String?
     /// Last name of the user

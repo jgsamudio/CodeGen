@@ -11,13 +11,9 @@ import UIKit
 /// Builder for a generic picker view.
 struct PickerViewBuilder: Builder {
 
-    // MARK: - Public Properties
-    
     /// View model for the created view.
     let pickerViewModel: PickerViewModel
 
-    // MARK: - Public Functions
-    
     func build() -> UIViewController {
         let pickerViewController: PickerViewController = UIStoryboard(name: "PickerView", bundle: nil).instantiateViewController()
         pickerViewController.viewModel = pickerViewModel

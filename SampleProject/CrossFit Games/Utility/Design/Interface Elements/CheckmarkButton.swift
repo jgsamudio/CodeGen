@@ -10,12 +10,8 @@ import UIKit
 
 final class CheckmarkButton: UIButton {
 
-    // MARK: - Private Properties
-    
     private let checkedImage = UIImage(named: "checked")
 
-    // MARK: - Public Properties
-    
     var isChecked: Bool = false {
         didSet {
             if isChecked {
@@ -27,8 +23,6 @@ final class CheckmarkButton: UIButton {
         }
     }
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         addTarget(self, action: #selector(pressButton(button:)), for: .touchUpInside)

@@ -12,8 +12,6 @@ import Simcoe
 /// Service for logging out the user.
 struct LogoutService {
 
-    // MARK: - Private Properties
-    
     private let leaderboardDataStore: LeaderboardDataStore
 
     private let userDataStore: UserDataStore
@@ -24,8 +22,6 @@ struct LogoutService {
 
     private let competitionInfoDataStore: CompetitionInfoDataStore
 
-    // MARK: - Initialization
-    
     /// Initalizer
     ///
     /// - Parameters:
@@ -45,8 +41,6 @@ struct LogoutService {
         self.competitionInfoDataStore = competitionInfoDataStore
     }
 
-    // MARK: - Public Functions
-    
     /// Logs out the user and wipes all user-centered data.
     func logout() {
         keychainDataStore.deleteAll()

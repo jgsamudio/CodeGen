@@ -10,12 +10,8 @@ import UIKit
 
 struct DashboardStatsBuilder: Builder {
 
-    // MARK: - Public Properties
-    
     let viewModel: DashboardCardViewModel
 
-    // MARK: - Public Functions
-    
     func build() -> UIViewController {
         let dashboardStatsViewController: DashboardStatsViewController = UIStoryboard(name: "DashboardStats", bundle: nil).instantiateViewController()
         dashboardStatsViewController.viewModel = DashboardStatsViewModel(dashboardCardViewModel: viewModel)

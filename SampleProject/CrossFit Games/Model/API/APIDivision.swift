@@ -29,8 +29,6 @@ enum APIDivision: Int {
     case men35to39
     case women35to39
 
-    // MARK: - Public Properties
-    
     /// Indicates that the given division is a "male division".
     var isMale: Bool {
         let maleDivisions: [APIDivision] = [

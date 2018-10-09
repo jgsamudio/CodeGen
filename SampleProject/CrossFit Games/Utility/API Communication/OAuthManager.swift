@@ -12,8 +12,6 @@ import Keys
 
 class OAuthManager: RequestRetrier, RequestAdapter {
 
-    // MARK: - Public Properties
-    
     /// Access token that is get / set from user defaults always
     var accessToken: String? {
         get {
@@ -24,15 +22,11 @@ class OAuthManager: RequestRetrier, RequestAdapter {
         }
     }
 
-    // MARK: - Initialization
-    
     init(sessionManager: SessionManager) {
         sessionManager.adapter = self
         sessionManager.retrier = self
     }
 
-    // MARK: - Public Functions
-    
     func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
         var request = urlRequest
         if request.value(forHTTPHeaderField: "Authorization") == nil {

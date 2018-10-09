@@ -10,8 +10,6 @@ import UIKit
 
 extension UICollectionView {
 
-    // MARK: - Public Functions
-    
     /// Dequeues and returns a specific collection view cell type for the given index path.
     ///
     /// This call crashes the app if the given cell type can not be dequeued for its own class name.

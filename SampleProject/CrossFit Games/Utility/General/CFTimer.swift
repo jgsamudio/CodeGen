@@ -11,23 +11,17 @@ import UIKit
 /// Wraps Timer, which contains managing the timer functions
 class CFTimer: NSObject {
 
-    // MARK: - Private Properties
-    
     private var timer: Timer!
     private var isTimerRunning: Bool = false
     private var interval: TimeInterval!
     private var repeats: Bool!
 
-    // MARK: - Initialization
-    
     init(interval: TimeInterval, repeats: Bool = false) {
         super.init()
         self.interval = interval
         self.repeats = repeats
     }
 
-    // MARK: - Public Functions
-    
     /// Creates a timer instance, if it isn't created yet
     /// based on the interval and the repeats values
     ///

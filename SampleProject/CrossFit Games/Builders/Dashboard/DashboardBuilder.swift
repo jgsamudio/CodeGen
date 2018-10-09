@@ -10,12 +10,7 @@ import UIKit
 
 struct DashboardBuilder: Builder {
 
-    // MARK: - Public Functions
-    
     func build() -> UIViewController {
-    
-    // MARK: - Public Properties
-    
         let dashboardViewController: DashboardViewController = UIStoryboard(name: "Dashboard", bundle: nil).instantiateViewController()
         dashboardViewController.viewModel = DashboardViewModel()
         return dashboardViewController

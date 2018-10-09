@@ -11,8 +11,6 @@ import UIKit
 /// Builder for a filter screen used to adjust parameters for a displayed leaderboard.
 struct FilterBuilder: Builder {
 
-    // MARK: - Public Properties
-    
     /// Theme configuration to customize the resulting filter view UI.
     let themeConfig: FilterThemeConfiguration
 
@@ -32,8 +30,6 @@ struct FilterBuilder: Builder {
     /// Custom title for the screen used instead of the view model's title if not nil.
     let customTitle: String?
 
-    // MARK: - Public Functions
-    
     func build() -> UIViewController {
         let viewController: FilterViewController = UIStoryboard(name: "Filters", bundle: nil).instantiateViewController()
         viewController.themeConfig = themeConfig

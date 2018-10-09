@@ -17,8 +17,6 @@ struct RegionFilterData: LeaderboardFilterData {
         case name
     }
 
-    // MARK: - Public Properties
-    
     let display: String
 
     let value: String
@@ -27,8 +25,6 @@ struct RegionFilterData: LeaderboardFilterData {
 
     let states: [RegionFilterData]?
 
-    // MARK: - Initialization
-    
     init(display: String, value: String, name: String, states: [RegionFilterData]?) {
         self.display = display
         self.value = value

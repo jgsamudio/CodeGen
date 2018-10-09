@@ -11,12 +11,8 @@ import WebKit
 /// Delegate for a submit score screen to log when users got redirected
 final class SubmitScoreWebViewDelegate: NSObject, WebViewControllerDelegate {
 
-    // MARK: - Private Properties
-    
     private let redirectIndication = "/cf/login"
 
-    // MARK: - Public Functions
-    
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         if webView.url?.absoluteString.contains(redirectIndication) == true {
             CrashlyticsIntegration.shared.log(event: .submitScoreRedirectToLogin)

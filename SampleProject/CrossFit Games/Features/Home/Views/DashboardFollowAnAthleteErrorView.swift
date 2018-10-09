@@ -12,16 +12,12 @@ import UIKit
 /// Will be displayed when a network request occurs
 final class DashboardFollowAnAthleteErrorView: UIView {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var refreshButton: StyleableButton!
 
     /// Tap action for the button.
     private var tapAction: (@escaping (Error?) -> Void) -> Void = { _ in }
     private let grayToneColor = UIColor(white: 59/255, alpha: 1)
 
-    // MARK: - Public Functions
-    
     /// Initializes an instance of DashboardFollowAnAthleteErrorView from the nib file
     ///
     /// - Returns: An instance of DashboardFollowAnAthleteErrorView

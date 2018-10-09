@@ -19,8 +19,6 @@ struct WorkoutCompetition: Decodable {
         case endDate = "end_date"
     }
 
-    // MARK: - Public Properties
-    
     /// Competition identifier
     let identifier: String
 
@@ -39,8 +37,6 @@ struct WorkoutCompetition: Decodable {
     /// Type of competition
     let type: String
 
-    // MARK: - Initialization
-    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         do {

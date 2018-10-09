@@ -11,8 +11,6 @@ import UIKit
 /// Displays Loader information
 final class WorkoutSmallLoaderTableViewCell: UITableViewCell {
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

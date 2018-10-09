@@ -12,8 +12,6 @@ import UIKit
 /// a view with one of those giant iOS 11 navigation bars.
 class IOS11CompatibleRefreshControl: UIRefreshControl {
 
-    // MARK: - Public Properties
-    
     override var isHidden: Bool {
         get {
             return !isRefreshing
@@ -26,8 +24,6 @@ class IOS11CompatibleRefreshControl: UIRefreshControl {
         }
     }
 
-    // MARK: - Public Functions
-    
     override func endRefreshing() {
         super.endRefreshing()
         super.isHidden = true

@@ -11,16 +11,12 @@ import UIKit
 /// Handles labels for error situations
 class StyleableErrorLabel: StyleableLabel, CAAnimationDelegate {
 
-    // MARK: - Public Properties
-    
     @IBInspectable var isError: Bool = false {
         didSet {
             initForError()
         }
     }
 
-    // MARK: - Public Functions
-    
     /// Initializes the label to handle the error states
     func initForError() {
         layer.opacity = 0

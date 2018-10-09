@@ -10,22 +10,13 @@ import UIKit
 
 struct LoginBuilder: Builder {
 
-    // MARK: - Private Properties
-    
     private let loginCompletion: ((LoginEvent) -> Void)?
 
-    // MARK: - Initialization
-    
     init(loginCompletion: ((LoginEvent) -> Void)? = nil) {
         self.loginCompletion = loginCompletion
     }
-    
-    // MARK: - Public Functions
-    
+
     func build() -> UIViewController {
-    
-    // MARK: - Public Properties
-    
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
         let viewController: LoginViewController = storyboard.instantiateViewController()
         viewController.viewModel = LoginViewModel()

@@ -10,8 +10,6 @@ import UIKit
 
 private struct Constants {
 
-    // MARK: - Public Properties
-    
     static let airrostiLogoURL = "https://www.airrosti.com/"
     static let reebokLogoURL = "https://www.reebok.com/us/"
     static let rogueURL = "https://www.roguefitness.com/"
@@ -21,13 +19,9 @@ private struct Constants {
 /// Displays Sponser View
 final class SponserView: UIView {
 
-    // MARK: - Private Properties
-    
     /// Handles callbacks for `SponsorView`
     @IBOutlet private weak var delegate: SponsorViewDelegate?
 
-    // MARK: - Initialization
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupForStoryboardUse()

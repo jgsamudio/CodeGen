@@ -12,18 +12,12 @@ import KeychainAccess
 /// Data store for direct interaction with the keychain.
 final class KeychainDataStore {
 
-    // MARK: - Private Properties
-    
     private let keychain: Keychain
 
-    // MARK: - Initialization
-    
     init() {
         keychain = Keychain(server: CFEnvironmentManager.shared.currentGeneralEnvironment.baseURL,
                             protocolType: ProtocolType.https)
 
-    // MARK: - Public Properties
-    
         let userDefaultsManager = UserDefaultsManager.shared
         // Hard reset keychain when the app is opened for the first time after install, making sure
         // no data is accessible from previous installs.
@@ -33,8 +27,6 @@ final class KeychainDataStore {
         }
     }
 
-    // MARK: - Public Functions
-    
     /// Retrieves a value from the keychain (if possible).
     ///
     /// - Parameter key: Key whose value has to be stored.

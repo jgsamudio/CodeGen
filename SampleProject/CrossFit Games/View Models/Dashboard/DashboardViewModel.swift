@@ -18,8 +18,6 @@ private typealias DashboardUserInfo = (userId: String,
 /// View model for the dashboard screen, used to load sub view models for each of the dashboard cards.
 struct DashboardViewModel {
 
-    // MARK: - Private Properties
-    
     private let userAuthService: UserAuthService
     private var leaderboardService: PersonalizedLeaderboardService?
     private let localization = DashboardLocalization()
@@ -29,8 +27,6 @@ struct DashboardViewModel {
     private let followAnAthleteService: FolllowAnAthleteService
     private let leaderboardListService: LeaderboardListService
 
-    // MARK: - Public Properties
-    
     /// URL to register for Open events
     let openRegistrationURL = URL(string: "https://games.crossfit.com/register/open")
 
@@ -62,8 +58,6 @@ struct DashboardViewModel {
     /// Indicates whether the retrieved personalized leaderboard was invalid.
     var isPersonalizedLeaderboardInvalid = false
 
-    // MARK: - Initialization
-    
     init(userAuthService: UserAuthService,
          leaderboardService: PersonalizedLeaderboardService?,
          competitionInfoService: CompetitionInfoService,
@@ -96,8 +90,6 @@ struct DashboardViewModel {
                   leaderboardListService: leaderboardListService)
     }
 
-    // MARK: - Public Functions
-    
     /// Gets the information of the following athlete
     ///
     /// - Parameter completion: Completion block which includes the following athlete view model and the error

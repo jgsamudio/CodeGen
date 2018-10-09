@@ -11,8 +11,6 @@ import XCTest
 
 class LeaderboardURLTests: XCTestCase {
 
-    // MARK: - Public Functions
-    
     func testCreatingLeaderboardURL() {
         guard let filePath = Bundle(for: LeaderboardFilterTests.self).url(forResource: "LeaderboardFilterResponse", withExtension: "json"),
             let json = try? Data(contentsOf: filePath) else {
@@ -20,8 +18,6 @@ class LeaderboardURLTests: XCTestCase {
                 return
         }
 
-    // MARK: - Public Properties
-    
         let decoder = JSONDecoder()
         XCTAssertNoThrow(try decoder.decode(LeaderboardControls.self, from: json))
 

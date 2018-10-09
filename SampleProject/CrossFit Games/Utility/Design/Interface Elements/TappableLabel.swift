@@ -12,12 +12,7 @@ import UIKit
 
 private final class TappableLabelGestureRecognizer: UITapGestureRecognizer {
 
-    // MARK: - Public Functions
-    
     func didTapAttributedTextInLabel(label: UILabel, inRange targetRange: NSRange) -> Bool {
-    
-    // MARK: - Public Properties
-    
         // Create instances of NSLayoutManager, NSTextContainer and NSTextStorage
         let layoutManager = NSLayoutManager()
         let textContainer = NSTextContainer(size: CGSize.zero)
@@ -70,8 +65,6 @@ internal class TappableLabel: StyleableLabel {
         }
     }
 
-    // MARK: - Initialization
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -83,8 +76,6 @@ internal class TappableLabel: StyleableLabel {
     /// Delegate that is notified about the event of a user tapping any of the links in `self`.
     weak var delegate: TappableLabelDelegate?
 
-    // MARK: - Private Properties
-    
     private var gestureRecognizer: TappableLabelGestureRecognizer!
 
     override func awakeFromNib() {

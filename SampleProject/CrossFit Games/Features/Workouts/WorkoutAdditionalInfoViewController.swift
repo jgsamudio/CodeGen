@@ -10,16 +10,10 @@ import UIKit
 
 final class WorkoutAdditionalInfoViewController: BaseViewController {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private var informationLabel: StyleableLabel!
 
-    // MARK: - Public Properties
-    
     var content: NSAttributedString?
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         informationLabel.attributedText = content

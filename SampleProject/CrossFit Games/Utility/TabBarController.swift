@@ -12,12 +12,8 @@ import Simcoe
 /// Tab Bar Controller
 class TabBarController: UITabBarController {
 
-    // MARK: - Public Properties
-    
     var previousSelectedViewController: UIViewController?
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self

@@ -11,8 +11,6 @@ import Foundation
 /// Localization constants for general app functionality.
 struct GeneralLocalization {
 
-    // MARK: - Public Properties
-    
     /// Error title for a banner.
     let bannerErrorTitle = "GENERAL_BANNER_ERROR".localized
 
@@ -41,8 +39,6 @@ struct GeneralLocalization {
 
     let errorMessage = "GENERAL_APP_ERROR_MESSAGE".localized
 
-    // MARK: - Public Functions
-    
     /// Localized string for the word in.
     ///
     /// - Parameter suffix: Suffix to apply after the word in

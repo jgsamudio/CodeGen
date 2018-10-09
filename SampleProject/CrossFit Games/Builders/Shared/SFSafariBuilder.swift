@@ -12,13 +12,9 @@ import SafariServices
 /// Builds SFSafariViewController
 struct SFSafariBuilder: Builder {
 
-    // MARK: - Public Properties
-    
     /// URL to utilize in web request
     let url: URL
 
-    // MARK: - Public Functions
-    
     func build() -> UIViewController {
         let safariViewController = SFSafariViewController(url: url)
         return safariViewController

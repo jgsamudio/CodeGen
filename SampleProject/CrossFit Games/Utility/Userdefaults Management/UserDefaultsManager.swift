@@ -12,20 +12,14 @@ import UIKit
 /// Setting values and reading the values by a key
 class UserDefaultsManager: NSObject {
 
-    // MARK: - Public Properties
-    
     var defaults: UserDefaults
 
     static let shared = UserDefaultsManager()
 
-    // MARK: - Initialization
-    
     private override init() {
         defaults = UserDefaults.standard
     }
 
-    // MARK: - Public Functions
-    
     func setValue(withKey key: UserDefaultsKey, value: Any?) {
         defaults.set(value, forKey: key.rawValue)
     }

@@ -11,16 +11,10 @@ import UIKit
 /// View controller for picking specific values.
 final class PickerViewController: UIViewController {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var pickerView: UIPickerView!
 
-    // MARK: - Public Properties
-    
     var viewModel: PickerViewModel!
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         pickerView.dataSource = self

@@ -11,8 +11,6 @@ import UIKit
 /// Loading state view till the network request is completed
 final class DashboardFollowAnAthleteLoadingView: UIView {
 
-    // MARK: - Public Functions
-    
     /// Initializes an instance of DashboardFollowAnAthleteLoadingView from the nib file
     ///
     /// - Returns: An instance of DashboardFollowAnAthleteLoadingView

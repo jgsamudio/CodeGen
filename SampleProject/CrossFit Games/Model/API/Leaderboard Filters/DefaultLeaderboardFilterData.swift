@@ -16,14 +16,10 @@ struct DefaultLeaderboardFilterData: LeaderboardFilterData, Codable {
         case display
     }
 
-    // MARK: - Public Properties
-    
     let value: String
 
     let display: String
 
-    // MARK: - Initialization
-    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
@@ -32,8 +28,6 @@ struct DefaultLeaderboardFilterData: LeaderboardFilterData, Codable {
         display = try container.decode(String.self, forKey: .display)
     }
 
-    // MARK: - Public Functions
-    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
 

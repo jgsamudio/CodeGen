@@ -11,12 +11,8 @@ import UIKit
 /// Debouncer to limit calls
 class Debouncer {
 
-    // MARK: - Public Properties
-    
     weak var timer: Timer?
 
-    // MARK: - Public Functions
-    
     /// Triggers callback after last uninterrupted delay
     ///
     /// - Parameters:

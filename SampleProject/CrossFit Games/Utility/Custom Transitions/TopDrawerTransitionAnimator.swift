@@ -10,15 +10,11 @@ import UIKit
 
 final class TopDrawerTransitionAnimator: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning {
 
-    // MARK: - Public Properties
-    
     /// Indicates whether `self` is used for presenting a view or dismissing.
     let isPresenting: Bool
 
     let initialContentOffset: () -> CGFloat
 
-    // MARK: - Initialization
-    
     init(isPresenting: Bool, initialContentOffset: @escaping () -> CGFloat) {
         self.isPresenting = isPresenting
         self.initialContentOffset = initialContentOffset
@@ -27,8 +23,6 @@ final class TopDrawerTransitionAnimator: UIPercentDrivenInteractiveTransition, U
         wantsInteractiveStart = false
     }
 
-    // MARK: - Public Functions
-    
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.2
     }

@@ -12,13 +12,9 @@ import UIKit
 /// Table view cell for displaying athletes in a leaderboard.
 final class LeaderboardAthleteResultCell: UITableViewCell {
 
-    // MARK: - Public Properties
-    
     /// Height estimate for `self`.
     static let heightEstimate: CGFloat = 80
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var athleteNameLabel: UILabel!
 
     @IBOutlet private weak var bottomLine: UIView!
@@ -170,8 +166,6 @@ final class LeaderboardAthleteResultCell: UITableViewCell {
 
     private let imageSize: CGFloat = 40
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
 

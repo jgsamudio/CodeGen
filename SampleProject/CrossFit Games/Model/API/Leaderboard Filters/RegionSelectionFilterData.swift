@@ -16,16 +16,12 @@ struct RegionSelectionFilterData: LeaderboardFilterData {
         case regions
     }
 
-    // MARK: - Public Properties
-    
     let value: String
 
     let display: String
 
     let regions: [LeaderboardFilterData]
 
-    // MARK: - Initialization
-    
     init(value: String, display: String, regions: [LeaderboardFilterData]) {
         self.value = value
         self.display = display
@@ -59,8 +55,6 @@ struct RegionSelectionFilterData: LeaderboardFilterData {
         regions = data
     }
 
-    // MARK: - Public Functions
-    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
 

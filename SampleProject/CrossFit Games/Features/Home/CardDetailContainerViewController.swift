@@ -11,16 +11,12 @@ import UIKit
 /// View controller that contains and manages proper scrolling of titles alongside view controllers for those titles.
 final class CardDetailContainerViewController: BaseViewController {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var scrollView: UIScrollView!
 
     @IBOutlet private weak var viewControllerStack: UIStackView!
 
     @IBOutlet private weak var titleViewStack: UIStackView!
 
-    // MARK: - Public Properties
-    
     var viewModel: CardDetailContainerViewModel!
 
     /// View controllers shown within the horizontal scroll view.
@@ -37,8 +33,6 @@ final class CardDetailContainerViewController: BaseViewController {
         titleObservations.removeAll()
     }
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

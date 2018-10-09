@@ -14,8 +14,6 @@
 
     private final class DatePickerMenu: YoshiDateSelectorMenu {
 
-    // MARK: - Public Properties
-    
         let title: String = "Select date 📆"
 
         var subtitle: String? {
@@ -40,8 +38,6 @@
     /// Debug menu for the application.
     struct DebugMenu {
 
-    // MARK: - Private Properties
-    
         private static var cacheReset: YoshiActionMenu {
             let menu = YoshiActionMenu(title: "Reset cache 🔄", completion: {
                 CFCache.default.reset()
@@ -98,8 +94,6 @@
             })
         }
 
-    // MARK: - Public Functions
-    
         /// Sets up the debug menu, configuring instabug for bug reporting and providing an environment switcher
         /// for the application.
         static func setup() {

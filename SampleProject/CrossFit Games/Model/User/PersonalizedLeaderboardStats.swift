@@ -10,8 +10,6 @@ import Foundation
 
 struct PersonalizedLeaderboardStats: Codable {
 
-    // MARK: - Public Properties
-    
     let allStateRank: Bool?
     let hasStateRank: Bool?
     let open: [PersonalizedLeaderboardAllCompetitionResult]?

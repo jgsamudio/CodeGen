@@ -12,8 +12,6 @@ import UIKit
 /// Manages validations required to perform kill switch
 struct KillSwitchManager {
 
-    // MARK: - Public Functions
-    
     /// Validates the API status
     /// Iterates through the given headers and checks for API status updates
     ///
@@ -27,9 +25,6 @@ struct KillSwitchManager {
 
         #endif
         return headers.flatMap({ (element) in
-    
-    // MARK: - Public Properties
-    
             let decoder = JSONDecoder()
             if element.key == "CrossFit-API-Status" {
                 do {
@@ -134,8 +129,6 @@ struct KillSwitchManager {
         })
     }
 
-    // MARK: - Private Properties
-    
     private static weak var alertViewController: UIAlertController?
 
     /// Shows the alert window for force update

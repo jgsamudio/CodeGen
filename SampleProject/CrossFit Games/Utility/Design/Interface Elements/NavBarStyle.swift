@@ -11,8 +11,6 @@ import UIKit
 /// Navigation bar styles for the app.
 struct NavBarStyle {
 
-    // MARK: - Public Properties
-    
     /// Default nav bar style in the app.
     static let `default` = NavBarStyle(backgroundImage: UIImage(), tintColor: StyleColumn.c2.color, shadowImage: UIImage(), isTranslucent: true)
 
@@ -34,8 +32,6 @@ struct NavBarStyle {
     /// Indicates whether the app will be translucent.
     let isTranslucent: Bool
 
-    // MARK: - Initialization
-    
     init(backgroundImage: UIImage?, tintColor: UIColor?, shadowImage: UIImage?, isTranslucent: Bool) {
         self.backgroundImage = backgroundImage
         self.tintColor = tintColor
@@ -50,8 +46,6 @@ struct NavBarStyle {
                   isTranslucent: navBar?.isTranslucent ?? false)
     }
 
-    // MARK: - Public Functions
-    
     /// Applies `self` to the given navigation bar.
     ///
     /// - Parameter navBar: Navigation bar.

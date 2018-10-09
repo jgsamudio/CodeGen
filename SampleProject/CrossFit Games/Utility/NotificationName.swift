@@ -26,8 +26,6 @@ enum NotificationName: String {
     /// Notifies if any changes occurred to the following athlete
     case followingAthleteDidUpdate
 
-    // MARK: - Public Properties
-    
     /// Notification Name
     var name: Notification.Name {
         return Notification.Name(rawValue: rawValue)

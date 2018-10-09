@@ -13,14 +13,10 @@ import Alamofire
 /// Handles retrieving peresonalized leaderboard service
 struct PersonalizedLeaderboardService {
 
-    // MARK: - Public Properties
-    
     let httpClient: HTTPClientProtocol
 
     let userID: String
 
-    // MARK: - Public Functions
-    
     /// Retrieves personalized leaderboard information
     ///
     /// - Parameters:

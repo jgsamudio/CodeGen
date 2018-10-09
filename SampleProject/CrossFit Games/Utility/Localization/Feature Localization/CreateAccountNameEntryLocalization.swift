@@ -11,8 +11,6 @@ import Foundation
 /// Localization strings for Create Account name entry feature.
 struct CreateAccountNameEntryLocalization {
 
-    // MARK: - Public Properties
-    
     let step = "CREATE_ACCOUNT_NAME_ENTRY_STEP".localized
     let title = "CREATE_ACCOUNT_NAME_ENTRY_TITLE".localized
     let firstName = "CREATE_ACCOUNT_NAME_ENTRY_FIRST_NAME".localized

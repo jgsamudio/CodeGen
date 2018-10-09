@@ -11,8 +11,6 @@ import UIKit
 /// Error view for generic errors, designed to cover the whole or most of the screen.
 final class FullscreenErrorView: UIView {
 
-    // MARK: - Private Properties
-    
     private static var killSwitchWindow: UIWindow!
 
     @IBOutlet private weak var titleLabel: StyleableLabel!
@@ -26,8 +24,6 @@ final class FullscreenErrorView: UIView {
 
     private let grayToneColor = UIColor(white: 59/255, alpha: 1)
 
-    // MARK: - Public Functions
-    
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -78,9 +74,6 @@ final class FullscreenErrorView: UIView {
         errorView.titleLabel.text = title ?? errorView.localization.errorTitle
         errorView.messageLabel.text = message ?? errorView.localization.errorMessage
         killSwitchWindow = KillSwitchWindow(frame: UIScreen.main.bounds)
-    
-    // MARK: - Public Properties
-    
         let rootViewController = UIViewController()
         rootViewController.view.addSubview(errorView)
         rootViewController.view.backgroundColor = UIColor.red

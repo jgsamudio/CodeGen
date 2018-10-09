@@ -11,8 +11,6 @@ import Foundation
 /// Item for the app's promo bar as delivered by the remote config.
 struct RemoteConfigPromoItem {
 
-    // MARK: - Public Properties
-    
     // Key
     let key: String
 
@@ -22,8 +20,6 @@ struct RemoteConfigPromoItem {
     /// Deeplink/URL for the item.
     let link: URL
 
-    // MARK: - Initialization
-    
     init(key: String, title: String, link: URL) {
         self.key = key
         self.title = title

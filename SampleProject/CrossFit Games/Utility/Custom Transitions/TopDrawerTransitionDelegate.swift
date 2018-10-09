@@ -10,8 +10,6 @@ import UIKit
 
 final class TopDrawerTransitionDelegate: NSObject, TopDrawerPresenter, UIViewControllerTransitioningDelegate {
 
-    // MARK: - Public Properties
-    
     lazy var topDrawerDismissalInteractor = {
         return TopDrawerTransitionAnimator(isPresenting: false, initialContentOffset: initialContentOffset)
     }()
@@ -26,16 +24,12 @@ final class TopDrawerTransitionDelegate: NSObject, TopDrawerPresenter, UIViewCon
         }
     }
 
-    // MARK: - Initialization
-    
     init(initialContentOffset: @escaping () -> CGFloat,
          contentOffsetChanged: @escaping (CGFloat) -> Void = { _ in }) {
         self.initialContentOffset = initialContentOffset
         self.contentOffsetChanged = contentOffsetChanged
     }
 
-    // MARK: - Public Functions
-    
     func presentationController(forPresented presented: UIViewController,
                                 presenting: UIViewController?,
                                 source: UIViewController) -> UIPresentationController? {

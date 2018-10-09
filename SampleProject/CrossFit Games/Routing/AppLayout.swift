@@ -11,13 +11,9 @@ import UIKit
 /// Representation of the app layout.
 final class AppLayout {
 
-    // MARK: - Public Properties
-    
     /// Global App layout. View controllers are set as the UI gets built.
     static let global = AppLayout()
 
-    // MARK: - Initialization
-    
     private init() {}
 
     /// Common result view controller (The result view controller used when going to the leaderboard tab).

@@ -10,8 +10,6 @@ import Foundation
 
 extension KeyedDecodingContainer {
 
-    // MARK: - Public Functions
-    
     /// Decodes a value of the given type for the given key. Allows string values to be parsed and translated directly to int.
     ///
     /// - parameter type: The type of value to decode.
@@ -21,9 +19,6 @@ extension KeyedDecodingContainer {
     /// - throws: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
     /// - throws: `DecodingError.valueNotFound` if `self` has a null entry for the given key.
     public func decodeIfPresentAllowString(_ type: Int.Type, forKey key: K) throws -> Int? {
-    
-    // MARK: - Public Properties
-    
         let stringValue = (try? decode(String.self, forKey: key)).flatMap(Int.init)
         return try stringValue ?? decodeIfPresent(Int.self, forKey: key)
     }

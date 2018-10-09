@@ -12,13 +12,9 @@ import FirebaseRemoteConfig
 /// In-app remote config structure, consisting of a list of promo items.
 struct RemoteConfig {
 
-    // MARK: - Public Properties
-    
     /// Promo items to show in the app.
     let promoItems: [RemoteConfigPromoItem]
 
-    // MARK: - Initialization
-    
     init(remoteConfig: FirebaseRemoteConfig.RemoteConfig) {
         let rawValues: [(String?, String?, String?)] = [
             ("promo_link_1", remoteConfig.configValue(forKey: "promo_title_1").stringValue,

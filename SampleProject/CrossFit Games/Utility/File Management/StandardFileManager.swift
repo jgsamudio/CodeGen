@@ -11,8 +11,6 @@ import Foundation
 /// Manages file operations
 struct StandardFileManager {
 
-    // MARK: - Public Functions
-    
     /// Reads values from property file by name
     /// Parameters
     ///     - path: file path
@@ -42,9 +40,6 @@ struct StandardFileManager {
     ///     - fileName: optional file name if required
     static func writeObject<T: Encodable> (object: T, fileName: String? = nil) throws {
         do {
-    
-    // MARK: - Public Properties
-    
             let payload: Data = try JSONEncoder().encode(object)
             var file = String(describing: T.self)
             if let newFileName = fileName, !newFileName.isEmpty {

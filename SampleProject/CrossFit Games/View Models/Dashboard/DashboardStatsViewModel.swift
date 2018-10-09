@@ -11,12 +11,8 @@ import UIKit
 /// View model for the Dash board stats view
 class DashboardStatsViewModel {
 
-    // MARK: - Public Properties
-    
     let dashboardCardViewModel: DashboardCardViewModel
 
-    // MARK: - Private Properties
-    
     private let leaderboardFilterService: LeaderboardFilterService = ServiceFactory.shared.createLeaderboardFilterService()
 
     private let leaderboardListService: LeaderboardListService = ServiceFactory.shared.createLeaderboardListService()
@@ -137,14 +133,10 @@ class DashboardStatsViewModel {
             .appending(dashboardCardViewModel.customNameSecondLine.flatMap {"\n\($0)"} ?? "")
     }
 
-    // MARK: - Initialization
-    
     init(dashboardCardViewModel: DashboardCardViewModel) {
         self.dashboardCardViewModel = dashboardCardViewModel
     }
 
-    // MARK: - Public Functions
-    
     func loadIfNeeded(completion: @escaping (Error?) -> Void) {
         if isLoading || didLoad {
             return

@@ -19,8 +19,6 @@ struct TeamSeriesWorkoutScore: WorkoutScore, Decodable {
         case ordinal
     }
 
-    // MARK: - Public Properties
-    
     let breakdown: String?
 
     let judge: String?
@@ -33,8 +31,6 @@ struct TeamSeriesWorkoutScore: WorkoutScore, Decodable {
 
     let ordinalID: String
 
-    // MARK: - Initialization
-    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 

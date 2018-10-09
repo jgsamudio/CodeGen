@@ -11,12 +11,8 @@ import XCTest
 
 class APITests: XCTestCase {
 
-    // MARK: - Public Properties
-    
     var testData: [String] = []
 
-    // MARK: - Public Functions
-    
     override func setUp() {
         super.setUp()
         initialize()

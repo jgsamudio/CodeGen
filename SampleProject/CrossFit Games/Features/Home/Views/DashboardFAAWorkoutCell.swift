@@ -11,14 +11,10 @@ import UIKit
 /// Displays athlete workout information
 final class DashboardFAAWorkoutCell: UITableViewCell {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var scoreLabel: StyleableLabel!
     @IBOutlet private weak var rankLabel: StyleableLabel!
     @IBOutlet private weak var workoutTitleLabel: StyleableLabel!
 
-    // MARK: - Public Functions
-    
     /// Sets data to be displayed in the cell
     ///
     /// - Parameters:

@@ -11,8 +11,6 @@ import Foundation
 /// Post processing structure for processing leaderboard controls in a similar manner as CIFilter processes images.
 struct LeaderboardFilterPostProcessing {
 
-    // MARK: - Public Properties
-    
     /// Leaderboard control input.
     let input: [LeaderboardFilter]
 

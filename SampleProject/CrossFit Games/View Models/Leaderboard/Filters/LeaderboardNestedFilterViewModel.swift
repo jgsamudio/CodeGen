@@ -11,16 +11,12 @@ import Foundation
 /// View model for a filter screen that is pushed upon selecting a nested option.
 struct LeaderboardNestedFilterViewModel: FilterViewModel {
 
-    // MARK: - Public Properties
-    
     let title: String
 
     let selectionOptions: [FilterViewModelSelectionOption]
 
     let shouldGroupContentAlphabetically: Bool
 
-    // MARK: - Initialization
-    
     /// Creates a view model with the given nested option.
     ///
     /// - Parameter nestedOption: Nested option the user selected to push a new filter view controller.
@@ -33,8 +29,6 @@ struct LeaderboardNestedFilterViewModel: FilterViewModel {
         shouldGroupContentAlphabetically = nestedOption.shouldGroupContentAlphabetically
     }
 
-    // MARK: - Public Functions
-    
     func reset() {
         return
     }

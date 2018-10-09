@@ -10,8 +10,6 @@ import Foundation
 
 struct LoginLocalization {
 
-    // MARK: - Public Properties
-    
     let email = "LOGIN_EMAIL".localized
     let password = "LOGIN_PASSWORD".localized
     let success = "LOGIN_SUCCESS".localized

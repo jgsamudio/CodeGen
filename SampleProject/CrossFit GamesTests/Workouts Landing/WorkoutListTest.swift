@@ -11,12 +11,8 @@ import XCTest
 
 class WorkoutListTest: XCTestCase {
 
-    // MARK: - Public Properties
-    
     var workoutList: [Workout]!
 
-    // MARK: - Public Functions
-    
     override func setUp() {
         super.setUp()
         initalize()

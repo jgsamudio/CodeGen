@@ -11,13 +11,9 @@ import UIKit
 /// Contains functions and attributes required to display the list view of the workouts
 struct WorkoutsViewModel {
 
-    // MARK: - Public Properties
-    
     /// Workout service
     var workoutsService: WorkoutsService
 
-    // MARK: - Initialization
-    
     init() {
         workoutsService = ServiceFactory.shared.createWorkoutsService()
     }
@@ -33,8 +29,6 @@ struct WorkoutsViewModel {
         return workoutsService.competitions()
     }
 
-    // MARK: - Public Functions
-    
     /// Selects the given competition.
     ///
     /// - Parameter division: Division to select.

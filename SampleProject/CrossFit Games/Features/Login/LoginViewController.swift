@@ -11,8 +11,6 @@ import UIKit
 
 final class LoginViewController: BaseAuthViewController {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var emailLabel: StyleableLabel!
     @IBOutlet private weak var passwordLabel: StyleableLabel!
     @IBOutlet private weak var loginButton: StyleableButton!
@@ -28,8 +26,6 @@ final class LoginViewController: BaseAuthViewController {
     private let localization = LoginLocalization()
     private let generalLocalization = GeneralLocalization()
 
-    // MARK: - Public Properties
-    
     /// Completion block that is called once the user finished the login flow.
     var loginCompletion: ((LoginEvent) -> Void)?
 
@@ -41,8 +37,6 @@ final class LoginViewController: BaseAuthViewController {
     private var hasKeyboardMovedUp: Bool = false
     private var errorView: FullscreenErrorView!
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
@@ -251,7 +245,6 @@ final class LoginViewController: BaseAuthViewController {
 }
 
 /// Includes textfield delegate functions
-// MARK: - UITextFieldDelegate
 extension LoginViewController: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

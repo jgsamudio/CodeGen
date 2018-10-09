@@ -11,8 +11,6 @@ import Foundation
 /// Date and time related functions
 struct DateTime {
 
-    // MARK: - Public Functions
-    
     /// Converts a given time on specific time zone to string
     ///
     /// - Parameters:
@@ -22,9 +20,6 @@ struct DateTime {
     /// - Returns: Converted string
     static func convertToString(timeZone: String?,
                                 date: Date, format: String) -> String {
-    
-    // MARK: - Public Properties
-    
         let dateformatter = DateFormatter()
         dateformatter.amSymbol = "am"
         dateformatter.pmSymbol = "pm"

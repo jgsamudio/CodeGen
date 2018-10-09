@@ -10,8 +10,6 @@ import Foundation
 
 extension Encodable {
 
-    // MARK: - Public Properties
-    
     /// JSON representation of `self` if parsing is possible.
     var json: [String: Any]? {
         do {

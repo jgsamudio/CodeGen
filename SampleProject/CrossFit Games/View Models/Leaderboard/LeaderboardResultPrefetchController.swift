@@ -11,8 +11,6 @@ import UIKit
 /// Table view prefetching data source for leaderboard results.
 final class LeaderboardResultPrefetchController: NSObject, UITableViewDataSourcePrefetching {
 
-    // MARK: - Private Properties
-    
     private let leaderboardListService: LeaderboardListService
 
     private let leaderboard: CustomLeaderboard
@@ -27,15 +25,11 @@ final class LeaderboardResultPrefetchController: NSObject, UITableViewDataSource
     /// - Loading a response successfully by scrolling to another page will set this to false.
     private var presentedErrorFromPrefetching = false
 
-    // MARK: - Initialization
-    
     init(leaderboard: CustomLeaderboard, leaderboardListService: LeaderboardListService) {
         self.leaderboard = leaderboard
         self.leaderboardListService = leaderboardListService
     }
 
-    // MARK: - Public Functions
-    
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         for indexPath in indexPaths {
             if let pageIndex = leaderboardListService.pageIndex(for: indexPath.row, in: leaderboard),

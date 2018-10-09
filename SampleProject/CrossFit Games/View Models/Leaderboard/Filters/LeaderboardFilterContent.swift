@@ -11,8 +11,6 @@ import Simcoe
 
 private struct FilterSelectionOption: FilterViewModelSelectionOption {
 
-    // MARK: - Public Properties
-    
     let title: String
 
     let filterName: String
@@ -23,8 +21,6 @@ private struct FilterSelectionOption: FilterViewModelSelectionOption {
 
     let selection: () -> Void
 
-    // MARK: - Public Functions
-    
     func didSelect() {
         selection()
 
@@ -80,8 +76,6 @@ private struct NestedFilterSelectionOption: FilterViewModelNestedOption {
 
     let shouldGroupContentAlphabetically: Bool
 
-    // MARK: - Initialization
-    
     init(title: String,
          filterName: String,
          selectedOption: @escaping () -> String?,
@@ -119,8 +113,6 @@ final class LeaderboardFilterContent {
 
     private(set) var selectionOptions: [FilterViewModelSelectionOption]
 
-    // MARK: - Private Properties
-    
     private let leaderboardFilterService: LeaderboardFilterService
 
     private let leaderboardFilterPersistenceService: LeaderboardFilterPersistenceService

@@ -12,12 +12,8 @@ import UIKit
 /// nested filter like "Competition").
 final class FilterViewController: BaseViewController {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var tableView: UITableView!
 
-    // MARK: - Public Properties
-    
     var viewModel: FilterViewModel!
 
     /// Applies a "Theme" to the view controller so that the screen can be blue, white or whatever other
@@ -33,8 +29,6 @@ final class FilterViewController: BaseViewController {
     /// Custom title that is used instead of the view model's provided title.
     var customTitle: String?
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

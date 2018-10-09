@@ -11,8 +11,6 @@ import Foundation
 /// Data store for workout data.
 final class WorkoutDataStore {
 
-    // MARK: - Public Properties
-    
     /// Last available selection of the division.
     var divisionSelection: [WorkoutPhase: String] {
         get {

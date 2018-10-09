@@ -11,8 +11,6 @@ import Foundation
 /// Media preview to be shown on the workout pages landing screen.
 struct MediaPreview: Decodable {
 
-    // MARK: - Public Properties
-    
     /// URL of media preview.
     let url: String
 

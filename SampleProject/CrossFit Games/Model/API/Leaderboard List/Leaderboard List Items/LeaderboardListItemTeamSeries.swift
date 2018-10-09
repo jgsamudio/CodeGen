@@ -19,8 +19,6 @@ struct LeaderboardListItemTeamSeries: LeaderboardListItem, Decodable {
         case points = "overallScore"
     }
 
-    // MARK: - Public Properties
-    
     let scores: [WorkoutScore]
 
     let user: LeaderboardAthlete
@@ -28,8 +26,6 @@ struct LeaderboardListItemTeamSeries: LeaderboardListItem, Decodable {
     /// Athletes that are part of this team.
     let roster: [LeaderboardAthlete]?
 
-    // MARK: - Initialization
-    
     init(from decoder: Decoder) throws {
         do {
             let container = try decoder.container(keyedBy: CodingKeys.self)

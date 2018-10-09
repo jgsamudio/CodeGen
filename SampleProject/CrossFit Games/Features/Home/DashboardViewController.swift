@@ -12,8 +12,6 @@ import Simcoe
 /// View controller for dashboard section of the app.
 final class DashboardViewController: BaseViewController {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var pageControl: UIPageControl!
 
     @IBOutlet private weak var collectionView: UICollectionView!
@@ -33,8 +31,6 @@ final class DashboardViewController: BaseViewController {
 
     @IBOutlet private weak var coachMark: CoachMark!
 
-    // MARK: - Public Properties
-    
     var viewModel: DashboardViewModel!
     private var followAnAthleteViewModel: DashboardFollowAnAthleteViewModel!
 
@@ -64,8 +60,6 @@ final class DashboardViewController: BaseViewController {
         return view.bounds.width / 100 * 56
     }
 
-    // MARK: - Public Functions
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(observeLogin), name: NotificationName.userDidLogin.name, object: nil)

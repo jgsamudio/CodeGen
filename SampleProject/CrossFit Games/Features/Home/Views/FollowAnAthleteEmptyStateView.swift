@@ -11,12 +11,8 @@ import UIKit
 /// UI nib file for the empty state of Follow An Athlete
 final class FollowAnAthleteEmptyStateView: UIView {
 
-    // MARK: - Private Properties
-    
     @IBOutlet private weak var placeholderView: UIView!
 
-    // MARK: - Public Functions
-    
     /// Initializes an instance of FollowAnAthleteEmptyStateView from the nib file
     ///
     /// - Returns: An instance of FollowAnAthleteEmptyStateView
@@ -31,9 +27,6 @@ final class FollowAnAthleteEmptyStateView: UIView {
     }
 
     private func applyShadow(view: UIView) {
-    
-    // MARK: - Public Properties
-    
         let layer = view.layer
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 4)

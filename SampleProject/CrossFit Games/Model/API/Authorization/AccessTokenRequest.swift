@@ -11,8 +11,6 @@ import Keys
 
 struct AccessTokenRequest: Encodable {
 
-    // MARK: - Public Properties
-    
     /// Request for granting access to the API in order to perform user-independent tasks, such as creating accounts.
     static let clientCredentials = AccessTokenRequest(clientId: CrossfitgamesKeys().clientID(),
                                                       clientSecret: CrossfitgamesKeys().clientSecret(),
@@ -20,8 +18,6 @@ struct AccessTokenRequest: Encodable {
                                                       username: nil,
                                                       password: nil)
 
-    // MARK: - Public Functions
-    
     /// Returns authentication for a single user to access (for example) profile information of this user's account.
     ///
     /// - Parameters:

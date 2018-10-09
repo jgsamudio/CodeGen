@@ -20,8 +20,6 @@ enum CrashlyticsCustomEvent: Int {
     /// Finding the user on the leaderboard API when showing the dashboard stats failed.
     case didNotFindUserForDashboardStats
 
-    // MARK: - Public Properties
-    
     /// Error to send for crashlytics.
     var error: NSError {
         return NSError(domain: "com.crossfit.games.error.".appending(String(describing: self)),

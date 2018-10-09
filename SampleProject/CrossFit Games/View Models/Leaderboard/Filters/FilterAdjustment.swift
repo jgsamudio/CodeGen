@@ -19,8 +19,6 @@ enum FilterAdjustment {
 
     case none
 
-    // MARK: - Public Functions
-    
     func filterOptions(adjusting filterViewModel: FilterViewModel) -> [FilterViewModelSelectionOption] {
         switch self {
         case .excludedFilters(names: let names):

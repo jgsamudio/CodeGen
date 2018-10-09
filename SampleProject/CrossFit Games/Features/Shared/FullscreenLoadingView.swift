@@ -10,8 +10,6 @@ import UIKit
 
 class FullscreenLoadingView: UIView {
 
-    // MARK: - Public Functions
-    
     /// Loads a dashboard loading view from nib and installs it as subview in the given view.
     ///
     /// - Parameter view: View to install the loading view in.

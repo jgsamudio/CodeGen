@@ -11,8 +11,6 @@ import Foundation
 /// Represnts the image attributes of a sponsor
 struct SponsorImage: Codable {
 
-    // MARK: - Public Properties
-    
     /// Main image URL
     let imageURL: String
 

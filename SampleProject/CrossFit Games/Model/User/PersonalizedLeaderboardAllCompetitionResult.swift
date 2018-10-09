@@ -28,8 +28,6 @@ struct PersonalizedLeaderboardAllCompetitionResult: Codable {
         case byAffiliate
     }
 
-    // MARK: - Public Properties
-    
     let year: String
     let divisionId: Int
     let divisionName: String
@@ -46,8 +44,6 @@ struct PersonalizedLeaderboardAllCompetitionResult: Codable {
     let byRegion: PersonalizedLeaderboardSingleCompetitionResult?
     let byAffiliate: PersonalizedLeaderboardSingleCompetitionResult?
 
-    // MARK: - Initialization
-    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 

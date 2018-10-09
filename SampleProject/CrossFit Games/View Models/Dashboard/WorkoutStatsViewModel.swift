@@ -11,8 +11,6 @@ import Foundation
 /// View model to display the workout statistics
 struct WorkoutStatsViewModel {
 
-    // MARK: - Public Properties
-    
     /// Workout name
     let workoutDisplayName: String
 

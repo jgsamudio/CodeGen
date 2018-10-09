@@ -25,8 +25,6 @@ import Foundation
 // MARK: - Helper functions.
 extension Styleable {
 
-    // MARK: - Public Functions
-    
     /// Prepares `self` to re-apply the style if the content size category changed. (Accessibility)
     func prepareForDynamicType() {
         NotificationCenter.default.addObserver(self,

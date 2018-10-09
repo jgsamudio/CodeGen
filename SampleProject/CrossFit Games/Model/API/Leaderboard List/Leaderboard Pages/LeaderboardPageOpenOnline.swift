@@ -17,8 +17,6 @@ struct LeaderboardPageOpenOnline: LeaderboardPage, Decodable {
         case items = "athletes"
     }
 
-    // MARK: - Public Properties
-    
     let items: [LeaderboardListItem]
 
     let pageIndex: Int
@@ -32,8 +30,6 @@ struct LeaderboardPageOpenOnline: LeaderboardPage, Decodable {
 
     var ordinals: [LeaderboardOrdinal]
 
-    // MARK: - Initialization
-    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         items = try (try? container.decode([LeaderboardListItemOpen].self, forKey: .items))

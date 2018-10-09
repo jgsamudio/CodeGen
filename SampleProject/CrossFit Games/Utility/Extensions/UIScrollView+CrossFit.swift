@@ -10,8 +10,6 @@ import UIKit
 
 extension UIScrollView {
 
-    // MARK: - Public Functions
-    
     /// Triggers scrollview to listen to keyboard events (show & hide)
     /// Appropriately offsets contentInset of scrollview to handle keyboard show/hide actions
     func enableKeyboardOffset() {

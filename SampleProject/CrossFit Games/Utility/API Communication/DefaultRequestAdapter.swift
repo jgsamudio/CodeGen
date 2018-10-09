@@ -12,12 +12,7 @@ import Alamofire
 /// Request adapter to adapt the URL requests which are sent
 final class DefaultRequestAdapter: RequestAdapter {
 
-    // MARK: - Public Functions
-    
     func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
-    
-    // MARK: - Public Properties
-    
         var request = urlRequest
 
         guard let url = urlRequest.url, var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else {

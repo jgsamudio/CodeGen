@@ -20,8 +20,6 @@ enum StyleColumn: Int {
     case c6
     case c7
 
-    // MARK: - Public Properties
-    
     var color: UIColor {
         switch self {
         case .c1:

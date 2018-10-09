@@ -10,22 +10,16 @@ import Foundation
 
 struct WorkoutsService {
 
-    // MARK: - Public Properties
-    
     let httpClient: HTTPClientProtocol
 
     let dataStore: WorkoutDataStore
 
-    // MARK: - Private Properties
-    
     private var selectedDivision: String?
 
     private var selectedType: String?
 
     private let workoutsURL = "competitions/api/v1/competitions"
 
-    // MARK: - Initialization
-    
     init(httpClient: HTTPClientProtocol, dataStore: WorkoutDataStore) {
         self.httpClient = httpClient
         self.dataStore = dataStore
@@ -41,8 +35,6 @@ struct WorkoutsService {
         }
     }
 
-    // MARK: - Public Functions
-    
     /// Sets the workouts grouped by year in the workout datastore
     ///
     /// - Parameter workoutsGrouped: grouped workout

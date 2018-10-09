@@ -11,8 +11,6 @@ import Foundation
 /// Represents the type of workout (Ex: Open, Online Qualifiers, The Games)
 struct WorkoutPhase: Codable {
 
-    // MARK: - Public Properties
-    
     /// Phase name
     let label: String
 
@@ -30,8 +28,6 @@ extension WorkoutPhase: Hashable {
 
 }
 
-    // MARK: - Public Functions
-    
 func == (_ lhs: WorkoutPhase, _ rhs: WorkoutPhase) -> Bool {
     return lhs.label == rhs.label
 }

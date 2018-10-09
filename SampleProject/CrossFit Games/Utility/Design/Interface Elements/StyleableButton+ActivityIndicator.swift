@@ -12,8 +12,6 @@ import UIKit
 /// and show/hide by two functions based on the preference
 extension StyleableButton {
 
-    // MARK: - Public Functions
-    
     /// Shows activity indicator in the button
     ///
     /// - Parameter color: the color of the activity indicator (defaults to light gray)
@@ -51,9 +49,6 @@ extension StyleableButton {
     }
 
     private func centerActivityIndicatorInButton() {
-    
-    // MARK: - Public Properties
-    
         let xCenterConstraint = NSLayoutConstraint(item: self,
                                                    attribute: .centerX,
                                                    relatedBy: .equal,

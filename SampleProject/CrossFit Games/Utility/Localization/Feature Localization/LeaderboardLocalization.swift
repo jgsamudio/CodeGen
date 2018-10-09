@@ -11,8 +11,6 @@ import Foundation
 /// Localization constants for leaderboard feature.
 struct LeaderboardLocalization {
 
-    // MARK: - Public Properties
-    
     /// String "Leader" to show in the UI on the left edge of the leader's leaderboard cell.
     let leader = "LEADERBOARD_LEADER".localized
 
@@ -26,8 +24,6 @@ struct LeaderboardLocalization {
 
     let faaCannotFollowError = "LEADERBOARD_FAA_CANNOT_FOLLOW_ERROR".localized
 
-    // MARK: - Public Functions
-    
     /// Localized string for the age of a user.
     ///
     /// - Parameter age: Age string with a numeric value in it.

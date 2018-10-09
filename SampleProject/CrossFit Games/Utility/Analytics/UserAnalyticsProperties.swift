@@ -12,12 +12,8 @@ import Foundation
 final class UserAnalyticsProperties: RawRepresentable {
     typealias RawValue = [String: Any]
 
-    // MARK: - Public Properties
-    
     private(set) var rawValue: [String: Any]
 
-    // MARK: - Initialization
-    
     init(personalizedLeaderboard: PersonalizedLeaderboard?) {
         rawValue = [:]
         if let country = personalizedLeaderboard?.countryName {

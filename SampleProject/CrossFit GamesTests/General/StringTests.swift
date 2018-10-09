@@ -11,8 +11,6 @@ import XCTest
 
 class StringTests: XCTestCase {
 
-    // MARK: - Public Functions
-    
     func testVersionComparison() {
         /*
         Test1: version1 = 1.0 version2 = 1.00 -> 0
@@ -32,9 +30,6 @@ class StringTests: XCTestCase {
     }
 
     func testDateConversion() {
-    
-    // MARK: - Public Properties
-    
         let formatter = CustomDateFormatter.apiDateFormatter
         let date1: String = "2015-12-30T01:00:00+0000"
         let date2: String = "-0001-11-30T00:00:00+0000"

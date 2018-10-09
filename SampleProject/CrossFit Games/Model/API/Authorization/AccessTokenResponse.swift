@@ -21,8 +21,6 @@ struct AccessTokenResponse: Codable {
         case errorDescription = "error_description"
     }
 
-    // MARK: - Public Properties
-    
     /// Access token for future API access.
     let accessToken: String?
 

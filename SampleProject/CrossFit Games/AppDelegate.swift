@@ -13,17 +13,11 @@ import Simcoe
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    // MARK: - Public Properties
-    
     var window: UIWindow?
 
-    // MARK: - Private Properties
-    
     private var isTimerRunning = false
     private var timer: CFTimer!
 
-    // MARK: - Public Functions
-    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let rootController = RootViewBuilder().build()

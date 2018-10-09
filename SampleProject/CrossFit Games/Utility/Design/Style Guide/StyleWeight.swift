@@ -16,8 +16,6 @@ enum StyleWeight: Int {
     case w3
     case w4
 
-    // MARK: - Public Properties
-    
     var fontSuffix: String {
         switch self {
         case .w1:
