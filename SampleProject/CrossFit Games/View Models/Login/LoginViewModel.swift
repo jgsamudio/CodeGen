@@ -12,12 +12,18 @@ import Foundation
 /// service layer
 struct LoginViewModel {
 
+    // MARK: - Private Properties
+    
     private var userAuthService: UserAuthService
     private let keychainService: KeychainService
     private let localization = LoginLocalization()
 
+    // MARK: - Public Properties
+    
     /// URL for Forgot password
     let forgotPasswordURL = URL(string: "https://games.crossfit.com/cf/login?returnTo=%2F&flow=games&ref=login")
+    
+    // MARK: - Initialization
     
     init() {
         self.init(userAuthService: ServiceFactory.shared.createUserAuthService(),
@@ -34,6 +40,8 @@ struct LoginViewModel {
         self.keychainService = keychainService
     }
 
+    // MARK: - Public Functions
+    
     /// Saves the user credentials upon logging in with a checkbox checked for saving the user's email and password.
     ///
     /// - Parameters:

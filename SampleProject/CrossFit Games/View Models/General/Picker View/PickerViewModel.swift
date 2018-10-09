@@ -11,6 +11,8 @@ import Foundation
 /// View model for a picker view controller.
 struct PickerViewModel {
 
+    // MARK: - Public Properties
+    
     /// Components to display in the picker view.
     let components: [PickerViewComponent]
 

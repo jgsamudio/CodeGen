@@ -9,6 +9,9 @@
 import Foundation
 
 struct LeaderboardSearch: Codable {
+    
+    // MARK: - Public Properties
+    
     let identifier: String
     let name: String
     let firstname: String

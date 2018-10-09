@@ -11,6 +11,8 @@ import XCTest
 
 class OnlineQualifiersLeaderboardListTests: XCTestCase {
 
+    // MARK: - Public Functions
+    
     func testParsingLeaderboards() {
         guard let filePath = Bundle(for: OnlineQualifiersLeaderboardListTests.self)
             .url(forResource: "leaderboard_onlinequalifiers", withExtension: "json"),
@@ -19,6 +21,8 @@ class OnlineQualifiersLeaderboardListTests: XCTestCase {
                 return
         }
 
+    // MARK: - Public Properties
+    
         let stringValue = String(data: json, encoding: .ascii)
         guard let data = stringValue?.data(using: .utf8) else {
             XCTFail("Whoops")

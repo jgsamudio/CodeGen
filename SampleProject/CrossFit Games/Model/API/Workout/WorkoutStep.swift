@@ -11,6 +11,8 @@ import Foundation
 /// Step details which are needed to complete a workout
 struct WorkoutStep: Codable {
 
+    // MARK: - Public Properties
+    
     /// Desciption of what needs to be done in a particular step
     let steps: String
 

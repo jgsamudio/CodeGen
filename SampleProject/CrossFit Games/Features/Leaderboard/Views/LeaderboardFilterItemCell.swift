@@ -11,8 +11,12 @@ import UIKit
 /// Cell for displaying filter question & answer option
 final class LeaderboardFilterItemCell: UICollectionViewCell {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var filterNameLabel: UILabel!
 
+    // MARK: - Public Properties
+    
     var filterName: String? {
         didSet {
             filterNameLabel.text = filterName

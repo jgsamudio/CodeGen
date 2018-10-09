@@ -13,6 +13,8 @@ import UIKit
 /// which contains the following athlete's workout scores and the rank details
 final class DashboardFAAModalViewController: UIViewController {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private var containerViewVerticallyCenterConstraint: NSLayoutConstraint!
     @IBOutlet private var containerViewTopConstraint: NSLayoutConstraint!
     @IBOutlet private weak var tableView: FixedSizeTableView!
@@ -22,6 +24,8 @@ final class DashboardFAAModalViewController: UIViewController {
     @IBOutlet private weak var divisionLabel: StyleableLabel!
     @IBOutlet private weak var containerView: UIView!
 
+    // MARK: - Public Properties
+    
     @IBOutlet weak var scrollView: UIScrollView!
     var viewModel: DashboardFollowAnAthleteViewModel!
 
@@ -30,6 +34,8 @@ final class DashboardFAAModalViewController: UIViewController {
     private let imageSize: CGFloat = 49
     private let thresholdRecordCount = 10
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let viewModel = viewModel {

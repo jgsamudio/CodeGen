@@ -11,9 +11,13 @@ import UIKit
 /// Loading view for dashboard screen.
 final class DashboardLoadingView: FullscreenLoadingView {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var avatarPlaceholder: UIView!
     @IBOutlet private weak var shimmerView: UIView!
 
+    // MARK: - Public Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 

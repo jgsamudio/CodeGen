@@ -11,16 +11,22 @@ import UIKit
 /// Displays List of loader cells
 final class LeaderboardLoadingView: UIView {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var shimmerView: UIView!
     @IBOutlet private weak var headerHeightConstraint: NSLayoutConstraint!
 
+    // MARK: - Public Properties
+    
     internal var headerHeight: CGFloat = 0.0 {
         didSet {
             headerHeightConstraint.constant = headerHeight
         }
     }
 
+    // MARK: - Public Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 

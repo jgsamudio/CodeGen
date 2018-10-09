@@ -12,9 +12,13 @@ import Foundation
 /// service layer
 struct CreateAccountNameEntryViewModel {
 
+    // MARK: - Private Properties
+    
     private var createAccountService: CreateAccountService
     private let localization = CreateAccountNameEntryLocalization()
 
+    // MARK: - Public Properties
+    
     /// URL for the terms and conditions web page
     var termsAndConditionsURL: String {
         return "https://www.crossfit.com/cf/terms-and-conditions"
@@ -25,10 +29,14 @@ struct CreateAccountNameEntryViewModel {
         return "https://www.crossfit.com/cf/privacy"
     }
     
+    // MARK: - Initialization
+    
     init() {
         createAccountService = ServiceFactory.shared.createAccountService()
     }
 
+    // MARK: - Public Functions
+    
     /// Validates the first name field and updates the error labels
     ///
     /// - Parameter firstName: first name to be validated

@@ -11,6 +11,8 @@ import WebKit
 
 private struct Constants {
 
+    // MARK: - Public Properties
+    
     /// Setup web view to load request and ensure content will always fit device width.
     /// Script enforcing size discovered in following note
     /// - NOTE: http://stackoverflow.com/questions/26295277/wkwebview-equivalent-for-uiwebviews-scalespagetofit
@@ -29,6 +31,8 @@ private struct Constants {
 /// Display web views within view controller
 final class WebViewController: BaseViewController {
 
+    // MARK: - Private Properties
+    
     private var webView: WKWebView!
     private var originalBackgroundColor: UIColor!
 
@@ -40,6 +44,8 @@ final class WebViewController: BaseViewController {
     /// Delegate that is notified about web view interaction.
     weak var delegate: WebViewControllerDelegate?
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = navigationTitle?.capitalized

@@ -12,8 +12,12 @@ import XCTest
 
 private class HTTPClient: HTTPClientProtocol {
 
+    // MARK: - Public Properties
+    
     let sessionManager: SessionManager = SessionManager()
 
+    // MARK: - Public Functions
+    
     func requestJson(request: HTTPRequest, isAuthRequest: Bool, completion: @escaping (Data?, Int?, Error?, [String: Any]?) -> Void) {
         guard let filePath = Bundle(for: LeaderboardFilterTests.self).url(forResource: "AllFilterControls", withExtension: "json"),
             let json = try? Data(contentsOf: filePath) else {

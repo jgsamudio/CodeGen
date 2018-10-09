@@ -11,6 +11,8 @@ import UIKit
 /// View to display the following athlete's information
 final class DashboardFollowAnAthleteView: UIView {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var innerView: UIView!
     @IBOutlet private weak var nameLabel: StyleableLabel!
     @IBOutlet private weak var profileImageView: UIImageView!
@@ -18,6 +20,8 @@ final class DashboardFollowAnAthleteView: UIView {
     @IBOutlet private weak var workoutTitleLabel: StyleableLabel!
     @IBOutlet private weak var workoutScoreLabel: StyleableLabel!
 
+    // MARK: - Public Functions
+    
     /// Initializes an instance of DashboardFollowAnAthleteView from the nib file
     ///
     /// - Returns: An instance of DashboardFollowAnAthleteView

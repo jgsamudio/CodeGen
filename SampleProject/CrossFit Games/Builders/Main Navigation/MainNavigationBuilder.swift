@@ -10,7 +10,12 @@ import UIKit
 
 struct MainNavigationBuilder: Builder {
 
+    // MARK: - Public Functions
+    
     func build() -> UIViewController {
+    
+    // MARK: - Public Properties
+    
         let dashboardViewController = DashboardBuilder().build()
         let dashboardNavigationController = UINavigationController(rootViewController: dashboardViewController)
         dashboardViewController.tabBarItem = UITabBarItem(title: "Home",

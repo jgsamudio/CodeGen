@@ -11,6 +11,8 @@ import UIKit
 // swiftlint:disable type_name
 final class CreateAccountCredentialsEntryViewController: BaseAuthViewController {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var passwordLabel: StyleableLabel!
     @IBOutlet private weak var emailLabel: StyleableLabel!
     @IBOutlet private weak var emailTextField: StyleableTextField!
@@ -24,12 +26,16 @@ final class CreateAccountCredentialsEntryViewController: BaseAuthViewController 
     @IBOutlet private weak var signInLabel: TappableLabel!
     private var errorView: FullscreenErrorView!
 
+    // MARK: - Public Properties
+    
     var viewModel: CreateAccountCredentialsEntryViewModel!
 
     private let localization = CreateAccountCredentialsEntryLocalization()
     private let loginLocalization = LoginLocalization()
     private let generalLocalization = GeneralLocalization()
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()

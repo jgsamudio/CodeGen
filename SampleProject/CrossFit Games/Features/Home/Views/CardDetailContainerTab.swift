@@ -11,6 +11,8 @@ import UIKit
 /// View for showing a title on the container view for card details.
 final class CardDetailContainerTab: UIView {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var label: UILabel!
 
     @IBOutlet private weak var underlineView: UIView!
@@ -19,6 +21,8 @@ final class CardDetailContainerTab: UIView {
 
     private let minAlphaUnderline: CGFloat = 0
 
+    // MARK: - Public Properties
+    
     /// Title to be displayed in `self`.
     var title: String? {
         didSet {

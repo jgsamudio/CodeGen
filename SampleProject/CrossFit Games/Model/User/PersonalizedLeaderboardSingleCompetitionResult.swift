@@ -24,6 +24,8 @@ struct PersonalizedLeaderboardSingleCompetitionResult: Codable {
         case id
     }
 
+    // MARK: - Public Properties
+    
     let rank: String?
     let score: Int?
     let totalAthletes: Int?
@@ -36,6 +38,8 @@ struct PersonalizedLeaderboardSingleCompetitionResult: Codable {
     let name: String?
     let id: Int?
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 

@@ -11,6 +11,8 @@ import Foundation
 /// View model for a leaderboard athlete result cell.
 struct LeaderboardAthleteResultCellViewModel: Codable {
 
+    // MARK: - Public Properties
+    
     /// Athlete ID
     let id: String
     
@@ -72,6 +74,8 @@ struct LeaderboardAthleteResultCellViewModel: Codable {
         case displayScore
     }
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decode(String.self, forKey: .id)
@@ -91,6 +95,8 @@ struct LeaderboardAthleteResultCellViewModel: Codable {
         userAuthService = ServiceFactory.shared.createUserAuthService()
     }
 
+    // MARK: - Public Functions
+    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
 

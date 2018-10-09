@@ -12,6 +12,8 @@ import Foundation
 /// for the following an athlete view controller
 struct FollowAnAthleteViewModel {
 
+    // MARK: - Public Properties
+    
     /// Currently following athlete
     let followingAthlete: LeaderboardAthleteResultCellViewModel
 

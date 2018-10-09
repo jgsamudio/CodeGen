@@ -10,8 +10,12 @@ import UIKit
 
 struct DashboardFAAModalBuilder: Builder {
 
+    // MARK: - Public Properties
+    
     let viewModel: DashboardFollowAnAthleteViewModel
 
+    // MARK: - Public Functions
+    
     func build() -> UIViewController {
         let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
         let viewController: DashboardFAAModalViewController = storyboard.instantiateViewController()

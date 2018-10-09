@@ -17,6 +17,8 @@ final class WorkoutDetailsViewController: BaseViewController {
         case movementStandards = 0
         case workoutDescription
 
+    // MARK: - Public Functions
+    
         func localize(localization: WorkoutDetailsLocalization) -> String {
             switch self {
             case .movementStandards:
@@ -27,6 +29,8 @@ final class WorkoutDetailsViewController: BaseViewController {
         }
     }
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var videoPlayerView: YTPlayerView!
     @IBOutlet private weak var workoutDivisionLabel: UILabel!
     @IBOutlet private weak var workoutTypeLabel: UILabel!
@@ -70,6 +74,9 @@ final class WorkoutDetailsViewController: BaseViewController {
     @IBOutlet private weak var submitScoreButton: StyleableButton!
 
     private var shouldPlayVideo = true
+    
+    // MARK: - Public Properties
+    
     var viewModel: WorkoutViewModel!
 
     private let localization = WorkoutDetailsLocalization()
@@ -426,6 +433,7 @@ extension WorkoutDetailsViewController: UIScrollViewDelegate {
 }
 
 // MARK: - Youtube player view delgate functions
+// MARK: - YTPlayerViewDelegate
 extension WorkoutDetailsViewController: YTPlayerViewDelegate {
 
     func playerView(_ playerView: YTPlayerView, didChangeTo state: YTPlayerState) {

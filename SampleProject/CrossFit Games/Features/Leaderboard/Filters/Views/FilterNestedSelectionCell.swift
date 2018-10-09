@@ -11,12 +11,16 @@ import UIKit
 /// Cell for going into a nested filter selection.
 final class FilterNestedSelectionCell: UITableViewCell {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var nameLabel: UILabel!
 
     @IBOutlet private weak var selectedOptionLabel: UILabel!
 
     @IBOutlet private weak var chevronImageView: UIImageView!
 
+    // MARK: - Public Properties
+    
     /// Theme configuration for `self`.
     var config: FilterThemeConfiguration? {
         didSet {

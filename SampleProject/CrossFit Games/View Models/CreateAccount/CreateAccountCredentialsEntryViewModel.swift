@@ -12,20 +12,29 @@ import Foundation
 /// service layer
 struct CreateAccountCredentialsEntryViewModel {
 
+    // MARK: - Private Properties
+    
     private var createAccountService: CreateAccountService
     private var userAuthService: UserAuthService
     private let localization = CreateAccountCredentialsEntryLocalization()
 
+    // MARK: - Initialization
+    
     init() {
         createAccountService = ServiceFactory.shared.createAccountService()
         userAuthService = ServiceFactory.shared.createUserAuthService()
     }
 
+    // MARK: - Public Functions
+    
     /// Validates the email text and returns the valid status with the relevant error message as a string
     ///
     /// - Parameter email: email to be validated
     /// - Returns: a tuple which includes the valid status and the error message if the status is false
     func isValidEmail(email: String?) -> (Bool, String) {
+    
+    // MARK: - Public Properties
+    
         var isValid = true
         var error: String = ""
         if let email = email {

@@ -14,8 +14,14 @@ struct FileRetriever {
     static func retrieveFilenames(at path: String, fileExtensions: [String]?) -> [String] {
         let fileEnumerator = FileManager.default.enumerator(atPath: path)
         let enumerator = fileEnumerator?.filter { (file) in
-            if let fileExtensions = fileExtensions {
-                return !(fileExtensions.filter { (file as? String)?.contains($0) ?? false }.isEmpty)
+            
+            if let fileExtensions = fileExtensions, let filePath = file as? String {
+                if let extensionIndex = filePath.index(of: ".") {
+                    let currentFileExtension = String(filePath[extensionIndex..<filePath.endIndex])
+                    return fileExtensions.contains(currentFileExtension)
+                } else {
+                    return false
+                }
             }
             return true
         }

@@ -11,9 +11,14 @@ import Foundation
 final class CompetitionInfoDataStore {
 
     struct Key: Hashable {
+    
+    // MARK: - Public Properties
+    
         let type: String
         let year: String
 
+    // MARK: - Initialization
+    
         init(type: String, year: String) {
             self.type = type
             self.year = year
@@ -41,6 +46,8 @@ final class CompetitionInfoDataStore {
 
 }
 
+    // MARK: - Public Functions
+    
 func == (_ lhs: CompetitionInfoDataStore.Key, _ rhs: CompetitionInfoDataStore.Key) -> Bool {
     return lhs.type == rhs.type && lhs.year == rhs.year
 }

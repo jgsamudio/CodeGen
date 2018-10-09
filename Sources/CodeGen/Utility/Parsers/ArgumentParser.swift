@@ -84,6 +84,7 @@ private extension ArgumentParser {
     }
 
     func storeConfigGenerators(config: Configuration) {
+        // TODO: Save Directory for changing projects.
         for generator in config.generators {
             generator.storeGenerator()
         }

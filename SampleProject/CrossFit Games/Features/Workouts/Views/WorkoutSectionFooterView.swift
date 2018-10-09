@@ -11,6 +11,8 @@ import UIKit
 /// The section footer view
 final class WorkoutSectionFooterView: UITableViewHeaderFooterView {
 
+    // MARK: - Public Properties
+    
     /// Height constant of the footer view
     static let viewHeight: CGFloat = 10
     

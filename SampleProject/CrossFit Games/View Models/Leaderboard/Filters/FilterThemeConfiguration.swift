@@ -11,9 +11,13 @@ import UIKit
 /// Theme configuration to customize UI layout of a filter view controller.
 struct FilterThemeConfiguration {
 
+    // MARK: - Private Properties
+    
     private static let selectedBlue = UIColor(displayP3Red: 22/255, green: 100/255, blue: 187/255, alpha: 1)
     private static let selectedWhite = UIColor(displayP3Red: 242/255, green: 246/255, blue: 251/255, alpha: 1)
 
+    // MARK: - Public Properties
+    
     /// Default blue theme configuration.
     static let blue = FilterThemeConfiguration(titleAttributes: StyleGuide.shared.style(row: .r10, column: .c1, weight: .w4),
                                                largeTitleAttributes: StyleGuide.shared.style(row: .r6, column: .c1, weight: .w4),

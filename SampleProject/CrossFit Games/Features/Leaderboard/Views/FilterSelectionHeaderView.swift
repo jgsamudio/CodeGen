@@ -10,9 +10,13 @@ import UIKit
 
 final class FilterSelectionHeaderView: UITableViewHeaderFooterView {
 
+    // MARK: - Public Properties
+    
     /// Height constant of the header view
     static let viewHeight: CGFloat = 80
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var filterButton: StyleableButton!
     @IBOutlet private weak var filterSelectionLabel: StyleableLabel!
 
@@ -30,11 +34,15 @@ final class FilterSelectionHeaderView: UITableViewHeaderFooterView {
 
     private let localization = GeneralLocalization()
 
+    // MARK: - Initialization
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         contentView.backgroundColor = .white
     }
 
+    // MARK: - Public Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         filterButton.setTitle(localization.filter, for: .normal)

@@ -32,10 +32,15 @@ enum AccountCellOption {
     /// Frequently asked questions
     case faq
 
+    // MARK: - Public Functions
+    
     /// Localize based on case
     ///
     /// - Returns: String to display
     func localize() -> String {
+    
+    // MARK: - Public Properties
+    
         let localization = AccountLocalization()
         switch self {    
         case .help:

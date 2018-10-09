@@ -11,7 +11,12 @@ import UIKit
 /// Builds Workout Container View Controller
 struct WorkoutContainerBuilder: Builder {
     
+    // MARK: - Public Functions
+    
     func build() -> UIViewController {
+    
+    // MARK: - Public Properties
+    
         let storyboard = UIStoryboard(name: "Workouts", bundle: nil)
         let viewController: WorkoutContainerViewController = storyboard.instantiateViewController()
         return viewController

@@ -10,7 +10,12 @@ import UIKit
 
 struct LandingBuilder: Builder {
 
+    // MARK: - Public Functions
+    
     func build() -> UIViewController {
+    
+    // MARK: - Public Properties
+    
         let storyboard = UIStoryboard(name: "Landing", bundle: nil)
         let viewController: LandingViewController = storyboard.instantiateViewController()
         viewController.viewModel = RootViewModel()

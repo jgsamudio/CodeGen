@@ -38,6 +38,8 @@ struct Workout: Decodable {
         case movementStandardImages = "images_movement"
     }
 
+    // MARK: - Public Properties
+    
     /// Workout id
     let id: String
 
@@ -96,6 +98,8 @@ struct Workout: Decodable {
     /// Movement standard images.
     let movementStandardImages: [MovementStandardImage]
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         do {

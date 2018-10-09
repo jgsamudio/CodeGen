@@ -13,8 +13,12 @@ import XCTest
 
 class LeaderboardFilterSelectionServiceTests: XCTestCase {
 
+    // MARK: - Public Properties
+    
     var filterSelectionService: LeaderboardFilterSelectionService!
 
+    // MARK: - Public Functions
+    
     override func setUp() {
         super.setUp()
 

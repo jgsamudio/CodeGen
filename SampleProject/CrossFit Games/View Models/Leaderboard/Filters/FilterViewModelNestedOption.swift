@@ -26,6 +26,8 @@ protocol FilterViewModelNestedOption: FilterViewModelSelectionOption {
 // MARK: - Default behavior
 extension FilterViewModelNestedOption {
 
+    // MARK: - Public Properties
+    
     var isSelected: () -> Bool {
         return { return false }
     }

@@ -10,8 +10,12 @@ import UIKit
 
 struct RootViewBuilder: Builder {
 
+    // MARK: - Public Properties
+    
     let viewModel = RootViewModel()
 
+    // MARK: - Public Functions
+    
     func build() -> UIViewController {
         if viewModel.isLoggedIn {
             return MainNavigationBuilder().build()
