@@ -45,6 +45,12 @@
 			"enabled": true,
 			"insertString":["", "// MARK: - Private Properties", ""],
 			"visitors": ["variable", "constant"]
+		},
+		{
+			"name": "publicFunctionMarkGenerator",
+			"enabled": true,
+			"insertString":["", "// MARK: - Public Functions", ""],
+			"visitors": ["function"]
 		}
 	],
 	"excluded": [],

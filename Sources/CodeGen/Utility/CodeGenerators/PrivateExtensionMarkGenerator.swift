@@ -17,7 +17,8 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
 
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
-                                  fileComponents: [String]) -> FileModifier? {
+                                  fileComponents: [String],
+                                  visitedNodes: [ASTNode]) -> FileModifier? {
         guard let insertions = generatorConfig.insertString,
             let extensionDeclaration = node as? ExtensionDeclaration,
             extensionDeclaration.accessLevelModifier == .private else {

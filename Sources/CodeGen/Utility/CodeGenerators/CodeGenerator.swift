@@ -28,10 +28,12 @@ protocol CodeGenerator {
     ///   - node: Current ASTNode.
     ///   - sourceLocation: Location with in the source file.
     ///   - fileComponents: File lines components of the Swift file.
+    ///   - visitedNodes: Visited nodes of the file.
     /// - Returns: Optional file modifier with any changes.
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
-                                  fileComponents: [String]) -> FileModifier?
+                                  fileComponents: [String],
+                                  visitedNodes: [ASTNode]) -> FileModifier?
     
 }
 

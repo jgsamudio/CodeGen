@@ -13,9 +13,10 @@ final class CodeASTVisitor: ASTVisitor {
 
     var modifications = [FileModifier]()
 
+    private var visitedNodes: [ASTNode]
+
     private let fileComponents: [String]
     private let config: Configuration?
-
     private let codeGenerators: [CodeGenerator]
 
     private static var availableGenerators: [CodeGenerator.Type] {
@@ -24,12 +25,14 @@ final class CodeASTVisitor: ASTVisitor {
                 DelegateExtensionMarkGenerator.self,
                 InitializationMarkGenerator.self,
                 PublicVariableMarkGenerator.self,
-                PrivateVariableMarkGenerator.self]
+                PrivateVariableMarkGenerator.self,
+                PublicFunctionMarkGenerator.self]
     }
 
     init(fileComponents: [String], config: Configuration?) {
         self.fileComponents = fileComponents
         self.config = config
+        self.visitedNodes = []
 
         codeGenerators = config?.generators.compactMap {
             if $0.enabled {
@@ -83,15 +86,25 @@ final class CodeASTVisitor: ASTVisitor {
         return true
     }
 
+    func visit(_ declaration: FunctionDeclaration) throws -> Bool {
+        visited(.function, sourceLocation: declaration.sourceLocation, node: declaration)
+        return true
+    }
+
 }
 
 private extension CodeASTVisitor {
 
     func visited<T: ASTNode>(_ visitor: Visitor, sourceLocation: SourceLocation, node: T?) {
+        if let node = node {
+            visitedNodes.append(node)
+        }
+
         codeGenerators.filter { $0.generatorConfig.visitors?.contains(visitor) ?? false }.forEach {
             if let modifier = $0.fileModifier(node: node,
                                               sourceLocation: sourceLocation,
-                                              fileComponents: fileComponents) {
+                                              fileComponents: fileComponents,
+                                              visitedNodes: visitedNodes) {
                 modifications.append(modifier)
             }
         }

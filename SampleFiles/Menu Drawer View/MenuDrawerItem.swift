@@ -46,7 +46,7 @@ final class MenuDrawerItem: UIView {
 
 // MARK: - Private Functions
 private extension MenuDrawerItem {
-
+    
     func configureView(theme: Theme, text: String) {
         autoSetDimension(.height, toSize: 74)
         backgroundColor = theme.colorTheme.primary

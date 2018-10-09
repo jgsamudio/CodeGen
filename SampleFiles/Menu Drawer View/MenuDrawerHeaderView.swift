@@ -62,7 +62,7 @@ final class MenuDrawerHeaderView: BuildableView {
 
 // MARK: - Private Functions
 private extension MenuDrawerHeaderView {
-
+    
     func configureView(theme: Theme) {
         backgroundColor = theme.colorTheme.primary
         setupProfileButton(theme: theme)
