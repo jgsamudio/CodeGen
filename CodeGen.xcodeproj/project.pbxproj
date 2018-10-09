@@ -38,6 +38,8 @@
 		20FA3C46216C071D009AD3A2 /* PublicVariableMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C45216C071D009AD3A2 /* PublicVariableMarkGenerator.swift */; };
 		20FA3C49216CFF4B009AD3A2 /* DeclarationModifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C48216CFF4B009AD3A2 /* DeclarationModifierProtocol.swift */; };
 		20FA3C4B216CFF68009AD3A2 /* PrivateVariableMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C4A216CFF68009AD3A2 /* PrivateVariableMarkGenerator.swift */; };
+		20FA3C4E216D20FF009AD3A2 /* ExtensionDeclarationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C4D216D20FF009AD3A2 /* ExtensionDeclarationExtension.swift */; };
+		20FA3C51216D2255009AD3A2 /* PublicFunctionMarkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA3C50216D2255009AD3A2 /* PublicFunctionMarkGenerator.swift */; };
 		OBJ_275 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* ASTNode.swift */; };
 		OBJ_276 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* ASTNodeContext.swift */; };
 		OBJ_277 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* ASTTextRepresentable.swift */; };
@@ -517,6 +519,8 @@
 		20FA3C45216C071D009AD3A2 /* PublicVariableMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicVariableMarkGenerator.swift; sourceTree = "<group>"; };
 		20FA3C48216CFF4B009AD3A2 /* DeclarationModifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationModifierProtocol.swift; sourceTree = "<group>"; };
 		20FA3C4A216CFF68009AD3A2 /* PrivateVariableMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateVariableMarkGenerator.swift; sourceTree = "<group>"; };
+		20FA3C4D216D20FF009AD3A2 /* ExtensionDeclarationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDeclarationExtension.swift; sourceTree = "<group>"; };
+		20FA3C50216D2255009AD3A2 /* PublicFunctionMarkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicFunctionMarkGenerator.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CodeASTVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeASTVisitor.swift; sourceTree = "<group>"; };
@@ -873,6 +877,27 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		20FA3C4C216D20EE009AD3A2 /* Declaration Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20FA3C4D216D20FF009AD3A2 /* ExtensionDeclarationExtension.swift */,
+			);
+			path = "Declaration Extensions";
+			sourceTree = "<group>";
+		};
+		20FA3C4F216D223D009AD3A2 /* Mark Generators */ = {
+			isa = PBXGroup;
+			children = (
+				20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */,
+				20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */,
+				20FA3C32216BB3F7009AD3A2 /* InitializationMarkGenerator.swift */,
+				20FA3C45216C071D009AD3A2 /* PublicVariableMarkGenerator.swift */,
+				20FA3C4A216CFF68009AD3A2 /* PrivateVariableMarkGenerator.swift */,
+				20FA3C50216D2255009AD3A2 /* PublicFunctionMarkGenerator.swift */,
+			);
+			path = "Mark Generators";
+			sourceTree = "<group>";
+		};
 		OBJ_102 /* Declaration */ = {
 			isa = PBXGroup;
 			children = (
@@ -959,11 +984,7 @@
 			children = (
 				OBJ_14 /* CodeGenerator.swift */,
 				OBJ_15 /* DeclarationHeaderGenerator.swift */,
-				20437D7C2152BB5C006EC083 /* PrivateExtensionMarkGenerator.swift */,
-				20437D7E2152BB69006EC083 /* DelegateExtensionMarkGenerator.swift */,
-				20FA3C32216BB3F7009AD3A2 /* InitializationMarkGenerator.swift */,
-				20FA3C45216C071D009AD3A2 /* PublicVariableMarkGenerator.swift */,
-				20FA3C4A216CFF68009AD3A2 /* PrivateVariableMarkGenerator.swift */,
+				20FA3C4F216D223D009AD3A2 /* Mark Generators */,
 			);
 			path = CodeGenerators;
 			sourceTree = "<group>";
@@ -1119,6 +1140,7 @@
 		OBJ_22 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				20FA3C4C216D20EE009AD3A2 /* Declaration Extensions */,
 				OBJ_23 /* StringExtension.swift */,
 				20FA3C39216BB995009AD3A2 /* ArrayExtension.swift */,
 				20FA3C3B216BB9A7009AD3A2 /* SourceLocationExtension.swift */,
@@ -1920,6 +1942,7 @@
 				OBJ_454 /* FileModifier.swift in Sources */,
 				OBJ_455 /* CodeGenerator.swift in Sources */,
 				OBJ_456 /* DeclarationHeaderGenerator.swift in Sources */,
+				20FA3C51216D2255009AD3A2 /* PublicFunctionMarkGenerator.swift in Sources */,
 				OBJ_457 /* CommandLineError.swift in Sources */,
 				20FA3C43216BF1D8009AD3A2 /* Constants.swift in Sources */,
 				20FA3C34216BB408009AD3A2 /* InitializationMarkGenerator.swift in Sources */,
@@ -1938,6 +1961,7 @@
 				20FA3C3A216BB995009AD3A2 /* ArrayExtension.swift in Sources */,
 				OBJ_463 /* Configuration.swift in Sources */,
 				OBJ_464 /* GeneratorConfig.swift in Sources */,
+				20FA3C4E216D20FF009AD3A2 /* ExtensionDeclarationExtension.swift in Sources */,
 				OBJ_465 /* ArgumentParser.swift in Sources */,
 				OBJ_466 /* main.swift in Sources */,
 				20FA3C3F216BF19A009AD3A2 /* Regex.swift in Sources */,

@@ -105,32 +105,19 @@ extension Array where Element == DeclarationModifier {
 
 extension Array where Element == ASTNode {
 
+    /// All extension declarations in the array.
     var extensionDeclarations: [ExtensionDeclaration] {
         return compactMap { $0 as? ExtensionDeclaration }
     }
 
-    func privateExtensionFunctionFound(_ function: FunctionDeclaration) -> Bool {
+    /// Determines if the function given is found in a private extension.
+    ///
+    /// - Parameter function: Function to check for.
+    /// - Returns: Boolean if the function is found in a private extension.
+    func privateExtensionFunctionFound(with function: FunctionDeclaration) -> Bool {
         for extensionDeclaration in extensionDeclarations {
             if extensionDeclaration.accessLevelModifier == .`private`, extensionDeclaration.contains(declaration: function) {
                 return true
-            }
-        }
-        return false
-    }
-
-}
-
-extension ExtensionDeclaration {
-
-    func contains(declaration: Declaration) -> Bool {
-        for member in members {
-            switch member {
-            case .declaration(let declaration):
-                if declaration.description == declaration.description {
-                    return true
-                }
-            default:
-                continue
             }
         }
         return false
