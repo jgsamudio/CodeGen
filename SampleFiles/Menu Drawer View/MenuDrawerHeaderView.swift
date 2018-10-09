@@ -18,7 +18,7 @@ import UIKit
 ///
 /// <Real world example of how someone would use this class with code snippet>
 final class MenuDrawerHeaderView: BuildableView {
-
+    
     // MARK: - Public Properties
     
     /// Updates the profile image.
