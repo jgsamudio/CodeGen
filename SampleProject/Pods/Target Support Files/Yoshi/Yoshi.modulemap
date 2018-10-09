@@ -1,0 +1,6 @@
+framework module Yoshi {
+  umbrella header "Yoshi-umbrella.h"
+
+  export *
+  module * { export * }
+}
