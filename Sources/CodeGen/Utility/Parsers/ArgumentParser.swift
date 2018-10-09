@@ -31,6 +31,7 @@ final class ArgumentParser {
 
         // Parse files.
         for fileName in fileNames {
+            // TODO: Make multi threaded.
             let sourceFile = try SourceReader.read(at: "\(directory)/\(fileName)")
             let fileComponents = sourceFile.content.components(separatedBy: "\n")
 
