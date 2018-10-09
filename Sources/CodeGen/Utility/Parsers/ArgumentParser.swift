@@ -21,6 +21,8 @@ final class ArgumentParser {
     }
 
     func run() throws {
+        let timer = ParkBenchTimer()
+
         guard arguments.count > 1 else {
             throw CommandLineError.missingDirectory
         }
@@ -31,47 +33,55 @@ final class ArgumentParser {
 
         // Parse files.
         for fileName in fileNames {
-            // TODO: Make multi threaded.
-            print(fileName)
-            let sourceFile = try SourceReader.read(at: "\(directory)/\(fileName)")
-            let fileComponents = sourceFile.content.components(separatedBy: "\n")
-
-            let parser = Parser(source: sourceFile)
-            let topLevelDecl = try parser.parse()
-            let visitor = CodeASTVisitor(fileComponents: fileComponents, config: config)
-            _ = try? visitor.traverse(topLevelDecl)
-
-            // Update files with modifications.
-            let updatedComponentList = LinkedList<String>()
-            for i in 0..<fileComponents.count {
-                let fileComponent = fileComponents[i]
-                var replaceCurrentLine = false
-
-                // Check Modifications
-                for modIndex in 0..<visitor.modifications.count {
-                    let modification = visitor.modifications[modIndex]
-                    if modification.startIndex == i {
-                        updatedComponentList.append(modification.insertions.joined(separator: "\n"))
-                        replaceCurrentLine = modification.replaceCurrentLine
-                        // Deletions should be a range
-                    }
-                }
-
-                // Append line if needed.
-                if !replaceCurrentLine {
-                    updatedComponentList.append(fileComponent)
+            DispatchQueue.global().async { [unowned self] in
+                do {
+                    try self.parse(fileName: fileName, directory: directory, config: config)
+                } catch {
+                    print("Parsing Error")
                 }
             }
-            updatedComponentList.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
         }
-
         // Store config generators for next run.
         storeConfigGenerators(config: config)
+        print("The task took \(timer.stop()) seconds.")
     }
 
 }
 
 private extension ArgumentParser {
+
+    func parse(fileName: String, directory: String, config: Configuration) throws {
+        let sourceFile = try SourceReader.read(at: "\(directory)/\(fileName)")
+        let fileComponents = sourceFile.content.components(separatedBy: "\n")
+
+        let parser = Parser(source: sourceFile)
+        let topLevelDecl = try parser.parse()
+        let visitor = CodeASTVisitor(fileComponents: fileComponents, config: config)
+        _ = try? visitor.traverse(topLevelDecl)
+
+        // Update files with modifications.
+        let updatedComponentList = LinkedList<String>()
+        for i in 0..<fileComponents.count {
+            let fileComponent = fileComponents[i]
+            var replaceCurrentLine = false
+
+            // Check Modifications
+            for modIndex in 0..<visitor.modifications.count {
+                let modification = visitor.modifications[modIndex]
+                if modification.startIndex == i {
+                    updatedComponentList.append(modification.insertions.joined(separator: "\n"))
+                    replaceCurrentLine = modification.replaceCurrentLine
+                    // Deletions should be a range
+                }
+            }
+
+            // Append line if needed.
+            if !replaceCurrentLine {
+                updatedComponentList.append(fileComponent)
+            }
+        }
+        updatedComponentList.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
+    }
 
     func loadConfig(directory: String) throws -> Configuration {
         let jsonString = try? String(contentsOfFile: "\(directory)/.codegen.config.json", encoding: String.Encoding.utf8)
