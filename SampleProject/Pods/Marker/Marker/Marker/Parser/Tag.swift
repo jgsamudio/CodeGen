@@ -11,6 +11,8 @@ import Foundation
 /// A tag represents a parser result containing a symbol and the index location of the symbol.
 internal struct Tag {
     
+    // MARK: - Public Properties
+    
     /// Symbol.
     let symbol: Symbol
     

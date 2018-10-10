@@ -31,21 +31,27 @@
 public protocol LayoutConstraintItem: class {
 }
 
+// MARK: - LayoutConstraintItem
 @available(iOS 9.0, OSX 10.11, *)
 extension ConstraintLayoutGuide : LayoutConstraintItem {
 }
 
+// MARK: - LayoutConstraintItem
 extension ConstraintView : LayoutConstraintItem {
 }
 
 
 extension LayoutConstraintItem {
     
+    // MARK: - Public Functions
+    
     internal func prepare() {
         if let view = self as? ConstraintView {
             view.translatesAutoresizingMaskIntoConstraints = false
         }
     }
+    
+    // MARK: - Public Properties
     
     internal var superview: ConstraintView? {
         if let view = self as? ConstraintView {
@@ -75,6 +81,8 @@ extension LayoutConstraintItem {
             constraintsSet.remove(constraint)
         }
     }
+    
+    // MARK: - Private Properties
     
     private var constraintsSet: NSMutableSet {
         let constraintsSet: NSMutableSet

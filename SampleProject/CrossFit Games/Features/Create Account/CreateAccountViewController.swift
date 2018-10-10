@@ -10,6 +10,8 @@ import UIKit
 
 final class CreateAccountViewController: UIViewController {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var emailTextField: UITextField!
 
     @IBOutlet private weak var passwordTextField: UITextField!
@@ -20,10 +22,14 @@ final class CreateAccountViewController: UIViewController {
 
     @IBOutlet private weak var errorLabel: UILabel!
 
+    // MARK: - Public Properties
+    
     var viewModel: CreateAccountViewModel!
 
     private let localization = PlaceholderLoginLocalization()
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

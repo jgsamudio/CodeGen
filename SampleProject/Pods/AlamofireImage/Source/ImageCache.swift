@@ -70,11 +70,16 @@ public protocol ImageRequestCache: ImageCache {
 /// internal access date of the image is updated.
 open class AutoPurgingImageCache: ImageRequestCache {
     class CachedImage {
+    
+    // MARK: - Public Properties
+    
         let image: Image
         let identifier: String
         let totalBytes: UInt64
         var lastAccessDate: Date
 
+    // MARK: - Initialization
+    
         init(_ image: Image, identifier: String) {
             self.image = image
             self.identifier = identifier
@@ -95,6 +100,8 @@ open class AutoPurgingImageCache: ImageRequestCache {
             }()
         }
 
+    // MARK: - Public Functions
+    
         func accessImage() -> Image {
             lastAccessDate = Date()
             return image
@@ -118,6 +125,8 @@ open class AutoPurgingImageCache: ImageRequestCache {
     /// capacity drops below this limit.
     open let preferredMemoryUsageAfterPurge: UInt64
 
+    // MARK: - Private Properties
+    
     private let synchronizationQueue: DispatchQueue
     private var cachedImages: [String: CachedImage]
     private var currentMemoryUsage: UInt64

@@ -15,10 +15,14 @@ final class LeaderboardRequest: RawRepresentable, Equatable {
 
     typealias RawValue = HTTPRequest
 
+    // MARK: - Private Properties
+    
     private let customLeaderboard: CustomLeaderboard
 
     private let searchCondition: LeaderboardSearchCondition
 
+    // MARK: - Initialization
+    
     init?(rawValue: RawValue) {
         return nil
     }
@@ -28,6 +32,8 @@ final class LeaderboardRequest: RawRepresentable, Equatable {
         self.searchCondition = searchCondition
     }
 
+    // MARK: - Public Properties
+    
     var rawValue: HTTPRequest {
         let url = CFEnvironmentManager.shared.currentGeneralEnvironment.baseURL
             .appendingPathComponent("competitions/api/v1/competitions")
@@ -51,6 +57,8 @@ final class LeaderboardRequest: RawRepresentable, Equatable {
 
 }
 
+    // MARK: - Public Functions
+    
 func == (_ lhs: LeaderboardRequest, _ rhs: LeaderboardRequest) -> Bool {
     return lhs.rawValue.urlRequest?.url == lhs.rawValue.urlRequest?.url
 }

@@ -20,11 +20,16 @@ enum HTTPModelShortType: String
     case IMAGE = "Image"
     case OTHER = "Other"
     
+    // MARK: - Public Properties
+    
     static let allValues = [JSON, XML, HTML, IMAGE, OTHER]
 }
 
 extension NFXColor
 {
+    
+    // MARK: - Initialization
+    
     convenience init(red: Int, green: Int, blue: Int)
     {
         assert(red >= 0 && red <= 255, "Invalid red component")
@@ -38,6 +43,8 @@ extension NFXColor
     {
         self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
     }
+    
+    // MARK: - Public Functions
     
     class func NFXOrangeColor() -> NFXColor
     {
@@ -345,8 +352,12 @@ extension String
     }
 }
 
+// MARK: - Private Functions
 @objc private extension URLSessionConfiguration
 {
+    
+    // MARK: - Private Properties
+    
     private static var firstOccurrence = true
     
     static func implementNetfox() {

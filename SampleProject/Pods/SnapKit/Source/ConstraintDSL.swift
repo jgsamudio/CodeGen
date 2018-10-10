@@ -38,6 +38,8 @@ public protocol ConstraintDSL {
 }
 extension ConstraintDSL {
     
+    // MARK: - Public Functions
+    
     public func setLabel(_ value: String?) {
         objc_setAssociatedObject(self.target as Any, &labelKey, value, .OBJC_ASSOCIATION_COPY_NONATOMIC)
     }
@@ -46,6 +48,9 @@ extension ConstraintDSL {
     }
     
 }
+    
+    // MARK: - Private Properties
+    
 private var labelKey: UInt8 = 0
 
 
@@ -54,6 +59,8 @@ public protocol ConstraintBasicAttributesDSL : ConstraintDSL {
 extension ConstraintBasicAttributesDSL {
     
     // MARK: Basics
+    
+    // MARK: - Public Properties
     
     public var left: ConstraintItem {
         return ConstraintItem(target: self.target, attributes: ConstraintAttributes.left)

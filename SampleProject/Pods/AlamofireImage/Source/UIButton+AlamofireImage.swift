@@ -34,6 +34,9 @@ extension UIButton {
     // MARK: - Private - AssociatedKeys
 
     private struct AssociatedKey {
+    
+    // MARK: - Public Properties
+    
         static var imageDownloader = "af_UIButton.ImageDownloader"
         static var sharedImageDownloader = "af_UIButton.SharedImageDownloader"
         static var imageReceipts = "af_UIButton.ImageReceipts"
@@ -73,6 +76,8 @@ extension UIButton {
         }
     }
 
+    // MARK: - Private Properties
+    
     private var imageRequestReceipts: [UInt: RequestReceipt] {
         get {
             guard let
@@ -105,6 +110,8 @@ extension UIButton {
 
     // MARK: - Image Downloads
 
+    // MARK: - Public Functions
+    
     /// Asynchronously downloads an image from the specified URL and sets it once the request is finished.
     ///
     /// If the image is cached locally, the image is set immediately. Otherwise the specified placeholder image will be

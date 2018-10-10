@@ -12,10 +12,16 @@ import Alamofire
 
 private struct PersonalizedLeaderboard2018HTTPClient: HTTPClientProtocol {
 
+    // MARK: - Public Properties
+    
     let sessionManager: SessionManager = SessionManager()
 
+    // MARK: - Private Properties
+    
     private var dummyCache: [URLRequest: Any] = [:]
 
+    // MARK: - Public Functions
+    
     func requestJson(request: HTTPRequest, isAuthRequest: Bool, completion: @escaping (Data?, Int?, Error?, [String: Any]?) -> Void) {
         guard let url = Bundle(for: PersonalizedLeaderboardTests.self).url(forResource: "PersonalizedLeaderboard2018", withExtension: "json") else {
             XCTFail("Failed to load test data.")

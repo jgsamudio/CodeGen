@@ -15,7 +15,12 @@ enum NFXBodyType: Int
 
 class NFXGenericBodyDetailsController: NFXGenericController
 {
+    
+    // MARK: - Public Properties
+    
     var bodyType: NFXBodyType = NFXBodyType.response
+    
+    // MARK: - Public Functions
     
     override func viewDidLoad()
     {

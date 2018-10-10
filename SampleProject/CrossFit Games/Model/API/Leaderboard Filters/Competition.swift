@@ -16,6 +16,8 @@ enum Competition: Int {
     case onlineQualifier
     case teamSeries
 
+    // MARK: - Public Properties
+    
     /// String for representation of `self` in a search query (e.g.
     /// `https://games.crossfit.com//competitions/api/v1/competitions/open/2017?expand%5B%5D=controls` for
     /// Competition.open.searchQueryString

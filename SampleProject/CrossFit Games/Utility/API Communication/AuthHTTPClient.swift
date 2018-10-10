@@ -13,12 +13,16 @@ import Foundation
 /// which includes a session manager who manages refreshing the token if it has expires as well
 struct AuthHTTPClient: HTTPClientProtocol {
 
+    // MARK: - Public Properties
+    
     /// Session Manager
     let sessionManager: SessionManager
 
     /// Manager handling OAuth
     let oAuthManager: OAuthManager
 
+    // MARK: - Initialization
+    
     /// Initalizes client
     ///
     /// - Parameter sessionManager: Session Manager to utilize

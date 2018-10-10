@@ -11,8 +11,12 @@ import XCTest
 
 class NewRegionFilterTests: XCTestCase {
 
+    // MARK: - Private Properties
+    
     private static let group = DispatchGroup()
 
+    // MARK: - Public Functions
+    
     override func setUp() {
         super.setUp()
     }
@@ -28,6 +32,8 @@ class NewRegionFilterTests: XCTestCase {
                 return
         }
 
+    // MARK: - Public Properties
+    
         let stringValue = String(data: json, encoding: .ascii)
         guard let data = stringValue?.data(using: .utf8) else {
             XCTFail("Whoops")

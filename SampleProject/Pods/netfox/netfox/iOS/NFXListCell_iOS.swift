@@ -14,6 +14,8 @@ import UIKit
 class NFXListCell: UITableViewCell
 {
     
+    // MARK: - Public Properties
+    
     let padding: CGFloat = 5
     var URLLabel: UILabel!
     var statusView: UIView!
@@ -25,6 +27,8 @@ class NFXListCell: UITableViewCell
     var rightSeparator: UIView!
     var circleView: UIView!
 
+    
+    // MARK: - Initialization
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?)
     {
@@ -83,6 +87,8 @@ class NFXListCell: UITableViewCell
     {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Public Functions
     
     override func layoutSubviews()
     {

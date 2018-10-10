@@ -25,6 +25,8 @@ public protocol YoshiTableViewMenuItem: class, YoshiGenericMenu {
 
 public extension YoshiTableViewMenuItem {
 
+    // MARK: - Public Properties
+    
     /// The display sub text for the table view menu item.
     var subtitle: String? {
         return nil
@@ -34,6 +36,8 @@ public extension YoshiTableViewMenuItem {
         return YoshiMenuCellDataSource(title: name, subtitle: subtitle, accessoryType: selected ? .checkmark : .none)
     }
 
+    // MARK: - Public Functions
+    
     func execute() -> YoshiActionResult {
         return .pop
     }

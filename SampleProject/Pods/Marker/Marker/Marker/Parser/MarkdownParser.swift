@@ -15,12 +15,16 @@ internal struct MarkdownParser {
     enum ParserError: LocalizedError {
         case invalidTagSymbol
 
+    // MARK: - Public Properties
+    
         var errorDescription: String? {
             return "Invalid Markdown tag."
         }
     }
     
     // MARK: - Private properties
+    
+    // MARK: - Private Properties
     
     private static let underscoreEmSymbol = Symbol(rawValue: "_")
     private static let asteriskEmSymbol = Symbol(rawValue: "*")
@@ -30,6 +34,8 @@ internal struct MarkdownParser {
     private static let equalUnderlineSymbol = Symbol(rawValue: "==")
     
     // MARK: - Static functions
+    
+    // MARK: - Public Functions
     
     /// Parses specified string and returns a tuple containing string stripped of tag characters and an array of Markdown elements.
     ///

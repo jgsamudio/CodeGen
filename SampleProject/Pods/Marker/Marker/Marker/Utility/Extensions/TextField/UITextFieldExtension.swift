@@ -10,6 +10,8 @@ import UIKit
 
 public extension UITextField {
 
+    // MARK: - Public Functions
+    
     /// Sets the text field text to an attributed string created from the specified string and text style.
     ///
     /// - Parameters:

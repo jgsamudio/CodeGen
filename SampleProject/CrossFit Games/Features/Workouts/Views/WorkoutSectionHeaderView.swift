@@ -11,14 +11,20 @@ import AlamofireImage
 
 final class WorkoutSectionHeaderView: UITableViewHeaderFooterView {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var statusLabel: StyleableLabel!
     @IBOutlet private weak var liveIcon: UIImageView!
 
     private let localization = WorkoutsLocalization()
 
+    // MARK: - Public Properties
+    
     /// Height constant of the header view
     static let viewHeight: CGFloat = 40
 
+    // MARK: - Initialization
+    
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
     }

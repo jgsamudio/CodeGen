@@ -12,6 +12,8 @@
     import AppKit
 #endif
 
+    // MARK: - Public Functions
+    
 /// Parses Markdown text and eturns formatted text as an attributed string with custom markup attributes applied.
 /// If the parsing failed, specified Markdown tags are ignored. Yet, the rest of the style information is still applied.
 ///
@@ -56,6 +58,9 @@ public func attributedMarkupString(from text: String,
 /// - Throws: Parser error.
 public func parsedMarkdownString(from markdownText: String,
                                  using textStyle: TextStyle) throws -> NSAttributedString {
+    
+    // MARK: - Public Properties
+    
     let (parsedString, elements) = try MarkdownParser.parse(markdownText)
     
     let attributedString = NSMutableAttributedString(string: textStyle.textTransform.applied(to: parsedString))

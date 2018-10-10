@@ -15,6 +15,8 @@
 /// Adds factory functions producing new TextStyle from existing TextStyle.
 public extension TextStyle {
     
+    // MARK: - Public Functions
+    
     /// Creates new TextStyle from exisiting TextStyle, updating with provided values.
     ///
     /// - Parameters:
@@ -59,6 +61,9 @@ public extension TextStyle {
                      newUnderlineStyle: NSUnderlineStyle? = nil,
                      newUnderlineColor: Color? = nil,
                      newTextTransform: TextTransform? = nil) -> TextStyle {
+    
+    // MARK: - Public Properties
+    
         let fontToUse = newFont ?? font
         let emFontToUse = newEmFont ?? emFont
         let strongFontToUse = newStrongFont ?? strongFont
@@ -135,6 +140,7 @@ public extension TextStyle {
 
 // MARK: Equatable
 
+// MARK: - Equatable
 extension TextStyle: Equatable { }
 
 public func ==(lhs: TextStyle, rhs: TextStyle) -> Bool {

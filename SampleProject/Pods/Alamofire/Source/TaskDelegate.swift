@@ -30,6 +30,8 @@ open class TaskDelegate: NSObject {
 
     // MARK: Properties
 
+    // MARK: - Public Properties
+    
     /// The serial operation queue used to execute all operations after the task completes.
     open let queue: OperationQueue
 
@@ -54,6 +56,8 @@ open class TaskDelegate: NSObject {
     var credential: URLCredential?
     var metrics: AnyObject? // URLSessionTaskMetrics
 
+    // MARK: - Private Properties
+    
     private var _task: URLSessionTask? {
         didSet { reset() }
     }
@@ -62,6 +66,8 @@ open class TaskDelegate: NSObject {
 
     // MARK: Lifecycle
 
+    // MARK: - Initialization
+    
     init(task: URLSessionTask?) {
         _task = task
 
@@ -76,6 +82,8 @@ open class TaskDelegate: NSObject {
         }()
     }
 
+    // MARK: - Public Functions
+    
     func reset() {
         error = nil
         initialResponseTime = nil

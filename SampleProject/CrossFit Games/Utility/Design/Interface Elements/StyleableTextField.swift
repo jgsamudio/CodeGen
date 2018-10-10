@@ -10,6 +10,8 @@ import UIKit
 
 final class StyleableTextField: UITextField, Styleable {
 
+    // MARK: - Public Properties
+    
     let rightImageView = UIImageView(image: UIImage(named: "checkmark"))
     let padding = UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0)
 
@@ -52,6 +54,8 @@ final class StyleableTextField: UITextField, Styleable {
         }
     }
 
+    // MARK: - Public Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         applyStyle()

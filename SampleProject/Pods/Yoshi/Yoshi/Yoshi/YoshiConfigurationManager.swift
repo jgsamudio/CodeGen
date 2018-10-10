@@ -9,9 +9,13 @@
 /// The configuration manager for the debug menu.
 internal final class YoshiConfigurationManager {
 
+    // MARK: - Public Properties
+    
     /// The default instance.
     static let sharedInstance = YoshiConfigurationManager()
 
+    // MARK: - Private Properties
+    
     private var yoshiMenuItems = [YoshiGenericMenu]()
     private var invocations: [YoshiInvocation]?
     private var presentingWindow: UIWindow?
@@ -23,6 +27,9 @@ internal final class YoshiConfigurationManager {
      - parameter menuItems: The menu items for presentation.
      - parameter invocations: The invocation types.
      */
+    
+    // MARK: - Public Functions
+    
     func setupDebugMenuOptions(_ menuItems: [YoshiGenericMenu], invocations: [YoshiInvocation]) {
         yoshiMenuItems = menuItems
         self.invocations = invocations

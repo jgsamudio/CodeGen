@@ -9,11 +9,16 @@
 /// Cell data source defining the layout for YoshiDateSelectorMenu's cell
 internal struct YoshiDateSelectorMenuCellDataSource: YoshiReusableCellDataSource {
 
+    // MARK: - Private Properties
+    
     private let title: String
 
     private let date: Date
 
     private var dateFormatter: DateFormatter {
+    
+    // MARK: - Public Properties
+    
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .short
@@ -21,6 +26,8 @@ internal struct YoshiDateSelectorMenuCellDataSource: YoshiReusableCellDataSource
         return dateFormatter
     }
 
+    // MARK: - Initialization
+    
     /// Intialize the YoshiDateSelectorMenuCellDataSource instance
     ///
     /// - Parameters:
@@ -31,6 +38,8 @@ internal struct YoshiDateSelectorMenuCellDataSource: YoshiReusableCellDataSource
         self.date = date
     }
 
+    // MARK: - Public Functions
+    
     func cellFor(tableView: UITableView) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: YoshiDateSelectorMenuCellDataSource.reuseIdentifier) ??
             UITableViewCell(style: .subtitle, reuseIdentifier: YoshiDateSelectorMenuCellDataSource.reuseIdentifier)

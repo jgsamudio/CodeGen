@@ -84,6 +84,8 @@ public struct URLEncoding: ParameterEncoding {
 
     // MARK: Properties
 
+    // MARK: - Public Properties
+    
     /// Returns a default `URLEncoding` instance.
     public static var `default`: URLEncoding { return URLEncoding() }
 
@@ -101,6 +103,8 @@ public struct URLEncoding: ParameterEncoding {
 
     // MARK: Initialization
 
+    // MARK: - Initialization
+    
     /// Creates a `URLEncoding` instance using the specified destination.
     ///
     /// - parameter destination: The destination defining where the encoded query string is to be applied.
@@ -112,6 +116,8 @@ public struct URLEncoding: ParameterEncoding {
 
     // MARK: Encoding
 
+    // MARK: - Public Functions
+    
     /// Creates a URL request by encoding parameters and applying them onto an existing request.
     ///
     /// - parameter urlRequest: The request to have parameters applied.
@@ -428,5 +434,8 @@ public struct PropertyListEncoding: ParameterEncoding {
 // MARK: -
 
 extension NSNumber {
+    
+    // MARK: - Private Properties
+    
     fileprivate var isBool: Bool { return CFBooleanGetTypeID() == CFGetTypeID(self) }
 }

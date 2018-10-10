@@ -28,11 +28,18 @@ import FBSDKCoreKit
  should call them in the respective methods in your AppDelegate implementation.
  */
 public final class SDKApplicationDelegate {
+    
+    // MARK: - Private Properties
+    
   private let delegate: FBSDKApplicationDelegate = FBSDKApplicationDelegate.sharedInstance()
 
+    // MARK: - Public Properties
+    
   /// Returns the singleton instance of an application delegate.
   public static let shared = SDKApplicationDelegate()
 
+    // MARK: - Initialization
+    
   private init() { }
 
   /**
@@ -44,6 +51,9 @@ public final class SDKApplicationDelegate {
 
    - returns: `true` if the url contained in the `launchOptions` was intended for the Facebook SDK, otherwise - `false`.
    */
+    
+    // MARK: - Public Functions
+    
   @discardableResult
   public func application(_ application: UIApplication,
                           didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {

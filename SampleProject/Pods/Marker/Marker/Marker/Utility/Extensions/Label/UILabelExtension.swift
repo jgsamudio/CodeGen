@@ -10,6 +10,8 @@ import UIKit
 
 public extension UILabel {
     
+    // MARK: - Public Functions
+    
     /// Sets the label text to an attributed string created from the specified string and text style.
     ///
     /// - Parameters:

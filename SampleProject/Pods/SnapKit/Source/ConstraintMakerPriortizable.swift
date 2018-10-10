@@ -30,6 +30,8 @@
 
 public class ConstraintMakerPriortizable: ConstraintMakerFinalizable {
     
+    // MARK: - Public Functions
+    
     @discardableResult
     public func priority(_ amount: ConstraintPriority) -> ConstraintMakerFinalizable {
         self.description.priority = amount.value

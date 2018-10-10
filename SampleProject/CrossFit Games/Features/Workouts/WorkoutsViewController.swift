@@ -11,9 +11,13 @@ import Simcoe
 
 final class WorkoutsViewController: BaseViewController {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var tableViewTopConstraint: NSLayoutConstraint!
 
+    // MARK: - Public Properties
+    
     var viewModel: WorkoutsViewModel!
     private let generalLocalization = GeneralLocalization()
     private let localization = WorkoutsLocalization()
@@ -43,6 +47,8 @@ final class WorkoutsViewController: BaseViewController {
 
     private var shrinkableTopView: ScrollViewShrinkableTopView?
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
@@ -219,6 +225,7 @@ final class WorkoutsViewController: BaseViewController {
 }
 
 // MARK: - Tableview datasource
+// MARK: - UITableViewDataSource
 extension WorkoutsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -249,6 +256,7 @@ extension WorkoutsViewController: UITableViewDataSource {
 }
 
 // MARK: - Tableview delegate
+// MARK: - UITableViewDelegate
 extension WorkoutsViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

@@ -7,12 +7,19 @@
 
 import Foundation
 
+    // MARK: - Private Properties
+    
 private let _sharedInstance = NFXHTTPModelManager()
 
 final class NFXHTTPModelManager: NSObject
 {
+    
+    // MARK: - Public Properties
+    
     static let sharedInstance = NFXHTTPModelManager()
     fileprivate var models = [NFXHTTPModel]()
+    
+    // MARK: - Public Functions
     
     func add(_ obj: NFXHTTPModel)
     {

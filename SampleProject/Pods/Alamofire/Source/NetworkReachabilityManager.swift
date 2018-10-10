@@ -60,6 +60,8 @@ public class NetworkReachabilityManager {
 
     // MARK: - Properties
 
+    // MARK: - Public Properties
+    
     /// Whether the network is currently reachable.
     public var isReachable: Bool { return isReachableOnWWAN || isReachableOnEthernetOrWiFi }
 
@@ -81,6 +83,8 @@ public class NetworkReachabilityManager {
     /// A closure executed when the network reachability status changes.
     public var listener: Listener?
 
+    // MARK: - Private Properties
+    
     private var flags: SCNetworkReachabilityFlags? {
         var flags = SCNetworkReachabilityFlags()
 
@@ -137,6 +141,8 @@ public class NetworkReachabilityManager {
 
     // MARK: - Listening
 
+    // MARK: - Public Functions
+    
     /// Starts listening for changes in network reachability status.
     ///
     /// - returns: `true` if listening was started successfully, `false` otherwise.
@@ -205,6 +211,7 @@ public class NetworkReachabilityManager {
 
 // MARK: -
 
+// MARK: - Equatable
 extension NetworkReachabilityManager.NetworkReachabilityStatus: Equatable {}
 
 /// Returns whether the two network reachability status values are equal.

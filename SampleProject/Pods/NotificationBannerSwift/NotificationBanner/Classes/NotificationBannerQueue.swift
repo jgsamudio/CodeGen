@@ -25,6 +25,8 @@ public enum QueuePosition {
 
 public class NotificationBannerQueue: NSObject {
     
+    // MARK: - Public Properties
+    
     /// The default instance of the NotificationBannerQueue
     public static let `default` = NotificationBannerQueue()
     
@@ -42,6 +44,9 @@ public class NotificationBannerQueue: NSObject {
         -parameter queuePosition: The position to show the notification banner. If the position is .front, the
         banner will be displayed immediately
     */
+    
+    // MARK: - Public Functions
+    
     func addBanner(_ banner: BaseNotificationBanner, queuePosition: QueuePosition) {
         
         if queuePosition == .back {

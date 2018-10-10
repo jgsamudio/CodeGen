@@ -45,7 +45,11 @@ public enum PublishPermission {
   case custom(String)
 }
 
+// MARK: - PermissionRepresentable
 extension PublishPermission: PermissionRepresentable {
+    
+    // MARK: - Public Properties
+    
   internal var permissionValue: Permission {
     switch self {
     case .publishActions: return "publish_actions"

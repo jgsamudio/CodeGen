@@ -10,6 +10,8 @@ import Foundation
 
 struct WorkoutsLocalization {
 
+    // MARK: - Public Properties
+    
     /// Live text
     let live = "WORKOUTS_LIVE".localized
 
@@ -40,6 +42,8 @@ struct WorkoutsLocalization {
 
     let submissionDeadline = "WORKOUTS_SUBMISSION_DEADLINE".localized
 
+    // MARK: - Public Functions
+    
     /// Localizes `rx` or `scaled` value coming from the API as workout type.
     ///
     /// - Parameter value: Value to localize.

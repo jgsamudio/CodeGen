@@ -20,6 +20,8 @@ internal struct ElementParser {
         case tagMismatch
         case unclosedTags
 
+    // MARK: - Public Properties
+    
         var errorDescription: String? {
             switch self {
             case .tagMismatch:
@@ -32,6 +34,8 @@ internal struct ElementParser {
     }
     
     // MARK: - Static functions
+    
+    // MARK: - Public Functions
     
     /// Parses specified string and returns a tuple containing string stripped of tag characters and an array of markup elements.
     ///

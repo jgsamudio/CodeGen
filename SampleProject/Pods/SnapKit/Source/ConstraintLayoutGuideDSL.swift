@@ -31,6 +31,8 @@
 @available(iOS 9.0, OSX 10.11, *)
 public struct ConstraintLayoutGuideDSL: ConstraintAttributesDSL {
     
+    // MARK: - Public Functions
+    
     @discardableResult
     public func prepareConstraints(_ closure: (_ make: ConstraintMaker) -> Void) -> [Constraint] {
         return ConstraintMaker.prepareConstraints(item: self.guide, closure: closure)
@@ -52,11 +54,15 @@ public struct ConstraintLayoutGuideDSL: ConstraintAttributesDSL {
         ConstraintMaker.removeConstraints(item: self.guide)
     }
     
+    // MARK: - Public Properties
+    
     public var target: AnyObject? {
         return self.guide
     }
     
     internal let guide: ConstraintLayoutGuide
+    
+    // MARK: - Initialization
     
     internal init(guide: ConstraintLayoutGuide) {
         self.guide = guide

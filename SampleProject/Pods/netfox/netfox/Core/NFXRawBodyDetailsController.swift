@@ -12,8 +12,16 @@ import UIKit
 
 class NFXRawBodyDetailsController: NFXGenericBodyDetailsController
 {
+    
+    // MARK: - Public Properties
+    
     var bodyView: UITextView = UITextView()
+    
+    // MARK: - Private Properties
+    
     private var copyAlert: UIAlertController?
+    
+    // MARK: - Public Functions
     
     override func viewDidLoad()
     {

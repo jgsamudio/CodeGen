@@ -32,6 +32,8 @@ enum StyleRow: Int {
     case r19
     case r20
 
+    // MARK: - Public Properties
+    
     var attributes: [NSAttributedStringKey: Any] {
         return [NSAttributedStringKey.paragraphStyle: paragraphStyle,
                 NSAttributedStringKey.kern: kerning]
@@ -126,6 +128,8 @@ enum StyleRow: Int {
         }
     }
 
+    // MARK: - Private Properties
+    
     private var paragraphStyle: NSParagraphStyle {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpacing

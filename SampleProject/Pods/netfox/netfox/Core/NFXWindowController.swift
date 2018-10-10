@@ -15,6 +15,8 @@ protocol NFXWindowControllerDelegate {
     
 class NFXWindowController: NSWindowController, NSWindowDelegate, NFXWindowControllerDelegate {
     
+    // MARK: - Public Properties
+    
     @IBOutlet var settingsButton: NSButton!
     @IBOutlet var infoButton: NSButton!
     @IBOutlet var statisticsButton: NSButton!
@@ -38,6 +40,8 @@ class NFXWindowController: NSWindowController, NSWindowDelegate, NFXWindowContro
     @IBOutlet var statisticsView: NSView!
     
     // MARK: Lifecycle
+    
+    // MARK: - Public Functions
     
     override func awakeFromNib() {
         settingsButton.image = NSImage(data: NFXAssets.getImage(.settings))

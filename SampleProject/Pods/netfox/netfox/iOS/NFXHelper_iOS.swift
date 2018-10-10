@@ -11,6 +11,9 @@ import UIKit
 
 extension UIWindow
 {
+    
+    // MARK: - Public Functions
+    
     override open func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?)
     {
         if NFX.sharedInstance().getSelectedGesture() == .shake {
@@ -28,6 +31,9 @@ public extension UIDevice
     
     class func getNFXDeviceType() -> String
     {
+    
+    // MARK: - Public Properties
+    
         var systemInfo = utsname()
         uname(&systemInfo)
         

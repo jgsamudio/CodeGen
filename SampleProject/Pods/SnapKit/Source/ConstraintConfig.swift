@@ -32,6 +32,8 @@
 
 public struct ConstraintConfig {
     
+    // MARK: - Public Properties
+    
     public static var interfaceLayoutDirection: ConstraintInterfaceLayoutDirection = .leftToRight
     
 }

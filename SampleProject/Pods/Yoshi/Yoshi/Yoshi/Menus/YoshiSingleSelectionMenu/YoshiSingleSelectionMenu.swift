@@ -13,6 +13,8 @@ public typealias YoshiSingleSelection = (title: String, subtitle: String?)
 /// Once provided with initial selection and options, Yoshi will maintain the selection and present them in a tableview.
 open class YoshiSingleSelectionMenu: YoshiSubmenu {
 
+    // MARK: - Public Properties
+    
     open let title: String
 
     open var subtitle: String? {
@@ -27,10 +29,14 @@ open class YoshiSingleSelectionMenu: YoshiSubmenu {
         }
     }
 
+    // MARK: - Private Properties
+    
     private let availableSelections: [YoshiSingleSelection]
     private var selectedIndex: Int
     private var selectedAction: ((YoshiSingleSelection) -> Void)?
 
+    // MARK: - Initialization
+    
     /// Initialize the YoshiSingleSelectionMenu with title, options, initial selected index,
     /// and the action when one of the options is selected.
     ///

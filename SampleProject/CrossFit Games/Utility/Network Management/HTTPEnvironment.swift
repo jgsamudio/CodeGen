@@ -32,6 +32,8 @@ protocol HTTPEnvironment {
 
 extension HTTPEnvironment {
 
+    // MARK: - Public Properties
+    
     /// Default headers for the current HTTP environment
     var defaultHTTPHeaders: Headers {
         return [

@@ -11,6 +11,8 @@ import Foundation
 /// Consists of all the usr related operations
 class UserDataStore {
 
+    // MARK: - Public Properties
+    
     /// Keychain data store for persisting private information.
     ///
     /// - Note: Required for maintaining login state of a user.

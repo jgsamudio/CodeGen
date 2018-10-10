@@ -11,13 +11,19 @@ import UIKit
 /// Builds Web View Controller
 struct WebViewBuilder: Builder {
 
+    // MARK: - Private Properties
+    
     private let request: URLRequest
 
+    // MARK: - Public Properties
+    
     /// Navigation Title
     let navigationTitle: String?
 
     let delegate: WebViewControllerDelegate?
 
+    // MARK: - Initialization
+    
     /// Initalizer
     ///
     /// - Parameters:
@@ -35,6 +41,8 @@ struct WebViewBuilder: Builder {
         self.delegate = delegate
     }
 
+    // MARK: - Public Functions
+    
     func build() -> UIViewController {
         let storyboard = UIStoryboard(name: "Shared", bundle: nil)
         let viewController: WebViewController = storyboard.instantiateViewController()

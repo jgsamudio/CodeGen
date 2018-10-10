@@ -9,6 +9,8 @@
 /// The write event.
 internal struct WriteEvent {
 
+    // MARK: - Public Properties
+    
     /// The provider.
     let provider: AnalyticsTracking
 

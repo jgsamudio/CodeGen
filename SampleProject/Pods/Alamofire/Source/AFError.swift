@@ -135,6 +135,9 @@ public enum AFError: Error {
 // MARK: - Adapt Error
 
 struct AdaptError: Error {
+    
+    // MARK: - Public Properties
+    
     let error: Error
 }
 
@@ -346,6 +349,7 @@ extension AFError.ResponseSerializationFailureReason {
 
 // MARK: - Error Descriptions
 
+// MARK: - LocalizedError
 extension AFError: LocalizedError {
     public var errorDescription: String? {
         switch self {

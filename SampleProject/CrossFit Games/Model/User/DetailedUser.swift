@@ -11,6 +11,8 @@ import UIKit
 /// Detailed information regarding user
 struct DetailedUser: Codable {
 
+    // MARK: - Public Properties
+    
     /// Email
     let email: String
 
@@ -82,6 +84,8 @@ struct DetailedUser: Codable {
         case canRetestL1
     }
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         email = try values.decode(String.self, forKey: .email)
@@ -107,6 +111,8 @@ struct DetailedUser: Codable {
         canRetestL1 = try values.decode(Bool.self, forKey: .canRetestL1)
     }
 
+    // MARK: - Public Functions
+    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
 

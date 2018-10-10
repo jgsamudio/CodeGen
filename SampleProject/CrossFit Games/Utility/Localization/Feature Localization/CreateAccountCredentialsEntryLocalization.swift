@@ -12,6 +12,8 @@ import Foundation
 /// Localization constants for Create account - Credentials entry feature.
 struct CreateAccountCredentialsEntryLocalization {
 
+    // MARK: - Public Properties
+    
     /// "step" string.
     let step = "CREATE_ACCOUNT_CREDENTIALS_ENTRY_STEP".localized
 

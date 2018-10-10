@@ -11,6 +11,8 @@ import UIKit
 /// View that can be added atop a scroll view (see: `attach(to:)`) and animates with the iOS 11 resizable nav bar.
 final class ScrollViewShrinkableTopView: UIView {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var contentLabel: StyleableLabel!
 
     @IBOutlet private weak var collapsedContentLabel: StyleableLabel!
@@ -23,6 +25,8 @@ final class ScrollViewShrinkableTopView: UIView {
 
     @IBOutlet private weak var bottomConstraint: NSLayoutConstraint!
 
+    // MARK: - Public Properties
+    
     /// Action to be performed when tapping the action button.
     var callback: () -> Void = {}
 
@@ -62,6 +66,8 @@ final class ScrollViewShrinkableTopView: UIView {
 
     private weak var topConstraint: NSLayoutConstraint?
 
+    // MARK: - Public Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 

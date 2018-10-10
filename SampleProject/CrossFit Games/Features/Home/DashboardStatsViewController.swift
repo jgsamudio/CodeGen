@@ -11,6 +11,8 @@ import Simcoe
 
 final class DashboardStatsViewController: BaseViewController {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var percentileProgressView: UIProgressView!
     @IBOutlet private weak var percentileView: UIView!
     @IBOutlet private weak var percentileLabel: StyleableLabel!
@@ -28,6 +30,8 @@ final class DashboardStatsViewController: BaseViewController {
 
     private weak var loadingView: DashboardStatsLoadingView?
 
+    // MARK: - Public Properties
+    
     var viewModel: DashboardStatsViewModel? {
         didSet {
             (parent as? CardDetailContainerViewController)?.updateTitles()
@@ -41,6 +45,8 @@ final class DashboardStatsViewController: BaseViewController {
     }
 
     private let localization = DashboardStatsLocalization()
+    
+    // MARK: - Public Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()

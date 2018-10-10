@@ -29,6 +29,8 @@
 
 public class ConstraintMaker {
     
+    // MARK: - Public Properties
+    
     public var left: ConstraintMakerExtendable {
         return self.makeExtendableWithAttributes(.left)
     }
@@ -143,13 +145,19 @@ public class ConstraintMaker {
         return self.makeExtendableWithAttributes(.centerWithinMargins)
     }
     
+    // MARK: - Private Properties
+    
     private let item: LayoutConstraintItem
     private var descriptions = [ConstraintDescription]()
+    
+    // MARK: - Initialization
     
     internal init(item: LayoutConstraintItem) {
         self.item = item
         self.item.prepare()
     }
+    
+    // MARK: - Public Functions
     
     internal func makeExtendableWithAttributes(_ attributes: ConstraintAttributes) -> ConstraintMakerExtendable {
         let description = ConstraintDescription(item: self.item, attributes: attributes)

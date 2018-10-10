@@ -13,7 +13,11 @@ import UIKit
 /// that the results have loaded, this view controller will animate loader view controller away.
 final class WorkoutContainerViewController: UIViewController {
     
+    // MARK: - Private Properties
+    
     private weak var loaderVC = WorkoutLoaderBuilder().build()
+    
+    // MARK: - Public Properties
     
     lazy var workoutNavVC: UINavigationController = {
         let vc = WorkoutsBuilder().build()
@@ -21,6 +25,8 @@ final class WorkoutContainerViewController: UIViewController {
         return navVC
     }()
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)

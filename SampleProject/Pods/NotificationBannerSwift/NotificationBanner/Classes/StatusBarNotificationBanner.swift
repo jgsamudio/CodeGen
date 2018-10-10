@@ -26,6 +26,8 @@ import UIKit
 
 public class StatusBarNotificationBanner: BaseNotificationBanner {
     
+    // MARK: - Public Properties
+    
     public override var bannerHeight: CGFloat {
         get {
             if let customBannerHeight = customBannerHeight {
@@ -39,6 +41,8 @@ public class StatusBarNotificationBanner: BaseNotificationBanner {
             customBannerHeight = newValue
         }
     }
+    
+    // MARK: - Initialization
     
     override init(style: BannerStyle, colors: BannerColorsProtocol? = nil) {
         super.init(style: style, colors: colors)

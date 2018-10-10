@@ -11,9 +11,13 @@ import Foundation
 /// Set of Yoshi invocation method.
 public struct YoshiInvocation: OptionSet {
 
+    // MARK: - Public Properties
+    
     /// An `OptionSet`'s `Element` type is normally `Self`.
     public let rawValue: UInt64
 
+    // MARK: - Initialization
+    
     /// Convert from a value of `RawValue`, succeeding unconditionally.
     public init(rawValue: UInt64) {
         self.rawValue = rawValue

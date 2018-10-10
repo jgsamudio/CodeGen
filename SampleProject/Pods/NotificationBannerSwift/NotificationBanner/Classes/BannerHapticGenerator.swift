@@ -31,8 +31,13 @@ open class BannerHapticGenerator: NSObject {
         Generates a haptic based on the given haptic
         -parameter haptic: The haptic strength to generate when a banner is shown
      */
+    
+    // MARK: - Public Functions
+    
     open class func generate(_ haptic: BannerHaptic) {
         
+    // MARK: - Public Properties
+    
         var style: UIImpactFeedbackStyle!
         
         switch haptic {

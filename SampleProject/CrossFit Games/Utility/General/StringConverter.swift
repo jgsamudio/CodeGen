@@ -11,6 +11,8 @@ import UIKit
 /// Tool for generating and manipulating attributed strings.
 public struct StringConverter {
 
+    // MARK: - Public Functions
+    
     /// Creates an attributed string with the given HTML string. Takes HTML format, such as `<b>Text</b>` into account.
     ///
     /// - Parameters:
@@ -24,6 +26,9 @@ public struct StringConverter {
                                         usingCSSFontFamily: String = "-apple-system",
                                         lineHeightInPixels: Int = 21,
                                         fontSizeInPixels: Int? = nil) -> NSAttributedString? {
+    
+    // MARK: - Public Properties
+    
         let options: [NSAttributedString.DocumentReadingOptionKey: Any] =
             [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html.rawValue,
              NSAttributedString.DocumentReadingOptionKey.characterEncoding: String.Encoding.unicode.rawValue]

@@ -16,8 +16,14 @@ enum NFXAssetName {
 
 class NFXAssets
 {
+    
+    // MARK: - Public Functions
+    
     class func getImage(_ image: NFXAssetName) -> Data
     {
+    
+    // MARK: - Public Properties
+    
         let base64Image: String = {
             switch image {
             case .settings: return getSettingsImageBase64()

@@ -23,6 +23,8 @@ public protocol YoshiTableViewMenu: YoshiSubmenu {
 
 public extension YoshiTableViewMenu {
 
+    // MARK: - Public Properties
+    
     var cellSource: YoshiReusableCellDataSource {
         let selectedDisplayItem = displayItems.filter { $0.selected == true }.first
         let subtitle = selectedDisplayItem?.name
@@ -38,6 +40,8 @@ public extension YoshiTableViewMenu {
         return displayItems.map { YoshiTableViewSubmenuItem(tableViewMenuItem: $0, action: selectedAction) }
     }
 
+    // MARK: - Public Functions
+    
     func execute() -> YoshiActionResult {
         let debugViewController = DebugViewController(options: options, isRootYoshiMenu: false, completion: nil)
         return .push(debugViewController)

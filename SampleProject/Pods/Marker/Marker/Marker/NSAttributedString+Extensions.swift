@@ -8,6 +8,8 @@
 
 internal extension NSAttributedString {
     
+    // MARK: - Initialization
+    
     /// Initializes `NSAttributedString` instance with given string and text style.
     ///
     /// - Parameters:

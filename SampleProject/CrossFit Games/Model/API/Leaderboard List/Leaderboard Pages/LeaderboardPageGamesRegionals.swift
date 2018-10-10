@@ -23,6 +23,8 @@ struct LeaderboardPageGamesRegionals: LeaderboardPage, Decodable {
         case totalNumberOfAthletes = "totalCompetitors"
     }
 
+    // MARK: - Public Properties
+    
     let items: [LeaderboardListItem]
 
     let pageIndex: Int
@@ -33,6 +35,8 @@ struct LeaderboardPageGamesRegionals: LeaderboardPage, Decodable {
 
     var ordinals: [LeaderboardOrdinal]
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let pagination = try container.nestedContainer(keyedBy: PaginationKeys.self, forKey: .pagination)

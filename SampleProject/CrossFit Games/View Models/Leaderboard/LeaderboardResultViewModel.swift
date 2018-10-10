@@ -11,8 +11,12 @@ import Foundation
 /// View model for the leaderboard result screen.
 struct LeaderboardResultViewModel {
 
+    // MARK: - Private Properties
+    
     private let localization = LeaderboardLocalization()
 
+    // MARK: - Public Properties
+    
     /// Number of lines in the results.
     var numberOfLines: Int {
         guard let customLeaderboard = customLeaderboard else {
@@ -54,6 +58,8 @@ struct LeaderboardResultViewModel {
 
     let customLeaderboard: CustomLeaderboard?
 
+    // MARK: - Initialization
+    
     init(leaderboardListService: LeaderboardListService, customLeaderboard: CustomLeaderboard?,
          followAnAthleteService: FolllowAnAthleteService) {
         self.leaderboardListService = leaderboardListService
@@ -72,6 +78,8 @@ struct LeaderboardResultViewModel {
                   customLeaderboard: customLeaderboard,
                   followAnAthleteService: ServiceFactory.shared.createFollowAnAthleteService())
     }
+    
+    // MARK: - Public Functions
     
     /// Determines if the view model contains enough information to render within UI. If so, returns a `LeaderboardAthleteResultCellViewModel`
     ///

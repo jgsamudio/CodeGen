@@ -10,9 +10,13 @@ import UIKit
 
 final class LeaderboardSearchService {
 
+    // MARK: - Public Properties
+    
     /// HTTP client for network communication.
     let httpClient: HTTPClientProtocol
 
+    // MARK: - Initialization
+    
     /// Creates a leaderboard filter service to generate filters.
     ///
     /// - Parameters:
@@ -21,6 +25,8 @@ final class LeaderboardSearchService {
         self.httpClient = httpClient
     }
 
+    // MARK: - Public Functions
+    
     /// Retrieves leaderboard filters for the given year and competition.
     ///
     /// - Parameters:

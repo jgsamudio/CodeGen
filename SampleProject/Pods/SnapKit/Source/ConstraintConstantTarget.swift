@@ -31,16 +31,21 @@
 public protocol ConstraintConstantTarget {
 }
 
+// MARK: - ConstraintConstantTarget
 extension CGPoint: ConstraintConstantTarget {
 }
 
+// MARK: - ConstraintConstantTarget
 extension CGSize: ConstraintConstantTarget {    
 }
 
+// MARK: - ConstraintConstantTarget
 extension ConstraintInsets: ConstraintConstantTarget {
 }
 
 extension ConstraintConstantTarget {
+    
+    // MARK: - Public Functions
     
     internal func constraintConstantTargetValueFor(layoutAttribute: LayoutAttribute) -> CGFloat {
         if let value = self as? CGFloat {

@@ -36,6 +36,8 @@ public protocol AnalyticsTracking {
 
 public extension AnalyticsTracking {
 
+    // MARK: - Public Functions
+    
     /// Starts tracking analytics. This is called on all providers passed to `Simcoe.run`.
     /// Your analytics tracker should start tracking lifecycle data or setup anything else
     /// that needs to run for the duration of the analytics lifecycle.

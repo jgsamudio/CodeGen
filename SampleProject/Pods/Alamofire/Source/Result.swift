@@ -35,6 +35,8 @@ public enum Result<Value> {
     case success(Value)
     case failure(Error)
 
+    // MARK: - Public Properties
+    
     /// Returns `true` if the result is a success, `false` otherwise.
     public var isSuccess: Bool {
         switch self {
@@ -73,6 +75,7 @@ public enum Result<Value> {
 
 // MARK: - CustomStringConvertible
 
+// MARK: - CustomStringConvertible
 extension Result: CustomStringConvertible {
     /// The textual representation used when written to an output stream, which includes whether the result was a
     /// success or failure.
@@ -88,6 +91,7 @@ extension Result: CustomStringConvertible {
 
 // MARK: - CustomDebugStringConvertible
 
+// MARK: - CustomDebugStringConvertible
 extension Result: CustomDebugStringConvertible {
     /// The debug textual representation used when written to an output stream, which includes whether the result was a
     /// success or failure in addition to the value or error.
@@ -104,6 +108,9 @@ extension Result: CustomDebugStringConvertible {
 // MARK: - Functional APIs
 
 extension Result {
+    
+    // MARK: - Initialization
+    
     /// Creates a `Result` instance from the result of a closure.
     ///
     /// A failure result is created when the closure throws, and a success result is created when the closure
@@ -130,6 +137,8 @@ extension Result {
         }
     }
 
+    // MARK: - Public Functions
+    
     /// Returns the success value, or throws the failure error.
     ///
     ///     let possibleString: Result<String> = .success("success")

@@ -10,6 +10,8 @@ import Foundation
 
 struct LeaderboardControlsLocalization {
 
+    // MARK: - Public Properties
+    
     let overall = "LEADERBOARDS_OVERALL".localized
 
 }

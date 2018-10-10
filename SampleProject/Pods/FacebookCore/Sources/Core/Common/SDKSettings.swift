@@ -23,6 +23,8 @@ import FBSDKCoreKit.FBSDKSettings
 // MARK: - SDK Version
 //--------------------------------------
 
+    // MARK: - Public Properties
+    
 /// Current SDK version.
 public let SDKVersion = FBSDKSettings.sdkVersion()
 
@@ -161,6 +163,9 @@ extension SDKSettings {
 
    - parameter behavior: The behavior to enable
    */
+    
+    // MARK: - Public Functions
+    
   public static func enableLoggingBehavior(_ behavior: SDKLoggingBehavior) {
     FBSDKSettings.enableLoggingBehavior(behavior.sdkStringValue)
   }

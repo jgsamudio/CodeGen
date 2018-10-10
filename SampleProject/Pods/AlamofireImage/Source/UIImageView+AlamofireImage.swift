@@ -50,6 +50,8 @@ extension UIImageView {
             completion: ((Bool) -> Void)?
         )
 
+    // MARK: - Public Properties
+    
         /// The duration of the image transition in seconds.
         public var duration: TimeInterval {
             switch self {
@@ -169,6 +171,8 @@ extension UIImageView {
 
     // MARK: - Image Download
 
+    // MARK: - Public Functions
+    
     /// Asynchronously downloads an image from the specified URL, applies the specified image filter to the downloaded
     /// image and sets it once finished while executing the image transition.
     ///

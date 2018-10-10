@@ -11,6 +11,8 @@ import CoreLocation
 /// The empty provider.
 internal final class EmptyProvider {
 
+    // MARK: - Public Properties
+    
     /// The name of the tracker.
     let name = "Analytics"
 
@@ -18,8 +20,11 @@ internal final class EmptyProvider {
 
 // MARK: - CartLogging
 
+// MARK: - CartLogging
 extension EmptyProvider: CartLogging {
 
+    // MARK: - Public Functions
+    
     /// Logs the addition of a product to the cart.
     ///
     /// - Parameters:
@@ -43,6 +48,7 @@ extension EmptyProvider: CartLogging {
 
 // MARK: - CheckoutTracking
 
+// MARK: - CheckoutTracking
 extension EmptyProvider: CheckoutTracking {
 
     /// Tracks a checkout event.
@@ -59,6 +65,7 @@ extension EmptyProvider: CheckoutTracking {
 
 // MARK: - ErrorLogging
 
+// MARK: - ErrorLogging
 extension EmptyProvider: ErrorLogging {
 
     /// Logs the error with optional additional properties.
@@ -75,6 +82,7 @@ extension EmptyProvider: ErrorLogging {
 
 // MARK: - EventTracking
 
+// MARK: - EventTracking
 extension EmptyProvider: EventTracking {
 
     /// Tracks the given event with optional additional properties.
@@ -91,6 +99,7 @@ extension EmptyProvider: EventTracking {
 
 // MARK: - LifetimeValueTracking
 
+// MARK: - LifetimeValueTracking
 extension EmptyProvider: LifetimeValueTracking {
 
     /// Tracks the lifetime value.
@@ -115,6 +124,7 @@ extension EmptyProvider: LifetimeValueTracking {
 
 // MARK: - LocationTracking
 
+// MARK: - LocationTracking
 extension EmptyProvider: LocationTracking {
 
     /// Tracks location.
@@ -131,6 +141,7 @@ extension EmptyProvider: LocationTracking {
 
 // MARK: - PageViewTracking
 
+// MARK: - PageViewTracking
 extension EmptyProvider: PageViewTracking {
 
     /// Tracks the page view.
@@ -147,6 +158,7 @@ extension EmptyProvider: PageViewTracking {
 
 // MARK: - PurchaseTracking
 
+// MARK: - PurchaseTracking
 extension EmptyProvider: PurchaseTracking {
 
     /// Tracks a purchase event.
@@ -163,6 +175,7 @@ extension EmptyProvider: PurchaseTracking {
 
 // MARK: - SuperPropertyTracking
 
+// MARK: - SuperPropertyTracking
 extension EmptyProvider: SuperPropertyTracking {
 
     /// Sets the super properties.
@@ -192,6 +205,7 @@ extension EmptyProvider: SuperPropertyTracking {
 
 // MARK: - TimedEventTracking
 
+// MARK: - TimedEventTracking
 extension EmptyProvider: TimedEventTracking {
 
     /// Starts the timed event.
@@ -218,6 +232,7 @@ extension EmptyProvider: TimedEventTracking {
 
 // MARK: - UserAttributeTracking
 
+// MARK: - UserAttributeTracking
 extension EmptyProvider: UserAttributeTracking {
 
     /// Sets the User Attribute.
@@ -243,6 +258,7 @@ extension EmptyProvider: UserAttributeTracking {
 
 // MARK: - ViewDetailLogging
 
+// MARK: - ViewDetailLogging
 extension EmptyProvider: ViewDetailLogging {
 
     /// Logs the action of viewing a product's details.

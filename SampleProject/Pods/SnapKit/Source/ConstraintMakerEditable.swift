@@ -30,6 +30,8 @@
 
 public class ConstraintMakerEditable: ConstraintMakerPriortizable {
 
+    // MARK: - Public Functions
+    
     @discardableResult
     public func multipliedBy(_ amount: ConstraintMultiplierTarget) -> ConstraintMakerEditable {
         self.description.multiplier = amount

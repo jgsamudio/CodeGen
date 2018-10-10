@@ -9,6 +9,8 @@
 /// Internal YoshiGenericMenu used for single selection menu.
 internal final class YoshiSingleSelectionMenuItem: YoshiGenericMenu {
 
+    // MARK: - Public Properties
+    
     var title: String {
         return selection.title
     }
@@ -17,10 +19,14 @@ internal final class YoshiSingleSelectionMenuItem: YoshiGenericMenu {
         return selection.subtitle
     }
 
+    // MARK: - Private Properties
+    
     private var selected: Bool
     private let selection: YoshiSingleSelection
     private var action: ((YoshiSingleSelection) -> Void)?
 
+    // MARK: - Initialization
+    
     init(selection: YoshiSingleSelection,
          selected: Bool,
          action: ((YoshiSingleSelection) -> Void)?) {
@@ -33,6 +39,8 @@ internal final class YoshiSingleSelectionMenuItem: YoshiGenericMenu {
         return YoshiMenuCellDataSource(title: title, subtitle: subtitle, accessoryType: selected ? .checkmark : .none)
     }
 
+    // MARK: - Public Functions
+    
     func execute() -> YoshiActionResult {
         action?(selection)
         return .pop

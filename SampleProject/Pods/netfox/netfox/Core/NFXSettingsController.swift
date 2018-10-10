@@ -10,6 +10,8 @@ import Foundation
 class NFXSettingsController: NFXGenericController {
     // MARK: Properties
 
+    // MARK: - Public Properties
+    
     let nfxVersionString = "netfox - \(nfxVersion)"
     var nfxURL = "https://github.com/kasketis/netfox"
     

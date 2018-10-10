@@ -11,15 +11,21 @@ import Foundation
 /// A remote output source.
 internal struct RemoteOutput: Output {
 
+    // MARK: - Public Properties
+    
     /// The token.
     let token: String
 
+    // MARK: - Private Properties
+    
     fileprivate let baseUrl = URL(string: "https://panalytics.herokuapp.com/")!
 
     fileprivate var url: URL {
         return URL(string: token, relativeTo: baseUrl)!
     }
 
+    // MARK: - Initialization
+    
     /// The default initializer.
     ///
     /// - Parameter token: The token.
@@ -29,6 +35,8 @@ internal struct RemoteOutput: Output {
         Swift.print ("Simcoe now logging remotely to URL: \(url.absoluteString)")
     }
 
+    // MARK: - Public Functions
+    
     /// Prints a message.
     ///
     /// - Parameter message: The message.

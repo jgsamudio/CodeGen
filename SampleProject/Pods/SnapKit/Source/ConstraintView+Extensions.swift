@@ -30,6 +30,8 @@
 
 public extension ConstraintView {
     
+    // MARK: - Public Properties
+    
     @available(*, deprecated:3.0, message:"Use newer snp.* syntax.")
     public var snp_left: ConstraintItem { return self.snp.left }
     
@@ -119,6 +121,8 @@ public extension ConstraintView {
     @available(iOS, deprecated:3.0, message:"Use newer snp.* syntax.")
     @available(iOS 8.0, *)
     public var snp_centerWithinMargins: ConstraintItem { return self.snp.centerWithinMargins }
+    
+    // MARK: - Public Functions
     
     @available(*, deprecated:3.0, message:"Use newer snp.* syntax.")
     public func snp_prepareConstraints(_ closure: (_ make: ConstraintMaker) -> Void) -> [Constraint] {

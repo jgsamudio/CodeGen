@@ -30,11 +30,17 @@
 
 public class ConstraintMakerFinalizable {
     
+    // MARK: - Public Properties
+    
     internal let description: ConstraintDescription
+    
+    // MARK: - Initialization
     
     internal init(_ description: ConstraintDescription) {
         self.description = description
     }
+    
+    // MARK: - Public Functions
     
     @discardableResult
     public func labeled(_ label: String) -> ConstraintMakerFinalizable {

@@ -11,6 +11,8 @@ import UIKit
 /// Contains the required attributes to display workout details
 struct WorkoutViewModel {
 
+    // MARK: - Public Properties
+    
     /// Workout
     let workout: Workout
 
@@ -99,13 +101,19 @@ struct WorkoutViewModel {
         return workoutsService.selectedType(for: workout)
     }
 
+    // MARK: - Private Properties
+    
     private var workoutsService: WorkoutsService = ServiceFactory.shared.createWorkoutsService()
 
+    // MARK: - Initialization
+    
     init(workout: Workout, collapsed: Bool) {
         self.workout = workout
         self.collapsed = collapsed
     }
 
+    // MARK: - Public Functions
+    
     /// Selects the given division and persists the selection.
     ///
     /// - Parameter division: Division to select.

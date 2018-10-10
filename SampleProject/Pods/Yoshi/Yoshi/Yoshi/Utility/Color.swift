@@ -11,6 +11,8 @@
  */
 internal struct Color {
 
+    // MARK: - Public Properties
+    
     /// The red value.
     let red: UInt8
 
@@ -31,6 +33,9 @@ internal struct Color {
      - parameter blue:  The blue component.
      - parameter alpha: The alpha channel. By default, this is 1.0.
      */
+    
+    // MARK: - Initialization
+    
     init(_ red: UInt8, _ green: UInt8, _ blue: UInt8, alpha: Float = 1.0) {
         self.red = red
         self.green = green
@@ -43,6 +48,9 @@ internal struct Color {
 
      - returns: The UIColor value.
      */
+    
+    // MARK: - Public Functions
+    
     func toUIColor() -> UIColor {
         let rFloat = CGFloat(red)
         let gFloat = CGFloat(green)

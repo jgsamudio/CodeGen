@@ -20,6 +20,8 @@ public struct TextStyle {
     
     // MARK: - Properties
 
+    // MARK: - Public Properties
+    
     /// Font for displaying regular text.
     public var font: Font
     
@@ -161,6 +163,9 @@ public struct TextStyle {
      
      - returns: An initialized text style object.
      */
+    
+    // MARK: - Initialization
+    
     public init(font: Font,
                 emFont: Font? = nil,
                 strongFont: Font? = nil,

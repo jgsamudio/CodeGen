@@ -27,6 +27,8 @@ import SnapKit
 
 public class NotificationBanner: BaseNotificationBanner {
     
+    // MARK: - Public Properties
+    
     /// Notification that will be posted when a notification banner will appear
     public static let BannerWillAppear: Notification.Name = Notification.Name(rawValue: "NotificationBannerWillAppear")
     
@@ -45,11 +47,15 @@ public class NotificationBanner: BaseNotificationBanner {
     /// The bottom most label of the notification if a subtitle is provided
     public private(set) var subtitleLabel: MarqueeLabel?
     
+    // MARK: - Private Properties
+    
     /// The view that is presented on the left side of the notification
     private var leftView: UIView?
     
     /// The view that is presented on the right side of the notification
     private var rightView: UIView?
+    
+    // MARK: - Initialization
     
     public init(title: String,
                 subtitle: String? = nil,
@@ -171,6 +177,8 @@ public class NotificationBanner: BaseNotificationBanner {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Public Functions
     
     internal override func updateMarqueeLabelsDurations() {
         super.updateMarqueeLabelsDurations()

@@ -9,14 +9,20 @@
 /// A recorder for SimcoeEvents.
 public final class Tracker {
 
+    // MARK: - Public Properties
+    
     /// The output option for the recorder. Defaults to .Verbose.
     public var outputOption: OutputOptions = .verbose
 
     /// The error option for the recorder. Defaults to .Default.
     public var errorOption: ErrorHandlingOption = .default
 
+    // MARK: - Private Properties
+    
     fileprivate let outputSources: [Output]
 
+    // MARK: - Initialization
+    
     /// Initializes a new instance using the specified source as its output. By default, this is the
     /// standard output console.
     ///
@@ -25,6 +31,8 @@ public final class Tracker {
         self.outputSources = outputSources
     }
 
+    // MARK: - Public Functions
+    
     /// Records the event.
     ///
     /// - Parameter event: The event to record.

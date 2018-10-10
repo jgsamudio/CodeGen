@@ -17,6 +17,9 @@ public final class Yoshi {
      - parameter menuItems: [YoshiGenericMenu] an array of items to be displayed in the Yoshi Debug Action Sheet.
      - parameter invocations: The invocation types.
      */
+    
+    // MARK: - Public Functions
+    
     public class func setupDebugMenu(_ menuItems: [YoshiGenericMenu], invocations: [YoshiInvocation] = [.all]) {
         YoshiConfigurationManager.sharedInstance.setupDebugMenuOptions(menuItems, invocations: invocations)
     }
@@ -72,6 +75,8 @@ public final class Yoshi {
             return
         }
 
+    // MARK: - Public Properties
+    
         let eventTouches = event?.allTouches?.filter({ (touch) -> Bool in
             // Guarding against touch.maximumPossibleForce > 0
             // because this value is 0 on non-3D touch capable devices

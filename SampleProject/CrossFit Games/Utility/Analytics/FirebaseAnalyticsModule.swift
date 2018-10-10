@@ -12,6 +12,8 @@ import Simcoe
 /// Analytics module for use within Simcoe.
 struct FirebaseAnalyticsModule {
 
+    // MARK: - Public Properties
+    
     let name = "Firebase"
 
 }
@@ -19,6 +21,8 @@ struct FirebaseAnalyticsModule {
 // MARK: - UserAttributeTracking
 extension FirebaseAnalyticsModule: UserAttributeTracking {
 
+    // MARK: - Public Functions
+    
     func setUserAttribute(_ key: String, value: Any) -> TrackingResult {
         if key == AnalyticsKey.Property.userId.rawValue {
             Analytics.setUserID(value as? String)

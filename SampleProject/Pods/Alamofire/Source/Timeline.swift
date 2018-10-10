@@ -26,6 +26,9 @@ import Foundation
 
 /// Responsible for computing the timing metrics for the complete lifecycle of a `Request`.
 public struct Timeline {
+    
+    // MARK: - Public Properties
+    
     /// The time the request was initialized.
     public let requestStartTime: CFAbsoluteTime
 
@@ -50,6 +53,8 @@ public struct Timeline {
     /// The time interval in seconds from the time the request started to the time response serialization completed.
     public let totalDuration: TimeInterval
 
+    // MARK: - Initialization
+    
     /// Creates a new `Timeline` instance with the specified request times.
     ///
     /// - parameter requestStartTime:           The time the request was initialized. Defaults to `0.0`.
@@ -80,6 +85,7 @@ public struct Timeline {
 
 // MARK: - CustomStringConvertible
 
+// MARK: - CustomStringConvertible
 extension Timeline: CustomStringConvertible {
     /// The textual representation used when written to an output stream, which includes the latency, the request
     /// duration and the total duration.
@@ -104,6 +110,7 @@ extension Timeline: CustomStringConvertible {
 
 // MARK: - CustomDebugStringConvertible
 
+// MARK: - CustomDebugStringConvertible
 extension Timeline: CustomDebugStringConvertible {
     /// The textual representation used when written to an output stream, which includes the request start time, the
     /// initial response time, the request completed time, the serialization completed time, the latency, the request

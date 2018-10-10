@@ -30,9 +30,14 @@ import UIKit
 
 // MARK: Initialization
 
+    // MARK: - Private Properties
+    
 private let lock = NSLock()
 
 extension UIImage {
+    
+    // MARK: - Public Functions
+    
     /// Initializes and returns the image object with the specified data in a thread-safe manner.
     ///
     /// It has been reported that there are thread-safety issues when initializing large amounts of images
@@ -44,6 +49,9 @@ extension UIImage {
     /// - returns: An initialized `UIImage` object, or `nil` if the method failed.
     public static func af_threadSafeImage(with data: Data) -> UIImage? {
         lock.lock()
+    
+    // MARK: - Public Properties
+    
         let image = UIImage(data: data)
         lock.unlock()
 

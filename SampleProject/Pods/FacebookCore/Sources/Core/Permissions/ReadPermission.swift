@@ -99,7 +99,11 @@ public enum ReadPermission {
   case custom(String)
 }
 
+// MARK: - PermissionRepresentable
 extension ReadPermission: PermissionRepresentable {
+    
+    // MARK: - Public Properties
+    
   internal var permissionValue: Permission {
     switch self {
     case .publicProfile: return "public_profile"

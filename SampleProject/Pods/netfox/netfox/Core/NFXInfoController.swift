@@ -10,8 +10,13 @@ import Foundation
 class NFXInfoController: NFXGenericController
 {
     
+    // MARK: - Public Functions
+    
     func generateInfoString(_ ipAddress: String) -> NSAttributedString
     {
+    
+    // MARK: - Public Properties
+    
         var tempString: String
         tempString = String()
         

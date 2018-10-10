@@ -13,6 +13,8 @@ internal typealias Index = String.CharacterView.Index
 /// Markup element. Contains a symbol and the range it applies to.
 internal struct Element {
     
+    // MARK: - Public Properties
+    
     /// Markup symbol.
     let symbol: Symbol
     

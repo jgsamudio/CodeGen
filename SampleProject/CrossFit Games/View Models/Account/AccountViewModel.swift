@@ -9,6 +9,8 @@
 /// View Model For Account
 struct AccountViewModel {
 
+    // MARK: - Public Properties
+    
     /// Full Name
     var fullname: String? {
         return userAuthService.userDataStore.userFullname
@@ -25,9 +27,13 @@ struct AccountViewModel {
         return [.help, .faq, .contactUs, .ruleBook, .drugPolicy, loginOption]
     }
 
+    // MARK: - Private Properties
+    
     private let logoutService = ServiceFactory.shared.createLogoutService()
     private let userAuthService = ServiceFactory.shared.createUserAuthService()
 
+    // MARK: - Public Functions
+    
     /// Logs the user out.
     func logout() {
         logoutService.logout()

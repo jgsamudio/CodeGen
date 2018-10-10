@@ -16,6 +16,8 @@ struct CreateAccountResponse: Codable {
         case emailVerified = "email_verified"
     }
 
+    // MARK: - Public Properties
+    
     let email: String
     let userId: String
     let emailVerified: Bool

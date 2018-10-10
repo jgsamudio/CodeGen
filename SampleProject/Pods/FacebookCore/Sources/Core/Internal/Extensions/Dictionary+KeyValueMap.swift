@@ -17,7 +17,13 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 extension Dictionary {
+    
+    // MARK: - Public Functions
+    
   func keyValueMap<K, V>(_ transform: (Element) throws -> (K, V)) rethrows -> [K:V] {
+    
+    // MARK: - Public Properties
+    
     var dictionary: [K:V] = [:]
     try forEach {
       let transformed = try transform($0)

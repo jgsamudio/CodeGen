@@ -40,11 +40,16 @@ extension Request {
     }
 
     fileprivate struct MIMEType {
+    
+    // MARK: - Public Properties
+    
         let type: String
         let subtype: String
 
         var isWildcard: Bool { return type == "*" && subtype == "*" }
 
+    // MARK: - Initialization
+    
         init?(_ string: String) {
             let components: [String] = {
                 let stripped = string.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -66,6 +71,8 @@ extension Request {
             }
         }
 
+    // MARK: - Public Functions
+    
         func matches(_ mime: MIMEType) -> Bool {
             switch (type, subtype) {
             case (mime.type, mime.subtype), (mime.type, "*"), ("*", mime.subtype), ("*", "*"):
@@ -78,6 +85,8 @@ extension Request {
 
     // MARK: Properties
 
+    // MARK: - Private Properties
+    
     fileprivate var acceptableStatusCodes: [Int] { return Array(200..<300) }
 
     fileprivate var acceptableContentTypes: [String] {

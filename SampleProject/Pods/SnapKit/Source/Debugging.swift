@@ -29,6 +29,8 @@
 
 public extension LayoutConstraint {
     
+    // MARK: - Public Properties
+    
     override public var description: String {
         var description = "<"
         

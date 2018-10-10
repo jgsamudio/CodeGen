@@ -9,10 +9,17 @@
 /// A standard menu that execute custom actions when tapped.
 open class YoshiActionMenu: YoshiMenu {
 
+    // MARK: - Public Properties
+    
     public let title: String
     public let subtitle: String?
+    
+    // MARK: - Private Properties
+    
     private let completion: (() -> Void)?
 
+    // MARK: - Initialization
+    
     /// Initialize the menu with title, an optional subtitle and action executed when being tapped.
     ///
     /// - Parameters:
@@ -27,6 +34,8 @@ open class YoshiActionMenu: YoshiMenu {
         self.completion = completion
     }
 
+    // MARK: - Public Functions
+    
     open func execute() -> YoshiActionResult {
         return .asyncAfterDismissing(completion)
     }

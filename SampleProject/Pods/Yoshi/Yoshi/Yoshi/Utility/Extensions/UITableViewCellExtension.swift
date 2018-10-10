@@ -11,8 +11,13 @@ import UIKit
 // MARK: - UITableView extension.
 extension UITableViewCell {
 
+    // MARK: - Public Functions
+    
     /// Setup a long press gesture on the cell to copy the subtitle (detailTextLabel's text) to the clipboard.
     func setupCopyToClipBoard() {
+    
+    // MARK: - Public Properties
+    
         let longPressGesture = UILongPressGestureRecognizer(target: self,
                                                             action: #selector(longPressCopyToClipBoard(_:)))
         addGestureRecognizer(longPressGesture)

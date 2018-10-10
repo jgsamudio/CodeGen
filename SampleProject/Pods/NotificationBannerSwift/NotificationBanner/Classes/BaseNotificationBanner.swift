@@ -34,6 +34,8 @@ public protocol NotificationBannerDelegate: class {
 
 public class BaseNotificationBanner: UIView {
     
+    // MARK: - Public Properties
+    
     /// The delegate of the notification banner
     public weak var delegate: NotificationBannerDelegate?
     
@@ -106,6 +108,8 @@ public class BaseNotificationBanner: UIView {
     /// Used by the banner queue to determine wether a notification banner was placed in front of it in the queue
     var isSuspended: Bool = false
     
+    // MARK: - Private Properties
+    
     /// Responsible for positioning and auto managing notification banners
     private let bannerQueue: NotificationBannerQueue = NotificationBannerQueue.default
     
@@ -131,6 +135,8 @@ public class BaseNotificationBanner: UIView {
             spacerView.backgroundColor = newValue
         }
     }
+    
+    // MARK: - Initialization
     
     init(style: BannerStyle, colors: BannerColorsProtocol? = nil) {
         super.init(frame: .zero)
@@ -214,6 +220,9 @@ public class BaseNotificationBanner: UIView {
     /**
         Dismisses the NotificationBanner and shows the next one if there is one to show on the queue
     */
+    
+    // MARK: - Public Functions
+    
     @objc public func dismiss() {
         NSObject.cancelPreviousPerformRequests(withTarget: self,
                                                selector: #selector(dismiss),

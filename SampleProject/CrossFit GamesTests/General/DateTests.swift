@@ -11,7 +11,12 @@ import XCTest
 
 class DateTests: XCTestCase {
 
+    // MARK: - Public Functions
+    
     func testDateParsing() {
+    
+    // MARK: - Public Properties
+    
         // This is a known value from the test data for workouts API.
         // This value should match the date below (03/27/2017, 17:00:00) as this was the submission date for the related workout.
         let crossFitStandardTime: Int64 = 1490659200

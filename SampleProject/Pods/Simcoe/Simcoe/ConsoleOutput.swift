@@ -9,6 +9,8 @@
 /// The default console output.
 internal final class ConsoleOutput: Output {
 
+    // MARK: - Public Functions
+    
     /// Prints a message to the standard output.
     ///
     /// - Parameter message: The message to print.

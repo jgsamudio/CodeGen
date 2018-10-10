@@ -12,6 +12,8 @@ import Cocoa
 import UIKit
 #endif
 
+    // MARK: - Public Properties
+    
 let nfxVersion = "1.8"
 
 // Notifications posted when NFX opens/closes, for client application that wish to log that information.
@@ -37,6 +39,8 @@ open class NFX: NSObject
         return Singleton.instance
     }
     
+    // MARK: - Public Functions
+    
     // the sharedInstance class method can be reached from ObjC
     open class func sharedInstance() -> NFX
     {
@@ -48,6 +52,8 @@ open class NFX: NSObject
         case shake
         case custom
     }
+    
+    // MARK: - Private Properties
     
     fileprivate var started: Bool = false
     fileprivate var presented: Bool = false

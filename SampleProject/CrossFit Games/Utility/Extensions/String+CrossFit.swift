@@ -10,6 +10,8 @@ import Foundation
 
 extension String {
 
+    // MARK: - Public Properties
+    
     /// Returns the localized value of `self` as read from `Localization.strings`.
     var localized: String {
         return NSLocalizedString(self,
@@ -18,6 +20,8 @@ extension String {
                                  comment: "")
     }
 
+    // MARK: - Public Functions
+    
     /// Creates a random emoji to inform users feature is not fully complete
     ///
     /// - Returns: Random Emoji

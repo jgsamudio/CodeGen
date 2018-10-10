@@ -11,6 +11,8 @@ import Foundation
 /// A row to display within a picker view component.
 struct PickerViewRow: Equatable {
 
+    // MARK: - Public Properties
+    
     /// Value displayed for `self`.
     let displayValue: String
 
@@ -19,6 +21,8 @@ struct PickerViewRow: Equatable {
 
 }
 
+    // MARK: - Public Functions
+    
 func == (_ lhs: PickerViewRow, _ rhs: PickerViewRow) -> Bool {
     return lhs.displayValue == rhs.displayValue
 }

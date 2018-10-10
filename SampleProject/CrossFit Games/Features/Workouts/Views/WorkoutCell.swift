@@ -11,12 +11,17 @@ import AlamofireImage
 
 final class WorkoutCell: UITableViewCell {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var workoutImageView: UIImageView!
     @IBOutlet private weak var titleLabel: StyleableLabel!
     @IBOutlet private weak var scoreSubmissionView: UIView!
     @IBOutlet private weak var workoutSummaryView: UIView!
     @IBOutlet private weak var sponsorLogoImageView: UIImageView!
     @IBOutlet private weak var submissionTimeLabel: StyleableLabel!
+    
+    // MARK: - Public Properties
+    
     @IBOutlet private(set) weak var submitScoreButton: StyleableButton!
     @IBOutlet private weak var tintView: UIView!
     /// Median value of the estimated row heights
@@ -28,6 +33,8 @@ final class WorkoutCell: UITableViewCell {
     /// Callback for the submit score button.
     var submitScoreCallback: () -> Void = {}
 
+    // MARK: - Public Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         config()

@@ -11,9 +11,13 @@ import Foundation
 /// Service for persisting leaderboard filter selections.
 struct LeaderboardFilterPersistenceService {
 
+    // MARK: - Public Properties
+    
     /// Data store for saving leaderboard selections.
     let dataStore: LeaderboardDataStore
 
+    // MARK: - Public Functions
+    
     /// Persists the given selection, saving it under the given name.
     ///
     /// - Parameters:

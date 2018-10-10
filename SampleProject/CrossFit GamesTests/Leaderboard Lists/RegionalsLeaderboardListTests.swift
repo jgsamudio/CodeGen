@@ -11,6 +11,8 @@ import XCTest
 
 class RegionalsLeaderboardListTests: XCTestCase {
 
+    // MARK: - Public Functions
+    
     func testParsingLeaderboards() {
         guard let filePath = Bundle(for: RegionalsLeaderboardListTests.self).url(forResource: "leaderboard_regionals", withExtension: "json"),
             let json = try? Data(contentsOf: filePath) else {
@@ -18,6 +20,8 @@ class RegionalsLeaderboardListTests: XCTestCase {
                 return
         }
 
+    // MARK: - Public Properties
+    
         let stringValue = String(data: json, encoding: .ascii)
         guard let data = stringValue?.data(using: .utf8) else {
             XCTFail("Whoops")

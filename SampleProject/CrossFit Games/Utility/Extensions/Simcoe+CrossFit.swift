@@ -11,6 +11,8 @@ import Simcoe
 
 extension Simcoe {
 
+    // MARK: - Public Functions
+    
     /// Tracks an analytics action or event.
     ///
     /// - Parameters:
@@ -20,6 +22,9 @@ extension Simcoe {
     class func track(event: AnalyticsKey.Event,
                      withAdditionalProperties additionalProperties: [AnalyticsKey.Property: Any],
                      on screen: AnalyticsKey.Screen? = nil) {
+    
+    // MARK: - Public Properties
+    
         var dict = [String: Any]()
         for key in additionalProperties.keys {
             dict[key.rawValue] = additionalProperties[key]

@@ -10,9 +10,14 @@ import Foundation
 @objc
 open class NFXProtocol: URLProtocol
 {
+    
+    // MARK: - Public Properties
+    
     var connection: NSURLConnection?
     var model: NFXHTTPModel?
     var session: URLSession?
+    
+    // MARK: - Public Functions
     
     override open class func canInit(with request: URLRequest) -> Bool
     {

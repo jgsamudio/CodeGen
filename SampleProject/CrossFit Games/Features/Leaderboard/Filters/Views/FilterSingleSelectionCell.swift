@@ -11,10 +11,14 @@ import UIKit
 /// Cell for selecting a single filter option.
 final class FilterSingleSelectionCell: UITableViewCell {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var nameLabel: UILabel!
 
     @IBOutlet private weak var checkMarkImageView: UIImageView!
 
+    // MARK: - Public Properties
+    
     /// Theme configuration for `self`.
     var config: FilterThemeConfiguration? {
         didSet {

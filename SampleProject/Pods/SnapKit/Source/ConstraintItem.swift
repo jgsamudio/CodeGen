@@ -30,8 +30,12 @@
 
 public final class ConstraintItem {
     
+    // MARK: - Public Properties
+    
     internal weak var target: AnyObject?
     internal let attributes: ConstraintAttributes
+    
+    // MARK: - Initialization
     
     internal init(target: AnyObject?, attributes: ConstraintAttributes) {
         self.target = target
@@ -44,6 +48,8 @@ public final class ConstraintItem {
     
 }
 
+    // MARK: - Public Functions
+    
 public func ==(lhs: ConstraintItem, rhs: ConstraintItem) -> Bool {
     // pointer equality
     guard lhs !== rhs else {

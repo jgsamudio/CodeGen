@@ -8,11 +8,15 @@
 
 import CoreLocation
 
+    // MARK: - Private Properties
+    
 private let sessionToken = String(arc4random_uniform(999999))
 
 /// The root analytics engine.
 public final class Simcoe {
 
+    // MARK: - Public Properties
+    
     /// The Simcoe session.
     static var session: String {
         return sessionToken
@@ -33,6 +37,8 @@ public final class Simcoe {
         }
     }
 
+    // MARK: - Initialization
+    
     /// Initializes a new instance using the specified tracker.
     ///
     /// - Parameter tracker: The tracker to use.
@@ -40,6 +46,8 @@ public final class Simcoe {
         self.tracker = tracker
     }
 
+    // MARK: - Public Functions
+    
     /// Retrieves the provider based on its kind from the current list of providers.
     ///
     /// - Parameter _: The kind of provider to retrieve.

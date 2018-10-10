@@ -20,6 +20,9 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 class NFXHTTPModel: NSObject
 {
+    
+    // MARK: - Public Properties
+    
     @objc var requestURL: String?
     @objc var requestMethod: String?
     var requestCachePolicy: String?
@@ -44,6 +47,8 @@ class NFXHTTPModel: NSObject
     @objc var shortType: NSString = HTTPModelShortType.OTHER.rawValue as NSString
     
     var noResponse: Bool = true
+    
+    // MARK: - Public Functions
     
     func saveRequest(_ request: URLRequest)
     {

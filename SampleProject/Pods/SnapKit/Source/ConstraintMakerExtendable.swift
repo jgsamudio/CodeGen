@@ -30,6 +30,8 @@
 
 public class ConstraintMakerExtendable: ConstraintMakerRelatable {
     
+    // MARK: - Public Properties
+    
     public var left: ConstraintMakerExtendable {
         self.description.attributes += .left
         return self

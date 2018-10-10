@@ -13,6 +13,8 @@ internal struct Symbol: RawRepresentable, Equatable {
     
     typealias RawValue = String
     
+    // MARK: - Public Properties
+    
     /// Underlying `String` representation.
     let rawValue: String
     
@@ -23,10 +25,14 @@ internal struct Symbol: RawRepresentable, Equatable {
 
     // MARK: - Private properties
 
+    // MARK: - Private Properties
+    
     private let symbolCharacterOne: Character?
     private let symbolCharacterTwo: Character?
     
     // MARK: - Init/deinit
+    
+    // MARK: - Initialization
     
     /// Creates a new instance with the specified raw value.
     ///
@@ -57,6 +63,8 @@ internal struct Symbol: RawRepresentable, Equatable {
 
     // MARK: - Instance functions
 
+    // MARK: - Public Functions
+    
     /// Returns a boolean indicating whether the symbol matches given characters.
     /// This function currently requires three characters. 
     /// Preceding and succeeding characters are used to check if the matched character is surrounded by a space.

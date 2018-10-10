@@ -10,10 +10,16 @@ import UIKit
 
 final class EmptyDashboardCell: UICollectionViewCell {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var registerButton: StyleableButton!
 
+    // MARK: - Public Properties
+    
     var didTapRegister: () -> Void = {}
 
+    // MARK: - Public Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 

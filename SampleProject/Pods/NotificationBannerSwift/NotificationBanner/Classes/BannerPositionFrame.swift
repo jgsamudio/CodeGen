@@ -25,9 +25,13 @@ public enum BannerPosition {
 
 class BannerPositionFrame: NSObject {
     
+    // MARK: - Public Properties
+    
     private(set) var startFrame: CGRect!
     private(set) var endFrame: CGRect!
 
+    // MARK: - Initialization
+    
     init(bannerPosition: BannerPosition,
          bannerWidth: CGFloat,
          bannerHeight: CGFloat,

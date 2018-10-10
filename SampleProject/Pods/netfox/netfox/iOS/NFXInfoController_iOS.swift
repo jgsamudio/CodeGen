@@ -11,8 +11,12 @@ import UIKit
 
 class NFXInfoController_iOS: NFXInfoController {
     
+    // MARK: - Public Properties
+    
     var scrollView: UIScrollView = UIScrollView()
     var textLabel: UILabel = UILabel()
+    
+    // MARK: - Public Functions
     
     override func viewDidLoad()
     {

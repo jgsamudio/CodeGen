@@ -13,6 +13,8 @@ import Simcoe
 /// View controller for showing results of leaderboard searches.
 final class LeaderboardResultViewController: BaseViewController {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var iOS10Constraint: NSLayoutConstraint!
     @IBOutlet private weak var iOS11Constraint: NSLayoutConstraint!
@@ -20,6 +22,8 @@ final class LeaderboardResultViewController: BaseViewController {
     @IBOutlet private weak var customTitleLabel: UILabel!
     @IBOutlet private weak var sortButton: UIBarButtonItem!
 
+    // MARK: - Public Properties
+    
     var viewModel: LeaderboardResultViewModel! {
         didSet {
             tableView?.prefetchDataSource = viewModel.prefetchController
@@ -100,6 +104,8 @@ final class LeaderboardResultViewController: BaseViewController {
     private var refreshObserver: AnyObject?
     private var scrollObserver: AnyObject?
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

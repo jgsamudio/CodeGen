@@ -16,7 +16,12 @@ enum APIError: Decodable, Error {
         case iOS
     }
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
+    
+    // MARK: - Public Properties
+    
         let values = try decoder.container(keyedBy: CodingKeys.self)
         do {
             let iOS = try values.decode(APIStatus.self, forKey: .iOS)

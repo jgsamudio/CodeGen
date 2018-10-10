@@ -19,7 +19,12 @@ public protocol YoshiSubmenu: YoshiMenu {
 
 public extension YoshiSubmenu {
 
+    // MARK: - Public Functions
+    
     func execute() -> YoshiActionResult {
+    
+    // MARK: - Public Properties
+    
         let debugViewController = DebugViewController(options: options, isRootYoshiMenu: false, completion: nil)
         debugViewController.title = self.title
         return .push(debugViewController)

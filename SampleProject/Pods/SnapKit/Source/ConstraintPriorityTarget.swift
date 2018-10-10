@@ -34,7 +34,10 @@ public protocol ConstraintPriorityTarget {
     
 }
 
+// MARK: - ConstraintPriorityTarget
 extension Int: ConstraintPriorityTarget {
+    
+    // MARK: - Public Properties
     
     public var constraintPriorityTargetValue: Float {
         return Float(self)
@@ -42,6 +45,7 @@ extension Int: ConstraintPriorityTarget {
     
 }
 
+// MARK: - ConstraintPriorityTarget
 extension UInt: ConstraintPriorityTarget {
     
     public var constraintPriorityTargetValue: Float {
@@ -50,6 +54,7 @@ extension UInt: ConstraintPriorityTarget {
     
 }
 
+// MARK: - ConstraintPriorityTarget
 extension Float: ConstraintPriorityTarget {
     
     public var constraintPriorityTargetValue: Float {
@@ -58,6 +63,7 @@ extension Float: ConstraintPriorityTarget {
     
 }
 
+// MARK: - ConstraintPriorityTarget
 extension Double: ConstraintPriorityTarget {
     
     public var constraintPriorityTargetValue: Float {
@@ -66,6 +72,7 @@ extension Double: ConstraintPriorityTarget {
     
 }
 
+// MARK: - ConstraintPriorityTarget
 extension CGFloat: ConstraintPriorityTarget {
     
     public var constraintPriorityTargetValue: Float {

@@ -13,10 +13,16 @@ import Foundation
 /// which is bound with a custom auth manager
 struct DefaultHTTPClient: HTTPClientProtocol {
 
+    // MARK: - Public Properties
+    
     let sessionManager: SessionManager
 
+    // MARK: - Private Properties
+    
     private let adapter = DefaultRequestAdapter()
 
+    // MARK: - Initialization
+    
     init(sessionManager: SessionManager) {
         sessionManager.adapter = adapter
         self.sessionManager = sessionManager

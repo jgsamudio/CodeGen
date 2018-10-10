@@ -33,6 +33,8 @@ import FBSDKCoreKit
 public struct GraphRequest: GraphRequestProtocol {
   public typealias Response = GraphResponse
 
+    // MARK: - Public Properties
+    
   /// The Graph API endpoint to use for the request, e.g. `"me"`.
   public let graphPath: String
 
@@ -57,6 +59,9 @@ public struct GraphRequest: GraphRequestProtocol {
    - parameter httpMethod:  Optional `GraphRequestHTTPMethod` to use for the request. Defaults to `.GET`.
    - parameter apiVersion:  Optional Graph API version to use. Defaults to `GraphAPIVersion.Default`.
    */
+    
+    // MARK: - Initialization
+    
   public init(graphPath: String,
               parameters: [String : Any] = [:],
               accessToken: AccessToken? = AccessToken.current,

@@ -27,6 +27,8 @@ public protocol YoshiReusableCellDataSource {
 
 public extension YoshiReusableCellDataSource {
 
+    // MARK: - Public Properties
+    
     /// Default reuseIdentifier implementation, it will use the protocol adopator's name
     static var reuseIdentifier: String {
         return String(describing: Self.self)

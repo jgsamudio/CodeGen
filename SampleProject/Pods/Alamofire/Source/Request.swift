@@ -86,6 +86,8 @@ open class Request {
 
     // MARK: Properties
 
+    // MARK: - Public Properties
+    
     /// The delegate for the underlying task.
     open internal(set) var delegate: TaskDelegate {
         get {
@@ -120,11 +122,15 @@ open class Request {
 
     var validations: [() -> Void] = []
 
+    // MARK: - Private Properties
+    
     private var taskDelegate: TaskDelegate
     private var taskDelegateLock = NSLock()
 
     // MARK: Lifecycle
 
+    // MARK: - Initialization
+    
     init(session: URLSession, requestTask: RequestTask, error: Error? = nil) {
         self.session = session
 
@@ -149,6 +155,8 @@ open class Request {
 
     // MARK: Authentication
 
+    // MARK: - Public Functions
+    
     /// Associates an HTTP Basic credential with the request.
     ///
     /// - parameter user:        The user.
@@ -238,6 +246,7 @@ open class Request {
 
 // MARK: - CustomStringConvertible
 
+// MARK: - CustomStringConvertible
 extension Request: CustomStringConvertible {
     /// The textual representation used when written to an output stream, which includes the HTTP method and URL, as
     /// well as the response status code if a response has been received.
@@ -262,6 +271,7 @@ extension Request: CustomStringConvertible {
 
 // MARK: - CustomDebugStringConvertible
 
+// MARK: - CustomDebugStringConvertible
 extension Request: CustomDebugStringConvertible {
     /// The textual representation used when written to an output stream, in the form of a cURL command.
     open var debugDescription: String {

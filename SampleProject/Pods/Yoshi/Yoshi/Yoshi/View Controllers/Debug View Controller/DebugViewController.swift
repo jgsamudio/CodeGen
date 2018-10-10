@@ -11,8 +11,12 @@ internal typealias VoidCompletionBlock = () -> Void
 /// A debug menu.
 internal final class DebugViewController: UIViewController {
 
+    // MARK: - Public Properties
+    
     var completionHandler: ((_ completed: VoidCompletionBlock? ) -> Void)?
 
+    // MARK: - Private Properties
+    
     /// Configures navigation bar and table view header for root Yoshi menu
     private let isRootYoshiMenu: Bool
     private let tableView = UITableView()
@@ -20,6 +24,8 @@ internal final class DebugViewController: UIViewController {
 
     private let dateFormatter: DateFormatter = DateFormatter()
 
+    // MARK: - Initialization
+    
     init(options: [YoshiGenericMenu], isRootYoshiMenu: Bool, completion: ((VoidCompletionBlock?) -> Void)?) {
         self.options = options
         self.completionHandler = completion
@@ -31,6 +37,8 @@ internal final class DebugViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Public Functions
+    
     override func loadView() {
         view = UIView()
         setupNavigationController()
@@ -163,6 +171,7 @@ internal final class DebugViewController: UIViewController {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension DebugViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -181,6 +190,7 @@ extension DebugViewController: UITableViewDataSource {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension DebugViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

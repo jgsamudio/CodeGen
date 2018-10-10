@@ -31,26 +31,34 @@
 public protocol ConstraintInsetTarget: ConstraintConstantTarget {
 }
 
+// MARK: - ConstraintInsetTarget
 extension Int: ConstraintInsetTarget {
 }
 
+// MARK: - ConstraintInsetTarget
 extension UInt: ConstraintInsetTarget {
 }
 
+// MARK: - ConstraintInsetTarget
 extension Float: ConstraintInsetTarget {
 }
 
+// MARK: - ConstraintInsetTarget
 extension Double: ConstraintInsetTarget {
 }
 
+// MARK: - ConstraintInsetTarget
 extension CGFloat: ConstraintInsetTarget {
 }
 
+// MARK: - ConstraintInsetTarget
 extension ConstraintInsets: ConstraintInsetTarget {
 }
 
 extension ConstraintInsetTarget {
 
+    // MARK: - Public Properties
+    
     internal var constraintInsetTargetValue: ConstraintInsets {
         if let amount = self as? ConstraintInsets {
             return amount

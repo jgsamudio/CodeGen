@@ -10,6 +10,8 @@ import UIKit
 
 public extension UITextView {
 
+    // MARK: - Public Functions
+    
     /// Sets the text view text to an attributed string created from the specified string and text style.
     ///
     /// - Parameters:

@@ -10,8 +10,12 @@ import Foundation
 
 extension Int {
 
+    // MARK: - Private Properties
+    
     private static var numberFormatter: NumberFormatter = NumberFormatter()
 
+    // MARK: - Public Functions
+    
     /// Fotmats an integer for the specified grouping size
     ///
     /// - Parameter groupingSize: Grouping size

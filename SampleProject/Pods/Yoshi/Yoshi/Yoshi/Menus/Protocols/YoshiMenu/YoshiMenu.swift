@@ -20,6 +20,8 @@ public protocol YoshiMenu: YoshiGenericMenu {
 
 public extension YoshiMenu {
 
+    // MARK: - Public Properties
+    
     /// Default implementation for the cell data source, it will use the system cell with the given title and subtitle
     var cellSource: YoshiReusableCellDataSource {
         return YoshiMenuCellDataSource(title: title, subtitle: subtitle)

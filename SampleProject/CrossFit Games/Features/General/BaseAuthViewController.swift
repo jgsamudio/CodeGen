@@ -11,8 +11,12 @@ import UIKit
 /// Contains common functionality for auth related view controllers
 class BaseAuthViewController: BaseViewController {
 
+    // MARK: - Private Properties
+    
     private var previousNavBarStyle: NavBarStyle?
 
+    // MARK: - Public Functions
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setNavigationItemTitle()
@@ -33,6 +37,9 @@ class BaseAuthViewController: BaseViewController {
 
     /// Sets the navigation bar title with a custom image
     private func setNavigationItemTitle() {
+    
+    // MARK: - Public Properties
+    
         let logo = UIImage(named: "navigation bar title")
         let imageView = UIImageView(image: logo)
 //        imageView.frame = CGRect(x: 0, y: 0, width: 26, height: 20)

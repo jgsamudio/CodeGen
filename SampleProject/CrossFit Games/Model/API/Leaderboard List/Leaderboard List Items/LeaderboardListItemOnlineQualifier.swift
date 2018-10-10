@@ -15,10 +15,14 @@ struct LeaderboardListItemOnlineQualifier: LeaderboardListItem, Decodable {
         case scores
     }
 
+    // MARK: - Public Properties
+    
     let scores: [WorkoutScore]
 
     let user: LeaderboardAthlete
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         user = try OpenOnlineLeaderboardAthlete(from: decoder)
         var scores = try decoder

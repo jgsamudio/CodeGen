@@ -35,6 +35,9 @@ import Cocoa
 #endif
 
 extension DataRequest {
+    
+    // MARK: - Public Properties
+    
     static var acceptableImageContentTypes: Set<String> = [
         "image/tiff",
         "image/jpeg",
@@ -51,6 +54,8 @@ extension DataRequest {
 
     static let streamImageInitialBytePattern = Data(bytes: [255, 216]) // 0xffd8
 
+    // MARK: - Public Functions
+    
     /// Adds the content types specified to the list of acceptable images content types for validation.
     ///
     /// - parameter contentTypes: The additional content types.

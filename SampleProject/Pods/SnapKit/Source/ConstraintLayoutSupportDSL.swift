@@ -31,11 +31,15 @@
 @available(iOS 8.0, *)
 public struct ConstraintLayoutSupportDSL: ConstraintDSL {
     
+    // MARK: - Public Properties
+    
     public var target: AnyObject? {
         return self.support
     }
     
     internal let support: ConstraintLayoutSupport
+    
+    // MARK: - Initialization
     
     internal init(support: ConstraintLayoutSupport) {
         self.support = support

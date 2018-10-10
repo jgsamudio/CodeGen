@@ -10,6 +10,8 @@ import UIKit
 
 class NotificationBannerUtilities: NSObject {
 
+    // MARK: - Public Functions
+    
     class func isiPhoneX() -> Bool {
         if UIDevice.current.userInterfaceIdiom != .phone {
             return false

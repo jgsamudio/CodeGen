@@ -12,7 +12,12 @@ import UIKit
 
 class NFXImageBodyDetailsController: NFXGenericBodyDetailsController
 {
+    
+    // MARK: - Public Properties
+    
     var imageView: UIImageView = UIImageView()
+    
+    // MARK: - Public Functions
     
     override func viewDidLoad()
     {

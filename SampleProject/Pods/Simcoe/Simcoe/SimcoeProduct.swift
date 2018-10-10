@@ -9,6 +9,8 @@
 /// The product.
 public struct SimcoeProduct {
 
+    // MARK: - Public Properties
+    
     /// The product name.
     public let productName: String
 
@@ -24,6 +26,8 @@ public struct SimcoeProduct {
     /// The properties.
     public let properties: Properties?
 
+    // MARK: - Initialization
+    
     /// The default initializer.
     ///
     /// - Parameters:

@@ -31,36 +31,47 @@
 public protocol ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension Int: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension UInt: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension Float: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension Double: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension CGFloat: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension CGSize: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension CGPoint: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension ConstraintInsets: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension ConstraintItem: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 extension ConstraintView: ConstraintRelatableTarget {
 }
 
+// MARK: - ConstraintRelatableTarget
 @available(iOS 9.0, OSX 10.11, *)
 extension ConstraintLayoutGuide: ConstraintRelatableTarget {
 }

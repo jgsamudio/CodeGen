@@ -10,6 +10,8 @@ import Foundation
 
 private struct CreateAccountRequest: Encodable {
 
+    // MARK: - Public Properties
+    
     /// Email of the user.
     let email: String
 
@@ -29,9 +31,13 @@ struct CreateAccountService {
     let httpClient: HTTPClientProtocol
     let userDataStore: UserDataStore
 
+    // MARK: - Private Properties
+    
     private let createAccountURL = "users"
     private let tokenRequestURL = "oauth2/token"
 
+    // MARK: - Public Functions
+    
     /// Creates user account
     ///
     /// - Parameters:

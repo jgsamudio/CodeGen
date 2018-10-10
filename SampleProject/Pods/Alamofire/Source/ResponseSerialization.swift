@@ -40,9 +40,13 @@ public struct DataResponseSerializer<Value>: DataResponseSerializerProtocol {
     /// The type of serialized object to be created by this `DataResponseSerializer`.
     public typealias SerializedObject = Value
 
+    // MARK: - Public Properties
+    
     /// A closure used by response handlers that takes a request, response, data and error and returns a result.
     public var serializeResponse: (URLRequest?, HTTPURLResponse?, Data?, Error?) -> Result<Value>
 
+    // MARK: - Initialization
+    
     /// Initializes the `ResponseSerializer` instance with the given serialize response closure.
     ///
     /// - parameter serializeResponse: The closure used to serialize the response.
@@ -104,6 +108,9 @@ extension Request {
 // MARK: - Default
 
 extension DataRequest {
+    
+    // MARK: - Public Functions
+    
     /// Adds a handler to be called once the request has finished.
     ///
     /// - parameter queue:             The queue on which the completion handler is dispatched.
@@ -711,5 +718,7 @@ extension DownloadRequest {
     }
 }
 
+    // MARK: - Private Properties
+    
 /// A set of HTTP response status code that do not contain response data.
 private let emptyDataStatusCodes: Set<Int> = [204, 205]

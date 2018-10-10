@@ -31,22 +31,29 @@
 public protocol ConstraintOffsetTarget: ConstraintConstantTarget {
 }
 
+// MARK: - ConstraintOffsetTarget
 extension Int: ConstraintOffsetTarget {
 }
 
+// MARK: - ConstraintOffsetTarget
 extension UInt: ConstraintOffsetTarget {
 }
 
+// MARK: - ConstraintOffsetTarget
 extension Float: ConstraintOffsetTarget {
 }
 
+// MARK: - ConstraintOffsetTarget
 extension Double: ConstraintOffsetTarget {
 }
 
+// MARK: - ConstraintOffsetTarget
 extension CGFloat: ConstraintOffsetTarget {
 }
 
 extension ConstraintOffsetTarget {
+    
+    // MARK: - Public Properties
     
     internal var constraintOffsetTargetValue: CGFloat {
         let offset: CGFloat

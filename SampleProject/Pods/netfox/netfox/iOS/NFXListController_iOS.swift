@@ -16,10 +16,14 @@ class NFXListController_iOS: NFXListController, UITableViewDelegate, UITableView
 {
     // MARK: Properties
     
+    // MARK: - Public Properties
+    
     var tableView: UITableView = UITableView()
     var searchController: UISearchController!
     
     // MARK: View Life Cycle
+    
+    // MARK: - Public Functions
     
     override func viewDidLoad()
     {

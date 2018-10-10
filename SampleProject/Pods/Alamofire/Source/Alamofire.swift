@@ -35,7 +35,11 @@ public protocol URLConvertible {
     func asURL() throws -> URL
 }
 
+// MARK: - URLConvertible
 extension String: URLConvertible {
+    
+    // MARK: - Public Functions
+    
     /// Returns a URL if `self` represents a valid URL string that conforms to RFC 2396 or throws an `AFError`.
     ///
     /// - throws: An `AFError.invalidURL` if `self` is not a valid URL string.
@@ -47,11 +51,13 @@ extension String: URLConvertible {
     }
 }
 
+// MARK: - URLConvertible
 extension URL: URLConvertible {
     /// Returns self.
     public func asURL() throws -> URL { return self }
 }
 
+// MARK: - URLConvertible
 extension URLComponents: URLConvertible {
     /// Returns a URL if `url` is not nil, otherwise throws an `Error`.
     ///
@@ -77,10 +83,14 @@ public protocol URLRequestConvertible {
 }
 
 extension URLRequestConvertible {
+    
+    // MARK: - Public Properties
+    
     /// The URL request.
     public var urlRequest: URLRequest? { return try? asURLRequest() }
 }
 
+// MARK: - URLRequestConvertible
 extension URLRequest: URLRequestConvertible {
     /// Returns a URL request or throws if an `Error` was encountered.
     public func asURLRequest() throws -> URLRequest { return self }
@@ -89,6 +99,9 @@ extension URLRequest: URLRequestConvertible {
 // MARK: -
 
 extension URLRequest {
+    
+    // MARK: - Initialization
+    
     /// Creates an instance with the specified `method`, `urlString` and `headers`.
     ///
     /// - parameter url:     The URL.

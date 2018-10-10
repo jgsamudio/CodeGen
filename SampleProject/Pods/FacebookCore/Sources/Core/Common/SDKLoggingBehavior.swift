@@ -58,6 +58,9 @@ public enum SDKLoggingBehavior {
 }
 
 extension SDKLoggingBehavior {
+    
+    // MARK: - Initialization
+    
   internal init?(sdkStringValue: String) {
     switch sdkStringValue {
     case FBSDKLoggingBehaviorAccessTokens: self = .accessTokens
@@ -74,6 +77,8 @@ extension SDKLoggingBehavior {
     }
   }
 
+    // MARK: - Public Properties
+    
   internal var sdkStringValue: String {
     switch self {
     case .accessTokens: return FBSDKLoggingBehaviorAccessTokens

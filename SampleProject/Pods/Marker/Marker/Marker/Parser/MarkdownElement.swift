@@ -21,6 +21,8 @@ internal enum MarkdownElement {
     case strikethrough(Range<Index>)
     case underline(Range<Index>)
     
+    // MARK: - Public Properties
+    
     /// Range of characters that the elements apply to.
     var range: Range<Index> {
         switch self {

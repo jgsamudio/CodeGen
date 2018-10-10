@@ -29,6 +29,9 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 class NFXStatisticsController: NFXGenericController
 {
+    
+    // MARK: - Public Properties
+    
     var totalModels: Int = 0
 
     var successfulRequests: Int = 0
@@ -41,6 +44,8 @@ class NFXStatisticsController: NFXGenericController
     
     var fastestResponseTime: Float = 999
     var slowestResponseTime: Float = 0
+    
+    // MARK: - Public Functions
     
     func getReportString() -> NSAttributedString
     {

@@ -72,11 +72,15 @@ public enum AppEventName {
 
    - parameter string: String to create an app event name from.
    */
+    
+    // MARK: - Initialization
+    
   public init(_ string: String) {
     self = .custom(string)
   }
 }
 
+// MARK: - RawRepresentable
 extension AppEventName: RawRepresentable {
   /**
    Create an `AppEventName` from `String`.
@@ -87,6 +91,8 @@ extension AppEventName: RawRepresentable {
     self = .custom(rawValue)
   }
 
+    // MARK: - Public Properties
+    
   /// The corresponding `String` value.
   public var rawValue: String {
     switch self {
@@ -111,6 +117,7 @@ extension AppEventName: RawRepresentable {
   }
 }
 
+// MARK: - ExpressibleByStringLiteral
 extension AppEventName: ExpressibleByStringLiteral {
   /**
    Create an `AppEventName` from a string literal.
@@ -140,6 +147,7 @@ extension AppEventName: ExpressibleByStringLiteral {
   }
 }
 
+// MARK: - Hashable
 extension AppEventName: Hashable {
   /// The hash value.
   public var hashValue: Int {
@@ -154,11 +162,15 @@ extension AppEventName: Hashable {
 
    - returns: Whether or not the app event names are equal.
    */
+    
+    // MARK: - Public Functions
+    
   public static func == (lhs: AppEventName, rhs: AppEventName) -> Bool {
     return lhs.rawValue == rhs.rawValue
   }
 }
 
+// MARK: - CustomStringConvertible
 extension AppEventName: CustomStringConvertible {
   /// Textual representation of an app event name.
   public var description: String {

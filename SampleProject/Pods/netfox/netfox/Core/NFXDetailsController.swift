@@ -36,6 +36,8 @@ class NFXDetailsController: NFXGenericController {
         case response
     }
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
@@ -43,6 +45,9 @@ class NFXDetailsController: NFXGenericController {
     
     func getInfoStringFromObject(_ object: NFXHTTPModel) -> NSAttributedString
     {
+    
+    // MARK: - Public Properties
+    
         var tempString: String
         tempString = String()
         

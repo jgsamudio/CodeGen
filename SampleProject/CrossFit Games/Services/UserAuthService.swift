@@ -11,6 +11,8 @@ import Foundation
 /// Consists of all the user authentication operations
 struct UserAuthService {
 
+    // MARK: - Public Properties
+    
     let httpClient: HTTPClientProtocol
     let userDataStore: UserDataStore
     let authClient: AuthHTTPClient
@@ -18,8 +20,12 @@ struct UserAuthService {
 
     let sessionService: SessionService
 
+    // MARK: - Private Properties
+    
     private let meRequestURL = "oauth2/me"
 
+    // MARK: - Public Functions
+    
     /// Authorizes user first and if successful, then gets detailed user information
     ///
     /// - Parameters:

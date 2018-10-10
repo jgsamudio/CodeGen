@@ -29,6 +29,8 @@ open class SessionDelegate: NSObject {
 
     // MARK: URLSessionDelegate Overrides
 
+    // MARK: - Public Properties
+    
     /// Overrides default behavior for URLSessionDelegate method `urlSession(_:didBecomeInvalidWithError:)`.
     open var sessionDidBecomeInvalidWithError: ((URLSession, Error?) -> Void)?
 
@@ -163,6 +165,8 @@ open class SessionDelegate: NSObject {
     var retrier: RequestRetrier?
     weak var sessionManager: SessionManager?
 
+    // MARK: - Private Properties
+    
     private var requests: [Int: Request] = [:]
     private let lock = NSLock()
 
@@ -180,6 +184,8 @@ open class SessionDelegate: NSObject {
 
     // MARK: Lifecycle
 
+    // MARK: - Initialization
+    
     /// Initializes the `SessionDelegate` instance.
     ///
     /// - returns: The new `SessionDelegate` instance.
@@ -189,6 +195,8 @@ open class SessionDelegate: NSObject {
 
     // MARK: NSObject Overrides
 
+    // MARK: - Public Functions
+    
     /// Returns a `Bool` indicating whether the `SessionDelegate` implements or inherits a method that can respond
     /// to a specified message.
     ///
@@ -236,6 +244,7 @@ open class SessionDelegate: NSObject {
 
 // MARK: - URLSessionDelegate
 
+// MARK: - URLSessionDelegate
 extension SessionDelegate: URLSessionDelegate {
     /// Tells the delegate that the session has been invalidated.
     ///
@@ -300,6 +309,7 @@ extension SessionDelegate: URLSessionDelegate {
 
 // MARK: - URLSessionTaskDelegate
 
+// MARK: - URLSessionTaskDelegate
 extension SessionDelegate: URLSessionTaskDelegate {
     /// Tells the delegate that the remote server requested an HTTP redirect.
     ///
@@ -493,6 +503,7 @@ extension SessionDelegate: URLSessionTaskDelegate {
 
 // MARK: - URLSessionDataDelegate
 
+// MARK: - URLSessionDataDelegate
 extension SessionDelegate: URLSessionDataDelegate {
     /// Tells the delegate that the data task received the initial reply (headers) from the server.
     ///
@@ -591,6 +602,7 @@ extension SessionDelegate: URLSessionDataDelegate {
 
 // MARK: - URLSessionDownloadDelegate
 
+// MARK: - URLSessionDownloadDelegate
 extension SessionDelegate: URLSessionDownloadDelegate {
     /// Tells the delegate that a download task has finished downloading.
     ///
@@ -674,6 +686,7 @@ extension SessionDelegate: URLSessionDownloadDelegate {
 
 #if !os(watchOS)
 
+// MARK: - URLSessionStreamDelegate
 @available(iOS 9.0, macOS 10.11, tvOS 9.0, *)
 extension SessionDelegate: URLSessionStreamDelegate {
     /// Tells the delegate that the read side of the connection has been closed.

@@ -137,6 +137,8 @@ struct AnalyticsKey {
         case followAthleteStatsView = "Follow Athlete Stats View"
     }
 
+    // MARK: - Public Functions
+    
     /// Returns the screen name for a given viewcontroller
     ///
     /// - Parameter viewController: viewcontroller which is to be translated to the screen name

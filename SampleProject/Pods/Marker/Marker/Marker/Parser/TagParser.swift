@@ -11,10 +11,14 @@ import Foundation
 /// Type for parsing symbols.
 struct TagParser {
     
+    // MARK: - Public Properties
+    
     /// Symbols to parse.
     let symbols: [Symbol]
     
     // MARK: - Init/deinit
+    
+    // MARK: - Initialization
     
     /// Initializes parser with specified list of symbols.
     ///
@@ -28,6 +32,8 @@ struct TagParser {
     }
         
     // MARK: - Internal functions
+    
+    // MARK: - Public Functions
     
     /// Parses and returns a list of tags containing the symbols in the receiver.
     ///

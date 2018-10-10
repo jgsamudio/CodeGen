@@ -22,6 +22,9 @@ import Foundation
  Represents a generic response that was received when `GraphRequest` succeeded.
  */
 public struct GraphResponse: GraphResponseProtocol {
+    
+    // MARK: - Private Properties
+    
   fileprivate let rawResponse: Any?
 
   /**
@@ -30,6 +33,9 @@ public struct GraphResponse: GraphResponseProtocol {
    - parameter rawResponse: Raw response received from a server.
    Usually is represented by either a `Dictionary` or `Array`.
    */
+    
+    // MARK: - Initialization
+    
   public init(rawResponse: Any?) {
     self.rawResponse = rawResponse
   }
@@ -38,6 +44,9 @@ public struct GraphResponse: GraphResponseProtocol {
    Converts and returns a response in a form of `Dictionary<String, Any>`.
    If the conversion fails or there is was response - returns `nil`.
    */
+    
+    // MARK: - Public Properties
+    
   public var dictionaryValue: [String : Any]? {
     return rawResponse as? [String : Any]
   }

@@ -10,12 +10,16 @@
 /// By default it helps dequeue a system UITableViewCell with the given title, subtitle and the accessoryType.
 public struct YoshiMenuCellDataSource: YoshiReusableCellDataSource {
 
+    // MARK: - Private Properties
+    
     private let title: String
 
     private let subtitle: String?
 
     private let accessoryType: UITableViewCellAccessoryType
 
+    // MARK: - Initialization
+    
     /// Initalize the YoshiMenuCellDataSource instance
     ///
     /// - Parameters:
@@ -27,7 +31,12 @@ public struct YoshiMenuCellDataSource: YoshiReusableCellDataSource {
         self.accessoryType = accessoryType
     }
 
+    // MARK: - Public Functions
+    
     public func cellFor(tableView: UITableView) -> UITableViewCell {
+    
+    // MARK: - Public Properties
+    
         let cell = tableView.dequeueReusableCell(withIdentifier: YoshiMenuCellDataSource.reuseIdentifier) ??
             UITableViewCell(style: .subtitle, reuseIdentifier: YoshiMenuCellDataSource.reuseIdentifier)
 

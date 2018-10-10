@@ -25,6 +25,8 @@ import Foundation
  */
 public struct Permission {
 
+    // MARK: - Public Properties
+    
   /// Name of the permission.
   public let name: String
 
@@ -33,11 +35,15 @@ public struct Permission {
 
    - parameter name: Name of the permission.
    */
+    
+    // MARK: - Initialization
+    
   public init(name: String) {
     self.name = name
   }
 }
 
+// MARK: - ExpressibleByStringLiteral
 extension Permission: ExpressibleByStringLiteral {
   /**
    Create a permission with a string value.
@@ -67,6 +73,7 @@ extension Permission: ExpressibleByStringLiteral {
   }
 }
 
+// MARK: - Hashable
 extension Permission: Hashable {
 
   /// The hash value.
@@ -82,6 +89,9 @@ extension Permission: Hashable {
 
    - returns: Whether or not the permissions are equal.
    */
+    
+    // MARK: - Public Functions
+    
   public static func == (lhs: Permission, rhs: Permission) -> Bool {
     return lhs.name == rhs.name
   }

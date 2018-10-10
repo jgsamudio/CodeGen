@@ -36,12 +36,17 @@ import Cocoa
 /// should be cancelled using the `RequestReceipt` instead of calling `cancel` directly on the `request` itself. The
 /// `ImageDownloader` is optimized to handle duplicate request scenarios as well as pending versus active downloads.
 open class RequestReceipt {
+    
+    // MARK: - Public Properties
+    
     /// The download request created by the `ImageDownloader`.
     open let request: Request
 
     /// The unique identifier for the image filters and completion handlers when duplicate requests are made.
     open let receiptID: String
 
+    // MARK: - Initialization
+    
     init(request: Request, receiptID: String) {
         self.request = request
         self.receiptID = receiptID
@@ -114,6 +119,8 @@ open class ImageDownloader {
     var queuedRequests: [Request] = []
     var responseHandlers: [String: ResponseHandler] = [:]
 
+    // MARK: - Private Properties
+    
     private let synchronizationQueue: DispatchQueue = {
         let name = String(format: "org.alamofire.imagedownloader.synchronizationqueue-%08x%08x", arc4random(), arc4random())
         return DispatchQueue(label: name)
@@ -129,6 +136,8 @@ open class ImageDownloader {
     /// The default instance of `ImageDownloader` initialized with default values.
     open static let `default` = ImageDownloader()
 
+    // MARK: - Public Functions
+    
     /// Creates a default `URLSessionConfiguration` with common usage parameter values.
     ///
     /// - returns: The default `URLSessionConfiguration` instance.

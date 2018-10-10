@@ -33,6 +33,8 @@ internal enum ConstraintRelation : Int {
     case lessThanOrEqual
     case greaterThanOrEqual
     
+    // MARK: - Public Properties
+    
     internal var layoutRelation: LayoutRelation {
         get {
             switch(self) {

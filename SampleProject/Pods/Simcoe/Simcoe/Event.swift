@@ -9,6 +9,8 @@
 /// A Simcoe Event.
 internal struct Event {
 
+    // MARK: - Public Properties
+    
     /// The write actions that occurred in this event.
     let writeEvents: [WriteEvent]
 

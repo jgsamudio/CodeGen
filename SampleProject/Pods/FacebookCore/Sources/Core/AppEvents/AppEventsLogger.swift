@@ -83,6 +83,9 @@ public class AppEventsLogger {
 
    - parameter application: Optional instance of UIApplication. Default: `UIApplication.sharedApplication()`.
    */
+    
+    // MARK: - Public Functions
+    
   public static func activate(_ application: UIApplication = UIApplication.shared) {
     FBSDKAppEvents.activateApp()
   }
@@ -98,6 +101,9 @@ public class AppEventsLogger {
    - parameter accessToken: Optional access token to use to log the event. Default: `AccessToken.current`.
    */
   public static func log(_ event: AppEventLoggable, accessToken: AccessToken? = AccessToken.current) {
+    
+    // MARK: - Public Properties
+    
     let valueToSum = event.valueToSum.map({ NSNumber(value: $0 as Double) })
     let parameters = event.parameters.keyValueMap {
       ($0.0.rawValue as NSString, $0.1.appEventParameterValue)

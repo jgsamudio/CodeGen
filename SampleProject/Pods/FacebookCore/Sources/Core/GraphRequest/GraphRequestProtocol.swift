@@ -59,7 +59,13 @@ extension GraphRequestProtocol {
 
    - parameter completion: Optional completion closure that is going to be called when the connection finishes or fails.
    */
+    
+    // MARK: - Public Functions
+    
   public func start(_ completion: GraphRequestConnection.Completion<Self>? = nil) {
+    
+    // MARK: - Public Properties
+    
     let connection = GraphRequestConnection()
     connection.add(self, completion: completion)
     connection.start()

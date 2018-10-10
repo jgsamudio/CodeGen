@@ -11,6 +11,8 @@ import UIKit
 /// Displays Account information
 final class AccountTableViewCell: UITableViewCell {
 
+    // MARK: - Public Properties
+    
     /// Height Estimate for cell
     static let heightEstimate = CGFloat(56)
 
@@ -21,6 +23,8 @@ final class AccountTableViewCell: UITableViewCell {
         }
     }
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var label: StyleableLabel!
 
 }

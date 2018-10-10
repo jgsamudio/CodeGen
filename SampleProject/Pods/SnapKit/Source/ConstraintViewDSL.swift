@@ -30,6 +30,8 @@
 
 public struct ConstraintViewDSL: ConstraintAttributesDSL {
     
+    // MARK: - Public Functions
+    
     @discardableResult
     public func prepareConstraints(_ closure: (_ make: ConstraintMaker) -> Void) -> [Constraint] {
         return ConstraintMaker.prepareConstraints(item: self.view, closure: closure)
@@ -50,6 +52,8 @@ public struct ConstraintViewDSL: ConstraintAttributesDSL {
     public func removeConstraints() {
         ConstraintMaker.removeConstraints(item: self.view)
     }
+    
+    // MARK: - Public Properties
     
     public var contentHuggingHorizontalPriority: Float {
         get {
@@ -92,6 +96,8 @@ public struct ConstraintViewDSL: ConstraintAttributesDSL {
     }
     
     internal let view: ConstraintView
+    
+    // MARK: - Initialization
     
     internal init(view: ConstraintView) {
         self.view = view

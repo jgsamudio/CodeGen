@@ -9,12 +9,16 @@
 /// The date picker view controller.
 internal class DebugDatePickerViewController: UIViewController {
 
+    // MARK: - Private Properties
+    
     private var selectorMenu: YoshiDateSelectorMenu?
 
     @IBOutlet private weak var datePicker: UIDatePicker!
 
     // MARK: - Initializers
 
+    // MARK: - Initialization
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -25,6 +29,8 @@ internal class DebugDatePickerViewController: UIViewController {
 
     // MARK: - View Lifecycle Functions
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDatePicker()
@@ -47,6 +53,8 @@ internal class DebugDatePickerViewController: UIViewController {
         datePicker.date = selectorMenu?.selectedDate as Date? ?? Date()
         navigationItem.title = selectorMenu?.title
 
+    // MARK: - Public Properties
+    
         let closeButton = UIBarButtonItem(title: "Apply",
                                           style: .plain,
                                           target: self,

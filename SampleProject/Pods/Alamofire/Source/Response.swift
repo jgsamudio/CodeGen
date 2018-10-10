@@ -26,6 +26,9 @@ import Foundation
 
 /// Used to store all data associated with an non-serialized response of a data or upload request.
 public struct DefaultDataResponse {
+    
+    // MARK: - Public Properties
+    
     /// The URL request sent to the server.
     public let request: URLRequest?
 
@@ -43,6 +46,8 @@ public struct DefaultDataResponse {
 
     var _metrics: AnyObject?
 
+    // MARK: - Initialization
+    
     /// Creates a `DefaultDataResponse` instance from the specified parameters.
     ///
     /// - Parameters:
@@ -121,6 +126,7 @@ public struct DataResponse<Value> {
 
 // MARK: -
 
+// MARK: - CustomStringConvertible, CustomDebugStringConvertible
 extension DataResponse: CustomStringConvertible, CustomDebugStringConvertible {
     /// The textual representation used when written to an output stream, which includes whether the result was a
     /// success or failure.
@@ -146,6 +152,9 @@ extension DataResponse: CustomStringConvertible, CustomDebugStringConvertible {
 // MARK: -
 
 extension DataResponse {
+    
+    // MARK: - Public Functions
+    
     /// Evaluates the specified closure when the result of this `DataResponse` is a success, passing the unwrapped
     /// result value as a parameter.
     ///
@@ -324,6 +333,7 @@ public struct DownloadResponse<Value> {
 
 // MARK: -
 
+// MARK: - CustomStringConvertible, CustomDebugStringConvertible
 extension DownloadResponse: CustomStringConvertible, CustomDebugStringConvertible {
     /// The textual representation used when written to an output stream, which includes whether the result was a
     /// success or failure.
@@ -432,6 +442,7 @@ extension Response {
 
 // MARK: -
 
+// MARK: - Response
 @available(iOS 10.0, macOS 10.12, tvOS 10.0, *)
 extension DefaultDataResponse: Response {
 #if !os(watchOS)
@@ -440,6 +451,7 @@ extension DefaultDataResponse: Response {
 #endif
 }
 
+// MARK: - Response
 @available(iOS 10.0, macOS 10.12, tvOS 10.0, *)
 extension DataResponse: Response {
 #if !os(watchOS)
@@ -448,6 +460,7 @@ extension DataResponse: Response {
 #endif
 }
 
+// MARK: - Response
 @available(iOS 10.0, macOS 10.12, tvOS 10.0, *)
 extension DefaultDownloadResponse: Response {
 #if !os(watchOS)
@@ -456,6 +469,7 @@ extension DefaultDownloadResponse: Response {
 #endif
 }
 
+// MARK: - Response
 @available(iOS 10.0, macOS 10.12, tvOS 10.0, *)
 extension DownloadResponse: Response {
 #if !os(watchOS)

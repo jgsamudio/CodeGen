@@ -28,6 +28,8 @@ import FBSDKCoreKit
  */
 public struct AccessToken {
 
+    // MARK: - Public Properties
+    
   /// The application id for this token.
   public let appId: String
 
@@ -60,6 +62,9 @@ public struct AccessToken {
    - parameter grantedPermissions:  Set of known granted permissions.
    - parameter declinedPermissions: Set of known declined permissions.
    */
+    
+    // MARK: - Initialization
+    
   public init(appId: String = SDKSettings.appId,
               authenticationToken: String,
               userId: String? = nil,
@@ -104,6 +109,9 @@ extension AccessToken {
    - note: If a token is already expired, it can't be refreshed.
    - parameter completion: Optional completion to call when the token was refreshed or failed.
    */
+    
+    // MARK: - Public Functions
+    
   public static func refreshCurrentToken(_ completion: ((AccessToken?, Error?) -> Void)? = nil) {
     FBSDKAccessToken.refreshCurrentAccessToken { (_, _, error: Error?) in
       completion?(self.current, error)
@@ -137,6 +145,7 @@ extension AccessToken {
   }
 }
 
+// MARK: - Private Functions
 private extension FBSDKAccessToken {
   var grantedSwiftPermissions: Set<Permission>? {
     return (permissions?.flatMap({ $0 as? String }).map({ Permission(name: $0) })).map(Set.init)

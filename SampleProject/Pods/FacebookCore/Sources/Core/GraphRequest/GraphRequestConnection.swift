@@ -35,6 +35,8 @@ public class GraphRequestConnection {
   /// A type of the closure that could be used to track network errors of a specific connection.
   public typealias NetworkFailureHandler = (Error) -> Void
 
+    // MARK: - Public Properties
+    
   /// Network progress closure that is going to be called every time data is sent to the server.
   public var networkProgressHandler: NetworkProgressHandler? = nil {
     didSet {
@@ -59,12 +61,17 @@ public class GraphRequestConnection {
     }
   }
 
+    // MARK: - Private Properties
+    
   fileprivate var sdkConnection = FBSDKGraphRequestConnection()
   fileprivate var sdkDelegateBridge = GraphRequestConnectionDelegateBridge()
 
   /**
    Initializes a connection.
    */
+    
+    // MARK: - Initialization
+    
   public init() {
     sdkDelegateBridge.setupAsDelegateFor(sdkConnection)
   }
@@ -86,6 +93,9 @@ extension GraphRequestConnection {
    As described in [Graph API Batch Requests](https://developers.facebook.com/docs/reference/api/batch/).
    - parameter completion:     Optional completion closure that is going to be called when the connection finishes or fails.
    */
+    
+    // MARK: - Public Functions
+    
   public func add<T>(_ request: T,
                   batchEntryName: String? = nil,
                   completion: Completion<T>? = nil) {

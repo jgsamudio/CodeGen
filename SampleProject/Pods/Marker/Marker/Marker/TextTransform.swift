@@ -23,6 +23,8 @@ public enum TextTransform {
     case capitalized
     case custom((String) -> String)
     
+    // MARK: - Public Functions
+    
     /// Returns argument string with transformation applied
     ///
     /// - Parameter string: String to be transformed.

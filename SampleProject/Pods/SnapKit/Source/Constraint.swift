@@ -29,9 +29,13 @@
 
 public final class Constraint {
 
+    // MARK: - Public Properties
+    
     internal let sourceLocation: (String, UInt)
     internal let label: String?
 
+    // MARK: - Private Properties
+    
     private let from: ConstraintItem
     private let to: ConstraintItem
     private let relation: ConstraintRelation
@@ -59,6 +63,8 @@ public final class Constraint {
     
     // MARK: Initialization
 
+    // MARK: - Initialization
+    
     internal init(from: ConstraintItem,
                   to: ConstraintItem,
                   relation: ConstraintRelation,
@@ -178,6 +184,8 @@ public final class Constraint {
 
     // MARK: Public
 
+    // MARK: - Public Functions
+    
     @available(*, deprecated:3.0, message:"Use activate().")
     public func install() {
         self.activate()

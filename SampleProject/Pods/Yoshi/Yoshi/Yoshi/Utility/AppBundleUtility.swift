@@ -14,6 +14,9 @@ internal class AppBundleUtility: NSObject {
 
      - returns: The application version.
      */
+    
+    // MARK: - Public Functions
+    
     class func appVersionText() -> String {
         return "Version \(AppBundleUtility.appVersionNumber())"
             + " (\(AppBundleUtility.appBuildNumber()))"
@@ -25,6 +28,9 @@ internal class AppBundleUtility: NSObject {
      - returns: The bundle icon, if any.
      */
     class func icon() -> UIImage? {
+    
+    // MARK: - Public Properties
+    
         let appBundleIconsKey = "CFBundleIcons"
         let appBundlePrimaryIconKey = "CFBundlePrimaryIcon"
         let iconFilesKey = "CFBundleIconFiles"

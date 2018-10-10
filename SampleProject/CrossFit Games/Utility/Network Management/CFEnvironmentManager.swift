@@ -14,6 +14,8 @@ import Foundation
 /// User selections are saved in user defaults
 final class CFEnvironmentManager: HTTPEnvironmentManager {
 
+    // MARK: - Public Properties
+    
     /// Stores the current environment for general APIs
     var currentGeneralEnvironment: HTTPEnvironment! {
         if let environmentString = UserDefaultsManager.shared.getValue(byKey: .currentGeneralEnvironment) as? String {
@@ -38,6 +40,8 @@ final class CFEnvironmentManager: HTTPEnvironmentManager {
     /// Manages the shared instance (singleton) of CFEnvironmentManager
     static var shared: CFEnvironmentManager = CFEnvironmentManager()
 
+    // MARK: - Initialization
+    
     private init() {
         prepareEnvironments()
     }
@@ -103,6 +107,8 @@ final class CFEnvironmentManager: HTTPEnvironmentManager {
         }
     }
 
+    // MARK: - Public Functions
+    
     /// Persists user preeferred function in user defaults
     ///
     /// - Parameters:

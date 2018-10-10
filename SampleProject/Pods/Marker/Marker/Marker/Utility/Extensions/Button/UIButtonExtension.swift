@@ -10,6 +10,8 @@ import UIKit
 
 public extension UIButton {
     
+    // MARK: - Public Functions
+    
     /// Sets the button's title to an attributed string created from the specified string and text style.
     ///
     /// - Parameters:

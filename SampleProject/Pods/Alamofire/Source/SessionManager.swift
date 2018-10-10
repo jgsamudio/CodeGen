@@ -43,6 +43,8 @@ open class SessionManager {
 
     // MARK: - Properties
 
+    // MARK: - Public Properties
+    
     /// A default instance of `SessionManager`, used by top-level Alamofire request methods, and suitable for use
     /// directly for any ad hoc requests.
     open static let `default`: SessionManager = {
@@ -153,6 +155,8 @@ open class SessionManager {
 
     // MARK: - Lifecycle
 
+    // MARK: - Initialization
+    
     /// Creates an instance with the specified `configuration`, `delegate` and `serverTrustPolicyManager`.
     ///
     /// - parameter configuration:            The configuration used to construct the managed session.
@@ -212,6 +216,8 @@ open class SessionManager {
 
     // MARK: - Data Request
 
+    // MARK: - Public Functions
+    
     /// Creates a `DataRequest` to retrieve the contents of the specified `url`, `method`, `parameters`, `encoding`
     /// and `headers`.
     ///

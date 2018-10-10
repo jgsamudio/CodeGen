@@ -11,6 +11,8 @@ import Foundation
 /// Component to add to a picker view controller.
 struct PickerViewComponent {
 
+    // MARK: - Public Properties
+    
     /// Values to display in the picker.
     let displayValues: [PickerViewRow]
 

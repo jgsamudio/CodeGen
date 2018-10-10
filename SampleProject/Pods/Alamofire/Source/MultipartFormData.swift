@@ -47,6 +47,9 @@ open class MultipartFormData {
     // MARK: - Helper Types
 
     struct EncodingCharacters {
+    
+    // MARK: - Public Properties
+    
         static let crlf = "\r\n"
     }
 
@@ -55,6 +58,8 @@ open class MultipartFormData {
             case initial, encapsulated, final
         }
 
+    // MARK: - Public Functions
+    
         static func randomBoundary() -> String {
             return String(format: "alamofire.boundary.%08x%08x", arc4random(), arc4random())
         }
@@ -82,6 +87,8 @@ open class MultipartFormData {
         var hasInitialBoundary = false
         var hasFinalBoundary = false
 
+    // MARK: - Initialization
+    
         init(headers: HTTPHeaders, bodyStream: InputStream, bodyContentLength: UInt64) {
             self.headers = headers
             self.bodyStream = bodyStream
@@ -100,6 +107,8 @@ open class MultipartFormData {
     /// The boundary used to separate the body parts in the encoded form data.
     public let boundary: String
 
+    // MARK: - Private Properties
+    
     private var bodyParts: [BodyPart]
     private var bodyPartError: AFError?
     private let streamBufferSize: Int

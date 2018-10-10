@@ -12,8 +12,11 @@ import Foundation
 
 // MARK: Equatable
 
+// MARK: - Equatable
 extension TextTransform: Equatable { }
 
+    // MARK: - Public Functions
+    
 /// Returns a Boolean value indicating whether two TextTransform are equal.
 /// NOTE: This function always returns false if one of the transforms are `custom` 
 /// since there is no good way to compare the associated functions.

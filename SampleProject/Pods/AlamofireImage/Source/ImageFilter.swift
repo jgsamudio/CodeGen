@@ -42,6 +42,9 @@ public protocol ImageFilter {
 }
 
 extension ImageFilter {
+    
+    // MARK: - Public Properties
+    
     /// The unique identifier for any `ImageFilter` type.
     public var identifier: String { return "\(type(of: self))" }
 }
@@ -90,6 +93,8 @@ public struct DynamicImageFilter: ImageFilter {
     /// A closure used to create an alternative representation of the given image.
     public let filter: (Image) -> Image
 
+    // MARK: - Initialization
+    
     /// Initializes the `DynamicImageFilter` instance with the specified identifier and filter closure.
     ///
     /// - parameter identifier: The unique identifier of the filter.

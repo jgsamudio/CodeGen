@@ -30,17 +30,22 @@ final class ArgumentParser {
         let directory = arguments[1]
         let fileNames = FileRetriever.retrieveFilenames(at: directory, fileExtensions: [".swift"])
         let config = try loadConfig(directory: directory)
-
+        let group = DispatchGroup()
         // Parse files.
         for fileName in fileNames {
-            DispatchQueue.global().async { [unowned self] in
+            group.enter()
+            DispatchQueue.global().async {
                 do {
                     try self.parse(fileName: fileName, directory: directory, config: config)
+                    group.leave()
                 } catch {
-                    print("Parsing Error")
+                    print("Parsing Error: \(fileName)")
+                    group.leave()
                 }
             }
         }
+        group.wait()
+        
         // Store config generators for next run.
         storeConfigGenerators(config: config)
         print("The task took \(timer.stop()) seconds.")

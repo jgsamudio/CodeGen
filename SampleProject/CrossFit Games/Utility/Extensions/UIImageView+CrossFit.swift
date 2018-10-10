@@ -10,10 +10,15 @@ import UIKit
 
 extension UIImageView {
 
+    // MARK: - Public Functions
+    
     /// Downloads for specified imageURL. If imageURL is nil, a placeholder image will be set.
     ///
     /// - Parameter imageURL: URL to fetch and update image view with
     func download(imageURL: URL?) {
+    
+    // MARK: - Public Properties
+    
         let placeholderImage = UIImage.image(with: UIColor(displayP3Red: 248/255, green: 248/255, blue: 248/255, alpha: 1))
         guard let imageURL = imageURL else {
             image = placeholderImage

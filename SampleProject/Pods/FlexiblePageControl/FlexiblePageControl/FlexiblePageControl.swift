@@ -12,6 +12,8 @@ public class FlexiblePageControl: UIView {
 
     // MARK: public
 
+    // MARK: - Public Properties
+    
     public var pageIndicatorTintColor: UIColor = UIColor(red:0.86, green:0.86, blue:0.86, alpha:1.00) {
         didSet {
             updateDotColor(currentPage: currentPage)
@@ -79,6 +81,8 @@ public class FlexiblePageControl: UIView {
         }
     }
 
+    // MARK: - Initialization
+    
     public init() {
 
         super.init(frame: .zero)
@@ -102,6 +106,8 @@ public class FlexiblePageControl: UIView {
         updateViewSize()
     }
 
+    // MARK: - Public Functions
+    
     public override func layoutSubviews() {
 
         super.layoutSubviews()
@@ -128,6 +134,8 @@ public class FlexiblePageControl: UIView {
 
     // MARK: private
 
+    // MARK: - Private Properties
+    
     private let scrollView: UIScrollView = UIScrollView()
 
     private var canScroll: Bool = false

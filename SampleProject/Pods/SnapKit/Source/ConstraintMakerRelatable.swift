@@ -30,11 +30,17 @@
 
 public class ConstraintMakerRelatable {
     
+    // MARK: - Public Properties
+    
     internal let description: ConstraintDescription
+    
+    // MARK: - Initialization
     
     internal init(_ description: ConstraintDescription) {
         self.description = description
     }
+    
+    // MARK: - Public Functions
     
     internal func relatedTo(_ other: ConstraintRelatableTarget, relation: ConstraintRelation, file: String, line: UInt) -> ConstraintMakerEditable {
         let related: ConstraintItem

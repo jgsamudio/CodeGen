@@ -36,6 +36,9 @@ public enum AFIError: Error {
 // MARK: - Error Booleans
 
 extension AFIError {
+    
+    // MARK: - Public Properties
+    
     /// Returns `true` if the `AFIError` is a request cancellation error, `false` otherwise.
     public var isRequestCancelledError: Bool {
         if case .requestCancelled = self { return true }
@@ -51,6 +54,7 @@ extension AFIError {
 
 // MARK: - Error Descriptions
 
+// MARK: - LocalizedError
 extension AFIError: LocalizedError {
     public var errorDescription: String? {
         switch self {

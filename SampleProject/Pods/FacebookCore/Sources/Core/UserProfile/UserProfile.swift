@@ -36,6 +36,9 @@ import FBSDKCoreKit.FBSDKProfile
  You can use this class to build your own `ProfilePictureView` or in place of typical requests to "/me".
  */
 public struct UserProfile {
+    
+    // MARK: - Public Properties
+    
   /// The user id.
   public let userId: String
 
@@ -68,6 +71,9 @@ public struct UserProfile {
    - parameter profileURL:  Optional user's profile URL.
    - parameter refreshDate: Optional user's last refresh date. Default: `NSDate()` aka current date/time.
    */
+    
+    // MARK: - Initialization
+    
   public init(userId: String,
               firstName: String? = nil,
               middleName: String? = nil,
@@ -103,6 +109,9 @@ extension UserProfile {
    - parameter userId:     Facebook user id of the profile to fetch.
    - parameter completion: The closure to be executed once the profile is refreshed.
    */
+    
+    // MARK: - Public Functions
+    
   public static func fetch(userId: String, completion: @escaping Completion) {
     let request = GraphRequest(graphPath: userId,
                                parameters: ["fields" : "first_name,middle_name,last_name,name,link"],

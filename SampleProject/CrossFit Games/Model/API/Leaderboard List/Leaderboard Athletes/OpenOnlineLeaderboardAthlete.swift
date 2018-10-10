@@ -25,6 +25,8 @@ struct OpenOnlineLeaderboardAthlete: LeaderboardAthlete, Decodable {
         case points = "overallscore"
     }
 
+    // MARK: - Public Properties
+    
     let affiliateId: String?
 
     let age: Int?
@@ -49,6 +51,8 @@ struct OpenOnlineLeaderboardAthlete: LeaderboardAthlete, Decodable {
 
     let rank: String?
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 

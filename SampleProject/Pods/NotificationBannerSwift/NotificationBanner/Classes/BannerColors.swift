@@ -24,6 +24,8 @@ public protocol BannerColorsProtocol {
 
 public class BannerColors: BannerColorsProtocol {
 
+    // MARK: - Public Functions
+    
     public func color(for style: BannerStyle) -> UIColor {
         switch style {
             case .danger:   return UIColor(red:0.90, green:0.31, blue:0.26, alpha:1.00)

@@ -10,6 +10,8 @@ import UIKit
 
 final class FollowAnAthleteModalViewController: UIViewController {
 
+    // MARK: - Private Properties
+    
     @IBOutlet private weak var singleAthleteView: UIView!
     @IBOutlet private weak var multiAthleteView: UIView!
     @IBOutlet private weak var multiAthleteInnerView: UIView!
@@ -22,6 +24,8 @@ final class FollowAnAthleteModalViewController: UIViewController {
 
     private let localization = LeaderboardLocalization()
 
+    // MARK: - Public Properties
+    
     var viewModel: FollowAnAthleteViewModel!
 
     weak var delegate: FollowAnAthleteDelegate!
@@ -31,6 +35,8 @@ final class FollowAnAthleteModalViewController: UIViewController {
 
     private let imageSize: CGFloat = 48
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.clear

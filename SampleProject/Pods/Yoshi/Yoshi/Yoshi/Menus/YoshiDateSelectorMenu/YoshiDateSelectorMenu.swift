@@ -21,6 +21,8 @@ public protocol YoshiDateSelectorMenu: class, YoshiMenu {
 
 public extension YoshiDateSelectorMenu {
 
+    // MARK: - Public Properties
+    
     /// Data source for the date selector style cell
     var cellSource: YoshiReusableCellDataSource {
         return YoshiDateSelectorMenuCellDataSource(title: title, date: selectedDate)
@@ -31,6 +33,9 @@ public extension YoshiDateSelectorMenu {
 
      - returns: A result for handling the selected menu item.
      */
+    
+    // MARK: - Public Functions
+    
     func execute() -> YoshiActionResult {
         let bundle = Bundle(for: YoshiConfigurationManager.self)
         let datePickerViewController =

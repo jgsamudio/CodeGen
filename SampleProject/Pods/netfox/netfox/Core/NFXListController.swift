@@ -9,9 +9,13 @@ import Foundation
 
 class NFXListController: NFXGenericController {
 
+    // MARK: - Public Properties
+    
     var tableData = [NFXHTTPModel]()
     var filteredTableData = [NFXHTTPModel]()
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()        
     }

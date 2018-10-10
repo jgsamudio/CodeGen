@@ -24,6 +24,8 @@ import Foundation
 public struct AppEvent: AppEventLoggable {
   public typealias ParametersDictionary = [AppEventParameterName : AppEventParameterValueType]
 
+    // MARK: - Public Properties
+    
   /// Name of the application event.
   public let name: AppEventName
 
@@ -43,6 +45,9 @@ public struct AppEvent: AppEventLoggable {
    - parameter parameters: Parameters dictionary. Default: empty.
    - parameter valueToSum: Optional value to sum. Default: `nil`.
    */
+    
+    // MARK: - Initialization
+    
   public init(name: AppEventName, parameters: ParametersDictionary = [:], valueToSum: Double? = nil) {
     self.name = name
     self.parameters = parameters
@@ -85,6 +90,7 @@ public protocol AppEventParameterValueType {
   var appEventParameterValue: Any { get }
 }
 
+// MARK: - AppEventParameterValueType
 extension NSNumber: AppEventParameterValueType {
   /// An object representation of `self`, suitable for parameter value of `AppEventLoggable`.
   public var appEventParameterValue: Any {
@@ -92,6 +98,7 @@ extension NSNumber: AppEventParameterValueType {
   }
 }
 
+// MARK: - AppEventParameterValueType
 extension IntegerLiteralType: AppEventParameterValueType {
   /// An object representation of `self`, suitable for parameter value of `AppEventLoggable`.
   public var appEventParameterValue: Any {
@@ -99,6 +106,7 @@ extension IntegerLiteralType: AppEventParameterValueType {
   }
 }
 
+// MARK: - AppEventParameterValueType
 extension FloatLiteralType: AppEventParameterValueType {
   /// An object representation of `self`, suitable for parameter value of `AppEventLoggable`.
   public var appEventParameterValue: Any {
@@ -106,6 +114,7 @@ extension FloatLiteralType: AppEventParameterValueType {
   }
 }
 
+// MARK: - AppEventParameterValueType
 extension String: AppEventParameterValueType {
   /// An object representation of `self`, suitable for parameter value of `AppEventLoggable`.
   public var appEventParameterValue: Any {

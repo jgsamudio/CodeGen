@@ -11,6 +11,8 @@ import Foundation
 /// Represents the valid period which a workout is going to exist
 struct WorkoutPeriod: Decodable {
 
+    // MARK: - Public Properties
+    
     /// Workout start time
     let startDate: Date
 
@@ -22,6 +24,8 @@ struct WorkoutPeriod: Decodable {
         case endTime = "value2"
     }
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         let startTimeInterval = try values.decode(TimeInterval.self, forKey: .startTime)

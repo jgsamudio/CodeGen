@@ -30,6 +30,8 @@
 
 public class LayoutConstraint : NSLayoutConstraint {
     
+    // MARK: - Public Properties
+    
     public var label: String? {
         get {
             return self.identifier
@@ -43,6 +45,8 @@ public class LayoutConstraint : NSLayoutConstraint {
     
 }
 
+    // MARK: - Public Functions
+    
 internal func ==(lhs: LayoutConstraint, rhs: LayoutConstraint) -> Bool {
     guard lhs.firstItem === rhs.firstItem &&
           lhs.secondItem === rhs.secondItem &&

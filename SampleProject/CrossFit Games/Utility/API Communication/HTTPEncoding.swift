@@ -17,6 +17,8 @@ enum HTTPEncoding {
     /// URL Encoding.
     case urlEncoding
 
+    // MARK: - Public Properties
+    
     var afEncoding: ParameterEncoding {
         switch self {
         case .json:

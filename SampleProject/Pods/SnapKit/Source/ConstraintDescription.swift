@@ -30,6 +30,8 @@
 
 public class ConstraintDescription {
     
+    // MARK: - Public Properties
+    
     internal let item: LayoutConstraintItem
     internal var attributes: ConstraintAttributes
     internal var relation: ConstraintRelation? = nil
@@ -60,6 +62,8 @@ public class ConstraintDescription {
     }()
     
     // MARK: Initialization
+    
+    // MARK: - Initialization
     
     internal init(item: LayoutConstraintItem, attributes: ConstraintAttributes) {
         self.item = item

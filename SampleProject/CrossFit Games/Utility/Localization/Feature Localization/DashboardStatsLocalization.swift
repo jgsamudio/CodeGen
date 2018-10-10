@@ -11,6 +11,8 @@ import Foundation
 /// Localization for Dashboard Stats
 struct DashboardStatsLocalization {
 
+    // MARK: - Public Properties
+    
     let overallRank = "DASHBOARD_STATS_OVERALL_RANK".localized
 
     let percentile = "DASHBOARD_STATS_PERCENTILE".localized
@@ -19,6 +21,8 @@ struct DashboardStatsLocalization {
 
     let checkBackLater = "DASHBOARD_STATS_CHECK_BACK_LATER".localized
 
+    // MARK: - Public Functions
+    
     func scoresAppearWhenOpenStarts(_ openYear: String) -> String {
         return String.localizedStringWithFormat("DASHBOARD_STATS_SCORE_APPEAR_WHEN_OPEN".localized, openYear)
     }

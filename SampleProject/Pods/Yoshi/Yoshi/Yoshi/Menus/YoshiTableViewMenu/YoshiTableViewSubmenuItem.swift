@@ -10,13 +10,19 @@
 /// This menu is interannly used to support YoshiTableViewMenu.
 internal struct YoshiTableViewSubmenuItem: YoshiGenericMenu {
 
+    // MARK: - Public Properties
+    
     let name: String
     let subtitle: String?
     var selected: Bool
 
+    // MARK: - Private Properties
+    
     private var tableViewMenuItem: YoshiTableViewMenuItem
     private var action: (_ displayItem: YoshiTableViewMenuItem) -> Void
 
+    // MARK: - Initialization
+    
     init(tableViewMenuItem: YoshiTableViewMenuItem, action: @escaping (_ displayItem: YoshiTableViewMenuItem) -> Void) {
         self.name = tableViewMenuItem.name
         self.subtitle = tableViewMenuItem.subtitle
@@ -29,6 +35,8 @@ internal struct YoshiTableViewSubmenuItem: YoshiGenericMenu {
         return YoshiMenuCellDataSource(title: name, subtitle: subtitle, accessoryType: selected ? .checkmark : .none)
     }
 
+    // MARK: - Public Functions
+    
     func execute() -> YoshiActionResult {
         action(tableViewMenuItem)
         return .pop

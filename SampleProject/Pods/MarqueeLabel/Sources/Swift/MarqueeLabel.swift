@@ -51,6 +51,9 @@ open class MarqueeLabel: UILabel, CAAnimationDelegate {
      
      - SeeAlso: textAlignment
      */
+    
+    // MARK: - Public Properties
+    
     open var type: MarqueeType = .continuous {
         didSet {
             if type == oldValue {
@@ -370,6 +373,9 @@ open class MarqueeLabel: UILabel, CAAnimationDelegate {
      - SeeAlso: controllerViewDidAppear:
      - SeeAlso: controllerViewWillAppear:
      */
+    
+    // MARK: - Public Functions
+    
     open class func restartLabelsOfController(_ controller: UIViewController) {
         MarqueeLabel.notifyController(controller, message: .Restart)
     }
@@ -438,6 +444,9 @@ open class MarqueeLabel: UILabel, CAAnimationDelegate {
      - Returns: An initialized `MarqueeLabel` object or nil if the object couldn't be created.
      - SeeAlso: fadeLength
      */
+    
+    // MARK: - Initialization
+    
     public init(frame: CGRect, rate: CGFloat, fadeLength fade: CGFloat) {
         speed = .rate(rate)
         fadeLength = CGFloat(min(fade, frame.size.width/2.0))
@@ -1131,6 +1140,8 @@ open class MarqueeLabel: UILabel, CAAnimationDelegate {
     //
     // MARK: - Private details
     //
+    
+    // MARK: - Private Properties
     
     private var sublabel = UILabel()
     

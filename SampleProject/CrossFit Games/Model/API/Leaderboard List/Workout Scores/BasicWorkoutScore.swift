@@ -19,6 +19,8 @@ struct BasicWorkoutScore: WorkoutScore, Decodable {
         case scoreDetails = "scoredetails"
     }
 
+    // MARK: - Public Properties
+    
     let breakdown: String?
 
     let judge: String?
@@ -31,6 +33,8 @@ struct BasicWorkoutScore: WorkoutScore, Decodable {
 
     var ordinalID: String = "0"
 
+    // MARK: - Initialization
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         if let nestedContainer = try? container.nestedContainer(keyedBy: CodingKeys.self, forKey: .scoreDetails) {

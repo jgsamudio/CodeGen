@@ -34,7 +34,10 @@ public protocol ConstraintMultiplierTarget {
     
 }
 
+// MARK: - ConstraintMultiplierTarget
 extension Int: ConstraintMultiplierTarget {
+    
+    // MARK: - Public Properties
     
     public var constraintMultiplierTargetValue: CGFloat {
         return CGFloat(self)
@@ -42,6 +45,7 @@ extension Int: ConstraintMultiplierTarget {
     
 }
 
+// MARK: - ConstraintMultiplierTarget
 extension UInt: ConstraintMultiplierTarget {
     
     public var constraintMultiplierTargetValue: CGFloat {
@@ -50,6 +54,7 @@ extension UInt: ConstraintMultiplierTarget {
     
 }
 
+// MARK: - ConstraintMultiplierTarget
 extension Float: ConstraintMultiplierTarget {
     
     public var constraintMultiplierTargetValue: CGFloat {
@@ -58,6 +63,7 @@ extension Float: ConstraintMultiplierTarget {
     
 }
 
+// MARK: - ConstraintMultiplierTarget
 extension Double: ConstraintMultiplierTarget {
     
     public var constraintMultiplierTargetValue: CGFloat {
@@ -66,6 +72,7 @@ extension Double: ConstraintMultiplierTarget {
     
 }
 
+// MARK: - ConstraintMultiplierTarget
 extension CGFloat: ConstraintMultiplierTarget {
     
     public var constraintMultiplierTargetValue: CGFloat {

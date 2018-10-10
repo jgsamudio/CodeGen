@@ -14,8 +14,13 @@ import Cocoa
 
 class NFXGenericController: NFXViewController
 {
+    
+    // MARK: - Public Properties
+    
     var selectedModel: NFXHTTPModel = NFXHTTPModel()
 
+    // MARK: - Public Functions
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

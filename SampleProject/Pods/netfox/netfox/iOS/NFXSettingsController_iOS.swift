@@ -12,9 +12,13 @@ import MessageUI
 
 class NFXSettingsController_iOS: NFXSettingsController, UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate {
     
+    // MARK: - Public Properties
+    
     var tableView: UITableView = UITableView()
     
     // MARK: View Life Cycle
+    
+    // MARK: - Public Functions
     
     override func viewDidLoad()
     {

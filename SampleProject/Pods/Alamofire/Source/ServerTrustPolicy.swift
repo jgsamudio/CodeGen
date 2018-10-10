@@ -26,9 +26,14 @@ import Foundation
 
 /// Responsible for managing the mapping of `ServerTrustPolicy` objects to a given host.
 open class ServerTrustPolicyManager {
+    
+    // MARK: - Public Properties
+    
     /// The dictionary of policies mapped to a particular host.
     open let policies: [String: ServerTrustPolicy]
 
+    // MARK: - Initialization
+    
     /// Initializes the `ServerTrustPolicyManager` instance with the given policies.
     ///
     /// Since different servers and web services can have different leaf certificates, intermediate and even root
@@ -43,6 +48,8 @@ open class ServerTrustPolicyManager {
         self.policies = policies
     }
 
+    // MARK: - Public Functions
+    
     /// Returns the `ServerTrustPolicy` for the given host if applicable.
     ///
     /// By default, this method will return the policy that perfectly matches the given host. Subclasses could override

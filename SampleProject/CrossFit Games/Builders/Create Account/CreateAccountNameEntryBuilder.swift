@@ -10,7 +10,12 @@ import UIKit
 
 struct CreateAccountNameEntryBuilder: Builder {
 
+    // MARK: - Public Functions
+    
     func build() -> UIViewController {
+    
+    // MARK: - Public Properties
+    
         let storyboard = UIStoryboard(name: "CreateAccountNameEntry", bundle: nil)
         let viewController: CreateAccountNameEntryViewController = storyboard.instantiateViewController()
         viewController.viewModel = CreateAccountNameEntryViewModel()
