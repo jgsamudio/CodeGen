@@ -1,6 +1,0 @@
-framework module Simcoe {
-  umbrella header "Simcoe-umbrella.h"
-
-  export *
-  module * { export * }
-}
