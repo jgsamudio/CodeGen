@@ -29,15 +29,6 @@ struct PrivateExtensionMarkGenerator: CodeGenerator {
                                         startIndex: sourceLocation.index,
                                         insertions: insertions)
 
-        if generatorConfig.generatorInsertStringUpdated {
-            let originalInsertionsFound =  foundInsertions(generatorConfig.originalGeneratorInsertString,
-                                                           fileComponents: fileComponents,
-                                                           startIndex: sourceLocation.index)
-            if originalInsertionsFound {
-                
-            }
-        }
-
         return foundInsertions(insertions,
                                fileComponents: fileComponents,
                                startIndex: sourceLocation.index) ? nil : fileModifier

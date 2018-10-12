@@ -50,4 +50,30 @@ extension CodeGenerator {
         return insertions?.isEqual(toBottomOf: Array(fileComponents[0..<startIndex])) ?? false
     }
 
+    func validNode<T: ASTNode>(_ node: T,
+                               visitedNodes: VisitedNodeCollection,
+                               ignoredVisitors: [Visitor] = [],
+                               visitedNodesValidator: ((ASTNode)->(Bool))? = nil) -> Bool {
+        return ignoredVisitors.reduce(true, { (result, ignoredVisitor) -> Bool in
+            return result && foundItem(with: node.sourceLocation, in: visitedNodes[ignoredVisitor])
+        })
+    }
+
+    func foundItem<T: ASTNode>(with location: SourceLocation,
+                               in list: LinkedList<T>?,
+                               visitedNodeValidator: ((ASTNode)->(Bool))? = nil) -> Bool {
+        var currentNode = list?.head
+
+        while currentNode != nil {
+            if let currentNode = currentNode,
+                currentNode.value.sourceRange.start.line < location.line &&
+                    currentNode.value.sourceRange.end.line > location.line &&
+                    (visitedNodeValidator?(currentNode.value) ?? true) {
+                return true
+            }
+            currentNode = currentNode?.next
+        }
+        return false
+    }
+    
 }

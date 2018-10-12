@@ -10,11 +10,11 @@ import AST
 
 extension Dictionary where Key: Hashable, Value: LinkedList<ASTNode> {
 
-    /// Determines if the function given is found in a private extension.
+    /// Determines if the function given is found in a extension.
     ///
     /// - Parameter function: Function to check for.
     /// - Returns: Boolean if the function is found in a private extension.
-    func privateExtensionFunctionFound(with function: FunctionDeclaration) -> Bool {
+    func extensionFunctionFound(with function: FunctionDeclaration) -> Bool {
         guard let vistedNodeCollection = self as? VisitedNodeCollection else {
             return false
         }
@@ -24,26 +24,9 @@ extension Dictionary where Key: Hashable, Value: LinkedList<ASTNode> {
         
         while currentNode != nil {
             if let extensionDeclaration = currentNode?.value as? ExtensionDeclaration,
-                extensionDeclaration.accessLevelModifier == .`private`,
+                extensionDeclaration.accessLevelModifier == .`private` ||
+                    extensionDeclaration.accessLevelModifier == .fileprivate,
                 extensionDeclaration.contains(declaration: function) {
-                return true
-            }
-            currentNode = currentNode?.next
-        }
-        return false
-    }
-
-    func functionVariableDeclarationFound(with variable: DeclarationModifierProtocol) -> Bool {
-        guard let vistedNodeCollection = self as? VisitedNodeCollection else {
-            return false
-        }
-
-        let variableList = vistedNodeCollection[.function]
-        var currentNode = variableList?.head
-
-        while currentNode != nil {
-            if let variableDeclaration = currentNode?.value as? FunctionDeclaration,
-                variableDeclaration.contains(declaration: variable) {
                 return true
             }
             currentNode = currentNode?.next

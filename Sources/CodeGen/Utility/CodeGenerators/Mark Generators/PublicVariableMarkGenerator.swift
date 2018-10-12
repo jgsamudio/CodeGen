@@ -27,7 +27,7 @@ class PublicVariableMarkGenerator: CodeGenerator {
                                   visitedNodes: VisitedNodeCollection) -> FileModifier? {
         guard let insertions = generatorConfig.insertString, !markAdded,
             let variableNode = node as? DeclarationModifierProtocol, variableNode.modifiers.isPublic,
-            !visitedNodes.functionVariableDeclarationFound(with: variableNode) else {
+            let node = node, validNode(node, visitedNodes: visitedNodes, ignoredVisitors: [.function, .initializer]) else {
                 return nil
         }
         markAdded = true

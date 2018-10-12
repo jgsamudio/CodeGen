@@ -25,11 +25,16 @@ class PublicFunctionMarkGenerator: CodeGenerator {
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String],
                                   visitedNodes: VisitedNodeCollection) -> FileModifier? {
+
         guard let insertions = generatorConfig.insertString,
             let functionNode = node as? FunctionDeclaration,
             functionNode.modifiers.isPublic,
-            !visitedNodes.privateExtensionFunctionFound(with: functionNode),
-            !markAdded else {
+            !visitedNodes.extensionFunctionFound(with: functionNode),
+            !markAdded,
+            validNode(functionNode,
+                      visitedNodes: visitedNodes,
+                      ignoredVisitors: [.extension],
+                      visitedNodesValidator: visitedNodesValidator) else {
                 return nil
         }
         markAdded = true
@@ -44,4 +49,16 @@ class PublicFunctionMarkGenerator: CodeGenerator {
                                startIndex: componentData.index) ? nil : fileModifier
     }
 
+}
+
+private extension PublicFunctionMarkGenerator {
+
+    func visitedNodesValidator(_ node: ASTNode) -> Bool {
+        if let extensionDeclaration = node as? ExtensionDeclaration {
+            return extensionDeclaration.accessLevelModifier == .`private` ||
+                extensionDeclaration.accessLevelModifier == .fileprivate
+        }
+        return true
+    }
+    
 }

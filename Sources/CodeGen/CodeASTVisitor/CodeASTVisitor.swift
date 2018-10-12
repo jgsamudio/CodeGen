@@ -16,19 +16,19 @@ final class CodeASTVisitor: ASTVisitor {
     var modifications = [FileModifier]()
 
     private var visitedNodes: VisitedNodeCollection
+    private var codeGenerators = [Visitor: LinkedList<CodeGenerator>]()
 
     private let fileComponents: [String]
     private let config: Configuration?
-    private let codeGenerators: [CodeGenerator]
 
-    private static var availableGenerators: [CodeGenerator.Type] {
-        return [DeclarationHeaderGenerator.self,
-                PrivateExtensionMarkGenerator.self,
-                DelegateExtensionMarkGenerator.self,
-                InitializationMarkGenerator.self,
-                PublicVariableMarkGenerator.self,
-                PrivateVariableMarkGenerator.self,
-                PublicFunctionMarkGenerator.self]
+    private static var availableGeneratorDict: [String: CodeGenerator.Type] {
+        return [DeclarationHeaderGenerator.name: DeclarationHeaderGenerator.self,
+                PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
+                DelegateExtensionMarkGenerator.name: DelegateExtensionMarkGenerator.self,
+                InitializationMarkGenerator.name: InitializationMarkGenerator.self,
+                PublicVariableMarkGenerator.name: PublicVariableMarkGenerator.self,
+                PrivateVariableMarkGenerator.name: PrivateVariableMarkGenerator.self,
+                PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self]
     }
 
     init(fileComponents: [String], config: Configuration?) {
@@ -36,16 +36,22 @@ final class CodeASTVisitor: ASTVisitor {
         self.config = config
         self.visitedNodes = VisitedNodeCollection()
 
-        codeGenerators = config?.generators.compactMap {
-            if $0.enabled {
-                for generator in CodeASTVisitor.availableGenerators {
-                    if $0.name == generator.name {
-                        return generator.init(generatorConfig: $0)
+        // Init the code generators.
+        for configGenerator in config?.generators ?? [] {
+            if configGenerator.enabled, let generatorType = CodeASTVisitor.availableGeneratorDict[configGenerator.name] {
+                let generator = generatorType.init(generatorConfig: configGenerator)
+                for visitor in configGenerator.visitors ?? [] {
+                    if let list = codeGenerators[visitor] {
+                        list.append(generator)
+                        codeGenerators[visitor] = list
+                    } else {
+                        let list = LinkedList<CodeGenerator>()
+                        list.append(generator)
+                        codeGenerators[visitor] = list
                     }
                 }
             }
-            return nil
-        } ?? []
+        }
     }
 
     func visit(_ declaration: ClassDeclaration) throws -> Bool {
@@ -99,14 +105,17 @@ private extension CodeASTVisitor {
 
     func visited<T: ASTNode>(_ visitor: Visitor, sourceLocation: SourceLocation, node: T?) {
         updateVisitedNodes(visitor, node: node)
-        // TODO: MAKE More efficient.
-        codeGenerators.filter { $0.generatorConfig.visitors?.contains(visitor) ?? false }.forEach {
-            if let modifier = $0.fileModifier(node: node,
-                                              sourceLocation: sourceLocation,
-                                              fileComponents: fileComponents,
-                                              visitedNodes: visitedNodes) {
+
+        let codeGeneratorList = codeGenerators[visitor]
+        var currentNode = codeGeneratorList?.head
+        while currentNode != nil {
+            if let modifier = currentNode?.value.fileModifier(node: node,
+                                                              sourceLocation: sourceLocation,
+                                                              fileComponents: fileComponents,
+                                                              visitedNodes: visitedNodes) {
                 modifications.append(modifier)
             }
+            currentNode = currentNode?.next
         }
     }
 
