@@ -11,10 +11,14 @@ import AST
 
 struct DeclarationHeaderGenerator: CodeGenerator {
 
+    // MARK: - Public Properties
+    
     static var name = "declarationHeader"
 
     let generatorConfig: GeneratorConfig
 
+    // MARK: - Public Functions
+    
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String],

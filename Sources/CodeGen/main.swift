@@ -1,5 +1,7 @@
 print("Hello, world!")
 
+    // MARK: - Public Properties
+    
 let tool = ArgumentParser()
 do {
     try tool.run()

@@ -8,6 +8,9 @@
 import Foundation
 
 struct Configuration: Codable {
+    
+    // MARK: - Public Properties
+    
     let generators: [GeneratorConfig]
     let excluded: [String]?
 }

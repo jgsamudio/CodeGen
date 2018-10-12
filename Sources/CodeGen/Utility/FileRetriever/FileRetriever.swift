@@ -11,6 +11,8 @@ typealias SourceFile = (fileNameUrl: URL, content: String, components: [String])
 
 struct FileRetriever {
 
+    // MARK: - Public Functions
+    
     static func retrieveFilenames(at path: String, fileExtensions: [String]?) -> [String] {
         let fileEnumerator = FileManager.default.enumerator(atPath: path)
         let enumerator = fileEnumerator?.filter { (file) in

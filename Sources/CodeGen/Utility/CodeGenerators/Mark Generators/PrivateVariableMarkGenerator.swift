@@ -11,16 +11,22 @@ import AST
 
 class PrivateVariableMarkGenerator: CodeGenerator {
 
+    // MARK: - Public Properties
+    
     static var name = "privateVariableMarkGenerator"
 
     let generatorConfig: GeneratorConfig
 
     private var markAdded = false
 
+    // MARK: - Initialization
+    
     required init(generatorConfig: GeneratorConfig) {
         self.generatorConfig = generatorConfig
     }
 
+    // MARK: - Public Functions
+    
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String],

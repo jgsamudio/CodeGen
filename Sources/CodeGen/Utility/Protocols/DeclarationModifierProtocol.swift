@@ -14,5 +14,12 @@ protocol DeclarationModifierProtocol: Declaration {
 
 }
 
-extension VariableDeclaration: DeclarationModifierProtocol {}
-extension ConstantDeclaration: DeclarationModifierProtocol {}
+// MARK: - DeclarationModifierProtocol
+extension VariableDeclaration: DeclarationModifierProtocol {
+
+}
+
+// MARK: - DeclarationModifierProtocol
+extension ConstantDeclaration: DeclarationModifierProtocol {
+    
+}

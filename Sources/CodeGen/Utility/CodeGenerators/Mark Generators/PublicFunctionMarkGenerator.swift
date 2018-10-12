@@ -11,16 +11,22 @@ import AST
 
 class PublicFunctionMarkGenerator: CodeGenerator {
 
+    // MARK: - Public Properties
+    
     static var name = "publicFunctionMarkGenerator"
 
     let generatorConfig: GeneratorConfig
 
     private var markAdded = false
 
+    // MARK: - Initialization
+    
     required init(generatorConfig: GeneratorConfig) {
         self.generatorConfig = generatorConfig
     }
 
+    // MARK: - Public Functions
+    
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String],
@@ -51,6 +57,7 @@ class PublicFunctionMarkGenerator: CodeGenerator {
 
 }
 
+// MARK: - Private Functions
 private extension PublicFunctionMarkGenerator {
 
     func visitedNodesValidator(_ node: ASTNode) -> Bool {

@@ -10,6 +10,9 @@ import Foundation
 struct Constants {
 
     struct Regex {
+    
+    // MARK: - Public Properties
+    
         static let comment = "(/\\*([^*]|[\\r\\n]|(\\*+([^*/]|[\\r\\n])))*\\*+/)|(//.*)"
     }
 

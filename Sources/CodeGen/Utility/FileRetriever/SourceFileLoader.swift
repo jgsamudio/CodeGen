@@ -9,6 +9,8 @@ import Foundation
 
 class SourceFileLoader {
 
+    // MARK: - Public Properties
+    
     var sourceFile: SourceFile?
     
     var fileNameUrl: URL {
@@ -22,11 +24,15 @@ class SourceFileLoader {
     private var directory: String
     private var fileName: String
 
+    // MARK: - Initialization
+    
     init(directory: String, fileName: String) {
         self.directory = directory
         self.fileName = fileName
     }
 
+    // MARK: - Public Functions
+    
     func loadFiles(completion: (()->Void)? = nil) {
         do {
             let content = try String(contentsOfFile: "\(self.directory)/\(self.fileName)", encoding: String.Encoding.utf8)

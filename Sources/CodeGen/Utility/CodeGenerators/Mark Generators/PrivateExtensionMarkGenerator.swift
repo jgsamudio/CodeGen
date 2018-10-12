@@ -11,10 +11,14 @@ import AST
 
 struct PrivateExtensionMarkGenerator: CodeGenerator {
 
+    // MARK: - Public Properties
+    
     static var name = "privateExtensionMark"
 
     let generatorConfig: GeneratorConfig
 
+    // MARK: - Public Functions
+    
     func fileModifier<T: ASTNode>(node: T?,
                                   sourceLocation: SourceLocation,
                                   fileComponents: [String],

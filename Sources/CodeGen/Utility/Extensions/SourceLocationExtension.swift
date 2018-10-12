@@ -9,6 +9,8 @@ import Source
 
 extension SourceLocation {
 
+    // MARK: - Public Properties
+    
     var tabString: String {
         return String(repeating: " ", count: column-1)
     }

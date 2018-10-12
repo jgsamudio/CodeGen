@@ -9,17 +9,10 @@ import Foundation
 
 class ParkBenchTimer {
 
+    // MARK: - Public Properties
+    
     let startTime: CFAbsoluteTime
     var endTime: CFAbsoluteTime?
-
-    init() {
-        startTime = CFAbsoluteTimeGetCurrent()
-    }
-
-    func stop() -> CFAbsoluteTime {
-        endTime = CFAbsoluteTimeGetCurrent()
-        return duration!
-    }
 
     var duration:CFAbsoluteTime? {
         if let endTime = endTime {
@@ -27,6 +20,19 @@ class ParkBenchTimer {
         } else {
             return nil
         }
+    }
+    
+    // MARK: - Initialization
+    
+    init() {
+        startTime = CFAbsoluteTimeGetCurrent()
+    }
+
+    // MARK: - Public Functions
+    
+    func stop() -> CFAbsoluteTime {
+        endTime = CFAbsoluteTimeGetCurrent()
+        return duration!
     }
 
 }

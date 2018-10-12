@@ -10,12 +10,16 @@ import Foundation
 /// Defines a class to handle regular expressions
 final class Regex {
 
+    // MARK: - Public Properties
+    
     /// The regular expression
     let expression: NSRegularExpression
 
     /// The pattern represented by the regular expression
     let pattern: String
 
+    // MARK: - Initialization
+    
     /// Creates an instance of Regex
     ///
     /// - Parameter pattern: The regular expression pattern
@@ -24,6 +28,8 @@ final class Regex {
         self.expression = try! NSRegularExpression(pattern: pattern, options: [])
     }
 
+    // MARK: - Public Functions
+    
     /// Returns true if the regular expression matches at least one substring of the input
     ///
     /// - Parameter input: The input string to test against the regex

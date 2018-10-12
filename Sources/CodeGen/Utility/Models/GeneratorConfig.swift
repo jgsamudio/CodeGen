@@ -8,6 +8,9 @@
 import Foundation
 
 struct GeneratorConfig: Codable {
+    
+    // MARK: - Public Properties
+    
     let name: String
     let enabled: Bool
     let insertString: [String]?

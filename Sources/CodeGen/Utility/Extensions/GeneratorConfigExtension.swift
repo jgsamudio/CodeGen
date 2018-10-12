@@ -9,6 +9,8 @@ import Foundation
 
 extension GeneratorConfig {
 
+    // MARK: - Public Properties
+    
     var generatorInsertStringUpdated: Bool {
         return originalGeneratorInsertString != insertString
     }

@@ -9,12 +9,16 @@ import Foundation
 
 final class FileModifier {
 
+    // MARK: - Public Properties
+    
     let filePath: String
     let startIndex: Int
     let insertions: [String]
     let deletions: [String]
     let replaceCurrentLine: Bool
 
+    // MARK: - Initialization
+    
     init(filePath: String,
          startIndex: Int,
          insertions: [String] = [],
