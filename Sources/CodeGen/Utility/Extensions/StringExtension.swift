@@ -16,7 +16,7 @@ extension String {
         }
 
         do {
-            try write(to: fileURL, atomically: false, encoding: .utf8)
+            try write(to: fileURL, atomically: true, encoding: .utf8)
         }
         catch let error {
             print("Error: " + error.localizedDescription)

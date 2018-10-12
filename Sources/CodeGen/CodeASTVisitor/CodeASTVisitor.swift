@@ -99,6 +99,7 @@ private extension CodeASTVisitor {
 
     func visited<T: ASTNode>(_ visitor: Visitor, sourceLocation: SourceLocation, node: T?) {
         updateVisitedNodes(visitor, node: node)
+        // TODO: MAKE More efficient.
         codeGenerators.filter { $0.generatorConfig.visitors?.contains(visitor) ?? false }.forEach {
             if let modifier = $0.fileModifier(node: node,
                                               sourceLocation: sourceLocation,

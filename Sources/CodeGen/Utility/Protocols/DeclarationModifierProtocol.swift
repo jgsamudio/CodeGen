@@ -8,7 +8,7 @@
 import Foundation
 import AST
 
-protocol DeclarationModifierProtocol {
+protocol DeclarationModifierProtocol: Declaration {
 
     var modifiers: DeclarationModifiers { get }
 

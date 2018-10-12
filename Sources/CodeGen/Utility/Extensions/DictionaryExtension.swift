@@ -33,4 +33,22 @@ extension Dictionary where Key: Hashable, Value: LinkedList<ASTNode> {
         return false
     }
 
+    func functionVariableDeclarationFound(with variable: DeclarationModifierProtocol) -> Bool {
+        guard let vistedNodeCollection = self as? VisitedNodeCollection else {
+            return false
+        }
+
+        let variableList = vistedNodeCollection[.function]
+        var currentNode = variableList?.head
+
+        while currentNode != nil {
+            if let variableDeclaration = currentNode?.value as? FunctionDeclaration,
+                variableDeclaration.contains(declaration: variable) {
+                return true
+            }
+            currentNode = currentNode?.next
+        }
+        return false
+    }
+
 }

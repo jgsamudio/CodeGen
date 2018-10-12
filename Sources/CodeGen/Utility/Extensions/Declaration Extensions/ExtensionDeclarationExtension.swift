@@ -29,3 +29,23 @@ extension ExtensionDeclaration {
     }
 
 }
+
+extension FunctionDeclaration {
+
+    /// Checks if the function declaration contains the declaration given.
+    ///
+    /// - Parameter declaration: Declaration to check for.
+    /// - Returns: Boolean if the declaration was found.
+    func contains(declaration: Declaration) -> Bool {
+        guard let statements = body?.statements else {
+            return false
+        }
+        for statement in statements {
+            if statement.description == declaration.description {
+                return true
+            }
+        }
+        return false
+    }
+
+}

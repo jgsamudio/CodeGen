@@ -36,6 +36,7 @@ final class ArgumentParser {
             group.enter()
             DispatchQueue.global().async {
                 do {
+                    print("Parsing: \(fileName)")
                     try self.parse(fileName: fileName, directory: directory, config: config)
                     group.leave()
                 } catch {
@@ -48,7 +49,7 @@ final class ArgumentParser {
         
         // Store config generators for next run.
         storeConfigGenerators(config: config)
-        print("The task took \(timer.stop()) seconds.")
+        print("Parsed \(fileNames.count) Files in \(timer.stop()) seconds.")
     }
 
 }
@@ -63,6 +64,11 @@ private extension ArgumentParser {
         let topLevelDecl = try parser.parse()
         let visitor = CodeASTVisitor(fileComponents: fileComponents, config: config)
         _ = try? visitor.traverse(topLevelDecl)
+
+        // Ensure there are modifications to make.
+        guard visitor.modifications.count > 0 else {
+            return
+        }
 
         // Update files with modifications.
         let updatedComponentList = LinkedList<String>()
