@@ -55,7 +55,7 @@ extension CodeGenerator {
                                ignoredVisitors: [Visitor] = [],
                                visitedNodesValidator: ((ASTNode)->(Bool))? = nil) -> Bool {
         return ignoredVisitors.reduce(true, { (result, ignoredVisitor) -> Bool in
-            return result && foundItem(with: node.sourceLocation, in: visitedNodes[ignoredVisitor])
+            return result && !foundItem(with: node.sourceLocation, in: visitedNodes[ignoredVisitor])
         })
     }
 
