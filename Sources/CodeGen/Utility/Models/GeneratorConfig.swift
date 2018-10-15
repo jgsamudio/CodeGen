@@ -15,4 +15,5 @@ struct GeneratorConfig: Codable {
     let enabled: Bool
     let insertString: [String]?
     let visitors: [Visitor]?
+    let excludedFiles: [String]?
 }
