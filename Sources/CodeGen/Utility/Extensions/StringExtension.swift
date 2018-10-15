@@ -14,7 +14,7 @@ extension String {
     }
 
     func writeToFile(directory: String) {
-        guard let fileURL = "file://\(directory))".urlFilePath else {
+        guard let fileURL = "file://\(directory)".urlFilePath else {
             return
         }
 
