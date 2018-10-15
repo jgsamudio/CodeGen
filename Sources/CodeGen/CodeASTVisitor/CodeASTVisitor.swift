@@ -15,12 +15,14 @@ final class CodeASTVisitor: ASTVisitor {
 
     var modifications = [FileModifier]()
 
+    // TODO: Auto generate the order of the variables.
     private var visitedNodes: VisitedNodeCollection
     private var codeGenerators = [Visitor: LinkedList<CodeGenerator>]()
 
     private let fileComponents: [String]
     private let config: Configuration?
 
+    // TODO: Auto generate this
     private static var availableGeneratorDict: [String: CodeGenerator.Type] {
         return [DeclarationHeaderGenerator.name: DeclarationHeaderGenerator.self,
                 PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
@@ -121,6 +123,7 @@ private extension CodeASTVisitor {
         }
     }
 
+    // TODO: Automate duplicated code.
     func updateVisitedNodes(_ visitor: Visitor, node: ASTNode?) {
         guard let node = node else {
             return
