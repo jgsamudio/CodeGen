@@ -23,7 +23,6 @@ struct FileRetriever {
             guard let filePath = file as? String,
                 let filePathURL = filePath.urlFilePath,
                 !(excludedFiles?.contains(filePathURL.lastPathComponent) ?? false) else {
-                print(file)
                 return false
             }
 
