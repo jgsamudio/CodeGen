@@ -13,19 +13,38 @@ struct FileRetriever {
 
     // MARK: - Public Functions
     
-    static func retrieveFilenames(at path: String, fileExtensions: [String]?) -> [String] {
+    static func retrieveFilenames(at path: String,
+                                  fileExtensions: [String]?,
+                                  excludedFiles: [String]?,
+                                  excludedDirectories: [String]?) -> [String] {
+
         let fileEnumerator = FileManager.default.enumerator(atPath: path)
         let enumerator = fileEnumerator?.filter { (file) in
-            
-            if let fileExtensions = fileExtensions, let filePath = file as? String {
-                if let extensionIndex = filePath.index(of: ".") {
-                    let currentFileExtension = String(filePath[extensionIndex..<filePath.endIndex])
-                    return fileExtensions.contains(currentFileExtension)
-                } else {
-                    return false
+            guard let filePath = file as? String,
+                let filePathURL = filePath.urlFilePath,
+                !(excludedFiles?.contains(filePathURL.lastPathComponent) ?? false) else {
+                print(file)
+                return false
+            }
+
+            if let excludedDirectories = excludedDirectories {
+                for excludedDirectory in excludedDirectories {
+                    if filePathURL.pathComponents.contains(excludedDirectory) {
+                        return false
+                    }
                 }
             }
-            return true
+
+            guard let fileExtensions = fileExtensions else {
+                return true
+            }
+
+            if let extensionIndex = filePath.index(of: ".") {
+                let currentFileExtension = String(filePath[extensionIndex..<filePath.endIndex])
+                return fileExtensions.contains(currentFileExtension)
+            } else {
+                return false
+            }
         }
 
         guard let filteredFileEnumerator = enumerator as? [String] else {

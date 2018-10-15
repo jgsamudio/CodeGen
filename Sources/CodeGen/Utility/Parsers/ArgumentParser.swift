@@ -28,8 +28,11 @@ final class ArgumentParser {
         }
 
         let directory = arguments[1]
-        let fileNames = FileRetriever.retrieveFilenames(at: directory, fileExtensions: [".swift"])
         let config = try loadConfig(directory: directory)
+        let fileNames = FileRetriever.retrieveFilenames(at: directory,
+                                                        fileExtensions: [".swift"],
+                                                        excludedFiles: config.excludedFiles,
+                                                        excludedDirectories: config.excludedDirectories)
         let group = DispatchGroup()
         // Parse files.
         for fileName in fileNames {

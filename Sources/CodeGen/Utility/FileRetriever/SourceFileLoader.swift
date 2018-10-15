@@ -14,7 +14,7 @@ class SourceFileLoader {
     var sourceFile: SourceFile?
     
     var fileNameUrl: URL {
-        return URL(string: fileName.replacingOccurrences(of: " ", with: "%20")) ?? URL(string: "hello")!
+        return fileName.urlFilePath ?? URL(string: "hello")!
     }
 
     var fileToParse: String {

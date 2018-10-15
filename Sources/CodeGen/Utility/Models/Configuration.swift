@@ -12,5 +12,6 @@ struct Configuration: Codable {
     // MARK: - Public Properties
     
     let generators: [GeneratorConfig]
-    let excluded: [String]?
+    let excludedFiles: [String]?
+    let excludedDirectories: [String]?
 }

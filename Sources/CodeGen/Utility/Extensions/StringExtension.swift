@@ -9,9 +9,12 @@ import Foundation
 
 extension String {
 
+    var urlFilePath: URL? {
+        return URL(string: replacingOccurrences(of: " ", with: "%20"))
+    }
+
     func writeToFile(directory: String) {
-        let urlString = "file://\(directory.replacingOccurrences(of: " ", with: "%20"))"
-        guard let fileURL = URL(string: urlString) else {
+        guard let fileURL = "file://\(directory))".urlFilePath else {
             return
         }
 

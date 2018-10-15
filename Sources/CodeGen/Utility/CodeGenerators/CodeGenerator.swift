@@ -75,5 +75,13 @@ extension CodeGenerator {
         }
         return false
     }
+
+    func sourceExcluded(_ sourceLocation: SourceLocation) -> Bool{
+        if let fileNameWithExtension = URL(string: sourceLocation.identifier)?.lastPathComponent,
+            generatorConfig.excludedFiles?.contains(fileNameWithExtension) ?? false {
+            return true
+        }
+        return false
+    }
     
 }

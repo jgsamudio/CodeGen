@@ -109,7 +109,9 @@ private extension CodeASTVisitor {
         let codeGeneratorList = codeGenerators[visitor]
         var currentNode = codeGeneratorList?.head
         while currentNode != nil {
-            if let modifier = currentNode?.value.fileModifier(node: node,
+            if let currentNode = currentNode,
+                !currentNode.value.sourceExcluded(sourceLocation),
+                let modifier = currentNode.value.fileModifier(node: node,
                                                               sourceLocation: sourceLocation,
                                                               fileComponents: fileComponents,
                                                               visitedNodes: visitedNodes) {
