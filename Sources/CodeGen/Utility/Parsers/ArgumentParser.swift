@@ -126,6 +126,8 @@ private extension ArgumentParser {
         while currentNode != nil {
             if let modification = currentNode?.value as? GeneratedFileModifier {
                 print(modification.parameters)
+                let insertString = modification.generatorConfig.insertString?.joined().stringBetween(startString: "<List>", endString: "</List>")
+                print(insertString)
             }
             currentNode = currentNode?.next
         }
@@ -149,4 +151,8 @@ private extension ArgumentParser {
         }
     }
 
+}
+
+enum TemplateCommand: String {
+    case list = "<List>"
 }

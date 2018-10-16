@@ -36,5 +36,15 @@ extension String {
             self.components(separatedBy: " ").contains("*") ||
             self.components(separatedBy: " ").contains("-")
     }
+
+    func stringBetween(startString: String, endString: String) -> String? {
+        if let startRange = range(of: startString),
+            let endRange = range(of: endString),
+            startRange.upperBound < endRange.lowerBound {
+
+            return substring(with: Range(uncheckedBounds: (lower: startRange.upperBound, upper: endRange.lowerBound)))
+        }
+        return nil
+    }
     
 }

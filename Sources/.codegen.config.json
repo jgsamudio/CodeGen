@@ -59,7 +59,7 @@
 				"struct CodeGeneratorDataSource {",
 				"",
 				"\tstatic var availableGeneratorDict: [String: CodeGenerator.Type] {",
-				"\t\treturn [%name%.name: %name%.self]",
+				"\t\treturn [<List>%name%.name: %name%.self</List>]",
 				"\t}",
 				"",
 				"}",
