@@ -11,7 +11,23 @@ struct Configuration: Codable {
     
     // MARK: - Public Properties
     
+    let platform: Platform
     let generators: [GeneratorConfig]
     let excludedFiles: [String]?
     let excludedDirectories: [String]?
+}
+
+struct StyleGuide: Codable {
+    
+}
+
+struct StyleConfig: Codable {
+    let name: String
+    let enabled: Bool
+    let excludedFiles: [String]?
+}
+
+enum Platform: String {
+    case ios
+    case android
 }
