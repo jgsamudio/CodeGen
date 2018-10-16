@@ -21,11 +21,11 @@
       },
       {
         "package": "swift-ast",
-        "repositoryURL": "https://github.com/yanagiba/swift-ast.git",
+        "repositoryURL": "https://github.com/jgsamudio/swift-ast",
         "state": {
           "branch": null,
-          "revision": "059a48d28d547a153dc223b93bcf592803988fdf",
-          "version": "0.4.3"
+          "revision": "6755d3017c1645480cfe04e4836d9fa02a26fd27",
+          "version": "0.4.4"
         }
       }
     ]

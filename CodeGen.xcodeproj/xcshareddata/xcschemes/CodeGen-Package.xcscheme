@@ -14,93 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-ast::Sema"
-               BuildableName = "Sema.framework"
-               BlueprintName = "Sema"
-               ReferencedContainer = "container:CodeGen.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "bocho::Bocho"
-               BuildableName = "Bocho.framework"
-               BlueprintName = "Bocho"
-               ReferencedContainer = "container:CodeGen.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CodeGen::CodeGen"
-               BuildableName = "CodeGen"
-               BlueprintName = "CodeGen"
-               ReferencedContainer = "container:CodeGen.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Alamofire::Alamofire"
                BuildableName = "Alamofire.framework"
                BlueprintName = "Alamofire"
-               ReferencedContainer = "container:CodeGen.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-ast::Parser"
-               BuildableName = "Parser.framework"
-               BlueprintName = "Parser"
-               ReferencedContainer = "container:CodeGen.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-ast::AST"
-               BuildableName = "AST.framework"
-               BlueprintName = "AST"
-               ReferencedContainer = "container:CodeGen.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "swift-ast::Diagnostic"
-               BuildableName = "Diagnostic.framework"
-               BlueprintName = "Diagnostic"
                ReferencedContainer = "container:CodeGen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -126,9 +42,93 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CodeGen::CodeGen"
+               BuildableName = "CodeGen"
+               BlueprintName = "CodeGen"
+               ReferencedContainer = "container:CodeGen.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-ast::AST"
+               BuildableName = "AST.framework"
+               BlueprintName = "AST"
+               ReferencedContainer = "container:CodeGen.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "swift-ast::Source"
                BuildableName = "Source.framework"
                BlueprintName = "Source"
+               ReferencedContainer = "container:CodeGen.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-ast::Sema"
+               BuildableName = "Sema.framework"
+               BlueprintName = "Sema"
+               ReferencedContainer = "container:CodeGen.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-ast::Parser"
+               BuildableName = "Parser.framework"
+               BlueprintName = "Parser"
+               ReferencedContainer = "container:CodeGen.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "swift-ast::Diagnostic"
+               BuildableName = "Diagnostic.framework"
+               BlueprintName = "Diagnostic"
+               ReferencedContainer = "container:CodeGen.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "bocho::Bocho"
+               BuildableName = "Bocho.framework"
+               BlueprintName = "Bocho"
                ReferencedContainer = "container:CodeGen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -157,9 +157,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "swift-ast::Sema"
-            BuildableName = "Sema.framework"
-            BlueprintName = "Sema"
+            BlueprintIdentifier = "Alamofire::Alamofire"
+            BuildableName = "Alamofire.framework"
+            BlueprintName = "Alamofire"
             ReferencedContainer = "container:CodeGen.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
