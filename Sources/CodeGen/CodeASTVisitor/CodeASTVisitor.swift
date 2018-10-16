@@ -15,18 +15,18 @@ final class CodeASTVisitor: ASTVisitor {
 
     // MARK: - Public Properties
     
-    var modifications = [FileModifier]()
+    var modifications = [FileModifierType: LinkedList<FileModifier>]()
 
     // MARK: - Private Properties
     
-    // TODO: Auto generate the order of the variables.
+    // TODO: STYLE - Auto generate the order of the variables.
     private var visitedNodes: VisitedNodeCollection
     private var codeGenerators = [Visitor: LinkedList<CodeGenerator>]()
 
     private let fileComponents: [String]
     private let config: Configuration?
 
-    // TODO: Auto generate this
+    // TODO: GENERATOR - Auto generate this
     private static var availableGeneratorDict: [String: CodeGenerator.Type] {
         return [DeclarationHeaderGenerator.name: DeclarationHeaderGenerator.self,
                 PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
@@ -127,13 +127,13 @@ private extension CodeASTVisitor {
                                                               sourceLocation: sourceLocation,
                                                               fileComponents: fileComponents,
                                                               visitedNodes: visitedNodes) {
-                modifications.append(modifier)
+                updateModifications(modifier: modifier)
             }
             currentNode = currentNode?.next
         }
     }
 
-    // TODO: Automate duplicated code.
+    // TODO: GENERATOR - Automate duplicated code.
     func updateVisitedNodes(_ visitor: Visitor, node: ASTNode?) {
         guard let node = node else {
             return
@@ -145,6 +145,17 @@ private extension CodeASTVisitor {
             let list = LinkedList<ASTNode>()
             list.append(node)
             visitedNodes[visitor] = list
+        }
+    }
+
+    func updateModifications(modifier: FileModifier) {
+        if let list = modifications[modifier.type] {
+            list.append(modifier)
+            modifications[modifier.type] = list
+        } else {
+            let list = LinkedList<FileModifier>()
+            list.append(modifier)
+            modifications[modifier.type] = list
         }
     }
 

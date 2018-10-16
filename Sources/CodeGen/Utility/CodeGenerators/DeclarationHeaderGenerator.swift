@@ -27,9 +27,9 @@ struct DeclarationHeaderGenerator: CodeGenerator {
             return nil
         }
 
-        let fileModifier = FileModifier(filePath: sourceLocation.identifier,
-                                        startIndex: sourceLocation.index,
-                                        insertions: insertions)
+        let fileModifier = ProjectFileModifier(filePath: sourceLocation.identifier,
+                                               startIndex: sourceLocation.index,
+                                               insertions: insertions)
 
         return foundInsertions(insertions,
                                fileComponents: fileComponents,

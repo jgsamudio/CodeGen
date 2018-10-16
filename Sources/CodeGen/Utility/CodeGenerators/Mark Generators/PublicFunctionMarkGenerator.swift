@@ -9,7 +9,7 @@ import Foundation
 import Source
 import AST
 
-// TODO: IBAction Marks
+// TODO: GENERATOR - IBAction Marks
 class PublicFunctionMarkGenerator: CodeGenerator {
 
     // MARK: - Public Properties
@@ -49,9 +49,9 @@ class PublicFunctionMarkGenerator: CodeGenerator {
         markAdded = true
 
         let componentData = fileComponents.commentComponentData(startIndex: sourceLocation.index)
-        let fileModifier = FileModifier(filePath: sourceLocation.identifier,
-                                        startIndex: componentData.index,
-                                        insertions: insertions.removeDoubleTopSpace(data: componentData).insertTabs())
+        let fileModifier = ProjectFileModifier(filePath: sourceLocation.identifier,
+                                               startIndex: componentData.index,
+                                               insertions: insertions.removeDoubleTopSpace(data: componentData).insertTabs())
 
         return foundInsertions(insertions,
                                fileComponents: fileComponents,

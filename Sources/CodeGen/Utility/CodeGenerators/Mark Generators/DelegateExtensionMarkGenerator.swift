@@ -33,9 +33,9 @@ struct DelegateExtensionMarkGenerator: CodeGenerator {
         let inheritanceString = (typeInheritanceList.compactMap { $0.names.first?.name.description }).joined(separator: ", ")
         let mappedInsertions = insertions.map { String(format: $0, inheritanceString) }
 
-        let fileModifier = FileModifier(filePath: sourceLocation.identifier,
-                                        startIndex: sourceLocation.index,
-                                        insertions: mappedInsertions)
+        let fileModifier = ProjectFileModifier(filePath: sourceLocation.identifier,
+                                               startIndex: sourceLocation.index,
+                                               insertions: mappedInsertions)
 
         return foundInsertions(mappedInsertions,
                                fileComponents: fileComponents,

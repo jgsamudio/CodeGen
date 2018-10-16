@@ -18,7 +18,7 @@ final class ArgumentParser {
     private let arguments: [String]
     private let dataDecoder = DataDecoder()
 
-    private var modifications = [FileModifier]()
+    private var generatedFileModifiers = LinkedList<FileModifier>()
 
     // MARK: - Initialization
     
@@ -81,10 +81,18 @@ private extension ArgumentParser {
         let visitor = CodeASTVisitor(fileComponents: fileComponents, config: config)
         _ = try? visitor.traverse(topLevelDecl)
 
-        modifications.append(contentsOf: visitor.modifications)
+        // Save generated file modifiers.
+        if let fileModifiers = visitor.modifications[FileModifierType.generatedFile] {
+            if generatedFileModifiers.tail == nil {
+                generatedFileModifiers = fileModifiers
+            } else {
+                generatedFileModifiers.tail?.next = fileModifiers.head
+                generatedFileModifiers.tail = fileModifiers.tail
+            }
+        }
 
         // Ensure there are modifications to make.
-        guard visitor.modifications.count > 0 else {
+        guard let list = visitor.modifications[FileModifierType.fileModified] else {
             return
         }
 
@@ -95,13 +103,14 @@ private extension ArgumentParser {
             var replaceCurrentLine = false
 
             // Check Modifications
-            for modIndex in 0..<visitor.modifications.count {
-                let modification = visitor.modifications[modIndex]
-                if modification.startIndex == i {
+            var currentNode = list.head
+            while currentNode != nil {
+                if let modification = currentNode?.value as? ProjectFileModifier, modification.startIndex == i {
                     updatedComponentList.append(modification.insertions.joined(separator: "\n"))
                     replaceCurrentLine = modification.replaceCurrentLine
                     // Deletions should be a range
                 }
+                currentNode = currentNode?.next
             }
 
             // Append line if needed.
@@ -113,7 +122,13 @@ private extension ArgumentParser {
     }
 
     func generateProjectFiles() {
-        print(modifications.count)
+        var currentNode = generatedFileModifiers.head
+        while currentNode != nil {
+            if let modification = currentNode?.value as? GeneratedFileModifier {
+                print(modification.parameters)
+            }
+            currentNode = currentNode?.next
+        }
     }
 
     func loadConfig(directory: String) throws -> Configuration {

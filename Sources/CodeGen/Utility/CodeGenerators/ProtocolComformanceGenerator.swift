@@ -32,8 +32,8 @@ final class ProtocolComformanceGenerator: CodeGenerator {
         if let typeDeclaration = node as? TypeDeclarationProtocol,
             let typeInheritanceClause = typeDeclaration.typeInheritanceClause,
             typeInheritanceClause.typeInheritanceList.contains(where: { $0.description == generatorConfig.conformance }) {
-//            print("PROTOCOL")
-//            print(typeDeclaration.typeInheritanceClause?.typeInheritanceList)
+            return GeneratedFileModifier(generatorConfig: generatorConfig,
+                                         parameters: [TemplateParameter.name: typeDeclaration.name.description])
         }
 
         return nil
