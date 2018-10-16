@@ -16,4 +16,12 @@ struct GeneratorConfig: Codable {
     let insertString: [String]?
     let visitors: [Visitor]?
     let excludedFiles: [String]?
+    let conformance: String?
+    let newFileGenerator: NewFileGenerator?
+}
+
+struct NewFileGenerator: Codable {
+    let name: String
+    let path: String
+    let header: String?
 }

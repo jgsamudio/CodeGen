@@ -30,7 +30,8 @@ final class CodeASTVisitor: ASTVisitor {
                 InitializationMarkGenerator.name: InitializationMarkGenerator.self,
                 PublicVariableMarkGenerator.name: PublicVariableMarkGenerator.self,
                 PrivateVariableMarkGenerator.name: PrivateVariableMarkGenerator.self,
-                PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self]
+                PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self,
+                ProtocolComformanceGenerator.name: ProtocolComformanceGenerator.self]
     }
 
     init(fileComponents: [String], config: Configuration?) {
