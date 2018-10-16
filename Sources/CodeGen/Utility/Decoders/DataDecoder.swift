@@ -24,10 +24,6 @@ import Alamofire
 /// killswitch or force update identifier.
 ///
 open class DataDecoder {
-
-    // MARK: - Private Properties
-
-    // MARK: - Public Properties
     
     // MARK: - Private Properties
     

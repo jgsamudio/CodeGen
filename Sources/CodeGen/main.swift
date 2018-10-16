@@ -1,6 +1,6 @@
 print("Hello, world!")
 
-    // MARK: - Public Properties
+// MARK: - Public Properties
     
 let tool = ArgumentParser()
 do {

@@ -12,8 +12,6 @@ import Source
 import Alamofire
 
 final class ArgumentParser {
-
-    // MARK: - Public Properties
     
     // MARK: - Private Properties
     
