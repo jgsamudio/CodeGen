@@ -28,6 +28,7 @@
 /* Begin PBXBuildFile section */
 		20FB231E217648F200BBAFC3 /* TypeDeclarationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB231B2176475300BBAFC3 /* TypeDeclarationProtocol.swift */; };
 		20FB23202176493400BBAFC3 /* ProtocolComformanceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB231821763DB000BBAFC3 /* ProtocolComformanceGenerator.swift */; };
+		20FB232321764E1D00BBAFC3 /* NewFileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB232121764E1000BBAFC3 /* NewFileGenerator.swift */; };
 		OBJ_304 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* ASTNode.swift */; };
 		OBJ_305 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* ASTNodeContext.swift */; };
 		OBJ_306 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* ASTTextRepresentable.swift */; };
@@ -516,6 +517,7 @@
 /* Begin PBXFileReference section */
 		20FB231821763DB000BBAFC3 /* ProtocolComformanceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolComformanceGenerator.swift; sourceTree = "<group>"; };
 		20FB231B2176475300BBAFC3 /* TypeDeclarationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDeclarationProtocol.swift; sourceTree = "<group>"; };
+		20FB232121764E1000BBAFC3 /* NewFileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFileGenerator.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CodeASTVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeASTVisitor.swift; sourceTree = "<group>"; };
@@ -1353,6 +1355,7 @@
 			children = (
 				OBJ_50 /* Configuration.swift */,
 				OBJ_51 /* GeneratorConfig.swift */,
+				20FB232121764E1000BBAFC3 /* NewFileGenerator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1991,6 +1994,7 @@
 				20FB23202176493400BBAFC3 /* ProtocolComformanceGenerator.swift in Sources */,
 				OBJ_493 /* CommandLineError.swift in Sources */,
 				OBJ_494 /* APIErrorType.swift in Sources */,
+				20FB232321764E1D00BBAFC3 /* NewFileGenerator.swift in Sources */,
 				OBJ_495 /* DataDecoder.swift in Sources */,
 				OBJ_496 /* TabFormat.swift in Sources */,
 				OBJ_497 /* Visitor.swift in Sources */,

@@ -19,9 +19,3 @@ struct GeneratorConfig: Codable {
     let conformance: String?
     let newFileGenerator: NewFileGenerator?
 }
-
-struct NewFileGenerator: Codable {
-    let name: String
-    let path: String
-    let header: String?
-}
