@@ -17,6 +17,8 @@ final class CodeASTVisitor: ASTVisitor {
     
     var modifications = [FileModifier]()
 
+    // MARK: - Private Properties
+    
     // TODO: Auto generate the order of the variables.
     private var visitedNodes: VisitedNodeCollection
     private var codeGenerators = [Visitor: LinkedList<CodeGenerator>]()

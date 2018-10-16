@@ -9,6 +9,7 @@ import Foundation
 import Source
 import AST
 
+// TODO: IBAction Marks
 class PublicFunctionMarkGenerator: CodeGenerator {
 
     // MARK: - Public Properties
@@ -17,6 +18,8 @@ class PublicFunctionMarkGenerator: CodeGenerator {
 
     let generatorConfig: GeneratorConfig
 
+    // MARK: - Private Properties
+    
     private var markAdded = false
 
     // MARK: - Initialization

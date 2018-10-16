@@ -21,6 +21,8 @@ class SourceFileLoader {
         return "\(directory)/\(fileName)".replacingOccurrences(of: " ", with: "%20")
     }
 
+    // MARK: - Private Properties
+    
     private var directory: String
     private var fileName: String
 

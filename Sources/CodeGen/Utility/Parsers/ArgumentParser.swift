@@ -15,8 +15,12 @@ final class ArgumentParser {
 
     // MARK: - Public Properties
     
+    // MARK: - Private Properties
+    
     private let arguments: [String]
     private let dataDecoder = DataDecoder()
+
+    private var modifications = [FileModifier]()
 
     // MARK: - Initialization
     
@@ -40,7 +44,7 @@ final class ArgumentParser {
                                                         excludedFiles: config.excludedFiles,
                                                         excludedDirectories: config.excludedDirectories)
         let group = DispatchGroup()
-        
+
         // Parse Current Files.
         for fileName in fileNames {
             group.enter()
@@ -56,6 +60,9 @@ final class ArgumentParser {
             }
         }
         group.wait()
+
+        // Generates the code given the config
+        generateProjectFiles()
         
         // Store config generators for next run.
         storeConfigGenerators(config: config)
@@ -75,6 +82,8 @@ private extension ArgumentParser {
         let topLevelDecl = try parser.parse()
         let visitor = CodeASTVisitor(fileComponents: fileComponents, config: config)
         _ = try? visitor.traverse(topLevelDecl)
+
+        modifications.append(contentsOf: visitor.modifications)
 
         // Ensure there are modifications to make.
         guard visitor.modifications.count > 0 else {
@@ -103,6 +112,10 @@ private extension ArgumentParser {
             }
         }
         updatedComponentList.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
+    }
+
+    func generateProjectFiles() {
+        print(modifications.count)
     }
 
     func loadConfig(directory: String) throws -> Configuration {

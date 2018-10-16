@@ -17,6 +17,8 @@ class PublicVariableMarkGenerator: CodeGenerator {
 
     let generatorConfig: GeneratorConfig
 
+    // MARK: - Private Properties
+    
     private var markAdded = false
 
     // MARK: - Initialization

@@ -99,7 +99,7 @@ extension Array where Element == DeclarationModifier {
     
     /// Determines if the modifier array is public.
     var isPublic: Bool {
-        return !textDescription.contains("private") || !textDescription.contains("fileprivate")
+        return !textDescription.contains("private") && !textDescription.contains("fileprivate")
     }
 
 }

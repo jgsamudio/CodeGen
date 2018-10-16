@@ -26,8 +26,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		20FB231A21763DD600BBAFC3 /* ProtocolComformanceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB231821763DB000BBAFC3 /* ProtocolComformanceGenerator.swift */; };
-		20FB231D2176476A00BBAFC3 /* TypeDeclarationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB231B2176475300BBAFC3 /* TypeDeclarationProtocol.swift */; };
+		20FB231E217648F200BBAFC3 /* TypeDeclarationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB231B2176475300BBAFC3 /* TypeDeclarationProtocol.swift */; };
+		20FB23202176493400BBAFC3 /* ProtocolComformanceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB231821763DB000BBAFC3 /* ProtocolComformanceGenerator.swift */; };
 		OBJ_304 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* ASTNode.swift */; };
 		OBJ_305 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* ASTNodeContext.swift */; };
 		OBJ_306 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* ASTTextRepresentable.swift */; };
@@ -1988,6 +1988,7 @@
 				OBJ_490 /* PrivateVariableMarkGenerator.swift in Sources */,
 				OBJ_491 /* PublicFunctionMarkGenerator.swift in Sources */,
 				OBJ_492 /* PublicVariableMarkGenerator.swift in Sources */,
+				20FB23202176493400BBAFC3 /* ProtocolComformanceGenerator.swift in Sources */,
 				OBJ_493 /* CommandLineError.swift in Sources */,
 				OBJ_494 /* APIErrorType.swift in Sources */,
 				OBJ_495 /* DataDecoder.swift in Sources */,
@@ -2003,9 +2004,8 @@
 				OBJ_505 /* SourceFileLoader.swift in Sources */,
 				OBJ_506 /* LinkedList.swift in Sources */,
 				OBJ_507 /* LinkedListNode.swift in Sources */,
-				20FB231A21763DD600BBAFC3 /* ProtocolComformanceGenerator.swift in Sources */,
 				OBJ_508 /* Configuration.swift in Sources */,
-				20FB231D2176476A00BBAFC3 /* TypeDeclarationProtocol.swift in Sources */,
+				20FB231E217648F200BBAFC3 /* TypeDeclarationProtocol.swift in Sources */,
 				OBJ_509 /* GeneratorConfig.swift in Sources */,
 				OBJ_510 /* ArgumentParser.swift in Sources */,
 				OBJ_511 /* DeclarationModifierProtocol.swift in Sources */,

@@ -8,7 +8,7 @@
 import Foundation
 import AST
 
-protocol TypeDeclarationProtocol {
+protocol TypeDeclarationProtocol: Declaration {
 
     var name: Identifier { get }
 
