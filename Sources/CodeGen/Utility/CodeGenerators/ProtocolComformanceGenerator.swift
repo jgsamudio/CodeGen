@@ -28,6 +28,14 @@ final class ProtocolComformanceGenerator: CodeGenerator {
     func fileModifier<T: ASTNode>(node: T?, sourceLocation: SourceLocation,
                          fileComponents: [String],
                          visitedNodes: VisitedNodeCollection) -> FileModifier? {
+
+        if let typeDeclaration = node as? TypeDeclarationProtocol,
+            let typeInheritanceClause = typeDeclaration.typeInheritanceClause,
+            typeInheritanceClause.typeInheritanceList.contains(where: { $0.description == generatorConfig.conformance }) {
+//            print("PROTOCOL")
+//            print(typeDeclaration.typeInheritanceClause?.typeInheritanceList)
+        }
+
         return nil
     }
     

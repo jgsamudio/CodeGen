@@ -27,6 +27,7 @@
 
 /* Begin PBXBuildFile section */
 		20FB231A21763DD600BBAFC3 /* ProtocolComformanceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB231821763DB000BBAFC3 /* ProtocolComformanceGenerator.swift */; };
+		20FB231D2176476A00BBAFC3 /* TypeDeclarationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FB231B2176475300BBAFC3 /* TypeDeclarationProtocol.swift */; };
 		OBJ_304 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* ASTNode.swift */; };
 		OBJ_305 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* ASTNodeContext.swift */; };
 		OBJ_306 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* ASTTextRepresentable.swift */; };
@@ -514,6 +515,7 @@
 
 /* Begin PBXFileReference section */
 		20FB231821763DB000BBAFC3 /* ProtocolComformanceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolComformanceGenerator.swift; sourceTree = "<group>"; };
+		20FB231B2176475300BBAFC3 /* TypeDeclarationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDeclarationProtocol.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CodeASTVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeASTVisitor.swift; sourceTree = "<group>"; };
@@ -1381,6 +1383,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_55 /* DeclarationModifierProtocol.swift */,
+				20FB231B2176475300BBAFC3 /* TypeDeclarationProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -2002,6 +2005,7 @@
 				OBJ_507 /* LinkedListNode.swift in Sources */,
 				20FB231A21763DD600BBAFC3 /* ProtocolComformanceGenerator.swift in Sources */,
 				OBJ_508 /* Configuration.swift in Sources */,
+				20FB231D2176476A00BBAFC3 /* TypeDeclarationProtocol.swift in Sources */,
 				OBJ_509 /* GeneratorConfig.swift in Sources */,
 				OBJ_510 /* ArgumentParser.swift in Sources */,
 				OBJ_511 /* DeclarationModifierProtocol.swift in Sources */,

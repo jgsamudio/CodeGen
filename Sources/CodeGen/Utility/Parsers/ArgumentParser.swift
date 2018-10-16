@@ -40,7 +40,8 @@ final class ArgumentParser {
                                                         excludedFiles: config.excludedFiles,
                                                         excludedDirectories: config.excludedDirectories)
         let group = DispatchGroup()
-        // Parse files.
+        
+        // Parse Current Files.
         for fileName in fileNames {
             group.enter()
             DispatchQueue.global().async {

@@ -38,7 +38,7 @@
 			"name": "publicVariableMarkGenerator",
 			"enabled": true,
 			"insertString":["", "// MARK: - Public Properties", ""],
-			"visitors": ["variable", "constant"]
+			"visitors": ["variable", "constant"],
 		},
 		{
 			"name": "privateVariableMarkGenerator",
@@ -51,7 +51,27 @@
 			"enabled": true,
 			"insertString":["", "// MARK: - Public Functions", ""],
 			"visitors": ["function"]
-		}
+		},
+		{
+			"name": "protocolComformanceGenerator",
+			"enabled": true,
+			"insertString":[
+				"struct CodeGeneratorDataSource {",
+				"",
+				"\tstatic var availableGeneratorDict: [String: CodeGenerator.Type] {",
+				"\t\treturn [%@.name: %@.self]",
+				"\t}",
+				"",
+				"}",
+			],
+			"visitors": ["struct", "enum", "class"],
+			"conformance": "CodeGenerator",
+			"newFileGenerator": {
+				"name": "CodeGeneratorDataSource",
+				"path": "./Sources/CodeGen/Utility/CodeGenerator",
+			},
+		},
 	],
-	"excluded": [],
+	"excludedFiles": [],
+	"excludedDirectories": ["Pods", "Constants"]
 }
