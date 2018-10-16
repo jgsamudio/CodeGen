@@ -36,6 +36,8 @@ public enum APIErrorType: Error {
     case noDataRetreived
     case deserializationFailed
 
+    // MARK: - Public Properties
+    
     /// Localized description.
     public var localizedDescription: String {
         switch self {

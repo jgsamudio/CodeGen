@@ -9,6 +9,8 @@ import Foundation
 
 extension String {
 
+    // MARK: - Public Properties
+    
     var urlFilePath: URL? {
         return URL(string: replacingOccurrences(of: " ", with: "%20"))
     }

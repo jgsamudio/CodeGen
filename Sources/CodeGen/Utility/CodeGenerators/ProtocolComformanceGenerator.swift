@@ -11,14 +11,20 @@ import AST
 
 final class ProtocolComformanceGenerator: CodeGenerator {
 
+    // MARK: - Public Properties
+    
     static var name = "protocolComformanceGenerator"
 
     var generatorConfig: GeneratorConfig
 
+    // MARK: - Initialization
+    
     init(generatorConfig: GeneratorConfig) {
         self.generatorConfig = generatorConfig
     }
 
+    // MARK: - Public Functions
+    
     func fileModifier<T: ASTNode>(node: T?, sourceLocation: SourceLocation,
                          fileComponents: [String],
                          visitedNodes: VisitedNodeCollection) -> FileModifier? {

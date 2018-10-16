@@ -95,6 +95,8 @@ extension Array where Element == String {
 
 extension Array where Element == DeclarationModifier {
 
+    // MARK: - Public Properties
+    
     /// Determines if the modifier array is public.
     var isPublic: Bool {
         return !textDescription.contains("private") || !textDescription.contains("fileprivate")

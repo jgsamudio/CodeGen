@@ -13,6 +13,8 @@ typealias VisitedNodeCollection = [Visitor: LinkedList<ASTNode>]
 
 final class CodeASTVisitor: ASTVisitor {
 
+    // MARK: - Public Properties
+    
     var modifications = [FileModifier]()
 
     // TODO: Auto generate the order of the variables.
@@ -34,6 +36,8 @@ final class CodeASTVisitor: ASTVisitor {
                 ProtocolComformanceGenerator.name: ProtocolComformanceGenerator.self]
     }
 
+    // MARK: - Initialization
+    
     init(fileComponents: [String], config: Configuration?) {
         self.fileComponents = fileComponents
         self.config = config
@@ -57,6 +61,8 @@ final class CodeASTVisitor: ASTVisitor {
         }
     }
 
+    // MARK: - Public Functions
+    
     func visit(_ declaration: ClassDeclaration) throws -> Bool {
         visited(.class, sourceLocation: declaration.sourceLocation, node: declaration)
         return true
@@ -104,6 +110,7 @@ final class CodeASTVisitor: ASTVisitor {
 
 }
 
+// MARK: - Private Functions
 private extension CodeASTVisitor {
 
     func visited<T: ASTNode>(_ visitor: Visitor, sourceLocation: SourceLocation, node: T?) {

@@ -27,6 +27,8 @@ open class DataDecoder {
 
     // MARK: - Private Properties
 
+    // MARK: - Public Properties
+    
     /// JSON Decoder used to decode the object.
     private let decoder: JSONDecoder
 

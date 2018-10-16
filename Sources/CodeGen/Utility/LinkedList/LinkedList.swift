@@ -23,6 +23,7 @@ import Foundation
 open class LinkedList<T> {
 
     // MARK: - Public Properties
+    
     public var head: LinkedListNode<T>?
     public var tail: LinkedListNode<T>?
 

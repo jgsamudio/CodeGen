@@ -13,13 +13,19 @@ import Alamofire
 
 final class ArgumentParser {
 
+    // MARK: - Public Properties
+    
     private let arguments: [String]
     private let dataDecoder = DataDecoder()
 
+    // MARK: - Initialization
+    
     init(arguments: [String] = CommandLine.arguments) {
         self.arguments = arguments
     }
 
+    // MARK: - Public Functions
+    
     func run() throws {
         let timer = ParkBenchTimer()
 
@@ -57,6 +63,7 @@ final class ArgumentParser {
 
 }
 
+// MARK: - Private Functions
 private extension ArgumentParser {
 
     func parse(fileName: String, directory: String, config: Configuration) throws {
