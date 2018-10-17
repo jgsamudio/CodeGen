@@ -18,7 +18,7 @@ final class ArgumentParser {
     private let arguments: [String]
     private let dataDecoder = DataDecoder()
 
-    private var generatedFileModifiers = LinkedList<FileModifier>()
+    private var generatedFileModifiers = [String: GeneratedFileModifier]()
 
     // MARK: - Initialization
     
@@ -60,7 +60,8 @@ final class ArgumentParser {
         group.wait()
 
         // Generates the code given the config
-        generateProjectFiles()
+        generateTemplateCommands(directory: directory, projectConfig: config)
+
         
         // Store config generators for next run.
         storeConfigGenerators(config: config)
@@ -82,17 +83,17 @@ private extension ArgumentParser {
         _ = try? visitor.traverse(topLevelDecl)
 
         // Save generated file modifiers.
-        if let fileModifiers = visitor.modifications[FileModifierType.generatedFile] {
-            if generatedFileModifiers.tail == nil {
-                generatedFileModifiers = fileModifiers
+        for (_, modification) in visitor.generatedFileModifications {
+            if let modifier = generatedFileModifiers[modification.generatorConfig.name] {
+                modifier.merge(modifier: modification)
+                generatedFileModifiers[modification.generatorConfig.name] = modifier
             } else {
-                generatedFileModifiers.tail?.next = fileModifiers.head
-                generatedFileModifiers.tail = fileModifiers.tail
+                generatedFileModifiers[modification.generatorConfig.name] = modification
             }
         }
 
         // Ensure there are modifications to make.
-        guard let list = visitor.modifications[FileModifierType.fileModified] else {
+        guard let listHead = visitor.projectFileModifications.head else {
             return
         }
 
@@ -103,9 +104,9 @@ private extension ArgumentParser {
             var replaceCurrentLine = false
 
             // Check Modifications
-            var currentNode = list.head
+            var currentNode: LinkedListNode<ProjectFileModifier>? = listHead
             while currentNode != nil {
-                if let modification = currentNode?.value as? ProjectFileModifier, modification.startIndex == i {
+                if let modification = currentNode?.value, modification.startIndex == i {
                     updatedComponentList.append(modification.insertions.joined(separator: "\n"))
                     replaceCurrentLine = modification.replaceCurrentLine
                     // Deletions should be a range
@@ -121,31 +122,17 @@ private extension ArgumentParser {
         updatedComponentList.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
     }
 
-    func generateProjectFiles() {
-        var currentNode = generatedFileModifiers.head
-        var names = [String]()
-        var insertString: [String]?
+    func generateTemplateCommands(directory: String, projectConfig: Configuration) {
 
-        while currentNode != nil {
-            if let modification = currentNode?.value as? GeneratedFileModifier {
-                if let name = modification.parameters[TemplateParameter.name] {
-                    names.append(name)
-                }
-                insertString = modification.generatorConfig.insertString
+        for (_, generator) in generatedFileModifiers {
+            let config = generator.generatorConfig
+            if let path = config.newFileGenerator?.path,
+                let name = config.newFileGenerator?.name,
+                let generatedString = TemplateCommand.commands(insertString: config.insertString,
+                                                               templateDict: generator.parameters) {
+                let header = projectConfig.fileHeader(name: name)
+                "\(header)\n\(generatedString)".writeToFile(directory: "\(directory)\(path)\(name)")
             }
-            currentNode = currentNode?.next
-        }
-
-        var updatedList = [String]()
-        let string = insertString?.joined().stringBetween(startString: "<CommaList>", endString: "</CommaList>")
-        for name in names {
-            if let nameString = string?.replacingOccurrences(of: "%name%", with: name), let lastName = names.last {
-                let separator = (name == lastName) ? "" : ",\n"
-                updatedList.append("\(nameString)\(separator)")
-            }
-        }
-        if let insertString = insertString?.joined(separator: "\n") {
-            print(insertString.replacingOccurrences(of: "<CommaList>\(string ?? "")</CommaList>", with: updatedList.joined()))
         }
     }
 
@@ -169,21 +156,69 @@ private extension ArgumentParser {
 
 }
 
-enum TemplateCommand: String {
-    case list = "<List>"
+enum TemplateCommand: String, CaseIterable {
+    case list
+
+    // MARK: - Public Properties
+    
+    var startToken: String {
+        switch self {
+        case .list:
+            return "<CommaList>"
+        }
+    }
+
+    var endToken: String {
+        switch self {
+        case .list:
+            return "</CommaList>"
+        }
+    }
+
+    func generatedString(templateString: String, templateDict: [TemplateParameter: [String]]) -> String {
+        switch self {
+        case .list:
+            var generatedString = ""
+
+            for (parameter, values) in templateDict {
+                guard templateString.contains(parameter.rawValue) else {
+                    continue
+                }
+                for value in values {
+                    let valueString = templateString.replacingOccurrences(of: parameter.rawValue, with: value)
+                    if let lastValue = values.last {
+                        let separator = (value == lastValue) ? "" : ",\n"
+                        generatedString.append("\(valueString)\(separator)")
+                    }
+                }
+            }
+            return generatedString
+        }
+    }
+
+    static func commands(insertString: [String]?, templateDict: [TemplateParameter: [String]]) -> String? {
+        guard let insertString = insertString else {
+            return nil
+        }
+
+        var updatedList = insertString.joined(separator: "\n")
+        for command in TemplateCommand.allCases {
+            if let templateString = insertString.joined().stringBetween(startString: command.startToken,
+                                                                        endString: command.endToken) {
+
+                let generatedString = command.generatedString(templateString: templateString, templateDict: templateDict)
+                let templateCommand = command.completeTemplateCommand(templateString: templateString)
+                updatedList = updatedList.replacingOccurrences(of: templateCommand, with: generatedString)
+            }
+        }
+        return updatedList
+    }
+
+    func completeTemplateCommand(templateString: String) -> String {
+        return "\(startToken)\(templateString)\(endToken)"
+    }
 }
 
-//struct CodeGeneratorDataSource {
-//
-//    static var availableGeneratorDict: [String: CodeGenerator.Type] {
-//        return [PrivateVariableMarkGenerator.name: PrivateVariableMarkGenerator.self,
-//                ProtocolComformanceGenerator.name: ProtocolComformanceGenerator.self,
-//                InitializationMarkGenerator.name: InitializationMarkGenerator.self,
-//                PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
-//                DelegateExtensionMarkGenerator.name: DelegateExtensionMarkGenerator.self,
-//                PublicVariableMarkGenerator.name: PublicVariableMarkGenerator.self,
-//                DeclarationHeaderGenerator.name: DeclarationHeaderGenerator.self,
-//                PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self]
-//    }
-//
-//}
+enum TemplateParameter: String {
+    case name = "%name%"
+}

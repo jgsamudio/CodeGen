@@ -33,7 +33,7 @@ final class ProtocolComformanceGenerator: CodeGenerator {
             let typeInheritanceClause = typeDeclaration.typeInheritanceClause,
             typeInheritanceClause.typeInheritanceList.contains(where: { $0.description == generatorConfig.conformance }) {
             return GeneratedFileModifier(generatorConfig: generatorConfig,
-                                         parameters: [TemplateParameter.name: typeDeclaration.name.description])
+                                         parameters: [TemplateParameter.name: [typeDeclaration.name.description]])
         }
 
         return nil

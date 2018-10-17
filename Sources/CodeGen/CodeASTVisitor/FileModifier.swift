@@ -41,35 +41,34 @@ final class ProjectFileModifier: FileModifier {
 
 }
 
-final class GeneratedFileModifier: FileModifier {
+class GeneratedFileModifier: FileModifier {
 
     var type = FileModifierType.generatedFile
 
     let generatorConfig: GeneratorConfig
-    let parameters: [TemplateParameter: String]
+    
+    // MARK: - Private Properties
+    
+    private(set) var parameters: [TemplateParameter: [String]]
 
-    init(generatorConfig: GeneratorConfig, parameters: [TemplateParameter: String]) {
+    init(generatorConfig: GeneratorConfig, parameters: [TemplateParameter: [String]]) {
         self.generatorConfig = generatorConfig
         self.parameters = parameters
     }
 
     // MARK: - Public Functions
     
-    func content() -> String? {
-        guard let insertString = generatorConfig.insertString else {
-            return nil
+    func merge(modifier: GeneratedFileModifier) {
+        for (parameter, values) in modifier.parameters {
+            if var parameterValues = parameters[parameter] {
+                parameterValues.append(contentsOf: values)
+                parameters[parameter] = parameterValues
+            } else {
+                parameters[parameter] = values
+            }
         }
-
-        for line in insertString {
-            print(insertString)
-        }
-        return nil
     }
 
-}
-
-enum TemplateParameter {
-    case name
 }
 
 enum FileModifierType {

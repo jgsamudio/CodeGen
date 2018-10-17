@@ -15,7 +15,8 @@ final class CodeASTVisitor: ASTVisitor {
 
     // MARK: - Public Properties
     
-    var modifications = [FileModifierType: LinkedList<FileModifier>]()
+    var projectFileModifications = LinkedList<ProjectFileModifier>()
+    var generatedFileModifications = [String: GeneratedFileModifier]()
 
     // MARK: - Private Properties
     
@@ -26,18 +27,6 @@ final class CodeASTVisitor: ASTVisitor {
     private let fileComponents: [String]
     private let config: Configuration?
 
-    // TODO: GENERATOR - Auto generate this
-    private static var availableGeneratorDict: [String: CodeGenerator.Type] {
-        return [DeclarationHeaderGenerator.name: DeclarationHeaderGenerator.self,
-                PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
-                DelegateExtensionMarkGenerator.name: DelegateExtensionMarkGenerator.self,
-                InitializationMarkGenerator.name: InitializationMarkGenerator.self,
-                PublicVariableMarkGenerator.name: PublicVariableMarkGenerator.self,
-                PrivateVariableMarkGenerator.name: PrivateVariableMarkGenerator.self,
-                PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self,
-                ProtocolComformanceGenerator.name: ProtocolComformanceGenerator.self]
-    }
-
     // MARK: - Initialization
     
     init(fileComponents: [String], config: Configuration?) {
@@ -47,7 +36,7 @@ final class CodeASTVisitor: ASTVisitor {
 
         // Init the code generators.
         for configGenerator in config?.generators ?? [] {
-            if configGenerator.enabled, let generatorType = CodeASTVisitor.availableGeneratorDict[configGenerator.name] {
+            if configGenerator.enabled, let generatorType = CodeGeneratorDataSource.availableGeneratorDict[configGenerator.name] {
                 let generator = generatorType.init(generatorConfig: configGenerator)
                 for visitor in configGenerator.visitors ?? [] {
                     if let list = codeGenerators[visitor] {
@@ -149,13 +138,20 @@ private extension CodeASTVisitor {
     }
 
     func updateModifications(modifier: FileModifier) {
-        if let list = modifications[modifier.type] {
-            list.append(modifier)
-            modifications[modifier.type] = list
-        } else {
-            let list = LinkedList<FileModifier>()
-            list.append(modifier)
-            modifications[modifier.type] = list
+        switch modifier.type {
+        case .fileModified:
+            if let modifier = modifier as? ProjectFileModifier {
+                projectFileModifications.append(modifier)
+            }
+        case .generatedFile:
+            if let modifier = modifier as? GeneratedFileModifier {
+                if let generatedModifier = generatedFileModifications[modifier.generatorConfig.name]  {
+                    generatedModifier.merge(modifier: modifier)
+                    generatedFileModifications[modifier.generatorConfig.name] = generatedModifier
+                } else {
+                    generatedFileModifications[modifier.generatorConfig.name] = modifier
+                }
+            }
         }
     }
 

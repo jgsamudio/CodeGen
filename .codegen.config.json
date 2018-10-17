@@ -1,7 +1,4 @@
 {
-	"authorName" : "Jonathan Samudio",
-  	"companyName" : "Prolific Interactive",
-  	"projectName" : "CodeGen",
 	"generators": [
 		{
 			"name": "declarationHeader",
@@ -61,21 +58,19 @@
 			"insertString":[
 				"struct CodeGeneratorDataSource {",
 				"",
-				"\tstatic var availableGeneratorDict: [String: CodeGenerator.Type] {",
-				"\t\treturn [",
-				"<CommaList>\t\t\t%name%.name: %name%.self</CommaList>",
-				"\t\t]",
+				"\tprivate static var availableGeneratorDict: [String: CodeGenerator.Type] {",
+				"\t\treturn [%name%.name: %name%.self]",
 				"\t}",
 				"",
-				"}",
+				"}"
 			],
-			"visitors": ["struct", "enum", "class"],
+			"visitors": ["function"],
 			"conformance": "CodeGenerator",
 			"newFileGenerator": {
-				"name": "CodeGeneratorDataSource.swift",
-				"path": "/CodeGen/Utility/CodeGenerators/",
-			},
-		},
+				"name": "CodeGeneratorDataSource",
+				"path": "./Sources/CodeGen/Utility/CodeGenerator",
+			}
+		}
 	],
 	"excludedFiles": [],
 	"excludedDirectories": ["Pods", "Constants"]
