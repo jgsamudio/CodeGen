@@ -75,7 +75,6 @@ private extension DataDecoder {
         #if DEBUG
         print("Deserialization Failed: ")
         print(decodeError)
-        print(error)
         #endif
         return Result.failure(APIErrorType.deserializationFailed)
 
