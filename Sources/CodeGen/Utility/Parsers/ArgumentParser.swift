@@ -123,13 +123,29 @@ private extension ArgumentParser {
 
     func generateProjectFiles() {
         var currentNode = generatedFileModifiers.head
+        var names = [String]()
+        var insertString: [String]?
+
         while currentNode != nil {
             if let modification = currentNode?.value as? GeneratedFileModifier {
-                print(modification.parameters)
-                let insertString = modification.generatorConfig.insertString?.joined().stringBetween(startString: "<List>", endString: "</List>")
-                print(insertString)
+                if let name = modification.parameters[TemplateParameter.name] {
+                    names.append(name)
+                }
+                insertString = modification.generatorConfig.insertString
             }
             currentNode = currentNode?.next
+        }
+
+        var updatedList = [String]()
+        let string = insertString?.joined().stringBetween(startString: "<CommaList>", endString: "</CommaList>")
+        for name in names {
+            if let nameString = string?.replacingOccurrences(of: "%name%", with: name), let lastName = names.last {
+                let separator = (name == lastName) ? "" : ",\n"
+                updatedList.append("\(nameString)\(separator)")
+            }
+        }
+        if let insertString = insertString?.joined(separator: "\n") {
+            print(insertString.replacingOccurrences(of: "<CommaList>\(string ?? "")</CommaList>", with: updatedList.joined()))
         }
     }
 
@@ -156,3 +172,18 @@ private extension ArgumentParser {
 enum TemplateCommand: String {
     case list = "<List>"
 }
+
+//struct CodeGeneratorDataSource {
+//
+//    static var availableGeneratorDict: [String: CodeGenerator.Type] {
+//        return [PrivateVariableMarkGenerator.name: PrivateVariableMarkGenerator.self,
+//                ProtocolComformanceGenerator.name: ProtocolComformanceGenerator.self,
+//                InitializationMarkGenerator.name: InitializationMarkGenerator.self,
+//                PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
+//                DelegateExtensionMarkGenerator.name: DelegateExtensionMarkGenerator.self,
+//                PublicVariableMarkGenerator.name: PublicVariableMarkGenerator.self,
+//                DeclarationHeaderGenerator.name: DeclarationHeaderGenerator.self,
+//                PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self]
+//    }
+//
+//}
