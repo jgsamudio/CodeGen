@@ -15,12 +15,12 @@ struct CodeGeneratorDataSource {
 	static var availableGeneratorDict: [String: CodeGenerator.Type] {
 		return [
 			ProtocolComformanceGenerator.name: ProtocolComformanceGenerator.self,
-			InitializationMarkGenerator.name: InitializationMarkGenerator.self,
 			DelegateExtensionMarkGenerator.name: DelegateExtensionMarkGenerator.self,
 			PrivateVariableMarkGenerator.name: PrivateVariableMarkGenerator.self,
-			PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self,
-			PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
+			InitializationMarkGenerator.name: InitializationMarkGenerator.self,
 			DeclarationHeaderGenerator.name: DeclarationHeaderGenerator.self,
+			PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
+			PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self,
 			PublicVariableMarkGenerator.name: PublicVariableMarkGenerator.self
 		]
 	}

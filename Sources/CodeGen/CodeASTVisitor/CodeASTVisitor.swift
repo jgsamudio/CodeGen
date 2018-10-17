@@ -36,7 +36,8 @@ final class CodeASTVisitor: ASTVisitor {
 
         // Init the code generators.
         for configGenerator in config?.generators ?? [] {
-            if configGenerator.enabled, let generatorType = CodeGeneratorDataSource.availableGeneratorDict[configGenerator.name] {
+            if configGenerator.enabled,
+                let generatorType = CodeGeneratorDataSource.availableGeneratorDict[configGenerator.name] {
                 let generator = generatorType.init(generatorConfig: configGenerator)
                 for visitor in configGenerator.visitors ?? [] {
                     if let list = codeGenerators[visitor] {
