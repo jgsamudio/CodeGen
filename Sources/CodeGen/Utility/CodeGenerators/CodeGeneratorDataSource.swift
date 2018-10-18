@@ -12,13 +12,12 @@
 
 struct CodeGeneratorDataSource {
 
-    // MARK: - Public Properties
-    
 	static var availableGeneratorDict: [String: CodeGenerator.Type] {
 		return [
 			DeclarationHeaderGenerator.name: DeclarationHeaderGenerator.self,
-			DelegateExtensionMarkGenerator.name: DelegateExtensionMarkGenerator.self,
+			LocalizedStringsGenerator.name: LocalizedStringsGenerator.self,
 			InitializationMarkGenerator.name: InitializationMarkGenerator.self,
+			DelegateExtensionMarkGenerator.name: DelegateExtensionMarkGenerator.self,
 			PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
 			PrivateVariableMarkGenerator.name: PrivateVariableMarkGenerator.self,
 			PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self,

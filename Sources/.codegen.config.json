@@ -75,7 +75,7 @@
 			"newFileGenerator": {
 				"name": "CodeGeneratorDataSource.swift",
 				"path": "CodeGen/Utility/CodeGenerators/",
-				"singleFileGeneration": true
+				"singleFileGeneration": false
 			},
 		},
 	],
