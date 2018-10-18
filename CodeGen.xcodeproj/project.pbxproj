@@ -28,6 +28,9 @@
 /* Begin PBXBuildFile section */
 		2039EE732178D57A00A73B00 /* TemplateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2039EE712178D56600A73B00 /* TemplateCommand.swift */; };
 		2039EE762178D5A600A73B00 /* TemplateParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2039EE742178D59700A73B00 /* TemplateParameter.swift */; };
+		2039EE7D2178F04D00A73B00 /* ProjectFileModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2039EE772178F02000A73B00 /* ProjectFileModifier.swift */; };
+		2039EE7E2178F04D00A73B00 /* GeneratedFileModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2039EE792178F02E00A73B00 /* GeneratedFileModifier.swift */; };
+		2039EE7F2178F04D00A73B00 /* FileModifierType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2039EE7B2178F03D00A73B00 /* FileModifierType.swift */; };
 		OBJ_310 /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* ASTNode.swift */; };
 		OBJ_311 /* ASTNodeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* ASTNodeContext.swift */; };
 		OBJ_312 /* ASTTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* ASTTextRepresentable.swift */; };
@@ -521,6 +524,9 @@
 /* Begin PBXFileReference section */
 		2039EE712178D56600A73B00 /* TemplateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCommand.swift; sourceTree = "<group>"; };
 		2039EE742178D59700A73B00 /* TemplateParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateParameter.swift; sourceTree = "<group>"; };
+		2039EE772178F02000A73B00 /* ProjectFileModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFileModifier.swift; sourceTree = "<group>"; };
+		2039EE792178F02E00A73B00 /* GeneratedFileModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedFileModifier.swift; sourceTree = "<group>"; };
+		2039EE7B2178F03D00A73B00 /* FileModifierType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModifierType.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CodeGen::CodeGen::Product" /* CodeGen */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CodeASTVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeASTVisitor.swift; sourceTree = "<group>"; };
@@ -1507,6 +1513,9 @@
 			children = (
 				OBJ_10 /* CodeASTVisitor.swift */,
 				OBJ_11 /* FileModifier.swift */,
+				2039EE772178F02000A73B00 /* ProjectFileModifier.swift */,
+				2039EE792178F02E00A73B00 /* GeneratedFileModifier.swift */,
+				2039EE7B2178F03D00A73B00 /* FileModifierType.swift */,
 			);
 			path = CodeASTVisitor;
 			sourceTree = "<group>";
@@ -2013,6 +2022,7 @@
 				OBJ_496 /* InitializationMarkGenerator.swift in Sources */,
 				OBJ_497 /* PrivateExtensionMarkGenerator.swift in Sources */,
 				OBJ_498 /* PrivateVariableMarkGenerator.swift in Sources */,
+				2039EE7D2178F04D00A73B00 /* ProjectFileModifier.swift in Sources */,
 				OBJ_499 /* PublicFunctionMarkGenerator.swift in Sources */,
 				OBJ_500 /* PublicVariableMarkGenerator.swift in Sources */,
 				OBJ_501 /* ProtocolComformanceGenerator.swift in Sources */,
@@ -2029,6 +2039,7 @@
 				OBJ_511 /* SourceLocationExtension.swift in Sources */,
 				OBJ_512 /* StringExtension.swift in Sources */,
 				OBJ_513 /* FileRetriever.swift in Sources */,
+				2039EE7E2178F04D00A73B00 /* GeneratedFileModifier.swift in Sources */,
 				OBJ_514 /* SourceFileLoader.swift in Sources */,
 				OBJ_515 /* LinkedList.swift in Sources */,
 				OBJ_516 /* LinkedListNode.swift in Sources */,
@@ -2040,6 +2051,7 @@
 				OBJ_521 /* DeclarationModifierProtocol.swift in Sources */,
 				OBJ_522 /* TypeDeclarationProtocol.swift in Sources */,
 				OBJ_523 /* Regex.swift in Sources */,
+				2039EE7F2178F04D00A73B00 /* FileModifierType.swift in Sources */,
 				OBJ_524 /* ParkBenchTimer.swift in Sources */,
 				OBJ_525 /* main.swift in Sources */,
 			);

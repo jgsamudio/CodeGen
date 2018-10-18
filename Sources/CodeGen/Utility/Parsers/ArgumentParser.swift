@@ -61,7 +61,6 @@ final class ArgumentParser {
 
         // Generates the code given the config
         generateTemplateCommands(directory: directory, projectConfig: config, fileNames: fileNames)
-
         dispatchGroup.wait()
 
         // Store config generators for next run.
