@@ -84,12 +84,7 @@ private extension ArgumentParser {
 
         // Save generated file modifiers.
         for (_, modification) in visitor.generatedFileModifications {
-            if let modifier = generatedFileModifiers[modification.generatorConfig.name] {
-                modifier.merge(modifier: modification)
-                generatedFileModifiers[modification.generatorConfig.name] = modifier
-            } else {
-                generatedFileModifiers[modification.generatorConfig.name] = modification
-            }
+            generatedFileModifiers.append(modification: modification)
         }
 
         // Ensure there are modifications to make.
@@ -123,7 +118,6 @@ private extension ArgumentParser {
     }
 
     func generateTemplateCommands(directory: String, projectConfig: Configuration) {
-
         for (_, generator) in generatedFileModifiers {
             let config = generator.generatorConfig
             if let path = config.newFileGenerator?.path,
@@ -206,7 +200,8 @@ enum TemplateCommand: String, CaseIterable {
             if let templateString = insertString.joined().stringBetween(startString: command.startToken,
                                                                         endString: command.endToken) {
 
-                let generatedString = command.generatedString(templateString: templateString, templateDict: templateDict)
+                let generatedString = command.generatedString(templateString: templateString,
+                                                              templateDict: templateDict)
                 let templateCommand = command.completeTemplateCommand(templateString: templateString)
                 updatedList = updatedList.replacingOccurrences(of: templateCommand, with: generatedString)
             }

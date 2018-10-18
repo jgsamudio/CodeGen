@@ -146,12 +146,7 @@ private extension CodeASTVisitor {
             }
         case .generatedFile:
             if let modifier = modifier as? GeneratedFileModifier {
-                if let generatedModifier = generatedFileModifications[modifier.generatorConfig.name]  {
-                    generatedModifier.merge(modifier: modifier)
-                    generatedFileModifications[modifier.generatorConfig.name] = generatedModifier
-                } else {
-                    generatedFileModifications[modifier.generatorConfig.name] = modifier
-                }
+                generatedFileModifications.append(modification: modifier)
             }
         }
     }

@@ -35,3 +35,17 @@ extension Dictionary where Key: Hashable, Value: LinkedList<ASTNode> {
     }
 
 }
+
+extension Dictionary where Dictionary == [String: GeneratedFileModifier] {
+    
+    mutating func append(modification: GeneratedFileModifier) {
+        if let modifier = self[modification.generatorConfig.name] {
+            modifier.merge(modifier: modification)
+            self[modification.generatorConfig.name] = modifier
+        } else {
+            self[modification.generatorConfig.name] = modification
+        }
+    }
+    
+}
+
