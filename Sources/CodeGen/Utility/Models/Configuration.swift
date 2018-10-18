@@ -38,7 +38,7 @@ extension Configuration {
         //
 
         /*
-        Auto-Generated using CodeGen
+            Auto-Generated using CodeGen
         */
 
         """
