@@ -21,8 +21,8 @@ struct CodeGeneratorDataSource {
 			PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
 			PrivateVariableMarkGenerator.name: PrivateVariableMarkGenerator.self,
 			PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self,
-			PublicVariableMarkGenerator.name: PublicVariableMarkGenerator.self,
-			ProtocolComformanceGenerator.name: ProtocolComformanceGenerator.self
+			ProtocolComformanceGenerator.name: ProtocolComformanceGenerator.self,
+			PublicVariableMarkGenerator.name: PublicVariableMarkGenerator.self
 		]
 	}
 

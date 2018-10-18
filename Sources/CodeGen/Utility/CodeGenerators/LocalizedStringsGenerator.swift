@@ -13,7 +13,7 @@ final class LocalizedStringsGenerator: CodeGenerator {
 
     // MARK: - Public Properties
     
-    static var name = "protocolComformanceGenerator"
+    static var name = "localizedStringsGenerator"
     
     var generatorConfig: GeneratorConfig
     
