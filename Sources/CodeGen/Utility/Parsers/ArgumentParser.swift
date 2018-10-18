@@ -40,7 +40,7 @@ final class ArgumentParser {
         let fileNames = FileRetriever.retrieveFilenames(at: directory,
                                                         fileExtensions: [".swift"],
                                                         excludedFiles: config.excludedFiles,
-                                                        excludedDirectories: config.excludedDirectories)
+                                                        excludedDirectories: config.excludedDirectories).sorted()
         let group = DispatchGroup()
 
         // Parse Current Files.
@@ -60,9 +60,8 @@ final class ArgumentParser {
         group.wait()
 
         // Generates the code given the config
-        generateTemplateCommands(directory: directory, projectConfig: config)
+        generateTemplateCommands(directory: directory, projectConfig: config, fileNames: fileNames)
 
-        
         // Store config generators for next run.
         storeConfigGenerators(config: config)
         print("Parsed \(fileNames.count) Files in \(timer.stop()) seconds.")
@@ -117,15 +116,22 @@ private extension ArgumentParser {
         updatedComponentList.joined(separator: "\n").writeToFile(directory: "\(directory)/\(fileName)")
     }
 
-    func generateTemplateCommands(directory: String, projectConfig: Configuration) {
+    func generateTemplateCommands(directory: String, projectConfig: Configuration, fileNames: [String]) {
         for (_, generator) in generatedFileModifiers {
             let config = generator.generatorConfig
+            guard let newFileGenerator = config.newFileGenerator,
+                let path = config.newFileGenerator?.path,
+                let name = config.newFileGenerator?.name,
+                !(fileNames.contains("\(path)\(name)") && newFileGenerator.singleFileGeneration ?? false) else {
+                    continue
+            }
+            
             if let path = config.newFileGenerator?.path,
                 let name = config.newFileGenerator?.name,
                 let generatedString = TemplateCommand.commands(insertString: config.insertString,
                                                                templateDict: generator.parameters) {
                 let header = projectConfig.fileHeader(name: name)
-                "\(header)\n\(generatedString)".writeToFile(directory: "\(directory)\(path)\(name)")
+                "\(header)\n\(generatedString)".writeToFile(directory: "\(directory)/\(path)\(name)")
             }
         }
     }

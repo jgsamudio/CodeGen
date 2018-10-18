@@ -27,6 +27,7 @@ struct Configuration: Codable {
 
 extension Configuration {
 
+    // TODO: Allow single generation functionality.
     func fileHeader(name: String) -> String {
         return """
         //

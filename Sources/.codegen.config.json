@@ -68,12 +68,14 @@
 				"\t}",
 				"",
 				"}",
+				""
 			],
 			"visitors": ["struct", "enum", "class"],
 			"conformance": "CodeGenerator",
 			"newFileGenerator": {
 				"name": "CodeGeneratorDataSource.swift",
-				"path": "/CodeGen/Utility/CodeGenerators/",
+				"path": "CodeGen/Utility/CodeGenerators/",
+				"singleFileGeneration": true
 			},
 		},
 	],

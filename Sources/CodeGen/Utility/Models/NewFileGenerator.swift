@@ -14,4 +14,5 @@ struct NewFileGenerator: Codable {
     let name: String
     let path: String
     let header: String?
+    let singleFileGeneration: Bool?
 }
