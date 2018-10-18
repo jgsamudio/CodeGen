@@ -17,6 +17,7 @@ final class ArgumentParser {
     
     private let arguments: [String]
     private let dataDecoder = DataDecoder()
+    private let dispatchGroup = DispatchGroup()
 
     private var generatedFileModifiers = [String: GeneratedFileModifier]()
 
@@ -41,26 +42,27 @@ final class ArgumentParser {
                                                         fileExtensions: [".swift"],
                                                         excludedFiles: config.excludedFiles,
                                                         excludedDirectories: config.excludedDirectories).sorted()
-        let group = DispatchGroup()
 
         // Parse Current Files.
         for fileName in fileNames {
-            group.enter()
+            dispatchGroup.enter()
             DispatchQueue.global().async {
                 do {
                     print("Parsing: \(fileName)")
                     try self.parse(fileName: fileName, directory: directory, config: config)
-                    group.leave()
+                    self.dispatchGroup.leave()
                 } catch {
                     print("Parsing Error: \(fileName)")
-                    group.leave()
+                    self.dispatchGroup.leave()
                 }
             }
         }
-        group.wait()
+        dispatchGroup.wait()
 
         // Generates the code given the config
         generateTemplateCommands(directory: directory, projectConfig: config, fileNames: fileNames)
+
+        dispatchGroup.wait()
 
         // Store config generators for next run.
         storeConfigGenerators(config: config)
@@ -118,20 +120,25 @@ private extension ArgumentParser {
 
     func generateTemplateCommands(directory: String, projectConfig: Configuration, fileNames: [String]) {
         for (_, generator) in generatedFileModifiers {
-            let config = generator.generatorConfig
-            guard let newFileGenerator = config.newFileGenerator,
-                let path = config.newFileGenerator?.path,
-                let name = config.newFileGenerator?.name,
-                !(fileNames.contains("\(path)\(name)") && newFileGenerator.singleFileGeneration ?? false) else {
-                    continue
-            }
-            
-            if let path = config.newFileGenerator?.path,
-                let name = config.newFileGenerator?.name,
-                let generatedString = TemplateCommand.commands(insertString: config.insertString,
-                                                               templateDict: generator.parameters) {
-                let header = projectConfig.fileHeader(name: name)
-                "\(header)\n\(generatedString)".writeToFile(directory: "\(directory)/\(path)\(name)")
+            dispatchGroup.enter()
+            DispatchQueue.global().async {
+                let config = generator.generatorConfig
+                guard let newFileGenerator = config.newFileGenerator,
+                    let path = config.newFileGenerator?.path,
+                    let name = config.newFileGenerator?.name,
+                    !(fileNames.contains("\(path)\(name)") && newFileGenerator.singleFileGeneration ?? false) else {
+                        self.dispatchGroup.leave()
+                        return
+                }
+
+                if let path = config.newFileGenerator?.path,
+                    let name = config.newFileGenerator?.name,
+                    let generatedString = TemplateCommand.commands(insertString: config.insertString,
+                                                                   templateDict: generator.parameters) {
+                    let header = projectConfig.fileHeader(name: name)
+                    "\(header)\n\(generatedString)".writeToFile(directory: "\(directory)/\(path)\(name)")
+                }
+                self.dispatchGroup.leave()
             }
         }
     }
@@ -154,73 +161,4 @@ private extension ArgumentParser {
         }
     }
 
-}
-
-enum TemplateCommand: String, CaseIterable {
-    case list
-
-    // MARK: - Public Properties
-    
-    var startToken: String {
-        switch self {
-        case .list:
-            return "<CommaList>"
-        }
-    }
-
-    var endToken: String {
-        switch self {
-        case .list:
-            return "</CommaList>"
-        }
-    }
-
-    func generatedString(templateString: String, templateDict: [TemplateParameter: [String]]) -> String {
-        switch self {
-        case .list:
-            var generatedString = ""
-
-            for (parameter, values) in templateDict {
-                guard templateString.contains(parameter.rawValue) else {
-                    continue
-                }
-                let sortedValues = values.sorted()
-                for value in sortedValues {
-                    let valueString = templateString.replacingOccurrences(of: parameter.rawValue, with: value)
-                    if let lastValue = sortedValues.last {
-                        let separator = (value == lastValue) ? "" : ",\n"
-                        generatedString.append("\(valueString)\(separator)")
-                    }
-                }
-            }
-            return generatedString
-        }
-    }
-
-    static func commands(insertString: [String]?, templateDict: [TemplateParameter: [String]]) -> String? {
-        guard let insertString = insertString else {
-            return nil
-        }
-
-        var updatedList = insertString.joined(separator: "\n")
-        for command in TemplateCommand.allCases {
-            if let templateString = insertString.joined().stringBetween(startString: command.startToken,
-                                                                        endString: command.endToken) {
-
-                let generatedString = command.generatedString(templateString: templateString,
-                                                              templateDict: templateDict)
-                let templateCommand = command.completeTemplateCommand(templateString: templateString)
-                updatedList = updatedList.replacingOccurrences(of: templateCommand, with: generatedString)
-            }
-        }
-        return updatedList
-    }
-
-    func completeTemplateCommand(templateString: String) -> String {
-        return "\(startToken)\(templateString)\(endToken)"
-    }
-}
-
-enum TemplateParameter: String {
-    case name = "%name%"
 }
