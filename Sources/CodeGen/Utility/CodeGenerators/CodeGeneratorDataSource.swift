@@ -15,13 +15,13 @@ struct CodeGeneratorDataSource {
 	static var availableGeneratorDict: [String: CodeGenerator.Type] {
 		return [
 			DeclarationHeaderGenerator.name: DeclarationHeaderGenerator.self,
-			LocalizedStringsGenerator.name: LocalizedStringsGenerator.self,
-			InitializationMarkGenerator.name: InitializationMarkGenerator.self,
 			DelegateExtensionMarkGenerator.name: DelegateExtensionMarkGenerator.self,
+			InitializationMarkGenerator.name: InitializationMarkGenerator.self,
+			LocalizedStringsGenerator.name: LocalizedStringsGenerator.self,
 			PrivateExtensionMarkGenerator.name: PrivateExtensionMarkGenerator.self,
 			PrivateVariableMarkGenerator.name: PrivateVariableMarkGenerator.self,
-			PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self,
 			ProtocolComformanceGenerator.name: ProtocolComformanceGenerator.self,
+			PublicFunctionMarkGenerator.name: PublicFunctionMarkGenerator.self,
 			PublicVariableMarkGenerator.name: PublicVariableMarkGenerator.self
 		]
 	}

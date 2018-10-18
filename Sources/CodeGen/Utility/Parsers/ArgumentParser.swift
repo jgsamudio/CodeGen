@@ -184,9 +184,10 @@ enum TemplateCommand: String, CaseIterable {
                 guard templateString.contains(parameter.rawValue) else {
                     continue
                 }
-                for value in values {
+                let sortedValues = values.sorted()
+                for value in sortedValues {
                     let valueString = templateString.replacingOccurrences(of: parameter.rawValue, with: value)
-                    if let lastValue = values.last {
+                    if let lastValue = sortedValues.last {
                         let separator = (value == lastValue) ? "" : ",\n"
                         generatedString.append("\(valueString)\(separator)")
                     }
